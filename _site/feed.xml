@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christopher Himes</title>
+    <description>Christopher Himes is a Software Developer living in Metro Detroit. This is an account of his personal projects and inquiries in the world of development.  
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 01 Feb 2015 18:37:55 -0500</pubDate>
+    <lastBuildDate>Sun, 01 Feb 2015 18:37:55 -0500</lastBuildDate>
+    <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Jekyll Install</title>
+        <description>&lt;p&gt;This is the first post using the static site generator &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 01 Feb 2015 10:09:40 -0500</pubDate>
+        <link>http://yourdomain.com/jekyll/install/2015/02/01/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/install/2015/02/01/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>install</category>
+        
+      </item>
+    
+  </channel>
+</rss>

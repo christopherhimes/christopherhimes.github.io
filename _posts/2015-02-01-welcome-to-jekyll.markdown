@@ -4,6 +4,6 @@ title:  "Jekyll Install"
 date:   2015-02-01 15:09:40
 categories: jekyll install
 ---
-This is the first post using the static site generator Jekyll[jekyll].
+This is the first post using the static site generator [Jekyll].
 
-[jekyll]:     https://github.com/jekyll/jekyll
+[Jekyll]:     https://github.com/jekyll/jekyll
