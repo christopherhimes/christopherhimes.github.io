@@ -1,0 +1,62 @@
+/**** Media Queries ***/
+
+/* Max Width */
+@media screen and (max-width: 1200px) {
+	h1 {
+		font-size: 4.5em;
+
+	}
+}
+@media screen and (max-width: 1200px) {
+	h1 {
+		font-size: 3.5em;
+
+	}
+}
+@media screen and (max-width: 768px) {
+	body {
+		/*background: url('../images/header-medium.jpeg') no-repeat fixed center;*/
+	}
+	h1 {
+		font-size: 3em;
+
+	}
+	h2, h3 {
+		font-size: 2.5em;
+		padding: 5%;		
+	}
+	h4, .lead {
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 650px) {
+	h1 {
+		font-size: 2.5em;
+
+	}
+} 
+@media screen and (max-width: 568px) {
+	h1 {
+		font-size: 2em;
+	}
+	h2, h3 {
+		font-size: 2em;
+		padding: 5%;
+	}
+	h4, .lead {
+		font-size: 1.3em;
+	}
+}
+@media screen and (max-width: 450px) {
+	h1 {
+		font-size: 1.4em;
+
+	}
+} 
+/* Max Height*/
+@media screen and (max-height: 800px) {
+	.full-window {
+		padding: 5%;
+		margin-top: 0%;
+	}
+}

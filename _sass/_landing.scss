@@ -9,18 +9,14 @@ body {
   width: 100%;
 }
  h1 {
-	/*font-family: 'Vollkorn', serif;*/
-	font-family: 'Megrim', serif;
 	text-transform: uppercase;
 	font-size: 5.5em;
 	letter-spacing: .15em;
-	color: GhostWhite;
 	padding:2%;
 }
 h2, h3 {
-	font-family: 'Megrim', serif;
+
 	text-transform: uppercase;
-	/*font-family: 'Vollkorn', serif;*/
 	font-size: 3em;
 	letter-spacing: .10em;
 }
@@ -37,6 +33,18 @@ hr {
 	border-top: 3px solid GhostWhite;
 	width: 25%;
 	padding:2%;
+}
+.megrim {
+	font-family: 'Megrim', serif;
+}
+.site-title {
+  font-size: 50px;
+}
+.vollkorn {
+	font-family: 'Vollkorn', serif;
+}
+.lato {
+	font-family: 'Lato';
 }
 .lead {
 	font-size: 1.5em;
@@ -143,67 +151,4 @@ p {
 }
 .copy {
 	padding-top:5%;
-}
-
-/**** Media Queries ***/
-
-/* Max Width */
-@media screen and (max-width: 1200px) {
-	h1 {
-		font-size: 4.5em;
-
-	}
-}
-@media screen and (max-width: 1200px) {
-	h1 {
-		font-size: 3.5em;
-
-	}
-}
-@media screen and (max-width: 768px) {
-	body {
-		/*background: url('../images/header-medium.jpeg') no-repeat fixed center;*/
-	}
-	h1 {
-		font-size: 3em;
-
-	}
-	h2, h3 {
-		font-size: 2.5em;
-		padding: 5%;		
-	}
-	h4, .lead {
-		font-size: 1.5em;
-	}
-}
-@media screen and (max-width: 650px) {
-	h1 {
-		font-size: 2.5em;
-
-	}
-} 
-@media screen and (max-width: 568px) {
-	h1 {
-		font-size: 2em;
-	}
-	h2, h3 {
-		font-size: 2em;
-		padding: 5%;
-	}
-	h4, .lead {
-		font-size: 1.3em;
-	}
-}
-@media screen and (max-width: 450px) {
-	h1 {
-		font-size: 1.4em;
-
-	}
-} 
-/* Max Height*/
-@media screen and (max-height: 800px) {
-	.full-window {
-		padding: 5%;
-		margin-top: 0%;
-	}
 }

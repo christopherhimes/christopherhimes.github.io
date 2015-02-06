@@ -1,3 +1,4 @@
+/* Constants */
 /*!
  * Bootstrap v3.0.3 (http://getbootstrap.com)
  * Copyright 2013 Twitter, Inc.
@@ -5110,7 +5111,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  margin-bottom: 15px; }
+  margin-bottom: 20px; }
 
 /**
  * Images
@@ -5132,7 +5133,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: 30px; }
+  margin-left: 40px; }
 
 li > ul,
 li > ol {
@@ -5162,7 +5163,7 @@ a {
 blockquote {
   color: #828282;
   border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
+  padding-left: 20px;
   font-size: 18px;
   letter-spacing: -1px;
   font-style: italic; }
@@ -5194,18 +5195,18 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
+  max-width: -webkit-calc(900px - (40px * 2));
+  max-width: calc(900px - (40px * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
+  padding-right: 40px;
+  padding-left: 40px; }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
+      max-width: -webkit-calc(900px - (40px));
+      max-width: calc(900px - (40px));
+      padding-right: 20px;
+      padding-left: 20px; } }
 
 /**
  * Clearfix
@@ -5230,28 +5231,44 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
+  /*    border-top: 5px solid $grey-color-dark;
+      border-bottom: 1px solid $grey-color-light;*/
+  min-height: 75px;
   position: relative; }
 
 .site-title {
-  font-size: 26px;
-  line-height: 56px;
+  font-size: 55px;
+  line-height: 75px;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
     color: #424242; }
 
+.blog-title {
+  font-size: 50px;
+  line-height: 75px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  text-transform: uppercase; }
+  .blog-title, .blog-title:visited {
+    color: #424242; }
+  .blog-title:hover {
+    text-decoration: none; }
+
 .site-nav {
   float: right;
-  line-height: 56px; }
+  line-height: 75px; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
     color: #111;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 20px;
+    /*text-transform: uppercase;*/
+    /*vertical-align: bottom;*/ }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
   @media screen and (max-width: 600px) {
@@ -5290,12 +5307,14 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  /*border-top: 1px solid $grey-color-light;*/
+  background: #09123d;
+  padding: 60px 0;
+  bottom: 0; }
 
 .footer-heading {
   font-size: 18px;
-  margin-bottom: 15px; }
+  margin-bottom: 20px; }
 
 .contact-list,
 .social-media-list {
@@ -5305,44 +5324,44 @@ pre {
 .footer-col-wrapper {
   font-size: 15px;
   color: #828282;
-  margin-left: -15px; }
+  margin-left: -20px; }
 
 .footer-col {
   float: left;
-  margin-bottom: 15px;
-  padding-left: 15px; }
+  margin-bottom: 20px;
+  padding-left: 20px; }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (30px / 2));
-  width: calc(35% - (30px / 2)); }
+  width: -webkit-calc(35% - (40px / 2));
+  width: calc(35% - (40px / 2)); }
 
 .footer-col-2 {
-  width: -webkit-calc(22% - (30px / 2));
-  width: calc(22% - (30px / 2)); }
+  width: -webkit-calc(22% - (40px / 2));
+  width: calc(22% - (40px / 2)); }
 
 .footer-col-3 {
-  width: -webkit-calc(43% - (30px / 2));
-  width: calc(43% - (30px / 2)); }
+  width: -webkit-calc(43% - (40px / 2));
+  width: calc(43% - (40px / 2)); }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
   .footer-col-2 {
-    width: -webkit-calc(50% - (30px / 2));
-    width: calc(50% - (30px / 2)); }
+    width: -webkit-calc(50% - (40px / 2));
+    width: calc(50% - (40px / 2)); }
 
   .footer-col-3 {
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
+    width: -webkit-calc(100% - (40px / 2));
+    width: calc(100% - (40px / 2)); } }
 @media screen and (max-width: 600px) {
   .footer-col {
     float: none;
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
+    width: -webkit-calc(100% - (40px / 2));
+    width: calc(100% - (40px / 2)); } }
 /**
  * Page content
  */
 .page-content {
-  padding: 30px 0; }
+  padding: 40px 0; }
 
 .page-heading {
   font-size: 20px; }
@@ -5351,7 +5370,7 @@ pre {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
 
 .post-meta {
   font-size: 14px;
@@ -5361,11 +5380,25 @@ pre {
   display: block;
   font-size: 24px; }
 
+.header-image {
+  background: url("../images/header.jpeg") no-repeat fixed center #010107;
+  width: 100%;
+  padding: 250px;
+  padding-top: 100px;
+  margin: 0 auto; }
+
+.header-image-small {
+  background: url("../images/header.jpeg") no-repeat fixed center #010107;
+  width: 100%;
+  padding: 100px;
+  padding-top: 100px;
+  margin: 0 auto; }
+
 /**
  * Posts
  */
 .post-header {
-  margin-bottom: 30px; }
+  margin-bottom: 40px; }
 
 .post-title {
   font-size: 42px;
@@ -5376,7 +5409,7 @@ pre {
       font-size: 36px; } }
 
 .post-content {
-  margin-bottom: 30px; }
+  margin-bottom: 40px; }
   .post-content h2 {
     font-size: 32px; }
     @media screen and (max-width: 800px) {
@@ -5542,18 +5575,13 @@ body {
   width: 100%; }
 
 h1 {
-  /*font-family: 'Vollkorn', serif;*/
-  font-family: 'Megrim', serif;
   text-transform: uppercase;
   font-size: 5.5em;
   letter-spacing: .15em;
-  color: GhostWhite;
   padding: 2%; }
 
 h2, h3 {
-  font-family: 'Megrim', serif;
   text-transform: uppercase;
-  /*font-family: 'Vollkorn', serif;*/
   font-size: 3em;
   letter-spacing: .10em; }
 
@@ -5570,6 +5598,18 @@ hr {
   border-top: 3px solid GhostWhite;
   width: 25%;
   padding: 2%; }
+
+.megrim {
+  font-family: 'Megrim', serif; }
+
+.site-title {
+  font-size: 50px; }
+
+.vollkorn {
+  font-family: 'Vollkorn', serif; }
+
+.lato {
+  font-family: 'Lato'; }
 
 .lead {
   font-size: 1.5em; }
