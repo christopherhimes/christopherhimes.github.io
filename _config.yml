@@ -9,7 +9,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://christopherhimes.com" # the base hostname & protocol for your site
 twitter_username: eeentropyyy
 github_username:  christopherhimes
-permalink: /blog/:categories/:year/:month/:day/:title.html
+permalink: /blog/:year/:month/:day/:title.html
 
 # Build settings
 markdown: kramdown
+exclude: ['node_modules', 'brewbacus', 'turnbuckle', 'gulpfile.js', 'package.json', 'css/main.css']
