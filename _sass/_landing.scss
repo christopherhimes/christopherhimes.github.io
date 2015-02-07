@@ -7,21 +7,22 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-}
+  background: url('../images/header.jpeg') no-repeat center center fixed #010107;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+
  h1 {
-	text-transform: uppercase;
-	font-size: 5.5em;
-	letter-spacing: .15em;
-	padding:2%;
+
 }
 h2, h3 {
-
-	text-transform: uppercase;
 	font-size: 3em;
 	letter-spacing: .10em;
 }
 h2 {
-	color: #09123d;
+	color: $dark-blue;
 }
 h3 {
 	color: GhostWhite;
@@ -33,6 +34,12 @@ hr {
 	border-top: 3px solid GhostWhite;
 	width: 25%;
 	padding:2%;
+}
+.landing-title {
+	/*text-transform: uppercase;*/
+	font-size: 5.5em;
+	letter-spacing: .01em;
+	padding:2%;	
 }
 .megrim {
 	font-family: 'Megrim', serif;
@@ -98,6 +105,9 @@ p {
 .featureRow {
 	padding: 10%;
 	margin-top: 0%;
+}
+.feature-text {
+	font-size: 5em;
 }
 .white {
 	background: GhostWhite;	

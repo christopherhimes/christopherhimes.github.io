@@ -8,6 +8,7 @@
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    background: #fff;
 }
 
 .site-title {
@@ -30,7 +31,6 @@
     margin-bottom: 0;
     float: left;
     
-    text-transform: uppercase;
     &,
     &:visited {
         color: $grey-color-dark;
@@ -112,7 +112,7 @@
  */
 .site-footer {
     /*border-top: 1px solid $grey-color-light;*/
-    background: #09123d;
+    background: $dark-blue;
     padding: $spacing-unit * 1.5 0;
     bottom: 0;
 }
@@ -183,7 +183,8 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spacing-unit * 2 0;
+    background: #fff;
 }
 
 .page-heading {
@@ -202,11 +203,12 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+
 }
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 40px;
 }
 
 .header-image {
@@ -268,4 +270,7 @@
             font-size: 18px;
         }
     }
+}
+.rss-subscribe {
+    font-size: $xsmall-font-size;
 }

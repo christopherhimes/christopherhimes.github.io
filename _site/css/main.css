@@ -5097,8 +5097,8 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 300;
   color: #111;
@@ -5127,7 +5127,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 18px; }
 
 /**
  * Lists
@@ -5234,7 +5234,8 @@ pre {
   /*    border-top: 5px solid $grey-color-dark;
       border-bottom: 1px solid $grey-color-light;*/
   min-height: 75px;
-  position: relative; }
+  position: relative;
+  background: #fff; }
 
 .site-title {
   font-size: 55px;
@@ -5250,8 +5251,7 @@ pre {
   line-height: 75px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
-  text-transform: uppercase; }
+  float: left; }
   .blog-title, .blog-title:visited {
     color: #424242; }
   .blog-title:hover {
@@ -5361,7 +5361,8 @@ pre {
  * Page content
  */
 .page-content {
-  padding: 40px 0; }
+  padding: 80px 0;
+  background: #fff; }
 
 .page-heading {
   font-size: 20px; }
@@ -5373,12 +5374,12 @@ pre {
     margin-bottom: 40px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 18px;
   color: #828282; }
 
 .post-link {
   display: block;
-  font-size: 24px; }
+  font-size: 40px; }
 
 .header-image {
   background: url("../images/header.jpeg") no-repeat fixed center #010107;
@@ -5425,6 +5426,9 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+.rss-subscribe {
+  font-size: 15px; }
 
 /**
  * Syntax highlighting styles
@@ -5572,16 +5576,14 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%; }
-
-h1 {
-  text-transform: uppercase;
-  font-size: 5.5em;
-  letter-spacing: .15em;
-  padding: 2%; }
+  width: 100%;
+  background: url("../images/header.jpeg") no-repeat center center fixed #010107;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 h2, h3 {
-  text-transform: uppercase;
   font-size: 3em;
   letter-spacing: .10em; }
 
@@ -5597,6 +5599,12 @@ h4 {
 hr {
   border-top: 3px solid GhostWhite;
   width: 25%;
+  padding: 2%; }
+
+.landing-title {
+  /*text-transform: uppercase;*/
+  font-size: 5.5em;
+  letter-spacing: .01em;
   padding: 2%; }
 
 .megrim {
@@ -5664,6 +5672,9 @@ p {
   padding: 10%;
   margin-top: 0%; }
 
+.feature-text {
+  font-size: 5em; }
+
 .white {
   background: GhostWhite; }
 
@@ -5726,7 +5737,7 @@ p {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: #b0d1f0 url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  background: #09123d url(../images/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -5773,7 +5784,7 @@ p {
   body {
     /*background: url('../images/header-medium.jpeg') no-repeat fixed center;*/ }
 
-  h1 {
+  h1, .landing-title {
     font-size: 3em; }
 
   h2, h3 {
@@ -5783,10 +5794,10 @@ p {
   h4, .lead {
     font-size: 1.5em; } }
 @media screen and (max-width: 650px) {
-  h1 {
+  h1, .landing-title {
     font-size: 2.5em; } }
 @media screen and (max-width: 568px) {
-  h1 {
+  h1, .landing-title {
     font-size: 2em; }
 
   h2, h3 {
@@ -5796,8 +5807,11 @@ p {
   h4, .lead {
     font-size: 1.3em; } }
 @media screen and (max-width: 450px) {
-  h1 {
-    font-size: 1.4em; } }
+  .landing-title {
+    font-size: 1.4em; }
+
+  .lead, .feature-text {
+    font-size: .8em; } }
 /* Max Height*/
 @media screen and (max-height: 800px) {
   .full-window {
