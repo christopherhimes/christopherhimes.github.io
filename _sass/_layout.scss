@@ -113,7 +113,7 @@
 .site-footer {
     /*border-top: 1px solid $grey-color-light;*/
     background: $dark-blue;
-    padding: $spacing-unit * 1.5 0;
+    padding: $spacing-unit * 1.8 0;
     bottom: 0;
 }
 
@@ -183,6 +183,9 @@
  * Page content
  */
 .page-content {
+    min-height:100%;
+    height: auto !important;
+    margin: auto 0;
     padding: $spacing-unit * 2 0;
     background: #fff;
 }

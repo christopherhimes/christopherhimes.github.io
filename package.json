@@ -17,6 +17,8 @@
     "gulp-minify-html": "~0.1.8",
     "gulp-imagemin": "~2.1.0",
     "browser-sync": "~2.0.0-rc8",
-    "gulp-header": "~1.2.2"
+    "gulp-header": "~1.2.2",
+    "gulp-changed": "~1.1.1",
+    "gulp-cache": "~0.2.4"
   }
 }

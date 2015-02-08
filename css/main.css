@@ -6604,8 +6604,12 @@ pre > code {
   max-width: calc(900px - (40px * 2));
   margin-right: auto;
   margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding-right: 40px;
   padding-left: 40px;
+  min-height: 100%;
+  height: auto !important;
 }
 @media screen and (max-width: 800px) {
   .wrapper {
@@ -6737,7 +6741,7 @@ pre > code {
 .site-footer {
   /*border-top: 1px solid $grey-color-light;*/
   background: #09123d;
-  padding: 60px 0;
+  padding: 72px 0;
   bottom: 0;
 }
 
@@ -6796,6 +6800,9 @@ pre > code {
  * Page content
  */
 .page-content {
+  min-height: 100%;
+  height: auto !important;
+  margin: auto 0;
   padding: 80px 0;
   background: #fff;
 }
@@ -7095,7 +7102,8 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background: url("../images/header.jpeg") no-repeat center center fixed #010107;
+  /*background: url('../images/header.jpeg') no-repeat center center fixed #010107;*/
+  /*background-color: red;*/
   background-size: cover;
 }
 
