@@ -94,7 +94,7 @@ gulp.task('watch', function() {
   gulp.watch('_sass/*.scss', ['jekyll']);
 });
 
-gulp.task('default', ['delete'], function () {
+gulp.task('default', function () {
   gulp.start('style', 'script', 'html', 'images', 'watch', 'browser-sync');
 }); 
 
