@@ -197,9 +197,15 @@
 .post-list {
     margin-left: 0;
     list-style: none;
+    letter-spacing:-1px;
+    
 
     > li {
         margin-bottom: $spacing-unit;
+    
+        a {
+            color:$dark-blue;
+        }
     }
 }
 
@@ -212,6 +218,10 @@
 .post-link {
     display: block;
     font-size: 40px;
+
+    h1 {
+        color:red;
+    }
 }
 
 .header-image {
@@ -235,6 +245,7 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+
 }
 
 .post-title {
@@ -242,11 +253,12 @@
     letter-spacing: -1px;
     line-height: 1;
 
+
+
     @include media-query($on-laptop) {
         font-size: 36px;
     }
 }
-
 .post-content {
     margin-bottom: $spacing-unit;
 

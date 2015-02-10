@@ -6814,9 +6814,13 @@ pre > code {
 .post-list {
   margin-left: 0;
   list-style: none;
+  letter-spacing: -1px;
 }
 .post-list > li {
   margin-bottom: 40px;
+}
+.post-list > li a {
+  color: #09123d;
 }
 
 .post-meta {
@@ -6827,6 +6831,9 @@ pre > code {
 .post-link {
   display: block;
   font-size: 40px;
+}
+.post-link h1 {
+  color: red;
 }
 
 .header-image {
