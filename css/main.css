@@ -7103,6 +7103,11 @@ pre > code {
 
 /* Sticky footer styles
 -------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   margin: 0;
@@ -7115,9 +7120,7 @@ body {
 }
 
 h1 {
-  font-size: 5%;
-  text-align: center;
-  white-space: nowrap;
+  margin: 0 auto;
 }
 
 h2, h3 {
@@ -7147,13 +7150,13 @@ hr {
   font-size: 5em;
   letter-spacing: .01em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .test-title {
   font-size: 4em;
   letter-spacing: .01em;
   text-transform: uppercase;
-  color: white;
 }
 
 .megrim {
