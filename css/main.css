@@ -7114,9 +7114,15 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-size: 5%;
+  text-align: center;
+  white-space: nowrap;
+}
+
 h2, h3 {
   font-size: 3em;
-  letter-spacing: .10em;
+  /*letter-spacing: .10em;*/
 }
 
 h2 {
@@ -7138,10 +7144,16 @@ hr {
 }
 
 .landing-title {
-  /*text-transform: uppercase;*/
-  font-size: 5.5em;
+  font-size: 5em;
   letter-spacing: .01em;
-  padding: 2%;
+  text-transform: uppercase;
+}
+
+.test-title {
+  font-size: 4em;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+  color: white;
 }
 
 .megrim {
@@ -7161,7 +7173,7 @@ hr {
 }
 
 .lead {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .attributes p {
@@ -7178,7 +7190,7 @@ hr {
 
 p {
   font-family: 'Lato';
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .linkColor, a:hover {
@@ -7245,6 +7257,10 @@ p {
   background: #b0d1f0;
 }
 
+.darkblue {
+  background: #09123d;
+}
+
 .contact {
   background: #FFF;
   padding: 5%;
@@ -7265,7 +7281,6 @@ p {
 }
 
 .footer {
-  background: #09123d;
   padding: 5%;
 }
 
@@ -7299,6 +7314,17 @@ p {
 
 .copy {
   padding-top: 5%;
+}
+
+.brewbacus-background {
+  background: #FFD700;
+}
+
+.brewbacus-font {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
 }
 
 .cd-top {
@@ -7373,7 +7399,7 @@ p {
   }
 
   h1, .landing-title {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   h2, h3 {
@@ -7382,17 +7408,17 @@ p {
   }
 
   h4, .lead {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 650px) {
   h1, .landing-title {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 @media screen and (max-width: 568px) {
   h1, .landing-title {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   h2, h3 {
@@ -7401,7 +7427,7 @@ p {
   }
 
   h4, .lead {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 450px) {

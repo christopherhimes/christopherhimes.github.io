@@ -12,12 +12,15 @@ body {
   background-size: cover;
  }
 
- h1 {
+h1 {
+	font-size:5%;
+	text-align: center;
+	white-space: nowrap;
 
 }
 h2, h3 {
 	font-size: 3em;
-	letter-spacing: .10em;
+	/*letter-spacing: .10em;*/
 }
 h2 {
 	color: $dark-blue;
@@ -34,10 +37,15 @@ hr {
 	padding:2%;
 }
 .landing-title {
-	/*text-transform: uppercase;*/
-	font-size: 5.5em;
+	font-size: 5em;
 	letter-spacing: .01em;
-	padding:2%;	
+	text-transform: uppercase;
+}
+.test-title {
+	font-size: 4em;
+	letter-spacing: .01em;
+	text-transform: uppercase;
+	color:white;
 }
 .megrim {
 	font-family: 'Megrim', serif;
@@ -52,7 +60,7 @@ hr {
 	font-family: 'Lato';
 }
 .lead {
-	font-size: 1.5em;
+	font-size: 1em;
 }
 .attributes p{
 	font-size: 2em;
@@ -65,7 +73,7 @@ hr {
 }
 p {
 	font-family: 'Lato';
-	font-size: 1.5em;
+	font-size: 1em;
 }
 .linkColor, a:hover {
 	color: #79aad5;
@@ -113,6 +121,9 @@ p {
 .blue {
 	background: #b0d1f0;
 }
+.darkblue {
+	background: $dark-blue;
+}
 .contact {
 	background: #FFF;
 	padding: 5%;
@@ -130,7 +141,6 @@ p {
 }
 
 .footer {
-	background: #09123d;
 	padding: 5%;
 }
 .btn-warning {
@@ -159,4 +169,13 @@ p {
 }
 .copy {
 	padding-top:5%;
+}
+.brewbacus-background {
+	background:#FFD700;
+}
+.brewbacus-font {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color:white;
+	text-align:center;
+	font-size:1.8em;	
 }

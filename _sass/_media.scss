@@ -18,7 +18,7 @@
 		/*background: url('../images/header-medium.jpeg') no-repeat fixed center;*/
 	}
 	h1, .landing-title  {
-		font-size: 3em;
+		font-size: 2.5em;
 
 	}
 	h2, h3 {
@@ -26,25 +26,25 @@
 		padding: 5%;		
 	}
 	h4, .lead {
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 }
 @media screen and (max-width: 650px) {
 	h1, .landing-title  {
-		font-size: 2.5em;
+		font-size: 2em;
 
 	}
 } 
 @media screen and (max-width: 568px) {
 	h1, .landing-title  {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 	h2, h3 {
 		font-size: 2em;
 		padding: 5%;
 	}
 	h4, .lead {
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 }
 @media screen and (max-width: 450px) {
