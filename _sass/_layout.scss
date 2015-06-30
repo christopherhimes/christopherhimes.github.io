@@ -12,8 +12,7 @@
 }
 
 .site-title {
-    font-size: 55px;
-    line-height: 75px;
+    font-size: 10em;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -113,7 +112,7 @@
 .site-footer {
     /*border-top: 1px solid $grey-color-light;*/
     background: $dark-blue;
-    padding: $spacing-unit * 1.8 0;
+    padding: $spacing-unit * 2 0;
     bottom: 0;
 }
 
@@ -225,7 +224,7 @@
 }
 
 .header-image {
-    background: url('../images/header.jpeg') no-repeat fixed center #010107;
+    /*background: url('../images/header.jpeg') no-repeat fixed center #010107;*/
     width:100%;
     padding:250px;
     padding-top:100px;
@@ -233,7 +232,7 @@
 }
 
 .header-image-small {
-    background: url('../images/header.jpeg') no-repeat fixed center #010107;
+/*    background: url('../images/header.jpeg') no-repeat fixed center #010107;*/
     width:100%;
     padding:100px;
     padding-top:100px;

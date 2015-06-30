@@ -19,6 +19,7 @@
     "browser-sync": "~2.0.0-rc8",
     "gulp-header": "~1.2.2",
     "gulp-changed": "~1.1.1",
-    "gulp-cache": "~0.2.4"
+    "gulp-cache": "~0.2.4",
+    "gulp-gzip": "~1.1.0"
   }
 }

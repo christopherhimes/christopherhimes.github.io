@@ -65,6 +65,7 @@ gulp.task('script', function() {
     .pipe(plugins.concat('main.js'))
       // .pipe(gulp.dest('js'))     
     .pipe(plugins.uglify())     
+    .pipe(plugins.gzip())
       // .pipe(plugins.rename({suffix: '.min'}))
       .pipe(gulp.dest('js'))
 });
