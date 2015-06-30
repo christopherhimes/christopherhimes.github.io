@@ -7,12 +7,8 @@
 }
 html,
 body {
-  margin: 0;
-  padding: 0;
   height: 100%;
   width: 100%;
-  /*background: url('../images/header.jpeg') no-repeat center center fixed #010107;*/
-  /*background-color: red;*/
   background-size: cover;
  }
 
@@ -41,7 +37,6 @@ hr {
 	font-size: 4.5em;
 	letter-spacing: .01em;
 	text-transform: uppercase;
-	padding: 1.2em 0;
 }
 .test-title {
 	font-size: 4em;
@@ -110,7 +105,10 @@ p {
 	padding-bottom: 10%;
 }
 .featureRow {
-	padding: 11% 10%;
+	overflow: auto;
+	height: 100%;
+	min-height: 100%;
+	padding: 10%;
 	margin-top: 0%;
 }
 .feature-text {
