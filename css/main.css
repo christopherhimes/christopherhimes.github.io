@@ -7149,7 +7149,7 @@ hr {
   font-size: 4.5em;
   letter-spacing: .01em;
   text-transform: uppercase;
-  padding: 1em 0;
+  padding: 1.2em 0;
 }
 
 .test-title {
@@ -7243,7 +7243,7 @@ p {
 }
 
 .featureRow {
-  padding: 10%;
+  padding: 11% 10%;
   margin-top: 0%;
 }
 
