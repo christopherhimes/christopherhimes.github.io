@@ -7149,6 +7149,7 @@ hr {
   font-size: 4.5em;
   letter-spacing: .01em;
   text-transform: uppercase;
+  padding: 1em 0;
 }
 
 .test-title {
