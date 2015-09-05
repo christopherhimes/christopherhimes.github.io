@@ -1,9 +1,13 @@
 ---
 layout: post
 title:  "Jekyll Install"
-date:   2015-02-01 15:09:40
-categories: jekyll install
+image: ../../../../images/blog/jekyll.png
+date:   2015-02-01 19:17:40
+categories: jekyll
 ---
+!['Jekyll'][jekyll-image]
+
 This is the first post using the static site generator [Jekyll].
 
-[Jekyll]:     https://github.com/jekyll/jekyll
+[Jekyll]:       https://github.com/jekyll/jekyll
+[jekyll-image]: ../../../../images/blog/jekyll.png "Jekyll"

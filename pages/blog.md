@@ -14,6 +14,14 @@ permalink: /blog/
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <img src='{{ post.image }}' alt="{{ post.title }} Image"/>
+        </a>
+        <div class="category-title">Categories: 
+          {% for category in post.categories %}
+            <span class="category">{{ category }}</span>
+          {% endfor %}          
+        </div>
       </li>
     {% endfor %}
   </ul>

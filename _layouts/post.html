@@ -11,5 +11,9 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-
+  <div class="category-title">Categories: 
+    {% for category in page.categories %}
+      <span class="category">{{ category }}</span>
+    {% endfor %}          
+  </div>
 </div>

@@ -288,3 +288,14 @@
 .rss-subscribe {
     font-size: $xsmall-font-size;
 }
+.category-title {
+    margin: 5px auto;
+    font-size: $base-font-size;
+}
+.category {
+    background: #eee;
+    color: #ccc;
+    padding: 5px;
+    margin:  0 2px;
+    font-size: $small-font-size;
+}
