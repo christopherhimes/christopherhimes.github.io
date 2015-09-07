@@ -31,7 +31,17 @@ gulp.task('delete', function(cb) {
 gulp.task('images', function() {
   return gulp.src('images/**/*')
     // .pipe(plugins.changed('_site/images/**/*'))
-    .pipe(plugins.cache(plugins.imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    // .pipe(plugins.cache(plugins.imagemin({ 
+    //   optimizationLevel: 3, 
+    //   progressive: true, 
+    //   interlaced: true
+    //  })))
+    .pipe(plugins.imagemin({ 
+      optimizationLevel: 3, 
+      progressive: true, 
+      interlaced: true
+     }))
+
     .pipe(gulp.dest('_site/images'))
 });
 

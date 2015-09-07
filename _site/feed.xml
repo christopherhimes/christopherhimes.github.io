@@ -6,9 +6,33 @@
 </description>
     <link>http://christopherhimes.com/</link>
     <atom:link href="http://christopherhimes.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 04 Sep 2015 22:06:56 -0400</pubDate>
-    <lastBuildDate>Fri, 04 Sep 2015 22:06:56 -0400</lastBuildDate>
+    <pubDate>Mon, 07 Sep 2015 12:43:33 -0400</pubDate>
+    <lastBuildDate>Mon, 07 Sep 2015 12:43:33 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Update Your Dependencies</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/dependencies.png&quot; alt=&quot;&#39;Dependencies&#39;&quot; title=&quot;Dependencies&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s been a while since I’ve updated dependencies for this site so I decided to ensure that all the dependencies are updated.  The fact that this site uses &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; which requires &lt;a href=&quot;http://npmjs.com&quot;&gt;NPM&lt;/a&gt; makes updating the dependencies very easy.&lt;/p&gt;
+
+&lt;p&gt;The image above includes a command for updating the version of various dependencies contained within this projects package.json file.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 07 Sep 2015 08:00:00 -0400</pubDate>
+        <link>http://christopherhimes.com/blog/2015/09/07/update-your-dependencies.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/09/07/update-your-dependencies.html</guid>
+        
+        
+        <category>gulp</category>
+        
+        <category>updates</category>
+        
+        <category>dependencies</category>
+        
+        <category>npm</category>
+        
+      </item>
     
       <item>
         <title>Blog Plan</title>
