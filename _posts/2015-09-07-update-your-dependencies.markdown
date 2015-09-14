@@ -12,6 +12,3 @@ It's been a while since I've updated dependencies for this site so I decided to 
 
 The image above includes a command for updating the version of various dependencies contained within this projects package.json file.
 
-[Gulp]:         http://gulpjs.com/
-[NPM]:          http://npmjs.com
-[dependencies-image]:   ../../../../images/blog/dependencies.png "Dependencies"
