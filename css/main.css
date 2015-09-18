@@ -6842,6 +6842,7 @@ pre > code {
   text-align: center;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .header-image-small {
@@ -7253,7 +7254,7 @@ p {
 }
 
 .featureRow {
-  overflow: auto;
+  /*	overflow: auto;*/
   height: 100%;
   min-height: 100%;
   padding: 10%;

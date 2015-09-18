@@ -63,6 +63,7 @@ gulp.task('style', ['sass'], function() {
     .src('css/main.css')   
     .pipe(plugins.minifyCss())
     .pipe(plugins.rename({suffix: '.min'}))
+    .pipe(plugins.gzip())
     .pipe(gulp.dest('css'))
 });
 
