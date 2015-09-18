@@ -6,8 +6,8 @@
 </description>
     <link>http://christopherhimes.com/</link>
     <atom:link href="http://christopherhimes.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 13 Sep 2015 20:47:22 -0400</pubDate>
-    <lastBuildDate>Sun, 13 Sep 2015 20:47:22 -0400</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2015 21:05:53 -0400</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2015 21:05:53 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -36,9 +36,9 @@
     
       <item>
         <title>Update Your Dependencies</title>
-        <description>&lt;p&gt;![‘Dependencies’][dependencies-image]&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/dependencies.png&quot; alt=&quot;&#39;Dependencies&#39;&quot; title=&quot;Gulp&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;It’s been a while since I’ve updated dependencies for this site so I decided to ensure that all the dependencies are updated.  The fact that this site uses [Gulp] which requires [NPM] makes updating the dependencies very easy.&lt;/p&gt;
+&lt;p&gt;It’s been a while since I’ve updated dependencies for this site so I decided to ensure that all the dependencies are updated.  The fact that this site uses &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; which requires &lt;a href=&quot;http://npmjs.com/&quot;&gt;NPM&lt;/a&gt; makes updating the dependencies very easy.&lt;/p&gt;
 
 &lt;p&gt;The image above includes a command for updating the version of various dependencies contained within this projects package.json file.&lt;/p&gt;
 

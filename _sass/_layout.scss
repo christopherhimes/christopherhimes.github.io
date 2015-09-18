@@ -4,11 +4,15 @@
 .site-header {
 /*    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;*/
-    min-height: 75px;
-
-    // Positioning context for the mobile navigation icon
+    /*min-height: 75px;*/
+    max-width: -webkit-calc(900px - (#{$spacing-unit} * 2));
+    max-width:         calc(900px - (#{$spacing-unit} * 2));
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
     position: relative;
-    background: #fff;
+
+    margin: 0 auto;
+    @extend %clearfix;
 }
 
 .site-title {
@@ -72,14 +76,15 @@
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
+            height: 36px;
             line-height: 0;
             padding-top: 10px;
+            padding-bottom: 10px;
             text-align: center;
 
             > svg {
                 width: 18px;
-                height: 15px;
+                height: 18px;
 
                 path {
                     fill: $grey-color-dark;
@@ -129,7 +134,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    /*color: $grey-color;*/
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -224,11 +229,13 @@
 }
 
 .header-image {
-    /*background: url('../images/header.jpeg') no-repeat fixed center #010107;*/
+    position: relative;
+    background: url('../images/green-header.png') no-repeat fixed center #010107;
     width:100%;
-    padding:250px;
-    padding-top:100px;
-    margin:0 auto;
+    min-height: 100%;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
 }
 
 .header-image-small {

@@ -6617,7 +6617,7 @@ pre > code {
 /**
  * Clearfix
  */
-.wrapper:after, .footer-col-wrapper:after {
+.wrapper:after, .site-header:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both;
@@ -6642,9 +6642,12 @@ pre > code {
 .site-header {
   /*    border-top: 5px solid $grey-color-dark;
       border-bottom: 1px solid $grey-color-light;*/
-  min-height: 75px;
+  /*min-height: 75px;*/
+  max-width: calc(900px - (40px * 2));
+  padding-right: 40px;
+  padding-left: 40px;
   position: relative;
-  background: #fff;
+  margin: 0 auto;
 }
 
 .site-title {
@@ -6703,14 +6706,15 @@ pre > code {
     display: block;
     float: right;
     width: 36px;
-    height: 26px;
+    height: 36px;
     line-height: 0;
     padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
   }
   .site-nav .menu-icon > svg {
     width: 18px;
-    height: 15px;
+    height: 18px;
   }
   .site-nav .menu-icon > svg path {
     fill: #424242;
@@ -6734,7 +6738,7 @@ pre > code {
  */
 .site-footer {
   /*border-top: 1px solid $grey-color-light;*/
-  background: #09123d;
+  background: #494842;
   padding: 80px 0;
   bottom: 0;
 }
@@ -6752,7 +6756,7 @@ pre > code {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #828282;
+  /*color: $grey-color;*/
   margin-left: -20px;
 }
 
@@ -6814,7 +6818,7 @@ pre > code {
   margin-bottom: 40px;
 }
 .post-list > li a {
-  color: #09123d;
+  color: #494842;
 }
 
 .post-meta {
@@ -6831,11 +6835,13 @@ pre > code {
 }
 
 .header-image {
-  /*background: url('../images/header.jpeg') no-repeat fixed center #010107;*/
+  position: relative;
+  background: url("../images/green-header.png") no-repeat fixed center #010107;
   width: 100%;
-  padding: 250px;
-  padding-top: 100px;
-  margin: 0 auto;
+  min-height: 100%;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
 }
 
 .header-image-small {
@@ -7132,7 +7138,7 @@ h2, h3 {
 }
 
 h2 {
-  color: #09123d;
+  color: #494842;
 }
 
 h3 {
@@ -7243,6 +7249,7 @@ p {
   margin-bottom: 2%;
   padding-top: 2%;
   padding-bottom: 10%;
+  font-size: 1.5em;
 }
 
 .featureRow {
@@ -7266,7 +7273,7 @@ p {
 }
 
 .darkblue {
-  background: #09123d;
+  background: #494842;
 }
 
 .contact {
@@ -7330,7 +7337,8 @@ p {
 }
 
 .brewbacus-background {
-  background: #FFD700;
+  /*background:#FFD700;*/
+  background: #949597;
 }
 
 .brewbacus-font {
@@ -7352,7 +7360,7 @@ p {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: #09123d url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  background: #494842 url(../images/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -7444,7 +7452,7 @@ p {
     font-size: 1.4em;
   }
 
-  .lead, .feature-text {
+  .lead, .feature-text, .bio {
     font-size: .8em;
   }
 }
