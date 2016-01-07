@@ -1,9 +1,12 @@
 var gulp = require('gulp');
-var es = require('event-stream');
+// var es = require('event-stream');
 var del = require('del');
 var spawn = require('child_process').spawn;
 // var mainBowerFiles = require('main-bower-files');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
+var source = require('vinyl-source-stream');
+var browserify = require('browserify');
+var watchify = require('watchify');
 
 var plugins = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'gulp.*'],
@@ -81,6 +84,29 @@ gulp.task('script', function() {
       // .pipe(plugins.rename({suffix: '.min'}))
       .pipe(gulp.dest('js'))
 });
+gulp.task('js', function () { //browserify
+    return browserify('_js/**/app.js')
+      // .bundle()
+      .on('error', function(e) {
+          plugins.util.log(e);
+      })
+      .pipe(source('bundle.js'))
+      .pipe(gulp.dest('js'))
+});
+
+gulp.task('watcherify', function () {
+  var watcher = watchify(browserify('_js/app.js', watchify.args));
+  bundle(watcher);
+  watcher.on('update', function () {
+    bundle(watcher);
+  })
+  watcher.on('log', plugins.util.log)
+
+  browserSync.init({
+    server: "./app",
+    logFileChanges: false
+  })
+});
 
 gulp.task('html' , function() {
   return gulp
@@ -144,3 +170,13 @@ gulp.task('jekyll-serve', function (){
 //         }))
 //         .pipe(gulp.dest('./deploy/'));
 // });
+function bundle (bundler) {
+  return bundeler
+    .bundle()
+    .on('error', function (e) {
+      plugins.util.log(e);
+    })
+    .pipe(source('bundle.js'))
+    .pipe(gulp.dest('./app/js/dist'))
+    .pipe(browserSync.stream())
+}
