@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christopher Himes</title>
+    <description>Christopher Himes is a Software Developer living in Metro Detroit. This is an account of his personal projects and inquiries in the world of development.  
+</description>
+    <link>http://christopherhimes.com/</link>
+    <atom:link href="http://christopherhimes.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 04 Apr 2017 23:29:23 -0400</pubDate>
+    <lastBuildDate>Tue, 04 Apr 2017 23:29:23 -0400</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Take it Home With You</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/home.png&quot; alt=&quot;&#39;Home&#39;&quot; title=&quot;Home&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next two weeks areg going to be exceedingly difficult not to bring work home.  I’m prone to work through things I’m working on at work while I’m at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.&lt;/p&gt;
+
+&lt;p&gt;Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcomming week.  We have a fairly agressive timeline on the current project and I’d prefer to avoid anyone else having to spend time on it outside of work.  I think we can make the timing work we just have to stick to the plan and hopefully do away with any unkowns early in the process.&lt;/p&gt;
+
+&lt;p&gt;This project is the first big project with the new team.  We’ve got everyone up to speed and on the same page, so I forsee a busy but productive week.  I’m excited to demonstrate all of what we can do.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/royaannmiller&quot;&gt;Roya Ann Miller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 13 Sep 2015 16:00:00 -0400</pubDate>
+        <link>http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</guid>
+        
+        
+        <category>work</category>
+        
+        <category>home</category>
+        
+      </item>
+    
+      <item>
+        <title>Update Your Dependencies</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/dependencies.png&quot; alt=&quot;&#39;Dependencies&#39;&quot; title=&quot;Gulp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s been a while since I’ve updated dependencies for this site so I decided to ensure that all the dependencies are updated.  The fact that this site uses &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; which requires &lt;a href=&quot;http://npmjs.com/&quot;&gt;NPM&lt;/a&gt; makes updating the dependencies very easy.&lt;/p&gt;
+
+&lt;p&gt;The image above includes a command for updating the version of various dependencies contained within this projects package.json file.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 07 Sep 2015 08:00:00 -0400</pubDate>
+        <link>http://christopherhimes.com/blog/2015/09/07/update-your-dependencies.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/09/07/update-your-dependencies.html</guid>
+        
+        
+        <category>gulp</category>
+        
+        <category>updates</category>
+        
+        <category>dependencies</category>
+        
+        <category>npm</category>
+        
+      </item>
+    
+      <item>
+        <title>Blog Plan</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/gulp.png&quot; alt=&quot;&#39;Gulp&#39;&quot; title=&quot;Gulp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m still learning all about &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt;.  Today for example I’ve tweaked my gulp process to properly build, serve, and watch using Jekyll in my gulpfile.js.  The gulpfile.js is where you setup all your processes, it automates your build process.&lt;/p&gt;
+
+&lt;p&gt;My current process includes the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;‘delete’ clears out the previous build&lt;/li&gt;
+  &lt;li&gt;‘style’ compiles Sass, creates on CSS file, and minifies the file&lt;/li&gt;
+  &lt;li&gt;‘script’ uglifies and compresses javascript files&lt;/li&gt;
+  &lt;li&gt;‘html’ minifies html files&lt;/li&gt;
+  &lt;li&gt;‘images’ compresses images&lt;/li&gt;
+  &lt;li&gt;‘jekyll’, ‘jekyll-serve’, ‘jekyll-watch’ builds and serves the Jekyll installation&lt;/li&gt;
+  &lt;li&gt;‘watch’ looks for changes and will rerun any of the previous sections to keep the files up to date.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This project is very small at the moment but I can definitely see these tools coming in handy when a project gets larger.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 04 Sep 2015 15:17:40 -0400</pubDate>
+        <link>http://christopherhimes.com/blog/2015/09/04/blog-plan.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/09/04/blog-plan.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>gulp</category>
+        
+      </item>
+    
+      <item>
+        <title>Jekyll Install</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/jekyll.png&quot; alt=&quot;&#39;Jekyll&#39;&quot; title=&quot;Jekyll&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the first post using the static site generator &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 01 Feb 2015 14:17:40 -0500</pubDate>
+        <link>http://christopherhimes.com/blog/2015/02/01/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/02/01/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+  </channel>
+</rss>
