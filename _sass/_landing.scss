@@ -136,7 +136,7 @@ p {
 	color: GhostWhite;
 }
 .lightGray {
-	color: #FFF;
+	color: lighten($grey-color, 50%);
 	border-color: #FFF;
 }
 .tite-section {
@@ -163,19 +163,19 @@ p {
 }
 .social a {
 	padding: 5px;
-	color: #ccc;
+	color: lighten($grey-color, 50%);
 }
 
 .social a:hover{
 	text-decoration: none;
-	color: #888;
+	color: lighten($grey-color, 40%);
 }
 .copy {
 	padding-top:5%;
 }
 .brewbacus-background {
 	/*background:#FFD700;*/
-		background:#949597;
+		background:#708901;
 }
 .brewbacus-font {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;

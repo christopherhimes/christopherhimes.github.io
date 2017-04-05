@@ -48,9 +48,12 @@
 }
 @media screen and (max-width: 450px) {
 	.landing-title  {
-		font-size: 1.4em;
+		font-size: 2.5em;
 	}
 	.lead, .feature-text, .bio {
+		font-size: 1.2em;
+	}
+	.brewdesc {
 		font-size: .8em;
 	}
 } 

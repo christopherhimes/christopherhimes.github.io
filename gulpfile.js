@@ -55,20 +55,23 @@ gulp.task('sass', function() {
     .on('error', function (err) {
       console.error('Error!', err.message);
    })
-    .pipe(gulp.dest('css/'));
-});
-
-gulp.task('style', ['sass'], function() {
-  return gulp
-    // .src('_sass/**/*.css')
-    // .pipe(plugins.concat('main.css'))
-    //   .pipe(gulp.dest('css')) 
-    .src('css/main.css')   
+    // .pipe(gulp.dest('css/'));
     .pipe(plugins.minifyCss())
     .pipe(plugins.rename({suffix: '.min'}))
-    .pipe(plugins.gzip())
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('_site/css'))
 });
+
+// gulp.task('style', ['sass'], function() {
+//   return gulp
+//     .src('_sass/**/*.css')
+//     // .pipe(plugins.concat('main.css'))
+//     //   .pipe(gulp.dest('css')) 
+//     // .src('css/main.css')   
+//     .pipe(plugins.minifyCss())
+//     .pipe(plugins.rename({suffix: '.min'}))
+//     // .pipe(plugins.gzip())
+//     .pipe(gulp.dest('_site/css'))
+// });
 
 gulp.task('script', function() {
   return gulp
@@ -80,33 +83,33 @@ gulp.task('script', function() {
     .pipe(plugins.concat('main.js'))
       // .pipe(gulp.dest('js'))     
     .pipe(plugins.uglify())     
-    .pipe(plugins.gzip())
+    // .pipe(plugins.gzip())
       // .pipe(plugins.rename({suffix: '.min'}))
-      .pipe(gulp.dest('js'))
+      // .pipe(gulp.dest('js'))
 });
-gulp.task('js', function () { //browserify
-    return browserify('_js/**/app.js')
-      // .bundle()
-      .on('error', function(e) {
-          plugins.util.log(e);
-      })
-      .pipe(source('bundle.js'))
-      .pipe(gulp.dest('js'))
-});
+// gulp.task('js', function () { //browserify
+//     return browserify('_js/**/app.js')
+//       // .bundle()
+//       .on('error', function(e) {
+//           plugins.util.log(e);
+//       })
+//       .pipe(source('bundle.js'))
+//       .pipe(gulp.dest('js'))
+// });
 
-gulp.task('watcherify', function () {
-  var watcher = watchify(browserify('_js/app.js', watchify.args));
-  bundle(watcher);
-  watcher.on('update', function () {
-    bundle(watcher);
-  })
-  watcher.on('log', plugins.util.log)
+// gulp.task('watcherify', function () {
+//   var watcher = watchify(browserify('_js/app.js', watchify.args));
+//   bundle(watcher);
+  // watcher.on('update', function () {
+  //   bundle(watcher);
+  // })
+  // watcher.on('log', plugins.util.log)
 
-  browserSync.init({
-    server: "./app",
-    logFileChanges: false
-  })
-});
+  // browserSync.init({
+  //   server: "./app",
+  //   logFileChanges: false
+  // })
+// });
 
 gulp.task('html' , function() {
   return gulp
@@ -117,16 +120,16 @@ gulp.task('html' , function() {
     // .pipe(gulp.dest(''))
 });
 
-gulp.task('browser-sync', function() {
-    browserSync({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
+// gulp.task('browser-sync', function() {
+//     browserSync({
+//         server: {
+//             baseDir: "./"
+//         }
+//     });
+// });
 
 gulp.task('watch', function() {
-  gulp.watch('_sass/*.scss', ['style', 'jekyll']);
+  gulp.watch('_sass/*.scss', ['sass', 'jekyll']);
   gulp.watch('_js/*.js', ['script', 'jekyll']);
   gulp.watch('images/*', ['images', 'jekyll']);
   gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html'], ['jekyll', 'html']);
@@ -135,7 +138,8 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', function () {
-  gulp.start('delete', 'style', 'script', 'html', 'images', 'jekyll', 'jekyll-serve', 'jekyll-watch', 'watch');
+  gulp.start('delete', 'sass', 'script', 'html', 'images', 'jekyll', 'jekyll-serve', 'jekyll-watch', 'watch');
+  // gulp.start('delete', 'sass', 'script', 'html', 'images', 'jekyll', 'jekyll-serve', 'watch');
 }); 
 
 gulp.task('jekyll', function (){
@@ -170,13 +174,13 @@ gulp.task('jekyll-serve', function (){
 //         }))
 //         .pipe(gulp.dest('./deploy/'));
 // });
-function bundle (bundler) {
-  return bundeler
-    .bundle()
-    .on('error', function (e) {
-      plugins.util.log(e);
-    })
-    .pipe(source('bundle.js'))
-    .pipe(gulp.dest('./app/js/dist'))
-    .pipe(browserSync.stream())
-}
+// function bundle (bundler) {
+//   return bundeler
+//     .bundle()
+//     .on('error', function (e) {
+//       plugins.util.log(e);
+//     })
+//     .pipe(source('bundle.js'))
+//     .pipe(gulp.dest('./app/js/dist'))
+//     .pipe(browserSync.stream())
+// }
