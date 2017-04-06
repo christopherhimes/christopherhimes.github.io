@@ -3,7 +3,7 @@ layout: post
 title:  "Time for a Change"
 image: ../../../../images/blog/change.jpg
 date:   2017-04-04 20:40:00
-categories: work home
+categories: site
 ---
 
 !['Change'][change-image]
