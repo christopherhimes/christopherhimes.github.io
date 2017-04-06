@@ -6,9 +6,29 @@
 </description>
     <link>http://christopherhimes.com/</link>
     <atom:link href="http://christopherhimes.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 05 Apr 2017 20:14:04 -0400</pubDate>
-    <lastBuildDate>Wed, 05 Apr 2017 20:14:04 -0400</lastBuildDate>
+    <pubDate>Wed, 05 Apr 2017 20:36:55 -0400</pubDate>
+    <lastBuildDate>Wed, 05 Apr 2017 20:36:55 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Time for a Change</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/change.jpg&quot; alt=&quot;&#39;Change&#39;&quot; title=&quot;Change&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The changes to this site now are stictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.  I’ve been unenthusiastic about the previous color scheme for a while so this is a nice brighter setup.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@lemuelbutler&quot;&gt;Lemuel Butler on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
+        <link>http://christopherhimes.com/blog/2017/04/04/time-for-a-change.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2017/04/04/time-for-a-change.html</guid>
+        
+        
+        <category>work</category>
+        
+        <category>home</category>
+        
+      </item>
     
       <item>
         <title>Take it Home With You</title>
@@ -24,8 +44,8 @@
 
 </description>
         <pubDate>Sun, 13 Sep 2015 16:00:00 -0400</pubDate>
-        <link>http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</link>
-        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</guid>
+        <link>http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you-copy.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you-copy.html</guid>
         
         
         <category>work</category>
