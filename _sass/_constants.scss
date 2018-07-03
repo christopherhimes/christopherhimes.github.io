@@ -9,13 +9,15 @@ $spacing-unit:     40px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
 
-$dark-blue:        #dd9327;
 
-$grey-color:       #708901;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$main-color:        #01b18b;
+$main-color-light:  lighten($main-color, 30%);
+$main-color-dark:  darken($main-color, 25%);
+
+$second-color:       #530189;
+$second-color-light: lighten($second-color, 30%);
+$second-color-dark:  darken($second-color, 25%);
 
 $on-palm:          600px;
 $on-laptop:        800px;

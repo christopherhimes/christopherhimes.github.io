@@ -20,7 +20,7 @@ h2, h3 {
 	/*letter-spacing: .10em;*/
 }
 h2 {
-	color: $dark-blue;
+	color: $second-color-light;
 }
 h3 {
 	color: GhostWhite;
@@ -36,7 +36,8 @@ hr {
 .landing-title {
 	font-size: 4.5em;
 	letter-spacing: .01em;
-	text-transform: uppercase;
+	// text-transform: uppercase;
+
 }
 .test-title {
 	font-size: 4em;
@@ -121,8 +122,17 @@ p {
 .blue {
 	background: #b0d1f0;
 }
-.darkblue {
-	background: $dark-blue;
+.maincolor {
+	background: $main-color;
+}
+.maincolorlight {
+	background: $main-color-light;
+}
+.secondcolor {
+	color: $second-color;
+}
+.secondcolorlight {
+	color: $second-color-light;
 }
 .contact {
 	background: #FFF;
@@ -136,7 +146,7 @@ p {
 	color: GhostWhite;
 }
 .lightGray {
-	color: lighten($grey-color, 50%);
+	color: lighten($second-color, 50%);
 	border-color: #FFF;
 }
 .tite-section {
@@ -158,17 +168,17 @@ p {
 #mc_embed_signup {
 	padding: 5%;
 }
-.social {
-/*	padding: 5%;*/
-}
+// .social {
+// /*	padding: 5%;*/
+// }
 .social a {
 	padding: 5px;
-	color: lighten($grey-color, 50%);
+	color: lighten($second-color, 50%);
 }
 
 .social a:hover{
 	text-decoration: none;
-	color: lighten($grey-color, 40%);
+	color: lighten($second-color, 40%);
 }
 .copy {
 	padding-top:5%;

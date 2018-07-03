@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-/*    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;*/
+/*    border-top: 5px solid $second-color-dark;
+    border-bottom: 1px solid $second-color-light;*/
     /*min-height: 75px;*/
     max-width: -webkit-calc(900px - (#{$spacing-unit} * 2));
     max-width:         calc(900px - (#{$spacing-unit} * 2));
@@ -23,7 +23,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $second-color-dark;
     }
 }
 
@@ -36,7 +36,7 @@
     
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $second-color-dark;
     }
     &:hover {
      text-decoration: none;
@@ -68,7 +68,7 @@
         top: 9px;
         right: 30px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        border: 1px solid $second-color-light;
         border-radius: 5px;
         text-align: right;
 
@@ -87,7 +87,7 @@
                 height: 18px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $second-color-dark;
                 }
             }
         }
@@ -115,8 +115,15 @@
  * Site footer
  */
 .site-footer {
-    /*border-top: 1px solid $grey-color-light;*/
-    background: $dark-blue;
+    /*border-top: 1px solid $second-color-light;*/
+    background: $main-color-light;
+    background: linear-gradient(180deg, 
+        GhostWhite 0%,
+        $main-color-light 53%, 
+        $main-color-light 70%, 
+        $main-color 100%
+
+    );
     padding: $spacing-unit * 2 0;
     bottom: 0;
 }
@@ -134,7 +141,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    /*color: $grey-color;*/
+    /*color: $second-color;*/
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -208,14 +215,14 @@
         margin-bottom: $spacing-unit;
     
         a {
-            color:$dark-blue;
+            color:$main-color;
         }
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $second-color;
 
 }
 
@@ -230,7 +237,15 @@
 
 .header-image {
     position: relative;
-    background: url('../images/lion.jpg') no-repeat fixed center #010107;
+    // background: url('../images/lion.jpg') no-repeat fixed center #010107;
+    // background: lighten($main-color, 10%);
+    background: $main-color;
+    background: linear-gradient(180deg, 
+        $main-color 0%, 
+        $main-color-light 33%, 
+        $main-color-light 66%, 
+        GhostWhite 100%
+    );
     width:100%;
     min-height: 100%;
     text-align: center;
