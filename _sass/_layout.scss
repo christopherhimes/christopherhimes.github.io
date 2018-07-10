@@ -242,9 +242,9 @@
     background: $main-color;
     background: linear-gradient(180deg, 
         $main-color 0%, 
-        $main-color-light 33%, 
-        $main-color-light 66%, 
-        GhostWhite 100%
+        $main-color-light 25%, 
+        // $main-color-light 66%, 
+        $second-color-light 100%
     );
     width:100%;
     min-height: 100%;
@@ -254,6 +254,14 @@
     overflow: hidden;
 }
 
+.hello-image {
+    background: linear-gradient(180deg, 
+        $second-color-light 0%, 
+        $second-color-lightest 33%, 
+        // $second-color-light 66%, 
+        GhostWhite 100%
+    );
+}
 .header-image-small {
 /*    background: url('../images/header.jpeg') no-repeat fixed center #010107;*/
     width:100%;

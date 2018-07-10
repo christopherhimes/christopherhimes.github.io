@@ -20,7 +20,8 @@ h2, h3 {
 	/*letter-spacing: .10em;*/
 }
 h2 {
-	color: $second-color-light;
+	letter-spacing: .1em;
+	color: $second-color;
 }
 h3 {
 	color: GhostWhite;
@@ -173,15 +174,16 @@ p {
 // }
 .social a {
 	padding: 5px;
-	color: lighten($second-color, 50%);
+	color: $second-color;
 }
 
 .social a:hover{
 	text-decoration: none;
-	color: lighten($second-color, 40%);
+	color: $second-color-dark;
 }
 .copy {
 	padding-top:5%;
+	letter-spacing: .4em;
 }
 .brewbacus-background {
 	/*background:#FFD700;*/
@@ -192,4 +194,13 @@ p {
 	color:white;
 	text-align:center;
 	font-size:1.8em;	
+}
+
+#small-name {
+	color: white;
+	font-family: 'Lato';
+	letter-spacing: .5em;
+	margin: auto 0;
+	text-align: center;
+	padding: 20px;
 }
