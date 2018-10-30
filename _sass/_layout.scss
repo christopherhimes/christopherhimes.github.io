@@ -116,13 +116,12 @@
  */
 .site-footer {
     /*border-top: 1px solid $second-color-light;*/
-    background: $main-color-light;
+    background: $second-color-light;
     background: linear-gradient(180deg, 
-        GhostWhite 0%,
-        $main-color-light 53%, 
-        $main-color-light 70%, 
-        $main-color 100%
+        $second-color-light 0%,
+        $background-color 10%, 
 
+        $background-color 100%
     );
     padding: $spacing-unit * 2 0;
     bottom: 0;

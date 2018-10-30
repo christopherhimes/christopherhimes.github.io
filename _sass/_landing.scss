@@ -195,12 +195,15 @@ p {
 	text-align:center;
 	font-size:1.8em;	
 }
-
+#brand-logo {
+	width: 30%;
+}
 #small-name {
 	color: white;
 	font-family: 'Lato';
-	letter-spacing: .5em;
+	letter-spacing: .8em;
 	margin: auto 0;
 	text-align: center;
-	padding: 20px;
+	padding: .5em;
+	font-size: 2em;
 }
