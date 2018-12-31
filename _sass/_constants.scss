@@ -11,12 +11,12 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 
 
-$main-color:        #01b18b;
+$main-color:        #505050;
 $main-color-light:  lighten($main-color, 15%);
 // $main-color-light:  lighten($main-color, 30%);
 $main-color-dark:  darken($main-color, 25%);
 
-$second-color:       #530189;
+$second-color:       #111;
 $second-color-light: lighten($second-color, 30%);
 $second-color-lightest: lighten($second-color, 50%);
 $second-color-dark:  darken($second-color, 15%);

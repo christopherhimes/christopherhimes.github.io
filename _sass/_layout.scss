@@ -4,13 +4,12 @@
 .site-header {
 /*    border-top: 5px solid $second-color-dark;
     border-bottom: 1px solid $second-color-light;*/
-    /*min-height: 75px;*/
+    max-height: 75px;
     max-width: -webkit-calc(900px - (#{$spacing-unit} * 2));
     max-width:         calc(900px - (#{$spacing-unit} * 2));
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     position: relative;
-
     margin: 0 auto;
     @extend %clearfix;
 }
@@ -18,7 +17,7 @@
 .site-title {
     font-size: 10em;
     letter-spacing: -1px;
-    margin-bottom: 0;
+    // margin-bottom: 0;
     float: left;
 
     &,
@@ -28,12 +27,12 @@
 }
 
 .blog-title {
-    font-size: 50px;
+    font-size: 1.3em;
     line-height: 75px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
+    letter-spacing: .5em;
+    // margin-bottom: 0;
     float: left;
-    
+    text-transform: uppercase;
     &,
     &:visited {
         color: $second-color-dark;
@@ -54,8 +53,8 @@
         color: $text-color;
         line-height: $base-line-height;
         font-weight:300;
-        font-size:20px;
-        /*text-transform: uppercase;*/
+        font-size:.75em;
+        text-transform: uppercase;
         /*vertical-align: bottom;*/
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -115,14 +114,15 @@
  * Site footer
  */
 .site-footer {
+    background-color: $background-color;
     /*border-top: 1px solid $second-color-light;*/
-    background: $second-color-light;
-    background: linear-gradient(180deg, 
-        $second-color-light 0%,
-        $background-color 10%, 
+    // background: $second-color-light;
+    // background: linear-gradient(180deg, 
+    //     $second-color-light 0%,
+    //     $background-color 10%, 
 
-        $background-color 100%
-    );
+    //     $background-color 100%
+    // );
     padding: $spacing-unit * 2 0;
     bottom: 0;
 }
@@ -221,14 +221,14 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $second-color;
-
+    color: $second-color-light;
+    text-transform: uppercase;
 }
 
 .post-link {
     display: block;
     font-size: 40px;
-
+    text-transform: uppercase;
     h1 {
         color:red;
     }
@@ -281,7 +281,7 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-
+    text-transform: uppercase;
 
 
     @include media-query($on-laptop) {

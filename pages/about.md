@@ -4,14 +4,20 @@ title: About
 permalink: /about/
 ---
 
-I'm a developer living in Metro Detroit - using my experience to make complicated things seem effortless, simpler, and elegant.
+I'm a developer living in Metro Detroit; using my experience to make complicated things seem effortless, simpler, and elegant.  
 
-I'm a jack of all trades, master of none. I've worked with C++, Objective-C, PHP, MySQL, jQuery, and many more standards.
+With a strong background in Mathematics and Information Technology (Multimedia Concentration) I'm analytically minded with a focus on user experience.  I've worked with C++/C#, Objective-C, PHP, MySQL, Python, Javascript, Version Control with Git and am interested in learning more.
 
-With a strong Mathematics and Computer Science background I'm always ready to work through a problem logically.
+## Experience
 
-Focusing on more than just code, design to me means both form and function.
+### MMI Door / Milliken Millwork, Inc.
 
-Some of the most interesting things to learn in both Development and Design are taking place on the web.
-
-_I really need to get someone to write this section for me. Either that or invest in a stick figure with a hard had animated gif_
+* Lead Software Developer, Manager - (March 2014 - Present)
+    * Project Management
+    * Set Strategic Goals
+    * Continuous Improvement (CI)
+    * Documentation of development and testing process
+* Software Developer - (June 2008 - February 2014)
+    * Catalog Creation and Maintenance
+    * Website Catalog
+    * Website with Log In

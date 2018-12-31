@@ -24,7 +24,7 @@ h2 {
 	color: $second-color;
 }
 h3 {
-	color: GhostWhite;
+	color: $second-color-light;
 }
 h4 {
 	font-family: 'Lato';
@@ -112,6 +112,7 @@ p {
 	height: 100%;
 	min-height: 100%;
 	padding: 10%;
+	padding-top: 20%;
 	margin-top: 0%;
 }
 .feature-text {
