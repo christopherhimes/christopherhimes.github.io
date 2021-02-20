@@ -25,7 +25,7 @@ var banner = ['/**',
   ' */',
   ''].join('\n');
 
-gulp.task('delete', function(cb) {
+gulp.task('delete', async function(cb) {
     // del(['assets/css', 'assets/js', 'assets/img', 'js/vendor', 'scss/vendor'], cb)
     del(['_site'], cb)
 });
@@ -47,8 +47,8 @@ gulp.task('images', function() {
     .pipe(gulp.dest('_site/images'))
 });
 
-gulp.task('sass', function() {
-    return plugins.rubySass('_sass/main.scss', { style: 'expanded' }) 
+gulp.task('sass', async function() {
+    return plugins.sass('_sass/main.scss', { style: 'expanded' }) 
      .pipe(plugins.autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
      .pipe(plugins.header(banner, { pkg : pkg } ))    
     .on('error', function (err) {
@@ -89,25 +89,23 @@ gulp.task('html' , function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('_sass/*.scss', ['sass', 'jekyll']);
-  gulp.watch('_js/*.js', ['script', 'jekyll']);
-  gulp.watch('images/*', ['images', 'jekyll']);
-  gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html'], ['jekyll', 'html']);
-  gulp.watch('_posts/*.markdown', ['jekyll'])
+  gulp.watch('_sass/*.scss', gulp.series('sass', 'jekyll'));
+  gulp.watch('_js/*.js', gulp.series('script', 'jekyll'));
+  gulp.watch('images/*', gulp.series('images', 'jekyll'));
+  gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html'], gulp.series('jekyll', 'html'));
+  gulp.watch('_posts/*.markdown', gulp.series('jekyll'))
   // gulp.watch('_sass/*.scss', ['jekyll']);
 });
 
-gulp.task('default', function () {
-  gulp.start('delete', 'sass', 'script', 'html', 'images', 'jekyll', 'jekyll-serve', 'jekyll-watch', 'watch');
-  // gulp.start('delete', 'sass', 'script', 'html', 'images', 'jekyll', 'jekyll-serve', 'watch');
+gulp.task('default', gulp.series('delete', gulp.series('sass', 'script', 'html', 'images', 'watch')), function (done) { done();
 }); 
-
+// , 'jekyll', 'jekyll-serve', 'jekyll-watch', 'watch'
 gulp.task('build', function () {
-  gulp.start('delete', 'sass', 'script', 'html', 'images', 'jekyll');
+  gulp.done();('delete', 'sass', 'script', 'html', 'images', 'jekyll');
 }); 
 
 gulp.task('jekyll', function (){
-    spawn('jekyll', ['build'], {stdio: 'inherit'});
+    spawn('jekyll', gulp.series('build', {stdio: 'inherit'}));
 });
 
 gulp.task('jekyll-watch', function (){
