@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 14 May 2022 17:48:28 -0400</pubDate>
-    <lastBuildDate>Sat, 14 May 2022 17:48:28 -0400</lastBuildDate>
+    <pubDate>Sat, 14 May 2022 18:08:35 -0400</pubDate>
+    <lastBuildDate>Sat, 14 May 2022 18:08:35 -0400</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -18,7 +18,7 @@
 
 &lt;p&gt;I have a new role, responsibilities, and more people relying on me than I ever have before. This requires me to make fewer explorations into pet projects. In the past I could find some faster way of doing something work related but now I need to delegate that activity to someone else.&lt;/p&gt;
 
-&lt;p&gt;As a Product Owner the daily activites do not typically require much coding so I’m thinking of spending more personal time trying different things out. I downloaded &lt;a href=&quot;https://blender.org&quot;&gt;blender&lt;/a&gt; again and am thinkig of playing with some procedural generation. Last week I wrote some &lt;a href=&quot;https://python.org&quot;&gt;python&lt;/a&gt; code to grab some image data so I am thinking about some python projects down the road as well.&lt;/p&gt;
+&lt;p&gt;As a Product Owner the daily activities do not typically require much coding so I’m thinking of spending more personal time trying different things out. I downloaded &lt;a href=&quot;https://blender.org&quot;&gt;blender&lt;/a&gt; again and am thinking of playing with some procedural generation. Last week I wrote some &lt;a href=&quot;https://python.org&quot;&gt;python&lt;/a&gt; code to grab some image data so I am thinking about some python projects down the road as well.&lt;/p&gt;
 
 &lt;p&gt;Before digging too much into any of that this site’s dependencies are out of control and my plan is to remove them and simplify the entire setup. Not seeing the point in a build process that is broken every time I attempt to build this site. What I mean is the &lt;a href=&quot;http://gulpjs.com/&quot;&gt;gulp&lt;/a&gt; setup will be scaled back dramatically and the patchwork of node modules that build this site will be mostly removed.&lt;/p&gt;
 
