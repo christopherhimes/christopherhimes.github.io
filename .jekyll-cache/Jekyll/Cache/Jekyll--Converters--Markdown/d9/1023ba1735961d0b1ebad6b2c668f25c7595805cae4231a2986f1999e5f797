@@ -1,6 +1,22 @@
-I"$<div class="home">
+I"<div class="home">
 
   <ul class="post-list">
+    
+      <li>
+        <span class="post-meta">May 14, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2022/05/14/virtual.html">I'm Virtual Now ⏲</a>
+        </h2>
+        <a class="post-link" href="/blog/2022/05/14/virtual.html">
+          <img src="../../../../images/blog/virtual.jpg" alt="I'm Virtual Now ⏲ Image" />
+        </a>
+        <div class="category-title">Categories: 
+          
+            <span class="category">site</span>
+                    
+        </div>
+      </li>
     
       <li>
         <span class="post-meta">Apr 4, 2017</span>
@@ -22,9 +38,9 @@
         <span class="post-meta">Sep 13, 2015</span>
 
         <h2>
-          <a class="post-link" href="/blog/2015/09/13/take-it-home-with-you-copy.html">Take it Home With You</a>
+          <a class="post-link" href="/blog/2015/09/13/take-it-home-with-you.html">Take it Home With You</a>
         </h2>
-        <a class="post-link" href="/blog/2015/09/13/take-it-home-with-you-copy.html">
+        <a class="post-link" href="/blog/2015/09/13/take-it-home-with-you.html">
           <img src="../../../../images/blog/home.png" alt="Take it Home With You Image" />
         </a>
         <div class="category-title">Categories: 

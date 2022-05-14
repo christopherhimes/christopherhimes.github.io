@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "I'm Virtual Now"
+image: ../../../../images/blog/virtual.jpg
+date:   2022-05-14 20:00:00
+categories: work blender python gulp site
+---
+
+!['Virtual'][virtual-image]
+
+Guess 'now' is relative with working at home for the last two years. As of yesterday I no longer have a desk at an office that I could return to when this whole pandemic blows over.
+
+I have a new role, responsibilities, and more people relying on me than I ever have before. This requires me to make fewer explorations into pet projects. In the past I could find some faster way of doing something work related but now I need to delegate that activity to someone else.
+
+As a Product Owner the daily activites do not typically require much coding so I'm thinking of spending more personal time trying different things out. I downloaded [blender] again and am thinkig of playing with some procedural generation. Last week I wrote some [python] code to grab some image data so I am thinking about some python projects down the road as well.
+
+Before digging too much into any of that this site's dependencies are out of control and my plan is to remove them and simplify the entire setup. Not seeing the point in a build process that is broken every time I attempt to build this site. What I mean is the [gulp] setup will be scaled back dramatically and the patchwork of node modules that build this site will be mostly removed.
+
+*The image above is from [Joshua Sortino on Unsplash].*
+
+[Joshua Sortino on Unsplash]: https://unsplash.com/@sortino
+[virtual-image]: ../../../../images/blog/virtual.jpg "Virtual"
+[blender]:      https://blender.org
+[python]: https://python.org
+[gulp]: http://gulpjs.com/
