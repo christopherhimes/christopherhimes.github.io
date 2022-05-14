@@ -1,19 +1,18 @@
 /**** Media Queries ***/
 
 /* Max Width */
-@media screen and (max-width: 1200px) {
-	h1 {
-		font-size: 3.5em;
-
-	}
-}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
 	h1 {
 		font-size: 3em;
-
+	}
+	#small-name {
+		font-size: 1.5em;
+	}
+	#brand-logo {
+		width: 60%;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
 	body {
 	}
 	h1, .landing-title  {
@@ -27,11 +26,22 @@
 	h4, .lead, .attributes {
 		font-size: 1em;
 	}
+	#small-name {
+		font-size: 1em;
+	}
+	.featureRow {
+		padding-top: 30%;
+	}
+	.blog-title {
+		font-size: 1em;
+	}
 }
 @media screen and (max-width: 650px) {
 	h1, .landing-title  {
 		font-size: 2em;
-
+	}
+	#small-name {
+		font-size: .75em;
 	}
 } 
 @media screen and (max-width: 568px) {
@@ -45,15 +55,44 @@
 	h4, .lead {
 		font-size: 1em;
 	}
+	.blog-title {
+		font-size: .75em;
+	}
+	.site-header, .blog-title {
+		line-height: 50px;
+		max-height: 50px;
+		float: top;
+	}
 }
 @media screen and (max-width: 450px) {
 	.landing-title  {
-		font-size: 1.4em;
+		font-size: 2.5em;
 	}
 	.lead, .feature-text, .bio {
+		font-size: 1.2em;
+	}
+	.brewdesc {
 		font-size: .8em;
 	}
-} 
+	#brand-logo {
+		width: 70%;
+	}
+	#small-name {
+		font-size: 1em;
+		letter-spacing: .2em;
+		// display: none;
+	}
+	.copy {
+		font-size: .75em;		
+	}
+	.featureRow {
+		padding-top: 50%;
+	}
+	.blog-title {
+		font-size: .75em;
+		letter-spacing: .3em;
+	}
+}
 /* Max Height*/
 @media screen and (max-height: 800px) {
 	.full-window {

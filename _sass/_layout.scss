@@ -2,15 +2,14 @@
  * Site header
  */
 .site-header {
-/*    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;*/
-    /*min-height: 75px;*/
+/*    border-top: 5px solid $second-color-dark;
+    border-bottom: 1px solid $second-color-light;*/
+    max-height: 75px;
     max-width: -webkit-calc(900px - (#{$spacing-unit} * 2));
     max-width:         calc(900px - (#{$spacing-unit} * 2));
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     position: relative;
-
     margin: 0 auto;
     @extend %clearfix;
 }
@@ -18,25 +17,25 @@
 .site-title {
     font-size: 10em;
     letter-spacing: -1px;
-    margin-bottom: 0;
+    // margin-bottom: 0;
     float: left;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $second-color-dark;
     }
 }
 
 .blog-title {
-    font-size: 50px;
+    font-size: 1.3em;
     line-height: 75px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
+    letter-spacing: .5em;
+    // margin-bottom: 0;
     float: left;
-    
+    text-transform: uppercase;
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $second-color-dark;
     }
     &:hover {
      text-decoration: none;
@@ -54,8 +53,8 @@
         color: $text-color;
         line-height: $base-line-height;
         font-weight:300;
-        font-size:20px;
-        /*text-transform: uppercase;*/
+        font-size:.75em;
+        text-transform: uppercase;
         /*vertical-align: bottom;*/
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -68,7 +67,7 @@
         top: 9px;
         right: 30px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        border: 1px solid $second-color-light;
         border-radius: 5px;
         text-align: right;
 
@@ -87,7 +86,7 @@
                 height: 18px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $second-color-dark;
                 }
             }
         }
@@ -115,8 +114,15 @@
  * Site footer
  */
 .site-footer {
-    /*border-top: 1px solid $grey-color-light;*/
-    background: $dark-blue;
+    background-color: $background-color;
+    /*border-top: 1px solid $second-color-light;*/
+    // background: $second-color-light;
+    // background: linear-gradient(180deg, 
+    //     $second-color-light 0%,
+    //     $background-color 10%, 
+
+    //     $background-color 100%
+    // );
     padding: $spacing-unit * 2 0;
     bottom: 0;
 }
@@ -134,7 +140,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    /*color: $grey-color;*/
+    /*color: $second-color;*/
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -208,21 +214,21 @@
         margin-bottom: $spacing-unit;
     
         a {
-            color:$dark-blue;
+            color:$main-color;
         }
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
-
+    color: $second-color-light;
+    text-transform: uppercase;
 }
 
 .post-link {
     display: block;
     font-size: 40px;
-
+    text-transform: uppercase;
     h1 {
         color:red;
     }
@@ -230,7 +236,15 @@
 
 .header-image {
     position: relative;
-    background: url('../images/green-header.png') no-repeat fixed center #010107;
+    // background: url('../images/lion.jpg') no-repeat fixed center #010107;
+    // background: lighten($main-color, 10%);
+    background: $main-color;
+    background: linear-gradient(180deg, 
+        $main-color 0%, 
+        $main-color-light 25%, 
+        // $main-color-light 66%, 
+        $second-color-light 100%
+    );
     width:100%;
     min-height: 100%;
     text-align: center;
@@ -239,6 +253,14 @@
     overflow: hidden;
 }
 
+.hello-image {
+    background: linear-gradient(180deg, 
+        $second-color-light 0%, 
+        $second-color-lightest 33%, 
+        // $second-color-light 66%, 
+        GhostWhite 100%
+    );
+}
 .header-image-small {
 /*    background: url('../images/header.jpeg') no-repeat fixed center #010107;*/
     width:100%;
@@ -259,7 +281,7 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-
+    text-transform: uppercase;
 
 
     @include media-query($on-laptop) {

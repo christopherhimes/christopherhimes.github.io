@@ -9,13 +9,17 @@ $spacing-unit:     40px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
 
-$dark-blue:        #494842;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$main-color:        #505050;
+$main-color-light:  lighten($main-color, 15%);
+// $main-color-light:  lighten($main-color, 30%);
+$main-color-dark:  darken($main-color, 25%);
+
+$second-color:       #111;
+$second-color-light: lighten($second-color, 30%);
+$second-color-lightest: lighten($second-color, 50%);
+$second-color-dark:  darken($second-color, 15%);
 
 $on-palm:          600px;
 $on-laptop:        800px;
