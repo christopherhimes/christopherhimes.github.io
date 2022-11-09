@@ -1,0 +1,25 @@
+/* Constants */
+$base-font-family: 'Lato', Helvetica, Arial, sans-serif;
+$base-font-size:   20px;
+$small-font-size:  $base-font-size * 0.9;
+$xsmall-font-size:  $base-font-size * 0.75;
+$base-line-height: 1.5;
+
+$spacing-unit:     40px;
+
+$text-color:       #131313;
+$background-color: #FFF;
+
+
+$main-color:        #131313;
+// $main-color-dark:  darken($main-color, 25%);
+
+$second-color:       rgb(24, 85, 70);
+// $second-color-light: lighten($second-color, 30%);
+
+
+$on-palm:          600px;
+$on-laptop:        800px;
+$on-desktop:       900px;
+
+

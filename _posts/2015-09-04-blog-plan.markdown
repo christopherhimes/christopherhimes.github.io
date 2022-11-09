@@ -2,11 +2,12 @@
 layout: post
 title:  "Blog Plan"
 image: ../../../../images/blog/gulp.png
+cover-img: ../../../../images/blog/gulp.png
+thumbnail-img: ../../../../images/blog/gulp.png
+share-img: ../../../../images/blog/gulp.png
 date:   2015-09-04 19:17:40
-categories: jekyll gulp
+tags: [jekyll, gulp]
 ---
-!['Gulp'][gulp-image]
-
 I'm still learning all about [Jekyll] and [Gulp].  Today for example I've tweaked my gulp process to properly build, serve, and watch using Jekyll in my gulpfile.js.  The gulpfile.js is where you setup all your processes, it automates your build process.
 
 My current process includes the following:
@@ -24,4 +25,3 @@ This project is very small at the moment but I can definitely see these tools co
 
 [Jekyll]:       https://github.com/jekyll/jekyll
 [Gulp]:         http://gulpjs.com/
-[gulp-image]:   ../../../../images/blog/gulp.png "Gulp"

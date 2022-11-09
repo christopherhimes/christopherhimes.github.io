@@ -1,7 +1,0 @@
-I"<p><img src="../../../../images/blog/dependencies.png" alt="'Dependencies'" title="Gulp" /></p>
-
-<p>It’s been a while since I’ve updated dependencies for this site so I decided to ensure that all the dependencies are updated.  The fact that this site uses <a href="http://gulpjs.com/">Gulp</a> which requires <a href="http://npmjs.com/">NPM</a> makes updating the dependencies very easy.</p>
-
-<p>The image above includes a command for updating the version of various dependencies contained within this projects package.json file.</p>
-
-:ET
