@@ -9,9 +9,9 @@ html {
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
-  color: #404040;
+  color: #f8f9fa;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: #242526;
   
   overflow-wrap: break-word;
 }
@@ -40,11 +40,11 @@ h1, h2, h3, h4 {
   margin-top: 1.25rem;
 }
 a {
-  color: #008AFF;
+  color: #177D4D;
 }
 a:hover,
 a:focus {
-  color: #0085A1;
+  color: #177D4D;
 }
 blockquote {
   color: #808080;
@@ -76,12 +76,12 @@ hr.small {
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
-  background-color: #0085A1;
+  background-color: #177D4D;
 }
 ::selection {
   color: #fff;
   text-shadow: none;
-  background-color: #0085A1;
+  background-color: #177D4D;
 }
 img::selection {
   color: #fff;
@@ -116,8 +116,8 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background-color: #EAEAEA;
-  border-bottom: 1px solid #DDDDDD;
+  background-color: #242526;
+  border-bottom: 1px solid #808080;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   
   -webkit-transition: padding .5s ease-in-out;
@@ -181,7 +181,7 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
-  color: #404040;
+  color: #f8f9fa;
 }
 
 .navbar-toggler {
@@ -250,10 +250,10 @@ img {
 
 .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
   padding: 0.625rem;
-  background-color: #EAEAEA;
+  background-color: #242526;
   text-decoration: none !important;
   font-weight: normal;
-  color: #404040;
+  color: #f8f9fa;
   
   white-space: normal;
   
@@ -266,7 +266,7 @@ img {
 
   .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
     padding-left: 0.625rem;
-    border: 1px solid #DDDDDD;
+    border: 1px solid #808080;
     border-width: 0 1px 1px;
   }
 
@@ -277,7 +277,7 @@ img {
 
 @media (max-width: 1199px) {
   .navbar-custom .navbar-collapse {
-    border-top: 1px solid #DDDDDD;
+    border-top: 1px solid #808080;
     margin: 0 -1rem;
   }
 
@@ -303,7 +303,7 @@ img {
 .navbar-custom .navbar-nav .nav-link:focus,
 .navbar-custom .navbar-nav .dropdown-menu .dropdown-item:hover,
 .navbar-custom .navbar-nav .dropdown-menu .dropdown-item:focus {
-  color: #0085A1;
+  color: #177D4D;
 }
 
 .navbar-custom .avatar-container {
@@ -372,21 +372,21 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 3.125rem;
   font-size: 0.875rem;
-  background-color: #EAEAEA;
+  background-color: #2f3031;
   
 }
 
 footer p.text-muted {
-  color: #777777 !important;
+  color: #f8f9fa !important;
 }
 
 footer a {
-  color: #404040;
+  color: #808080;
 }
 
 footer a:hover,
 footer a:focus {
-  color: #0085A1;
+  color: #177D4D;
 }
 
 footer .list-inline {
@@ -450,13 +450,13 @@ footer .footer-custom-content {
 .post-preview a {
   text-decoration: none;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #404040;
+  color: #f8f9fa;
 }
 
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #0085A1;
+  color: #177D4D;
 }
 
 .post-preview .post-title {
@@ -557,7 +557,7 @@ footer .footer-custom-content {
 }
 
 .blog-tags span {
-  color: #404040;
+  color: #f8f9fa;
   opacity: 0.8;
 }
 
@@ -566,7 +566,7 @@ footer .footer-custom-content {
 }
 
 .blog-tags a {
-  color: #404040;
+  color: #f8f9fa;
   text-decoration: none;
   padding: 0 0.3125rem;
   opacity: 0.8;
@@ -576,8 +576,8 @@ footer .footer-custom-content {
 
 .blog-tags a:hover {
   opacity: 1;
-  color: #404040;
-  border-color: #404040;
+  color: #f8f9fa;
+  border-color: #f8f9fa;
 }
 
 .post-preview .blog-tags {
@@ -593,8 +593,16 @@ footer .footer-custom-content {
 
 /* Tags page */
 
-.tag-btn {
+.tag-btn{
   margin: 0.3125rem;
+  background-color: #2f3031;
+  border: 1px solid #2f3031;
+}
+
+.tag-btn:hover {
+  margin: 0.3125rem;
+  background-color: #177D4D;
+  border: 1px solid #177D4D;
 }
 
 #full-tags-list {
@@ -795,9 +803,9 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 0.625rem 0.3125rem;
-  background-color: #FFF;
+  background-color: #f8f9fa;
   border-radius: 0;
-  color: #404040;
+  color: #177D4D;
 }
 @media (min-width: 768px) {
   .pagination .page-item .page-link {
@@ -807,8 +815,8 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .pagination .page-item .page-link:hover,
 .pagination .page-item .page-link:focus {
   color: #FFF;
-  border: 1px solid #0085A1;
-  background-color: #0085A1;
+  border: 1px solid #177D4D;
+  background-color: #177D4D;
 }
 
 /* --- Tables --- */

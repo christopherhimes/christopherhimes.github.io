@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 09 Nov 2022 11:27:58 -0500</pubDate>
-    <lastBuildDate>Wed, 09 Nov 2022 11:27:58 -0500</lastBuildDate>
+    <pubDate>Wed, 23 Nov 2022 14:29:40 -0500</pubDate>
+    <lastBuildDate>Wed, 23 Nov 2022 14:29:40 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -71,72 +71,6 @@
         
         <category>home</category>
         
-        
-      </item>
-    
-      <item>
-        <title>Update Your Dependencies</title>
-        <description>&lt;p&gt;It’s been a while since I’ve updated dependencies for this site so I decided to ensure that all the dependencies are updated.  The fact that this site uses &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; which requires &lt;a href=&quot;http://npmjs.com/&quot;&gt;NPM&lt;/a&gt; makes updating the dependencies very easy.&lt;/p&gt;
-
-&lt;p&gt;The image above includes a command for updating the version of various dependencies contained within this projects package.json file.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 07 Sep 2015 08:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2015/09/07/update-your-dependencies.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/09/07/update-your-dependencies.html</guid>
-        
-        <category>gulp</category>
-        
-        <category>updates</category>
-        
-        <category>dependencies</category>
-        
-        <category>npm</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Blog Plan</title>
-        <description>&lt;p&gt;I’m still learning all about &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt;.  Today for example I’ve tweaked my gulp process to properly build, serve, and watch using Jekyll in my gulpfile.js.  The gulpfile.js is where you setup all your processes, it automates your build process.&lt;/p&gt;
-
-&lt;p&gt;My current process includes the following:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;‘delete’ clears out the previous build&lt;/li&gt;
-  &lt;li&gt;‘style’ compiles Sass, creates on CSS file, and minifies the file&lt;/li&gt;
-  &lt;li&gt;‘script’ uglifies and compresses javascript files&lt;/li&gt;
-  &lt;li&gt;‘html’ minifies html files&lt;/li&gt;
-  &lt;li&gt;‘images’ compresses images&lt;/li&gt;
-  &lt;li&gt;‘jekyll’, ‘jekyll-serve’, ‘jekyll-watch’ builds and serves the Jekyll installation&lt;/li&gt;
-  &lt;li&gt;‘watch’ looks for changes and will rerun any of the previous sections to keep the files up to date.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;This project is very small at the moment but I can definitely see these tools coming in handy when a project gets larger.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 04 Sep 2015 15:17:40 -0400</pubDate>
-        <link>http://localhost:4000/blog/2015/09/04/blog-plan.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/09/04/blog-plan.html</guid>
-        
-        <category>jekyll</category>
-        
-        <category>gulp</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Jekyll Install</title>
-        <description>&lt;p&gt;This is the first post using the static site generator &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 01 Feb 2015 14:17:40 -0500</pubDate>
-        <link>http://localhost:4000/blog/2015/02/01/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/02/01/welcome-to-jekyll.html</guid>
-        
-        
-        <category>jekyll</category>
         
       </item>
     
