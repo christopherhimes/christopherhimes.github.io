@@ -4,10 +4,10 @@
     <title>Christopher Himes</title>
     <description>Christopher Himes is a Software Developer living in Metro Detroit. This is an account of his personal projects and inquiries in the world of development.  
 </description>
-    <link>http://christopherhimes.com/</link>
-    <atom:link href="http://christopherhimes.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Nov 2022 14:45:45 -0500</pubDate>
-    <lastBuildDate>Wed, 23 Nov 2022 14:45:45 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 23 Nov 2022 15:01:57 -0500</pubDate>
+    <lastBuildDate>Wed, 23 Nov 2022 15:01:57 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -24,8 +24,8 @@
 
 </description>
         <pubDate>Sat, 14 May 2022 16:00:00 -0400</pubDate>
-        <link>http://christopherhimes.com/blog/2022/05/14/virtual.html</link>
-        <guid isPermaLink="true">http://christopherhimes.com/blog/2022/05/14/virtual.html</guid>
+        <link>http://localhost:4000/blog/2022/05/14/virtual.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2022/05/14/virtual.html</guid>
         
         <category>work</category>
         
@@ -46,8 +46,8 @@
 
 </description>
         <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
-        <link>http://christopherhimes.com/blog/2017/04/04/time-for-a-change.html</link>
-        <guid isPermaLink="true">http://christopherhimes.com/blog/2017/04/04/time-for-a-change.html</guid>
+        <link>http://localhost:4000/blog/2017/04/04/time-for-a-change.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/04/04/time-for-a-change.html</guid>
         
         
       </item>
@@ -64,8 +64,8 @@
 
 </description>
         <pubDate>Sun, 13 Sep 2015 16:00:00 -0400</pubDate>
-        <link>http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</link>
-        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</guid>
+        <link>http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</guid>
         
         <category>work</category>
         
