@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+mainnav: true
 permalink: /about/
 ---
 
@@ -10,10 +11,14 @@ With a strong background in Mathematics and Information Technology (Multimedia C
 
 # Experience
 
+## JELD-WEN
+
+**Retail Catalog Manager - Doors(February 2022 – *Present*)**
+* Coordinate between the business, catalog team, and retail partners the maintenance and release of retail door catalogs.
 
 ## MMI Door a JELD-WEN Company 
 
-**Lead Programmer (Janruary 2019 – *Present*)**
+**Lead Programmer (January 2019 – January 2022)**
 * Project Management - Lead a team of developers to enhance and maintain multiple software product catalogs, concurrently, with high precision, and meeting aggressive timelines
 
 ## MMI Door / Milliken Millwork, Inc.

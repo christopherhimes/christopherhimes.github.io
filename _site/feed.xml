@@ -6,17 +6,17 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 21 Jan 2023 13:10:10 -0500</pubDate>
-    <lastBuildDate>Sat, 21 Jan 2023 13:10:10 -0500</lastBuildDate>
-    <generator>Jekyll v3.9.2</generator>
+    <pubDate>Wed, 02 Aug 2023 18:42:21 -0400</pubDate>
+    <lastBuildDate>Wed, 02 Aug 2023 18:42:21 -0400</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
     
       <item>
         <title>I&apos;m Virtual Now</title>
         <description>&lt;p&gt;Guess ‘now’ is relative with working at home for the last two years. As of yesterday I no longer have a desk at an office that I could return to when this whole pandemic blows over.&lt;/p&gt;
 
-&lt;p&gt;I have a new role, responsibilities, and more people relying on me than I ever have before. This requires me to make fewer explorations into pet projects. In the past I could find some faster way of doing something work related but now I need to delegate that activity to someone else.&lt;/p&gt;
-
-&lt;p&gt;As a Product Owner the daily activities do not typically require much coding so I’m thinking of spending more personal time trying different things out. I downloaded &lt;a href=&quot;https://blender.org&quot;&gt;blender&lt;/a&gt; again and am thinking of playing with some procedural generation. Last week I wrote some &lt;a href=&quot;https://python.org&quot;&gt;python&lt;/a&gt; code to grab some image data so I am thinking about some python projects down the road as well.&lt;/p&gt;
+&lt;p&gt;I have a new role, responsibilities, and more people relying on me than I ever have before. This requires me to make fewer explorations into pet projects. In the past I could find some faster way of doing something work related but now I need to delegate that activity to someone else.
+&lt;!--more--&gt;
+As a Product Owner the daily activities do not typically require much coding so I’m thinking of spending more personal time trying different things out. I downloaded &lt;a href=&quot;https://blender.org&quot;&gt;blender&lt;/a&gt; again and am thinking of playing with some procedural generation. Last week I wrote some &lt;a href=&quot;https://python.org&quot;&gt;python&lt;/a&gt; code to grab some image data so I am thinking about some python projects down the road as well.&lt;/p&gt;
 
 &lt;p&gt;Before digging too much into any of that this site’s dependencies are out of control and my plan is to remove them and simplify the entire setup. Not seeing the point in a build process that is broken every time I attempt to build this site. What I mean is the &lt;a href=&quot;http://gulpjs.com/&quot;&gt;gulp&lt;/a&gt; setup will be scaled back dramatically and the patchwork of node modules that build this site will be mostly removed.&lt;/p&gt;
 
@@ -40,7 +40,8 @@
     
       <item>
         <title>Time for a Change</title>
-        <description>&lt;p&gt;The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.  I’ve been unenthusiastic about the previous color scheme for a while so this is a nice brighter setup.&lt;/p&gt;
+        <description>&lt;p&gt;The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.  I’ve been unenthusiastic about the previous color scheme for a while so this is a nice brighter setup.
+&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@lemuelbutler&quot;&gt;Lemuel Butler on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
@@ -54,9 +55,9 @@
     
       <item>
         <title>Take it Home With You</title>
-        <description>&lt;p&gt;The next two weeks are going to be exceedingly difficult not to bring work home.  I’m prone to work through things I’m working on at work while I’m at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.&lt;/p&gt;
-
-&lt;p&gt;Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcoming week.  We have a fairly aggressive timeline on the current project and I’d prefer to avoid anyone else having to spend time on it outside of work.  I think we can make the timing work we just have to stick to the plan and hopefully do away with any unknowns early in the process.&lt;/p&gt;
+        <description>&lt;p&gt;The next two weeks are going to be exceedingly difficult not to bring work home.  I’m prone to work through things I’m working on at work while I’m at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.
+&lt;!--more--&gt;
+Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcoming week.  We have a fairly aggressive timeline on the current project and I’d prefer to avoid anyone else having to spend time on it outside of work.  I think we can make the timing work we just have to stick to the plan and hopefully do away with any unknowns early in the process.&lt;/p&gt;
 
 &lt;p&gt;This project is the first big project with the new team.  We’ve got everyone up to speed and on the same page, so I forsee a busy but productive week.  I’m excited to demonstrate all of what we can do.&lt;/p&gt;
 

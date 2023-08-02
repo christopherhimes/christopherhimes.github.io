@@ -2,7 +2,9 @@
 
 source "https://rubygems.org"
 
-gemspec
 
-
+# gemspec
+gem 'jekyll-paginate'
+gem 'jekyll-sitemap'
+# gem "minima"
 gem "webrick", "~> 1.7"

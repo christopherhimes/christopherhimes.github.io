@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+mainnav: true
 permalink: /blog/
 ---
 
@@ -14,18 +15,19 @@ permalink: /blog/
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          <img src='{{ post.image }}' alt="{{ post.title }} Image"/>
+        {{ post.excerpt }}
+        <a href="{{ post.url | relative_url }}">
+          More...
         </a>
-        <div class="category-title">Categories: 
+        <!-- <div class="category-title">Categories: 
           {% for category in post.categories %}
             <span class="category">{{ category }}</span>
           {% endfor %}          
-        </div>
+        </div> -->
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>

@@ -10,7 +10,7 @@ tags:
 ---
 
 The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.  I've been unenthusiastic about the previous color scheme for a while so this is a nice brighter setup.
-
+<!--more-->
 
 
 *The image above is from [Lemuel Butler on Unsplash].*
