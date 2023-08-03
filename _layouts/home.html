@@ -30,10 +30,12 @@ layout: base
               {{ post.title | escape }}
             </a>
           </h3>
+          <div class="post-content e-content" itemprop="articleBody">
             {{ post.excerpt }}
             <a href="{{ post.url | relative_url }}">
               More...
             </a>
+          </div>
         </li>
         {%- endfor -%}
       </ul>
