@@ -4,6 +4,7 @@
 .site-title {
     background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -11,6 +12,7 @@
     // background: linear-gradient(34deg, #128562, #1086a3) 1;
     background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: initial; /* reset Font Awesome's display:inline-block */
 }
@@ -26,18 +28,6 @@
     // border-image-source: linear-gradient(to left, #00C853, #B2FF59);
 }
 
-.menu-icon {
-    > svg path {
-      // fill: red;
-      // fill: "url(#pattern)";
-      // fill: "url(#gradient)";
-    }
-  }
-
-// #pattern {
-
-
-// }
 /**
  * Site Home Column
  */
@@ -51,6 +41,7 @@
     margin-bottom: $spacing-unit * .5;
     background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   

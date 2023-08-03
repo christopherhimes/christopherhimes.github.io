@@ -744,12 +744,14 @@ table td {
 .site-title {
   background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .fa-gradient {
   background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial; /* reset Font Awesome's display:inline-block */
 }
@@ -776,6 +778,7 @@ table td {
   margin-bottom: 15px;
   background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
