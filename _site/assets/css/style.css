@@ -468,7 +468,7 @@ table td {
   top: 9px;
   right: 15px;
   background-color: #181818;
-  border: 1px solid #128562;
+  border: 1px solid #1086a3;
   border-radius: 5px;
   text-align: right;
 }
@@ -482,9 +482,6 @@ table td {
   line-height: 0;
   padding-top: 10px;
   text-align: center;
-}
-.site-nav .menu-icon > svg path {
-  fill: #1086a3;
 }
 .site-nav label[for=nav-trigger] {
   display: block;
@@ -764,10 +761,6 @@ table td {
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
-}
-
-.menu-icon > svg path {
-  fill: red;
 }
 
 /**

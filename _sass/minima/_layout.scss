@@ -33,7 +33,7 @@
   top: 9px;
   right: $spacing-unit * .5;
   background-color: $background-color;
-  border: 1px solid #128562;
+  border: 1px solid #1086a3;
   border-radius: 5px;
   text-align: right;
 
@@ -49,9 +49,9 @@
     padding-top: 10px;
     text-align: center;
 
-    > svg path {
-      fill: #1086a3;
-    }
+    // > svg path {
+    //   fill: #1086a3;
+    // }
   }
 
   label[for="nav-trigger"] {
