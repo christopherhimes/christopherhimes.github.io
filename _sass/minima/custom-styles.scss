@@ -47,6 +47,7 @@
   
   .face {
     clip-path: circle(150px at center);
+    filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
   }
   .home wrapper,
   .social-links {
