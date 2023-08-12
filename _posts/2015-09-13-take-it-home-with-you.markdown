@@ -9,6 +9,7 @@ date:   2015-09-13 20:00:00
 tags: [work, home]
 ---
 
+![home-image]
 
 The next two weeks are going to be exceedingly difficult not to bring work home.  I'm prone to work through things I'm working on at work while I'm at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.
 <!--more-->
