@@ -4,10 +4,10 @@
     <title>Christopher Himes</title>
     <description>Christopher Himes is a Software Developer living in Metro Detroit. This is an account of his personal projects and inquiries in the world of development.  
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 12 Aug 2023 19:11:44 -0400</pubDate>
-    <lastBuildDate>Sat, 12 Aug 2023 19:11:44 -0400</lastBuildDate>
+    <link>http://christopherhimes.com/</link>
+    <atom:link href="http://christopherhimes.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 16 Dec 2023 15:53:11 -0500</pubDate>
+    <lastBuildDate>Sat, 16 Dec 2023 15:53:11 -0500</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -32,8 +32,8 @@
 
 </description>
         <pubDate>Sat, 12 Aug 2023 16:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2023/08/12/another-new-design.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2023/08/12/another-new-design.html</guid>
+        <link>http://christopherhimes.com/blog/2023/08/12/another-new-design.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2023/08/12/another-new-design.html</guid>
         
         <category>site</category>
         
@@ -62,8 +62,8 @@ As a Product Owner the daily activities do not typically require much coding so 
 
 </description>
         <pubDate>Sat, 14 May 2022 16:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2022/05/14/virtual.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2022/05/14/virtual.html</guid>
+        <link>http://christopherhimes.com/blog/2022/05/14/virtual.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2022/05/14/virtual.html</guid>
         
         <category>work</category>
         
@@ -86,8 +86,8 @@ The changes to this site now are strictly cosmetic but it is interesting to play
 
 </description>
         <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2017/04/04/time-for-a-change.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/04/04/time-for-a-change.html</guid>
+        <link>http://christopherhimes.com/blog/2017/04/04/time-for-a-change.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2017/04/04/time-for-a-change.html</guid>
         
         
       </item>
@@ -106,8 +106,8 @@ Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcom
 
 </description>
         <pubDate>Sun, 13 Sep 2015 16:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</guid>
+        <link>http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</link>
+        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</guid>
         
         <category>work</category>
         

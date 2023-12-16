@@ -15,7 +15,7 @@ permalink: /blog/:year/:month/:day/:title.html
 social-network-links:
   email: "christopher@christopherhimes.com"
   github: christopherhimes
-  mastodon: "mastodon.social/@eeentropyyy"
+  mastodon: "hachyderm.io/@eeentropyyy"
   rss: true  
 
 navbar-links:
