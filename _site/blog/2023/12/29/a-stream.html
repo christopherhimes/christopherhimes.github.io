@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>A Stream?</title>
+
+  
+  <meta name="author" content="Christopher Himes">
+  
+
+  <meta name="description" content="I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time. First, lets talk audio. I’ve spent far too much time adjusting the audio for both personal streaming and for work. Current setup utilizes virtual cables and obs studio filters to achieve what I think is pretty good sounding audio. I’ve primarily been following EposVox audio quality guides. I’m using a shock mounted Yeti Blue microphone and passing it throught Noise Suppression using the built in RNNoise method. I haven’t noticed any CPU impact and this works so well. I have the gain on the microphone down very low but I’ve turned the digital gain boosted by 10 dB. This can sound weird without additional filtering but increases my volume without having to be right on top of the microphone. Next there are a few rounds of correcting for that initial gain boosting and making things sound good. The first round of EQ that uses ReaEQ mostly to cut highs, lows, and a few nasaly places in the mids. This is followed up with a compressor with a 3:1 ratio and a -20dB threshold. From there I do have a Noise Gate set but I’m not sure if it is strictly necessary with all the other things happening. Lastly, there is an additional EQ for some high end and...">
+
+  
+
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="Christopher Himes" href="http://localhost:4000/feed.xml">
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  <meta property="og:site_name" content="Christopher Himes">
+  <meta property="og:title" content="A Stream?">
+  <meta property="og:description" content="I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time. First, lets talk audio. I’ve spent far too much time adjusting the audio for both personal streaming and for work. Current setup utilizes virtual cables and obs studio filters to achieve what I think is pretty good sounding audio. I’ve primarily been following EposVox audio quality guides. I’m using a shock mounted Yeti Blue microphone and passing it throught Noise Suppression using the built in RNNoise method. I haven’t noticed any CPU impact and this works so well. I have the gain on the microphone down very low but I’ve turned the digital gain boosted by 10 dB. This can sound weird without additional filtering but increases my volume without having to be right on top of the microphone. Next there are a few rounds of correcting for that initial gain boosting and making things sound good. The first round of EQ that uses ReaEQ mostly to cut highs, lows, and a few nasaly places in the mids. This is followed up with a compressor with a 3:1 ratio and a -20dB threshold. From there I do have a Noise Gate set but I’m not sure if it is strictly necessary with all the other things happening. Lastly, there is an additional EQ for some high end and...">
+
+  
+  <meta property="og:image" content="http://localhost:4000/images/blog/stream.jpg">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Christopher Himes">
+  <meta property="og:article:published_time" content="2023-12-29T08:00:00-05:00">
+  <meta property="og:url" content="http://localhost:4000/blog/2023/12/29/a-stream.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2023/12/29/a-stream.html">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link href="/favicon.ico" rel="icon" type="image/x-icon">
+  
+
+  
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Christopher Himes</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <defs>
+                <linearGradient id="gradient">
+                  <stop offset="0%" stop-color="#128562" />
+                  <stop offset="100%" stop-color="#1086a3" />
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/blog/">Blog</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">A Stream?</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2023-12-29T08:00:00-05:00" itemprop="datePublished">
+        Dec 29, 2023
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><img src="../../../../images/blog/stream.jpg" alt="main-image" title="Stream" /></p>
+
+<p>I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.</p>
+
+<!--more-->
+
+<p>First, lets talk audio. I’ve spent far too much time adjusting the audio for both personal streaming and for work. Current setup utilizes <a href="https://vb-audio.com">virtual cables</a> and <a href="https://obsproject.com">obs</a> studio filters to achieve what I think is pretty good sounding audio. I’ve primarily been following <a href="https://www.youtube.com/@EposVox">EposVox</a> audio quality guides.</p>
+
+<p>I’m using a shock mounted Yeti Blue microphone and passing it throught Noise Suppression using the built in RNNoise method. I haven’t noticed any CPU impact and this works so well. I have the gain on the microphone down very low but I’ve turned the digital gain boosted by 10 dB. This can sound weird without additional filtering but increases my volume without having to be right on top of the microphone.</p>
+
+<p>Next there are a few rounds of correcting for that initial gain boosting and making things sound good. The first round of EQ that uses ReaEQ mostly to cut highs, lows, and a few nasaly places in the mids. This is followed up with a compressor with a 3:1 ratio and a -20dB threshold. From there I do have a Noise Gate set but I’m not sure if it is strictly necessary with all the other things happening. Lastly, there is an additional EQ for some high end and normal speaking range boosting for clarity and to add interest.</p>
+
+<p>For the camera side I have a Razer Kiyo that has most of the default settings but with the white balance manually adjusted. It never quite gets that right and I haven’t found the right filters to counter it consistently. I do typically increase the contrast a little and apply a LUT. This is mostly to add back in some warmth as the default settings can read a bit cold. One thing I wanted to add is that the camera in obs has its own dedicated scene that is then added to other scenes to enable different presentation of the same source. I was running into an issue where changing it on one scene would change it in every scene. This is apparently a known thing about obs but it did cause some confusion.</p>
+
+<p>The baked in streaming setup for OBS is so good it doesn’t typically need to be tweaked. I spent the beter part of the last year streaming exclusively to twitch. This is for a few reasons. First, up until recently it was against twitch’s terms of service to stream to more than one platform. Also, for whatever reason I associate twitch with streaming more than YouTube.</p>
+
+<p>I have been experimenting doing both lately but have determined the only way for me to do that is to use a third party. Specifically, I’ve been using <a href="https://restream.io">Restream</a> to simultaneously stream to both twitch and YouTube. My upload bandwith is not good so I cannot support both at the same time myself. Setting these up is no more complicated than setting up accounts at each and giving access to Restream. The most complicated piece is setting some of the bitrate and sizing information that will work for both. My current setup is not as good for YouTube as it could be due to the limitations coming from twitch.</p>
+
+<p>I stream infrequently, but when I do it’s at either <a href="https://www.twitch.tv/entropygrows/">EntropyGrows Twitch</a> or <a href="https://www.youtube.com/@entropygrows9669">EntropyGrows YouTube</a></p>
+
+<p><em>The image above is from <a href="https://unsplash.com/@rzunikoff">Photo by Raphael Schaller on Unsplash</a>.</em></p>
+
+
+  </div>
+
+  <a class="u-url" href="/blog/2023/12/29/a-stream.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <ul class="contact-list">
+          
+
+             <a href="/feed.xml" title="RSS">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">RSS</span>
+            </a>
+            <a href="mailto:christopher@christopherhimes.com" title="Email me">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
+                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Email me</span>
+           </a>
+            <a href="https://github.com/christopherhimes" title="GitHub">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">GitHub</span>
+           </a>
+            <a rel="me" href="https://hachyderm.io/@eeentropyyy">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
+                <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Mastodon</span>
+            </a>
+      </div>
+      <div class="footer-col">
+        <p>Christopher Himes is a Software Developer living in Metro Detroit. This is an account of his personal projects and inquiries in the world of development.  
+</p>
+      </div>
+    </div>
+
+
+  </div>
+
+</footer>
+</body>
+
+</html>

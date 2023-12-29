@@ -4,11 +4,51 @@
     <title>Christopher Himes</title>
     <description>Christopher Himes is a Software Developer living in Metro Detroit. This is an account of his personal projects and inquiries in the world of development.  
 </description>
-    <link>http://christopherhimes.com/</link>
-    <atom:link href="http://christopherhimes.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 16 Dec 2023 16:48:14 -0500</pubDate>
-    <lastBuildDate>Sat, 16 Dec 2023 16:48:14 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 29 Dec 2023 13:22:34 -0500</pubDate>
+    <lastBuildDate>Fri, 29 Dec 2023 13:22:34 -0500</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>A Stream?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/stream.jpg&quot; alt=&quot;main-image&quot; title=&quot;Stream&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;First, lets talk audio. I’ve spent far too much time adjusting the audio for both personal streaming and for work. Current setup utilizes &lt;a href=&quot;https://vb-audio.com&quot;&gt;virtual cables&lt;/a&gt; and &lt;a href=&quot;https://obsproject.com&quot;&gt;obs&lt;/a&gt; studio filters to achieve what I think is pretty good sounding audio. I’ve primarily been following &lt;a href=&quot;https://www.youtube.com/@EposVox&quot;&gt;EposVox&lt;/a&gt; audio quality guides.&lt;/p&gt;
+
+&lt;p&gt;I’m using a shock mounted Yeti Blue microphone and passing it throught Noise Suppression using the built in RNNoise method. I haven’t noticed any CPU impact and this works so well. I have the gain on the microphone down very low but I’ve turned the digital gain boosted by 10 dB. This can sound weird without additional filtering but increases my volume without having to be right on top of the microphone.&lt;/p&gt;
+
+&lt;p&gt;Next there are a few rounds of correcting for that initial gain boosting and making things sound good. The first round of EQ that uses ReaEQ mostly to cut highs, lows, and a few nasaly places in the mids. This is followed up with a compressor with a 3:1 ratio and a -20dB threshold. From there I do have a Noise Gate set but I’m not sure if it is strictly necessary with all the other things happening. Lastly, there is an additional EQ for some high end and normal speaking range boosting for clarity and to add interest.&lt;/p&gt;
+
+&lt;p&gt;For the camera side I have a Razer Kiyo that has most of the default settings but with the white balance manually adjusted. It never quite gets that right and I haven’t found the right filters to counter it consistently. I do typically increase the contrast a little and apply a LUT. This is mostly to add back in some warmth as the default settings can read a bit cold. One thing I wanted to add is that the camera in obs has its own dedicated scene that is then added to other scenes to enable different presentation of the same source. I was running into an issue where changing it on one scene would change it in every scene. This is apparently a known thing about obs but it did cause some confusion.&lt;/p&gt;
+
+&lt;p&gt;The baked in streaming setup for OBS is so good it doesn’t typically need to be tweaked. I spent the beter part of the last year streaming exclusively to twitch. This is for a few reasons. First, up until recently it was against twitch’s terms of service to stream to more than one platform. Also, for whatever reason I associate twitch with streaming more than YouTube.&lt;/p&gt;
+
+&lt;p&gt;I have been experimenting doing both lately but have determined the only way for me to do that is to use a third party. Specifically, I’ve been using &lt;a href=&quot;https://restream.io&quot;&gt;Restream&lt;/a&gt; to simultaneously stream to both twitch and YouTube. My upload bandwith is not good so I cannot support both at the same time myself. Setting these up is no more complicated than setting up accounts at each and giving access to Restream. The most complicated piece is setting some of the bitrate and sizing information that will work for both. My current setup is not as good for YouTube as it could be due to the limitations coming from twitch.&lt;/p&gt;
+
+&lt;p&gt;I stream infrequently, but when I do it’s at either &lt;a href=&quot;https://www.twitch.tv/entropygrows/&quot;&gt;EntropyGrows Twitch&lt;/a&gt; or &lt;a href=&quot;https://www.youtube.com/@entropygrows9669&quot;&gt;EntropyGrows YouTube&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@rzunikoff&quot;&gt;Photo by Raphael Schaller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 29 Dec 2023 08:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2023/12/29/a-stream.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2023/12/29/a-stream.html</guid>
+        
+        <category>streaming</category>
+        
+        <category>Twitch</category>
+        
+        <category>YouTube</category>
+        
+        <category>OBS</category>
+        
+        
+      </item>
     
       <item>
         <title>Another New Design</title>
@@ -32,8 +72,8 @@
 
 </description>
         <pubDate>Sat, 12 Aug 2023 16:00:00 -0400</pubDate>
-        <link>http://christopherhimes.com/blog/2023/08/12/another-new-design.html</link>
-        <guid isPermaLink="true">http://christopherhimes.com/blog/2023/08/12/another-new-design.html</guid>
+        <link>http://localhost:4000/blog/2023/08/12/another-new-design.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2023/08/12/another-new-design.html</guid>
         
         <category>site</category>
         
@@ -62,8 +102,8 @@ As a Product Owner the daily activities do not typically require much coding so 
 
 </description>
         <pubDate>Sat, 14 May 2022 16:00:00 -0400</pubDate>
-        <link>http://christopherhimes.com/blog/2022/05/14/virtual.html</link>
-        <guid isPermaLink="true">http://christopherhimes.com/blog/2022/05/14/virtual.html</guid>
+        <link>http://localhost:4000/blog/2022/05/14/virtual.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2022/05/14/virtual.html</guid>
         
         <category>work</category>
         
@@ -86,8 +126,8 @@ The changes to this site now are strictly cosmetic but it is interesting to play
 
 </description>
         <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
-        <link>http://christopherhimes.com/blog/2017/04/04/time-for-a-change.html</link>
-        <guid isPermaLink="true">http://christopherhimes.com/blog/2017/04/04/time-for-a-change.html</guid>
+        <link>http://localhost:4000/blog/2017/04/04/time-for-a-change.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/04/04/time-for-a-change.html</guid>
         
         
       </item>
@@ -106,8 +146,8 @@ Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcom
 
 </description>
         <pubDate>Sun, 13 Sep 2015 16:00:00 -0400</pubDate>
-        <link>http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</link>
-        <guid isPermaLink="true">http://christopherhimes.com/blog/2015/09/13/take-it-home-with-you.html</guid>
+        <link>http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</guid>
         
         <category>work</category>
         
