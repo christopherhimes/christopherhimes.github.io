@@ -5,8 +5,6 @@ author: Christopher Himes
 email: Christopher@christopherhimes.com
 description: > # this means to ignore newlines until "baseurl:"
   Christopher Himes is a Software Developer living in Metro Detroit.
-  This is an account of his personal projects and inquiries in the world of
-  development.  
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://christopherhimes.com" # the base hostname & protocol for your site
 github_username:  christopherhimes
@@ -17,6 +15,10 @@ social-network-links:
   github: christopherhimes
   mastodon: "hachyderm.io/@eeentropyyy"
   rss: true  
+
+comments:
+  host: hachyderm.io
+  username: eeentropyyy
 
 navbar-links:
   About Me: "about"

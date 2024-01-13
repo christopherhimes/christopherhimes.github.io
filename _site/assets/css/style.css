@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .highlight .c {
   color: #545454;
   font-style: italic;
@@ -883,6 +884,112 @@ table td {
 
 .contact-list a:hover {
   text-decoration: none;
+}
+
+section#comments .comment {
+  display: grid;
+  column-gap: 1rem;
+  grid-template-areas: "avatar name" "avatar time" "avatar post" "...... interactions";
+  grid-template-columns: min-content;
+  justify-items: start;
+  margin: 2em auto 2em -1em;
+  padding: 1em;
+}
+section#comments .comment .avatar-link {
+  grid-area: avatar;
+  height: 4rem;
+  position: relative;
+  width: 4rem;
+}
+section#comments .comment .avatar-link .avatar {
+  height: 100%;
+  width: 100%;
+}
+section#comments .comment .author {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  gap: 0.5em;
+  grid-area: name;
+}
+section#comments .comment .author .instance {
+  background-color: var(--faint);
+  border-radius: 9999px;
+  color: var(--neutral);
+  font-size: smaller;
+  font-weight: normal;
+  padding: 0.25em 0.75em;
+}
+section#comments .comment .author .instance:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+section#comments .comment time {
+  grid-area: time;
+  line-height: 1.5rem;
+}
+section#comments .comment main {
+  grid-area: post;
+}
+section#comments .comment main p:first-child {
+  margin-top: 0.25em;
+}
+section#comments .comment main p:last-child {
+  margin-bottom: 0;
+}
+section#comments .comment footer {
+  grid-area: interactions;
+  margin-top: 0.925rem;
+}
+section#comments .comment footer .faves {
+  color: inherit;
+}
+section#comments .comment footer .faves:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+section#comments .comment footer .faves::before {
+  color: var(--accent-color);
+  content: "♥";
+  margin-inline-end: 0.25em;
+}
+section#comments .comment .emoji {
+  display: inline;
+  height: 1.25em;
+  vertical-align: middle;
+  width: 1.25em;
+}
+section#comments .comment .invisible {
+  display: none;
+}
+section#comments .comment .ellipsis::after {
+  content: "…";
+}
+section#comments .comment.verified .avatar-link::after {
+  background-color: var(--secondary-accent-color);
+  border-radius: 50%;
+  bottom: -0.25rem;
+  color: var(--secondary-accent-contrast);
+  content: "✓";
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  position: absolute;
+  right: -0.25rem;
+  text-align: center;
+  width: 1.5rem;
+}
+section#comments .comment.verified .instance {
+  background-color: var(--secondary-accent-color);
+  color: var(--secondary-accent-contrast);
+}
+section#comments .comment.verified .instance::before {
+  content: "✓";
+  font-weight: bold;
+  margin-inline-end: 0.25em;
+  margin-inline-start: -0.25em;
 }
 
 /*# sourceMappingURL=style.css.map */
