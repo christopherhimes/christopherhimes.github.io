@@ -62,7 +62,21 @@ The image above is from Roya Ann Miller on Unsplash.">
   <link rel="canonical" href="http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html">
   
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+  <link
+    rel="preload"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript>
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        rel="stylesheet"
+        type="text/css"
+    />
+</noscript>
+  
   <link href="/favicon.ico" rel="icon" type="image/x-icon">
   
 
@@ -126,9 +140,6 @@ Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcom
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
-        <ul class="contact-list">
-          
-
              <a href="/feed.xml" title="RSS">
               <span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fas fa-circle fa-stack-2x fa-gradient"></i>

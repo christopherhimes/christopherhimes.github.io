@@ -5,15 +5,6 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-
              <a href="/feed.xml" title="RSS">
               <span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
@@ -42,7 +33,6 @@
               </span>
               <span class="sr-only">Mastodon</span>
             </a>
-      {%- endif %}
       </div>
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>
