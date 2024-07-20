@@ -290,14 +290,14 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: rgb(21, 167, 123);
+  color: rgb(27, 209, 155);
   text-decoration: none;
 }
 a:visited {
-  color: rgb(27, 209, 155);
+  color: rgb(30, 251, 185);
 }
 a:hover {
-  color: rgb(21, 167, 123);
+  color: rgb(27, 209, 155);
   text-decoration: underline;
 }
 .social-media-list a:hover, .pagination a:hover {
@@ -461,7 +461,7 @@ table td {
   }
 }
 .site-title, .site-title:visited {
-  color: rgb(21, 167, 123);
+  color: rgb(27, 209, 155);
 }
 
 .site-nav {
