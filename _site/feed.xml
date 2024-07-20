@@ -6,13 +6,13 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 20 Jul 2024 17:22:06 -0400</pubDate>
-    <lastBuildDate>Sat, 20 Jul 2024 17:22:06 -0400</lastBuildDate>
+    <pubDate>Sat, 20 Jul 2024 17:53:38 -0400</pubDate>
+    <lastBuildDate>Sat, 20 Jul 2024 17:53:38 -0400</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
         <title>I got married!</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/married.webp&quot; alt=&quot;main-image&quot; title=&quot;Married&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/married.webp&quot; alt=&quot;main-image&quot; title=&quot;Married&quot; width=&quot;680&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s been a little over a month now since I got married.&lt;/p&gt;
 

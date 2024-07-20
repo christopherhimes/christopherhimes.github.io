@@ -12,7 +12,7 @@ comments:
     id: 112770491280326441 
 ---
 
-![main-image]
+![main-image]{: width="680" }
 
 It's been a little over a month now since I got married.
 
@@ -31,6 +31,6 @@ After the wedding we stayed downtown at [The Detroit Club] which was a bit fancy
 *The image above is from a [wedding site] I made but never showed to anyone but my wife.*
 
 [wedding site]:  https://leahandchristopherhimes.com
-[main-image]: /images/blog/married.webp "Married"
+[main-image]: /images/blog/married.webp "Married" 
 [The Whitney]: https://www.thewhitney.com/
 [The Detroit Club]: https://www.thedetroitclub.com/
