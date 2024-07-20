@@ -311,7 +311,7 @@ a:hover {
  * Blockquotes
  */
 blockquote {
-  color: rgb(16, 134, 163);
+  color: rgb(25, 209, 255);
   border-left: 4px solid #404040;
   padding-left: 15px;
   font-size: 1.125rem;
@@ -563,7 +563,7 @@ table td {
 .footer wrapper,
 .social-links {
   font-size: 0.9375rem;
-  color: rgb(16, 134, 163);
+  color: rgb(25, 209, 255);
 }
 
 .footer-col {
@@ -633,7 +633,7 @@ table td {
 
 .post-meta {
   font-size: 14px;
-  color: rgb(16, 134, 163);
+  color: rgb(25, 209, 255);
 }
 
 .post-link {
@@ -791,7 +791,7 @@ table td {
 .home wrapper,
 .social-links {
   font-size: 0.9375rem;
-  color: rgb(16, 134, 163);
+  color: rgb(25, 209, 255);
 }
 
 .home-col {
@@ -850,7 +850,7 @@ table td {
 
 .post-meta {
   font-size: 16px;
-  color: rgb(16, 134, 163);
+  color: rgb(25, 209, 255);
 }
 
 .post-content {
