@@ -213,7 +213,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
   color: #bbbbbb;
-  background-color: #0f0f0f;
+  background-color: #000000;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -416,14 +416,14 @@ table {
   border: 1px solid #404040;
 }
 table tr:nth-child(even) {
-  background-color: #191919;
+  background-color: #0a0a0a;
 }
 table th, table td {
   padding: 10px 15px;
 }
 table th {
-  background-color: #292929;
-  border: 1px solid #454545;
+  background-color: #1a1a1a;
+  border: 1px solid #363636;
 }
 table td {
   border: 1px solid #404040;
@@ -468,7 +468,7 @@ table td {
   position: absolute;
   top: 9px;
   right: 15px;
-  background-color: #0f0f0f;
+  background-color: #000000;
   border: 1px solid #1086a3;
   border-radius: 5px;
   text-align: right;
