@@ -297,7 +297,7 @@ a:visited {
   color: rgb(32, 255, 188);
 }
 a:hover {
-  color: rgb(32, 255, 188);
+  color: rgb(25, 209, 255);
   text-decoration: underline;
 }
 .social-media-list a:hover, .pagination a:hover {
