@@ -213,7 +213,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
   color: #bbbbbb;
-  background-color: #000000;
+  background-color: #181818;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -290,14 +290,14 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(32, 255, 188);
   text-decoration: none;
 }
 a:visited {
-  color: rgb(255, 255, 255);
+  color: rgb(32, 255, 188);
 }
 a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(32, 255, 188);
   text-decoration: underline;
 }
 .social-media-list a:hover, .pagination a:hover {
@@ -416,14 +416,14 @@ table {
   border: 1px solid #404040;
 }
 table tr:nth-child(even) {
-  background-color: #0a0a0a;
+  background-color: #222222;
 }
 table th, table td {
   padding: 10px 15px;
 }
 table th {
-  background-color: #1a1a1a;
-  border: 1px solid #363636;
+  background-color: #323232;
+  border: 1px solid #4e4e4e;
 }
 table td {
   border: 1px solid #404040;
@@ -468,7 +468,7 @@ table td {
   position: absolute;
   top: 9px;
   right: 15px;
-  background-color: #000000;
+  background-color: #181818;
   border: 1px solid #1086a3;
   border-radius: 5px;
   text-align: right;
@@ -743,14 +743,14 @@ table td {
   }
 }
 .site-title {
-  background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .fa-gradient {
-  background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -758,7 +758,7 @@ table td {
 }
 
 .site-header {
-  border-image: linear-gradient(34deg, #128562, #1086a3) 1;
+  border-image: linear-gradient(34deg, rgb(32, 255, 188), #1086a3) 1;
   border-width: 5px;
   border-style: solid;
   border-left: 0;
@@ -777,7 +777,7 @@ table td {
 .home-heading {
   font-size: 2.25rem;
   margin-bottom: 15px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

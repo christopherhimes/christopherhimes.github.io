@@ -2,7 +2,7 @@
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
 .site-title {
-    background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
+    background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -10,7 +10,7 @@
 
 .fa-gradient{
     // background: linear-gradient(34deg, #128562, #1086a3) 1;
-    background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
+    background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -18,7 +18,7 @@
 }
 .site-header {
     // border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
-    border-image: linear-gradient(34deg, #128562, #1086a3) 1;
+    border-image: linear-gradient(34deg, $site-title-color, #1086a3) 1;
     border-width: 5px;
     border-style: solid;
     border-left: 0;
@@ -39,7 +39,7 @@
   .home-heading {
     @include relative-font-size(2.25);
     margin-bottom: $spacing-unit * .5;
-    background: -webkit-gradient(linear, left top, right bottom, from(#128562), to(#1086a3));
+    background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
