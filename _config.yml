@@ -29,7 +29,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/face.png"
+avatar: "/assets/img/face.webp"
 
 # By default, the image is cut into a circle. You can disable this behavior by setting 'round-avatar: false'
 round-avatar: true
@@ -77,7 +77,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - screenshot.png
+  - screenshot.webp
   - docs/
 exclude: [vendor]
 

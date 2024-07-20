@@ -17,7 +17,7 @@
       <itunes:email>christopher@christopherhimes.com</itunes:email>
     </itunes:owner>``
 
-    <itunes:image href="http://wwww.christopherhimes.com/images/podcast.jpg" />
+    <itunes:image href="http://wwww.christopherhimes.com/images/podcast.webp" />
 
     <itunes:category text="Education">
       <itunes:category text="Higher Education"/>
@@ -30,7 +30,7 @@
       <itunes:subtitle>My first podcast episode</itunes:subtitle>
       <itunes:author>Christopher Himes</itunes:author>
       <itunes:summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</itunes:summary>
-      <itunes:image href="http://christopherhimes.com/images/podcastart.jpg" />
+      <itunes:image href="http://christopherhimes.com/images/podcastart.webp" />
 
       <enclosure url="http://christopherhimes.com/podcast/audio/episode1.m4a" length="8727310" type="audio/mpeg" />
 
@@ -46,7 +46,7 @@
       <itunes:subtitle>My second podcast episode</itunes:subtitle>
       <itunes:author>Christopher Himes</itunes:author>
       <itunes:summary>Hey hey hey</itunes:summary>
-      <itunes:image href="http://christopherhimes.com/images/podcastart.jpg" />
+      <itunes:image href="http://christopherhimes.com/images/podcastart.webp" />
 
       <enclosure url="http://christopherhimes.com/podcast/audio/episode2.m4a" length="8727310" type="audio/mpeg" />
 

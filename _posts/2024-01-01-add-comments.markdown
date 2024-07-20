@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Add Comments"
-image: /images/blog/comments.jpg
-cover-img: /images/blog/comments.jpg
-thumbnail-img: /images/blog/comments.jpg
-share-img: /images/blog/comments.jpg
+image: /images/blog/comments.webp
+cover-img: /images/blog/comments.webp
+thumbnail-img: /images/blog/comments.webp
+share-img: /images/blog/comments.webp
 date:   2024-01-13 18:00:00
 tags: [comments]
 
@@ -26,5 +26,5 @@ I may go back and add comments to previous posts but for now this post will be t
 
 [Photo by Jason Leung on Unsplash]:  https://unsplash.com/@ninjason
 [Mastodon]: https://joinmastodon.org/
-[main-image]: /images/blog/comments.jpg "Comments"
+[main-image]: /images/blog/comments.webp "Comments"
 [Cassidy James]: https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/
