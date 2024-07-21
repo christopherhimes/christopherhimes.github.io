@@ -154,3 +154,10 @@
 .contact-list a:hover{
         text-decoration: none;
 }
+
+.main-image {
+  aspect-ratio: 3 / 1;
+  width: 100%;
+  object-fit: cover;
+ 
+}

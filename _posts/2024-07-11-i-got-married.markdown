@@ -12,7 +12,7 @@ comments:
     id: 112770491280326441 
 ---
 
-![main-image]{: width="740" height="247"}
+![main-image]{: class="main-image"}
 
 It's been a little over a month now since I got married.
 
