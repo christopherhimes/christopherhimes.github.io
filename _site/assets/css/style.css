@@ -755,6 +755,7 @@ table td {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial; /* reset Font Awesome's display:inline-block */
+  font-display: swap;
 }
 
 .site-header {
