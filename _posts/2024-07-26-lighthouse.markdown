@@ -9,7 +9,7 @@ date:   2024-07-26 12:30:00
 tags: [lighthouse, SEO, Web Development, Accessibility]
 
 comments:
-    # id:  
+    id:  112853773240799520
 ---
 
 ![image of a lighthouse]{: class="main-image"}
