@@ -6,9 +6,61 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 21 Jul 2024 11:34:19 -0400</pubDate>
-    <lastBuildDate>Sun, 21 Jul 2024 11:34:19 -0400</lastBuildDate>
+    <pubDate>Fri, 26 Jul 2024 12:33:19 -0400</pubDate>
+    <lastBuildDate>Fri, 26 Jul 2024 12:33:19 -0400</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Lighthouse</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/lighthouse/lighthouse.webp&quot; alt=&quot;image of a lighthouse&quot; title=&quot;Lighthouse at night with lots of stars and the light from the house shining bright.&quot; class=&quot;main-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This site is not big, but it is faster, and more accessible.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;As the briefest of lead ins to this project I wanted to learn about modern approaches to speed and accessibility. I’ve spent some time on Mastodon and follow a number of people that post about these topics regularly.&lt;/p&gt;
+
+&lt;p&gt;I want this site to function as fast as it can and be accessible to folks who may not be interacting with it the same way I am. With that as a goal I downloaded the &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse&lt;/a&gt; extension to analyze this site.&lt;/p&gt;
+
+&lt;p&gt;Starting off the site looked good for SEO and best practices but had some room for improvement with both performance and accessibility. Thankfully the score for each section comes with specific problems and ways to improve.&lt;/p&gt;
+
+&lt;p&gt;For performance images were the largest issue. They have been resized and converted to webp (from jpg). This brought the score up to 100 on desktop but the mobile version only ever got up to 95%. There remains a bit of css that is load blocking and I have not been able to find a way to resolve it without a significant rewrite.&lt;/p&gt;
+
+&lt;p&gt;As far as accessibility goes the usual suspects were the culprits. Images lacked alt tags and contrast was too low with some color choices for links. This is relatively easy to resolve. I updated my color choices in CSS to increase contrast. Here too mobile is at 95% and I cannot figure out why. Out of frustration I set the links to white and the background to black and Lighthouse still reported a contrast issue. Anyway I’ve been updating alt tags but I will probably go back and make them a little better when I have time.&lt;/p&gt;
+
+&lt;p&gt;Here are the final scores!&lt;/p&gt;
+
+&lt;h2 id=&quot;desktop&quot;&gt;Desktop&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/lighthouse/lighthouse-desktop.webp&quot; alt=&quot;desktop score&quot; title=&quot;Lighthouse scores for desktop. Performance is 100%. Accessibility is 100%. Best Practices is 100%. SEO is 100%.&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mobile&quot;&gt;Mobile&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/lighthouse/lighthouse-mobile.webp&quot; alt=&quot;mobile score&quot; title=&quot;Lighthouse scores for mobile. Performance is 95%. Accessibility is 95%. Best Practices is 100%. SEO is 100%.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am happy to have these scores as high as they are but I do not think this is over just yet. Having read a bunch of ways to improve things, now I want to go further. 95% is pretty good on mobile for performance and accessibility but is there any reason why these cannot be 100% as well.&lt;/p&gt;
+
+&lt;p&gt;The rewrite I mentioned earlier is incoming. This site is simply more complicated than it needs to be and I really want to experiment with critical CSS being inlined to prevent load blocking.&lt;/p&gt;
+
+&lt;p&gt;There is no reason that this site should be a recolor of an existing theme. Especially when that theme is introducing so much unnecessary overhead. Anyway, more on that to come.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@nathjennings&quot;&gt;Photo by Nathan Jennings on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 26 Jul 2024 08:30:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2024/07/26/lighthouse.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2024/07/26/lighthouse.html</guid>
+        
+        <category>lighthouse</category>
+        
+        <category>SEO</category>
+        
+        <category>Web Development</category>
+        
+        <category>Accessibility</category>
+        
+        
+      </item>
     
       <item>
         <title>I got married!</title>
