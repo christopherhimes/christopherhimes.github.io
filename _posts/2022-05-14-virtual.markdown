@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "I'm Virtual Now"
-image: ../../../../images/blog/virtual/virtual.webp
-cover-img: ../../../../images/blog/virtual/virtual.webp
-thumbnail-img: ../../../../images/blog/virtual/virtual.webp
-share-img: ../../../../images/blog/virtual/virtual.webp
+image: ../../../..../../../../assets/img/blog/virtual/virtual.webp
+cover-img: ../../../..../../../../assets/img/blog/virtual/virtual.webp
+thumbnail-img: ../../../..../../../../assets/img/blog/virtual/virtual.webp
+share-img: ../../../..../../../../assets/img/blog/virtual/virtual.webp
 date:   2022-05-14 20:00:00
 tags: [work, blender, python, gulp]
 ---
@@ -22,7 +22,7 @@ Before digging too much into any of that this site's dependencies are out of con
 *The image above is from [Joshua Sortino on Unsplash].*
 
 [Joshua Sortino on Unsplash]: https://unsplash.com/@sortino
-[virtual-image]: ../../../../images/blog/virtual/virtual.webp "Virtual"
+[virtual-image]: ../../../..../../../../assets/img/blog/virtual/virtual.webp "Virtual"
 [blender]: https://blender.org
 [python]: https://python.org
 [gulp]: http://gulpjs.com/

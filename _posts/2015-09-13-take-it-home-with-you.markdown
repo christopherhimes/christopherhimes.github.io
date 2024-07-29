@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Take it Home With You"
-image: ../../../../images/blog/take-it-home-with-you/home.webp
-cover-img: ../../../../images/blog/take-it-home-with-you/home.webp
-thumbnail-img: ../../../../images/blog/take-it-home-with-you/home.webp
-share-img: ../../../../images/blog/take-it-home-with-you/home.webp
+image: ../../../..../../../../assets/img/blog/take-it-home-with-you/home.webp
+cover-img: ../../../..../../../../assets/img/blog/take-it-home-with-you/home.webp
+thumbnail-img: ../../../..../../../../assets/img/blog/take-it-home-with-you/home.webp
+share-img: ../../../..../../../../assets/img/blog/take-it-home-with-you/home.webp
 date:   2015-09-13 20:00:00
 tags: [work, home]
 ---
@@ -20,4 +20,4 @@ This project is the first big project with the new team.  We've got everyone up 
 *The image above is from [Roya Ann Miller on Unsplash].*
 
 [Roya Ann Miller on Unsplash]:     https://unsplash.com/royaannmiller
-[home-image]:   ../../../../images/blog/take-it-home-with-you/home.webp "Home"
+[home-image]:   ../../../../../../../../assets/img/blog/take-it-home-with-you/home.webp "Home"

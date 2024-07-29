@@ -6,13 +6,13 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Jul 2024 18:39:11 -0400</pubDate>
-    <lastBuildDate>Mon, 29 Jul 2024 18:39:11 -0400</lastBuildDate>
+    <pubDate>Mon, 29 Jul 2024 19:13:08 -0400</pubDate>
+    <lastBuildDate>Mon, 29 Jul 2024 19:13:08 -0400</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
         <title>Lighthouse</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/lighthouse/lighthouse.webp&quot; alt=&quot;image of a lighthouse&quot; title=&quot;Lighthouse at night with lots of stars and the light from the house shining bright.&quot; class=&quot;main-image&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/lighthouse/lighthouse.webp&quot; alt=&quot;image of a lighthouse&quot; title=&quot;Lighthouse at night with lots of stars and the light from the house shining bright.&quot; class=&quot;main-image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This site is not big, but it is faster, and more accessible.&lt;/p&gt;
 
@@ -32,11 +32,11 @@
 
 &lt;h2 id=&quot;desktop&quot;&gt;Desktop&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/lighthouse/lighthouse-desktop.webp&quot; alt=&quot;desktop score&quot; title=&quot;Lighthouse scores for desktop. Performance is 100%. Accessibility is 100%. Best Practices is 100%. SEO is 100%.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/lighthouse/lighthouse-desktop.webp&quot; alt=&quot;desktop score&quot; title=&quot;Lighthouse scores for desktop. Performance is 100%. Accessibility is 100%. Best Practices is 100%. SEO is 100%.&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;mobile&quot;&gt;Mobile&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/lighthouse/lighthouse-mobile.webp&quot; alt=&quot;mobile score&quot; title=&quot;Lighthouse scores for mobile. Performance is 95%. Accessibility is 95%. Best Practices is 100%. SEO is 100%.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/lighthouse/lighthouse-mobile.webp&quot; alt=&quot;mobile score&quot; title=&quot;Lighthouse scores for mobile. Performance is 95%. Accessibility is 95%. Best Practices is 100%. SEO is 100%.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I am happy to have these scores as high as they are but I do not think this is over just yet. Having read a bunch of ways to improve things, now I want to go further. 95% is pretty good on mobile for performance and accessibility but is there any reason why these cannot be 100% as well.&lt;/p&gt;
 
@@ -64,7 +64,7 @@
     
       <item>
         <title>I got married!</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/i-got-married/married.webp&quot; alt=&quot;main-image&quot; title=&quot;Married&quot; class=&quot;main-image&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/i-got-married/married.webp&quot; alt=&quot;main-image&quot; title=&quot;Married&quot; class=&quot;main-image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s been a little over a month now since I got married.&lt;/p&gt;
 
@@ -94,7 +94,7 @@
     
       <item>
         <title>Add Comments</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/add-comments/comments.webp&quot; alt=&quot;main-image&quot; title=&quot;Comments&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/add-comments/comments.webp&quot; alt=&quot;main-image&quot; title=&quot;Comments&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;My blog has &lt;a href=&quot;https://joinmastodon.org/&quot;&gt;Mastodon&lt;/a&gt; powered comments now and this post is really just a test for that.&lt;/p&gt;
 
@@ -118,7 +118,7 @@
     
       <item>
         <title>A Stream?</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://christopherhimes.com/images/blog/a-stream/stream.webp&quot; alt=&quot;main-image&quot; title=&quot;Stream&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/a-stream/stream.webp&quot; alt=&quot;main-image&quot; title=&quot;Stream&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.&lt;/p&gt;
 
@@ -158,7 +158,7 @@
     
       <item>
         <title>Another New Design</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/another-new-design/design.webp&quot; alt=&quot;main-image&quot; title=&quot;Design&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../../..../../../../assets/img/blog/another-new-design/design.webp&quot; alt=&quot;main-image&quot; title=&quot;Design&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s a new design, yes it is! This site gets more visual updates than it does blog posts but that’s where we’re at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.&lt;/p&gt;
 
@@ -194,7 +194,7 @@
     
       <item>
         <title>I&apos;m Virtual Now</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/virtual/virtual.webp&quot; alt=&quot;virtual-image&quot; title=&quot;Virtual&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../../..../../../../assets/img/blog/virtual/virtual.webp&quot; alt=&quot;virtual-image&quot; title=&quot;Virtual&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Guess ‘now’ is relative with working at home for the last two years. As of yesterday I no longer have a desk at an office that I could return to when this whole pandemic blows over.&lt;/p&gt;
 
@@ -224,8 +224,9 @@ As a Product Owner the daily activities do not typically require much coding so 
     
       <item>
         <title>Time for a Change</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/time-for-a-change/change.webp&quot; alt=&quot;change-image&quot; title=&quot;change image&quot; /&gt;
-The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.  I’ve been unenthusiastic about the previous color scheme for a while so this is a nice brighter setup.
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../../../../../assets/img/blog/time-for-a-change/change.webp&quot; alt=&quot;change-image&quot; title=&quot;change image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.  I’ve been unenthusiastic about the previous color scheme for a while so this is a nice brighter setup.
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@lemuelbutler&quot;&gt;Lemuel Butler on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -240,7 +241,7 @@ The changes to this site now are strictly cosmetic but it is interesting to play
     
       <item>
         <title>Take it Home With You</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../images/blog/take-it-home-with-you/home.webp&quot; alt=&quot;home-image&quot; title=&quot;Home&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../../../../../assets/img/blog/take-it-home-with-you/home.webp&quot; alt=&quot;home-image&quot; title=&quot;Home&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The next two weeks are going to be exceedingly difficult not to bring work home.  I’m prone to work through things I’m working on at work while I’m at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.
 &lt;!--more--&gt;

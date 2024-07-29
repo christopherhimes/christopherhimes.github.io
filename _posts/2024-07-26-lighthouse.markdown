@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Lighthouse"
-image: /images/blog/lighthouse/lighthouse.webp
-cover-img: /images/blog/lighthouse/lighthouse.webp
-thumbnail-img: /images/blog/lighthouse/lighthouse.webp
-share-img: /images/blog/lighthouse/lighthouse.webp
+image: ../../../../assets/img/blog/lighthouse/lighthouse.webp
+cover-img: ../../../../assets/img/blog/lighthouse/lighthouse.webp
+thumbnail-img: ../../../../assets/img/blog/lighthouse/lighthouse.webp
+share-img: ../../../../assets/img/blog/lighthouse/lighthouse.webp
 date:   2024-07-26 12:30:00
 tags: [lighthouse, SEO, Web Development, Accessibility]
 
@@ -48,7 +48,7 @@ There is no reason that this site should be a recolor of an existing theme. Espe
 
 
 [Photo by Nathan Jennings on Unsplash]:  https://unsplash.com/@nathjennings_
-[image of a lighthouse]: /images/blog/lighthouse/lighthouse.webp "Lighthouse at night with lots of stars and the light from the house shining bright."
+[image of a lighthouse]: ../../../../assets/img/blog/lighthouse/lighthouse.webp "Lighthouse at night with lots of stars and the light from the house shining bright."
 [Lighthouse]: https://github.com/GoogleChrome/lighthouse
-[desktop score]: /images/blog/lighthouse/lighthouse-desktop.webp "Lighthouse scores for desktop. Performance is 100%. Accessibility is 100%. Best Practices is 100%. SEO is 100%."
-[mobile score]: /images/blog/lighthouse/lighthouse-mobile.webp "Lighthouse scores for mobile. Performance is 95%. Accessibility is 95%. Best Practices is 100%. SEO is 100%."
+[desktop score]: ../../../../assets/img/blog/lighthouse/lighthouse-desktop.webp "Lighthouse scores for desktop. Performance is 100%. Accessibility is 100%. Best Practices is 100%. SEO is 100%."
+[mobile score]: ../../../../assets/img/blog/lighthouse/lighthouse-mobile.webp "Lighthouse scores for mobile. Performance is 95%. Accessibility is 95%. Best Practices is 100%. SEO is 100%."

@@ -39,7 +39,7 @@
   <meta property="og:description" content="This site is not big, but it is faster, and more accessible. As the briefest of lead ins to this project I wanted to learn about modern approaches to speed and accessibility. I’ve spent some time on Mastodon and follow a number of people that post about these topics regularly. I want this site to function as fast as it can and be accessible to folks who may not be interacting with it the same way I am. With that as a goal I downloaded the Lighthouse extension to analyze this site. Starting off the site looked good for SEO and best practices but had some room for improvement with both performance and accessibility. Thankfully the score for each section comes with specific problems and ways to improve. For performance images were the largest issue. They have been resized and converted to webp (from jpg). This brought the score up to 100 on desktop but the mobile version only ever got up to 95%. There remains a bit of css that is load blocking and I have not been able to find a way to resolve it without a significant rewrite. As far as accessibility goes the usual suspects were the culprits. Images lacked alt tags and contrast was too low with some color choices for links. This is relatively easy to resolve. I updated my color choices in CSS to increase contrast. Here too mobile is at 95% and I cannot figure out why. Out of frustration I set...">
 
   
-  <meta property="og:image" content="http://localhost:4000/images/blog/lighthouse/lighthouse.webp">
+  <meta property="og:image" content="http://localhost:4000/assets/img/blog/lighthouse/lighthouse.webp">
   
 
   
@@ -103,7 +103,7 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p><img src="/images/blog/lighthouse/lighthouse.webp" alt="image of a lighthouse" title="Lighthouse at night with lots of stars and the light from the house shining bright." class="main-image" /></p>
+    <p><img src="../../../../assets/img/blog/lighthouse/lighthouse.webp" alt="image of a lighthouse" title="Lighthouse at night with lots of stars and the light from the house shining bright." class="main-image" /></p>
 
 <p>This site is not big, but it is faster, and more accessible.</p>
 
@@ -123,11 +123,11 @@
 
 <h2 id="desktop">Desktop</h2>
 
-<p><img src="/images/blog/lighthouse/lighthouse-desktop.webp" alt="desktop score" title="Lighthouse scores for desktop. Performance is 100%. Accessibility is 100%. Best Practices is 100%. SEO is 100%." /></p>
+<p><img src="../../../../assets/img/blog/lighthouse/lighthouse-desktop.webp" alt="desktop score" title="Lighthouse scores for desktop. Performance is 100%. Accessibility is 100%. Best Practices is 100%. SEO is 100%." /></p>
 
 <h2 id="mobile">Mobile</h2>
 
-<p><img src="/images/blog/lighthouse/lighthouse-mobile.webp" alt="mobile score" title="Lighthouse scores for mobile. Performance is 95%. Accessibility is 95%. Best Practices is 100%. SEO is 100%." /></p>
+<p><img src="../../../../assets/img/blog/lighthouse/lighthouse-mobile.webp" alt="mobile score" title="Lighthouse scores for mobile. Performance is 95%. Accessibility is 95%. Best Practices is 100%. SEO is 100%." /></p>
 
 <p>I am happy to have these scores as high as they are but I do not think this is over just yet. Having read a bunch of ways to improve things, now I want to go further. 95% is pretty good on mobile for performance and accessibility but is there any reason why these cannot be 100% as well.</p>
 

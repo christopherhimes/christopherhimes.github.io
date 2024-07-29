@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "A Stream?"
-image: /images/blog/a-stream/stream.webp
-cover-img: /images/blog/a-stream/stream.webp
+image: ../../../../assets/img/blog/a-stream/stream.webp
+cover-img: ../../../../assets/img/blog/a-stream/stream.webp
 thumbnail-img: images/blog/a-stream/stream.webp
-share-img: /images/blog/a-stream/stream.webp
+share-img: ../../../../assets/img/blog/a-stream/stream.webp
 date:   2023-12-29 13:00:00
 tags: [streaming, Twitch, YouTube, OBS]
 ---
@@ -32,7 +32,7 @@ I stream infrequently, but when I do it's at either [EntropyGrows Twitch] or [En
 *The image above is from [Photo by Raphael Schaller on Unsplash].*
 
 [Photo by Raphael Schaller on Unsplash]:  https://unsplash.com/@rzunikoff
-[main-image]: /images/blog/a-stream/stream.webp "Stream"
+[main-image]: ../../../../assets/img/blog/a-stream/stream.webp "Stream"
 [virtual cables]: https://vb-audio.com
 [obs]: https://obsproject.com
 [EposVox]: https://www.youtube.com/@EposVox
