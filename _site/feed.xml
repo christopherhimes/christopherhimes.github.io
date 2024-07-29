@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 26 Jul 2024 12:39:08 -0400</pubDate>
-    <lastBuildDate>Fri, 26 Jul 2024 12:39:08 -0400</lastBuildDate>
+    <pubDate>Mon, 29 Jul 2024 17:02:39 -0400</pubDate>
+    <lastBuildDate>Mon, 29 Jul 2024 17:02:39 -0400</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -44,7 +44,7 @@
 
 &lt;p&gt;There is no reason that this site should be a recolor of an existing theme. Especially when that theme is introducing so much unnecessary overhead. Anyway, more on that to come.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@nathjennings&quot;&gt;Photo by Nathan Jennings on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@nathjennings_&quot;&gt;Photo by Nathan Jennings on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 26 Jul 2024 08:30:00 -0400</pubDate>

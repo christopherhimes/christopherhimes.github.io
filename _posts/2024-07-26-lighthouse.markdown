@@ -47,7 +47,7 @@ There is no reason that this site should be a recolor of an existing theme. Espe
 *The image above is from [Photo by Nathan Jennings on Unsplash].*
 
 
-[Photo by Nathan Jennings on Unsplash]:  https://unsplash.com/@nathjennings
+[Photo by Nathan Jennings on Unsplash]:  https://unsplash.com/@nathjennings_
 [image of a lighthouse]: /images/blog/lighthouse/lighthouse.webp "Lighthouse at night with lots of stars and the light from the house shining bright."
 [Lighthouse]: https://github.com/GoogleChrome/lighthouse
 [desktop score]: /images/blog/lighthouse/lighthouse-desktop.webp "Lighthouse scores for desktop. Performance is 100%. Accessibility is 100%. Best Practices is 100%. SEO is 100%."
