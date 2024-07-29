@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "I got married!"
-image: /images/blog/married.webp
-cover-img: /images/blog/married.webp
-thumbnail-img: /images/blog/married.webp
-share-img: /images/blog/married.webp
+image: /images/blog/i-got-married/married.webp
+cover-img: /images/blog/i-got-married/married.webp
+thumbnail-img: /images/blog/i-got-married/married.webp
+share-img: /images/blog/i-got-married/married.webp
 date:   2024-07-11 20:00:00
 tags: [married]
 
@@ -31,6 +31,6 @@ After the wedding we stayed downtown at [The Detroit Club] which was a bit fancy
 *The image above is from a [wedding site] I made but never showed to anyone but my wife.*
 
 [wedding site]:  https://leahandchristopherhimes.com
-[main-image]: /images/blog/married.webp "Married" 
+[main-image]: /images/blog/i-got-married/married.webp "Married" 
 [The Whitney]: https://www.thewhitney.com/
 [The Detroit Club]: https://www.thedetroitclub.com/

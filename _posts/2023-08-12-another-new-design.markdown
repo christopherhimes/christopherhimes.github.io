@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Another New Design"
-image: ../../../../images/blog/design.webp
-cover-img: ../../../../images/blog/design.webp
-thumbnail-img: ../../../../images/blog/design.webp
-share-img: ../../../../images/blog/design.webp
+image: ../../../../images/blog/another-new-design/design.webp
+cover-img: ../../../../images/blog/another-new-design/design.webp
+thumbnail-img: ../../../../images/blog/another-new-design/design.webp
+share-img: ../../../../images/blog/another-new-design/design.webp
 date:   2023-08-12 20:00:00
 tags: [site, design, lighthouse, accessibility]
 ---
@@ -28,4 +28,4 @@ Next projects will be documented and shared here. I'm not a web developer but I 
 *The image above is from [Photo by Raphael Schaller on Unsplash].*
 
 [Photo by Raphael Schaller on Unsplash]:  https://unsplash.com/@raphaelphotoch
-[main-image]: ../../../../images/blog/design.webp "Design"
+[main-image]: ../../../../images/blog/another-new-design/design.webp "Design"

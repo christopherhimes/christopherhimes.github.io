@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Time for a Change"
-image: ../../../../images/blog/change.webp
-cover-img: ../../../../images/blog/change.webp
-thumbnail-img: ../../../../images/blog/change.webp
-share-img: ../../../../images/blog/change.webp
+image: ../../../../images/blog/time-for-a-change/change.webp
+cover-img: ../../../../images/blog/time-for-a-change/change.webp
+thumbnail-img: ../../../../images/blog/time-for-a-change/change.webp
+share-img: ../../../../images/blog/time-for-a-change/change.webp
 date:   2017-04-04 20:40:00
 tags: 
 ---
@@ -18,4 +18,4 @@ The changes to this site now are strictly cosmetic but it is interesting to play
 
 [Lemuel Butler on Unsplash]:     https://unsplash.com/@lemuelbutler
 
-[change-image]: ../../../../images/blog/change.webp "change image"
+[change-image]: ../../../../images/blog/time-for-a-change/change.webp "change image"
