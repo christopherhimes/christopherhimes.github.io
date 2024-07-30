@@ -1,5 +1,4 @@
 # Site settings
-# theme: minima
 title: Christopher Himes
 author: Christopher Himes
 email: Christopher@christopherhimes.com
@@ -80,9 +79,6 @@ exclude:
   - screenshot.webp
   - docs/
 exclude: [vendor]
-
-minima:
-  skin: dark
   
 plugins:
   - jekyll-paginate
