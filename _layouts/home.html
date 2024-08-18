@@ -4,43 +4,39 @@ layout: base
 
 <div class="home">
 
-  <div class="wrapper">
-    <div class="home-col-wrapper">
+  <div class="home-wrapper">
       <div class="home-col">
         <img class="face" width="325" height="325" src="assets/img/new-face.webp" alt="black and white picture of me in a suit">
       </div>
       <div class="home-col">
         <p class="home-heading">I work in Software Development as a Product Owner in Metro Detroit.</p>
       </div>
-    </div>
-      <div class="home-col-wrapper">
-      {% assign posts = site.posts %}
-    
+  </div>
+  <div class="home-wrapper">
+      {% assign posts = site.posts %}   
       {%- if posts.size > 0 -%}
-      {%- if page.list_title -%}
-        <h2 class="post-list-heading">{{ page.list_title }}</h2>
-      {%- endif -%}
-      <ul class="post-list">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {% for post in site.posts limit:1 %}
-        <li>
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
+        
+        <article class="home-article">
+          {%- if page.list_title -%}
+          <h2 class="post-list-heading">{{ page.list_title }}</h2>
+          {%- endif -%}
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {% for post in site.posts limit:1 %}
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
-          </h3>
-          <div class="post-content e-content" itemprop="articleBody">
-            {{ post.excerpt }}
-            <a href="{{ post.url | relative_url }}">
-              More...
-            </a>
-          </div>
-        </li>
-        {%- endfor -%}
-      </ul>
-  
-    {%- endif -%}
+            <time class='home-article-time'>
+              {{ post.date | date: date_format }}
+            </time>
+            <div class="post-content e-content" itemprop="articleBody">
+                {{ post.excerpt }}
+              <a href="{{ post.url | relative_url }}">
+                Read More...
+              </a>
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+        </article>
     </div>
   </div>
   

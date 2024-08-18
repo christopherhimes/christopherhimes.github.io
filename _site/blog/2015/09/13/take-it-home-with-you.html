@@ -64,14 +64,49 @@ The image above is from Roya Ann Miller on Unsplash.">
   <style type="text/css">
     
     body {
-  background-color: black;
+  background-color: rgb(12, 12, 12);
+  color: rgb(200, 200, 200);
+  margin-top: 0px;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper a {
+  text-decoration: none;
+}
+
+.site-nav {
+  margin-top: 0;
+  float: right;
+}
+
+.page-link {
+  margin: 0 1em;
+}
+
+a, a:visited, a:hover .page-link {
+  color: rgb(32, 255, 188);
+}
+
+.face {
+  clip-path: circle(150px at center);
+  filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
 }
 
 .site-title {
+  font-size: 1.5em;
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.site-nav a {
+  font-size: 1em;
+  text-decoration: none;
 }
 
 .fa-gradient {
@@ -90,6 +125,55 @@ The image above is from Roya Ann Miller on Unsplash.">
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
+  margin: 0px -5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.home-heading {
+  width: 325px;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+}
+
+.site-nav {
+  display: flex;
+  padding: 10px 15px;
+}
+
+.home-article {
+  border-width: 2px;
+  border-style: solid;
+  padding: 1em;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(rgb(12, 12, 12), rgb(12, 12, 12)), linear-gradient(rgb(32, 255, 188), #1086a3);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: left;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
   </style>
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -113,10 +197,8 @@ The image above is from Roya Ann Miller on Unsplash.">
 
   
 </head>
-<body><header class="site-header">
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Christopher Himes</a><nav class="site-nav">
-        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/blog/">Blog</a></div>
-      </nav></div>
+<body><header >
+  <nav class="site-header"><a class="site-title" rel="author" href="/">Christopher Himes</a><nav class="site-nav"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/blog/">Blog</a></nav></nav>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -153,7 +235,7 @@ Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcom
 
   <div class="wrapper">
 
-    <div class="footer-col-wrapper">
+    <div class="footer-wrapper">
       <div class="footer-col">
              <a href="/feed.xml" title="RSS">
               <span class="fa-stack fa-lg" aria-hidden="true">
