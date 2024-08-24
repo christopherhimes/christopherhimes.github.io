@@ -13,6 +13,10 @@ body {
     background-color: rgb(12,12,12);
     color: rgb(200,200,200);
     margin-top:0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.post-link {
+    font-size: 2em;
 }
 .wrapper {
     margin:0 auto;
@@ -76,7 +80,8 @@ a, a:visited, a:hover .page-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 3em;
+    margin:2em auto;
 }
 .home-heading {
     width:325px;
@@ -90,7 +95,7 @@ a, a:visited, a:hover .page-link {
     display: flex;
     padding: 10px 15px;
 }
-.home-article {
+.article {
     // border-image: linear-gradient(34deg, $site-title-color, #1086a3) 1;
     border-width: 2px;
     border-style: solid;
