@@ -49,11 +49,49 @@
   
   <style type="text/css">
     
-    body {
-  background-color: rgb(12, 12, 12);
+    @font-face {
+  font-family: "frauncesblack";
+  src: url("../../../../../assets/css/frauncessoftwonkopszwght-webfont.woff2") format("woff2"), url("../../../../../assets/css/frauncessoftwonkopszwght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: rgb(26, 26, 26);
   color: rgb(200, 200, 200);
   margin-top: 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "frauncesblack", Arial, Helvetica, sans-serif;
+}
+
+span {
+  margin: 0;
+  padding: none;
+}
+
+h1 {
+  color: rgb(32, 255, 188);
+  margin-bottom: 1em;
+}
+
+h2 {
+  color: rgb(25, 209, 255);
+  margin: 0;
+}
+
+h3 {
+  color: rgb(211, 211, 211);
+  margin: 2em 0;
+}
+
+hr {
+  border: dashed 2px rgb(211, 211, 211);
+}
+
+p {
+  color: rgb(200, 200, 200);
 }
 
 .post-link {
@@ -87,6 +125,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .site-title {
+  font-family: "frauncesblack", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
@@ -131,10 +170,20 @@ a, a:visited, a:hover .page-link {
   align-items: center;
   gap: 3em;
   margin: 2em auto;
+  flex-direction: row;
+  width: 70%;
 }
 
+@media (max-width: 800px) {
+  .home-wrapper {
+    flex-direction: column;
+  }
+  .article {
+    width: 90%;
+  }
+}
 .home-heading {
-  width: 325px;
+  font-family: "frauncesblack", Arial, Helvetica, sans-serif;
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
   background-clip: text;
@@ -153,7 +202,6 @@ a, a:visited, a:hover .page-link {
   padding: 1em;
   border: 2px solid transparent;
   border-radius: 20px;
-  background-image: linear-gradient(rgb(12, 12, 12), rgb(12, 12, 12)), linear-gradient(rgb(32, 255, 188), #1086a3);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   display: flex;
@@ -161,11 +209,53 @@ a, a:visited, a:hover .page-link {
   justify-content: left;
 }
 
+.wrapper {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 3em;
+  flex-direction: column;
+  line-height: 2.5em;
+  flex: 1 100%;
+}
+
+.post-detail, .page-detail {
+  align-items: left;
+  text-align: left;
+  font-size: 1.25em;
+}
+
+.dt-published {
+  color: rgb(25, 209, 255);
+}
+
+.blog-entry {
+  width: 100%;
+  padding: 1em 0;
+  align-items: left;
+  text-align: left;
+  border-top: dashed 2px rgb(211, 211, 211);
+}
+
+.blog-entry, .post-detail span {
+  color: rgb(25, 209, 255);
+}
+
+@media (max-width: 800px) {
+  .post {
+    flex-direction: column;
+  }
+  .article {
+    width: 90%;
+  }
+}
 .footer-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 1.5em;
 }
   </style>
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -190,7 +280,7 @@ a, a:visited, a:hover .page-link {
   
 </head>
 <body><header >
-  <nav class="site-header"><a class="site-title" rel="author" href="/">Christopher Himes</a><nav class="site-nav"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/blog/">Blog</a></nav></nav>
+  <nav class="site-header"><a class="site-title" rel="author" href="/">Christopher Himes</a><nav class="site-nav"><a class="page-link" href="/about/">About</a><a class="page-link" href="/blog/">Blog</a></nav></nav>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -205,24 +295,8 @@ a, a:visited, a:hover .page-link {
       </div>
   </div>
   <div class="home-wrapper">
-      <article class="article">
-            <a class="post-link" href="/blog/2024/07/26/lighthouse.html">
-              Lighthouse
-            </a>
-            <time class='home-article-time'>
-              Jul 26, 2024
-            </time>
-            <div class="post-content e-content" itemprop="articleBody">
-                <p><img src="../../../../assets/img/blog/lighthouse/lighthouse.webp" alt="image of a lighthouse" title="Lighthouse at night with lots of stars and the light from the house shining bright." class="main-image" /></p>
-
-<p>This site is not big, but it is faster, and more accessible.</p>
 
 
-              <a href="/blog/2024/07/26/lighthouse.html">
-                Read More...
-              </a>
-            </div></article>
-    </div>
   </div>
   
   

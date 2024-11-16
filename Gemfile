@@ -6,6 +6,7 @@ source "https://rubygems.org"
 # gemspec
 gem 'jekyll-paginate'
 # gem 'jekyll'
+gem 'racc'
 gem 'jekyll-sitemap'
 # gem "minima"
 gem "webrick"

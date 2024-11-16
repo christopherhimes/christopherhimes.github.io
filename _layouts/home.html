@@ -13,31 +13,8 @@ layout: base
       </div>
   </div>
   <div class="home-wrapper">
-      {% assign posts = site.posts %}   
-      {%- if posts.size > 0 -%}
-        
-        <article class="article">
-          {%- if page.list_title -%}
-          <h2 class="post-list-heading">{{ page.list_title }}</h2>
-          {%- endif -%}
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          {% for post in site.posts limit:1 %}
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-            <time class='home-article-time'>
-              {{ post.date | date: date_format }}
-            </time>
-            <div class="post-content e-content" itemprop="articleBody">
-                {{ post.excerpt }}
-              <a href="{{ post.url | relative_url }}">
-                Read More...
-              </a>
-            </div>
-          {%- endfor -%}
-        {%- endif -%}
-        </article>
-    </div>
+
+
   </div>
   
   
