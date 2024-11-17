@@ -230,17 +230,10 @@ a, a:visited, a:hover .page-link {
   gap: 3em;
   margin: 2em auto;
   flex-direction: row;
-  width: 70%;
+  width: 80%;
+  flex: 2 100%;
 }
 
-@media (max-width: 1200px) {
-  .home-wrapper {
-    flex-direction: column;
-  }
-  .article, .wrapper, .home-wrapper {
-    width: 90%;
-  }
-}
 .home-name {
   font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
@@ -275,7 +268,7 @@ a, a:visited, a:hover .page-link {
 
 .wrapper {
   margin: auto;
-  width: 70%;
+  width: 1200px;
   display: flex;
   justify-content: left;
   align-items: left;
@@ -303,19 +296,28 @@ a, a:visited, a:hover .page-link {
   border-top: dashed 2px rgb(211, 211, 211);
 }
 
-@media (max-width: 800px) {
-  .post {
-    flex-direction: column;
-  }
-  .article {
-    width: 90%;
-  }
-}
 .footer-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+  .home-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .home-wrapper {
+    flex-direction: column;
+  }
+  .home-wrapper {
+    width: 90%;
+  }
 }
   </style>
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -342,8 +344,7 @@ a, a:visited, a:hover .page-link {
 <body><header>
   <nav class="site-header"><div class="site-title"><a rel="author" href="/">christopher himes</a></div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/blog/">blog</a></nav></nav>
 </header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
+<main class="wrapper" aria-label="Content">
         <div class="page-detail">
 <header>
   <h1 class="page-title">Tag Index</h1>
@@ -523,7 +524,6 @@ a, a:visited, a:hover .page-link {
             </div></div></div>
 
 </div>
-      </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
