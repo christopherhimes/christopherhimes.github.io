@@ -49,6 +49,221 @@
   <meta property="og:url" content="http://localhost:4000/index-old">
   <link rel="canonical" href="http://localhost:4000/index-old">
   
+  <style type="text/css">
+    
+    @font-face {
+  font-family: "comprehensionsemibold";
+  src: url("../../../../../assets/css/comprehension-semibold-webfont.woff2") format("woff2"), url("../../../../../assets/css/comprehension-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: rgb(26, 26, 26);
+  color: rgb(200, 200, 200);
+  margin-top: 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.15em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.25em;
+}
+
+span {
+  margin: 0;
+  padding: none;
+}
+
+h1 {
+  color: rgb(32, 255, 188);
+  margin-bottom: 1em;
+}
+
+h2 {
+  color: rgb(25, 209, 255);
+  margin: 0;
+}
+
+h3 {
+  color: rgb(211, 211, 211);
+  margin: 2em 0;
+}
+
+hr {
+  border: dashed 2px rgb(211, 211, 211);
+}
+
+p {
+  color: rgb(200, 200, 200);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.post-link {
+  font-size: 2em;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.site-nav {
+  margin-top: 0;
+  float: right;
+}
+
+.page-link {
+  margin: 0 1em;
+}
+
+a, a:visited, a:hover .page-link {
+  color: rgb(25, 209, 255);
+}
+
+.face {
+  clip-path: circle(150px at center);
+  filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
+}
+
+.site-title {
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.fa-gradient {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial; /* reset Font Awesome's display:inline-block */
+  font-display: swap;
+}
+
+.site-header {
+  border-image: linear-gradient(34deg, rgb(32, 255, 188), #1086a3) 1;
+  border-width: 5px;
+  border-style: solid;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  margin: 0px -5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin: 2em auto;
+  flex-direction: row;
+  width: 80%;
+  flex: 2 100%;
+}
+
+.home-name {
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+}
+
+.home-heading {
+  font-size: 2em;
+  color: rgb(32, 255, 188);
+}
+
+.site-nav {
+  display: flex;
+  padding: 10px 15px;
+}
+
+.article {
+  border-width: 2px;
+  border-style: solid;
+  padding: 1em;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: left;
+}
+
+.wrapper {
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 3em;
+  flex-direction: column;
+  line-height: 2.5em;
+  flex: 1 100%;
+}
+
+.post-detail, .page-detail {
+  align-items: left;
+  text-align: left;
+  font-size: 1.25em;
+}
+
+.dt-published {
+  color: rgb(25, 209, 255);
+}
+
+.blog-entry {
+  width: 100%;
+  padding: 1em 0;
+  align-items: left;
+  text-align: left;
+  border-top: dashed 2px rgb(211, 211, 211);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+  .home-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .home-wrapper {
+    flex-direction: column;
+  }
+  .home-wrapper {
+    width: 90%;
+  }
+}
+  </style>
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <link
@@ -88,7 +303,7 @@
 
   <div class="wrapper">
 
-    <div class="footer-col-wrapper">
+    <div class="footer-wrapper">
       <div class="footer-col">
              <a href="/feed.xml" title="RSS">
               <span class="fa-stack fa-lg" aria-hidden="true">

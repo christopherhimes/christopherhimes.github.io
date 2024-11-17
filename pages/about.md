@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: about
 mainnav: true
 permalink: /about/
 ---
@@ -9,19 +9,19 @@ I'm a developer living in Metro Detroit; using my experience to make complicated
 
 With a strong background in Mathematics and Information Technology (Multimedia Concentration) I'm analytically minded with a focus on user experience.  I've worked with C++/C#, Objective-C, PHP, MySQL, Python, Javascript, Version Control with Git and am interested in learning more.
 
-# Experience
+## Experience
 
-## JELD-WEN
+### JELD-WEN
 
 **Retail Catalog Manager - Doors(February 2022 – *Present*)**
 * Coordinate between the business, catalog team, and retail partners the maintenance and release of retail door catalogs.
 
-## MMI Door a JELD-WEN Company 
+### MMI Door a JELD-WEN Company 
 
 **Lead Programmer (January 2019 – January 2022)**
 * Project Management - Lead a team of developers to enhance and maintain multiple software product catalogs, concurrently, with high precision, and meeting aggressive timelines
 
-## MMI Door / Milliken Millwork, Inc.
+### MMI Door / Milliken Millwork, Inc.
 
 **Lead Software Developer, Manager - (March 2014 - December 2018)**
 * Continuous Improvement - Worked with internal department stake holders, software partners, and management to make fundamental changes in our back-end data, modeled implementation, and presentation in customer facing catalogs, resulting in over a 30% reduction of time to market for new products

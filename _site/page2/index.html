@@ -47,6 +47,221 @@
   <meta property="og:url" content="http://localhost:4000/page2/">
   <link rel="canonical" href="http://localhost:4000/page2/">
   
+  <style type="text/css">
+    
+    @font-face {
+  font-family: "comprehensionsemibold";
+  src: url("../../../../../assets/css/comprehension-semibold-webfont.woff2") format("woff2"), url("../../../../../assets/css/comprehension-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: rgb(26, 26, 26);
+  color: rgb(200, 200, 200);
+  margin-top: 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.15em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.25em;
+}
+
+span {
+  margin: 0;
+  padding: none;
+}
+
+h1 {
+  color: rgb(32, 255, 188);
+  margin-bottom: 1em;
+}
+
+h2 {
+  color: rgb(25, 209, 255);
+  margin: 0;
+}
+
+h3 {
+  color: rgb(211, 211, 211);
+  margin: 2em 0;
+}
+
+hr {
+  border: dashed 2px rgb(211, 211, 211);
+}
+
+p {
+  color: rgb(200, 200, 200);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.post-link {
+  font-size: 2em;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.site-nav {
+  margin-top: 0;
+  float: right;
+}
+
+.page-link {
+  margin: 0 1em;
+}
+
+a, a:visited, a:hover .page-link {
+  color: rgb(25, 209, 255);
+}
+
+.face {
+  clip-path: circle(150px at center);
+  filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
+}
+
+.site-title {
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.fa-gradient {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial; /* reset Font Awesome's display:inline-block */
+  font-display: swap;
+}
+
+.site-header {
+  border-image: linear-gradient(34deg, rgb(32, 255, 188), #1086a3) 1;
+  border-width: 5px;
+  border-style: solid;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  margin: 0px -5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin: 2em auto;
+  flex-direction: row;
+  width: 80%;
+  flex: 2 100%;
+}
+
+.home-name {
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+}
+
+.home-heading {
+  font-size: 2em;
+  color: rgb(32, 255, 188);
+}
+
+.site-nav {
+  display: flex;
+  padding: 10px 15px;
+}
+
+.article {
+  border-width: 2px;
+  border-style: solid;
+  padding: 1em;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: left;
+}
+
+.wrapper {
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 3em;
+  flex-direction: column;
+  line-height: 2.5em;
+  flex: 1 100%;
+}
+
+.post-detail, .page-detail {
+  align-items: left;
+  text-align: left;
+  font-size: 1.25em;
+}
+
+.dt-published {
+  color: rgb(25, 209, 255);
+}
+
+.blog-entry {
+  width: 100%;
+  padding: 1em 0;
+  align-items: left;
+  text-align: left;
+  border-top: dashed 2px rgb(211, 211, 211);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+  .home-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .home-wrapper {
+    flex-direction: column;
+  }
+  .home-wrapper {
+    width: 90%;
+  }
+}
+  </style>
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <link
@@ -68,72 +283,31 @@
 
   
 </head>
-<body><header class="site-header">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="/">christopher himes</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <defs>
-                <linearGradient id="gradient">
-                  <stop offset="0%" stop-color="#128562" />
-                  <stop offset="100%" stop-color="#1086a3" />
-                </linearGradient>
-              </defs>
-              <path fill="url(#gradient)" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/blog/">Blog</a></div>
-      </nav></div>
+<body><header>
+  <nav class="site-header"><div class="site-title"></div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/blog/">blog</a></nav></nav>
 </header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-
-  <div class="wrapper">
-    <div class="home-col-wrapper">
+<main class="wrapper" aria-label="Content">
+          <div class="home-wrapper">
       <div class="home-col">
         <img class="face" width="325" height="325" src="assets/img/new-face.webp" alt="black and white picture of me in a suit">
       </div>
       <div class="home-col">
+        <p class="home-name">christopher himes</p>
         <p class="home-heading">I work in Software Development as a Product Owner in Metro Detroit.</p>
       </div>
-    </div>
-      <div class="home-col-wrapper">
-      <ul class="post-list">
-        <li>
-          <span class="post-meta">Jul 26, 2024</span>
-          <h3>
-            <a class="post-link" href="/blog/2024/07/26/lighthouse.html">
-              Lighthouse
-            </a>
-          </h3>
-          <div class="post-content e-content" itemprop="articleBody">
-            <p><img src="../../../../assets/img/blog/lighthouse/lighthouse.webp" alt="image of a lighthouse" title="Lighthouse at night with lots of stars and the light from the house shining bright." class="main-image" /></p>
-
-<p>This site is not big, but it is faster, and more accessible.</p>
+  </div>
+  <div class="home-wrapper">
 
 
-            <a href="/blog/2024/07/26/lighthouse.html">
-              More...
-            </a>
-          </div>
-        </li></ul></div>
   </div>
   
-  
-</div>
 
-      </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
 
-    <div class="footer-col-wrapper">
+    <div class="footer-wrapper">
       <div class="footer-col">
              <a href="/feed.xml" title="RSS">
               <span class="fa-stack fa-lg" aria-hidden="true">

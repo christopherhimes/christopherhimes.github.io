@@ -1,0 +1,238 @@
+// Placeholder to allow overriding predefined variables smoothly.
+$brand-color: rgb(25, 209, 255);
+
+$link-base-color: rgb(25, 209, 255);
+$link-visited-color: rgb(25, 209, 255);
+$link-hover-color: rgb(25, 209, 255);
+
+$code-background-color: rgb(0, 0, 0);
+$site-title-color: rgb(32, 255, 188);
+$main-background-color: rgb(26, 26, 26);
+$card-background-color: rgb(17, 17, 17);
+$accent-color: rgb(211, 211, 211);
+$text-color: rgb(200,200,200);
+
+@font-face {
+    font-family: 'comprehensionsemibold';
+    src: url('../../../../../assets/css/comprehension-semibold-webfont.woff2') format('woff2'),
+         url('../../../../../assets/css/comprehension-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+  
+body {
+    background-color: $main-background-color;
+    color: $text-color;
+    margin-top:0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: .15em;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
+    letter-spacing: .25em;
+}
+span {
+    margin:0;
+    padding: none;
+}
+h1 {
+    color: $site-title-color;
+    margin-bottom:1em;
+} 
+h2 {
+    color: $brand-color;
+    margin: 0;
+}
+h3 {
+    color: $accent-color;
+    margin: 2em 0;
+}
+hr {
+    border: dashed 2px $accent-color;
+}
+p {
+    color: $text-color;
+}
+a:hover {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+}
+.post-link {
+    font-size: 2em;
+}
+.wrapper {
+    margin:0 auto;
+}
+.site-nav { 
+    margin-top: 0;
+    float: right;
+}
+.page-link {
+    margin: 0 1em;
+}
+a, a:visited, a:hover .page-link {
+    color:$link-base-color;
+}
+.face {
+    clip-path: circle(150px at center);
+    filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
+  }
+
+.site-title {
+    font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+
+.fa-gradient{
+    // background: linear-gradient(34deg, #128562, #1086a3) 1;
+    background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial; /* reset Font Awesome's display:inline-block */
+    font-display: swap;
+}
+.site-header {
+    border-image: linear-gradient(34deg, $site-title-color, #1086a3) 1;
+    border-width: 5px;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    margin:0px -5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin:2em auto;
+    flex-direction: row;
+    width: 80%;
+    flex: 2 100%;
+}
+
+.home-name {
+    font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
+    // width:325px;
+    background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+}
+.home-heading {
+    font-size: 2em;
+    color: $site-title-color;
+}
+.site-nav {
+    display: flex;
+    padding: 10px 15px;
+}
+.article {
+    // border-image: linear-gradient(34deg, $site-title-color, #1086a3) 1;
+    border-width: 2px;
+    border-style: solid;
+    padding: 1em;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    // width:500px;
+
+}
+.wrapper {
+    margin: auto;
+    width:1200px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 3em;
+    // margin:5em;
+    flex-direction: column;
+    line-height: 2.5em;
+    flex: 1 100%;
+}
+.post-detail, .page-detail{
+    align-items: left;
+    text-align: left;
+    font-size: 1.25em;
+}
+
+.dt-published {
+    color:$brand-color;
+}
+
+.blog-entry {
+    width: 100%;
+    padding: 1em 0;
+    align-items: left;
+    text-align: left;
+    border-top: dashed 2px $accent-color;
+}
+// .blog-entry, .post-detail span {
+//     // color: $brand-color;
+// }
+
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+// @media (max-width: 800px) {
+//     .post{
+//       flex-direction: column;
+//     }
+//     .article {
+//         width: 90%;
+//     }
+//   }
+// .home-col {
+//     width: 100%;
+// }
+// @media (max-width: 100px) {
+//     .home-wrapper {
+//         width: 100%;
+//     }
+//     .wrapper {
+//         width: 100%;
+//     }
+//   }
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+    }
+    .home-wrapper {
+        width: 90%;
+    }
+  }
+@media (max-width: 800px) {
+    .home-wrapper {
+    flex-direction: column;
+    }
+
+    .home-wrapper {
+        width: 90%;
+    }
+}
