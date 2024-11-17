@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Christopher Himes</title>
+    <title>christopher himes</title>
     <description>Christopher Himes is a Product Owner living in Metro Detroit.
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 16 Nov 2024 16:57:07 -0500</pubDate>
-    <lastBuildDate>Sat, 16 Nov 2024 16:57:07 -0500</lastBuildDate>
+    <pubDate>Sat, 16 Nov 2024 20:27:39 -0500</pubDate>
+    <lastBuildDate>Sat, 16 Nov 2024 20:27:39 -0500</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>

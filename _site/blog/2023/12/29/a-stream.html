@@ -20,7 +20,7 @@
   
 
   
-  <link rel="alternate" type="application/rss+xml" title="Christopher Himes" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="christopher himes" href="http://localhost:4000/feed.xml">
   
 
   
@@ -34,7 +34,7 @@
   
 
   
-  <meta property="og:site_name" content="Christopher Himes">
+  <meta property="og:site_name" content="christopher himes">
   <meta property="og:title" content="A Stream?">
   <meta property="og:description" content="I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time. First, lets talk audio. I’ve spent far too much time adjusting the audio for both personal streaming and for work. Current setup utilizes virtual cables and obs studio filters to achieve what I think is pretty good sounding audio. I’ve primarily been following EposVox audio quality guides. I’m using a shock mounted Yeti Blue microphone and passing it throught Noise Suppression using the built in RNNoise method. I haven’t noticed any CPU impact and this works so well. I have the gain on the microphone down very low but I’ve turned the digital gain boosted by 10 dB. This can sound weird without additional filtering but increases my volume without having to be right on top of the microphone. Next there are a few rounds of correcting for that initial gain boosting and making things sound good. The first round of EQ that uses ReaEQ mostly to cut highs, lows, and a few nasaly places in the mids. This is followed up with a compressor with a 3:1 ratio and a -20dB threshold. From there I do have a Noise Gate set but I’m not sure if it is strictly necessary with all the other things happening. Lastly, there is an additional EQ for some high end and...">
 
@@ -52,8 +52,8 @@
   <style type="text/css">
     
     @font-face {
-  font-family: "frauncesblack";
-  src: url("../../../../../assets/css/frauncessoftwonkopszwght-webfont.woff2") format("woff2"), url("../../../../../assets/css/frauncessoftwonkopszwght-webfont.woff") format("woff");
+  font-family: "comprehensionsemibold";
+  src: url("../../../../../assets/css/comprehension-semibold-webfont.woff2") format("woff2"), url("../../../../../assets/css/comprehension-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -61,11 +61,13 @@ body {
   background-color: rgb(26, 26, 26);
   color: rgb(200, 200, 200);
   margin-top: 0px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.15em;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "frauncesblack", Arial, Helvetica, sans-serif;
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.25em;
 }
 
 span {
@@ -96,16 +98,20 @@ p {
   color: rgb(200, 200, 200);
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
 .post-link {
   font-size: 2em;
 }
 
 .wrapper {
   margin: 0 auto;
-}
-
-.wrapper a {
-  text-decoration: none;
 }
 
 .site-nav {
@@ -118,7 +124,7 @@ p {
 }
 
 a, a:visited, a:hover .page-link {
-  color: rgb(32, 255, 188);
+  color: rgb(25, 209, 255);
 }
 
 .face {
@@ -127,17 +133,12 @@ a, a:visited, a:hover .page-link {
 }
 
 .site-title {
-  font-family: "frauncesblack", Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: none;
-}
-
-.site-nav a {
-  font-size: 1em;
   text-decoration: none;
 }
 
@@ -176,21 +177,26 @@ a, a:visited, a:hover .page-link {
   width: 70%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .home-wrapper {
     flex-direction: column;
   }
-  .article {
+  .article, .wrapper, .home-wrapper {
     width: 90%;
   }
 }
-.home-heading {
-  font-family: "frauncesblack", Arial, Helvetica, sans-serif;
+.home-name {
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5em;
+}
+
+.home-heading {
+  font-size: 2em;
+  color: rgb(32, 255, 188);
 }
 
 .site-nav {
@@ -241,10 +247,6 @@ a, a:visited, a:hover .page-link {
   border-top: dashed 2px rgb(211, 211, 211);
 }
 
-.blog-entry, .post-detail span {
-  color: rgb(25, 209, 255);
-}
-
 @media (max-width: 800px) {
   .post {
     flex-direction: column;
@@ -281,14 +283,14 @@ a, a:visited, a:hover .page-link {
 
   
 </head>
-<body><header >
-  <nav class="site-header"><a class="site-title" rel="author" href="/">Christopher Himes</a><nav class="site-nav"><a class="page-link" href="/about/">About</a><a class="page-link" href="/blog/">Blog</a></nav></nav>
+<body><header>
+  <nav class="site-header"><div class="site-title"><a rel="author" href="/">christopher himes</a></div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/blog/">blog</a></nav></nav>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         
 
-<div class="wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-detail">
   <header>
     <h1 class="post-title" itemprop="name headline">A Stream?</h1>

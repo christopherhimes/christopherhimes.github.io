@@ -49,7 +49,7 @@
   
 
   
-  <link rel="alternate" type="application/rss+xml" title="Christopher Himes" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="christopher himes" href="http://localhost:4000/feed.xml">
   
 
   
@@ -63,7 +63,7 @@
   
 
   
-  <meta property="og:site_name" content="Christopher Himes">
+  <meta property="og:site_name" content="christopher himes">
   <meta property="og:title" content="Tag Index">
   <meta property="og:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %}
 
@@ -108,8 +108,8 @@
   <style type="text/css">
     
     @font-face {
-  font-family: "frauncesblack";
-  src: url("../../../../../assets/css/frauncessoftwonkopszwght-webfont.woff2") format("woff2"), url("../../../../../assets/css/frauncessoftwonkopszwght-webfont.woff") format("woff");
+  font-family: "comprehensionsemibold";
+  src: url("../../../../../assets/css/comprehension-semibold-webfont.woff2") format("woff2"), url("../../../../../assets/css/comprehension-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -117,11 +117,13 @@ body {
   background-color: rgb(26, 26, 26);
   color: rgb(200, 200, 200);
   margin-top: 0px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.15em;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "frauncesblack", Arial, Helvetica, sans-serif;
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.25em;
 }
 
 span {
@@ -152,16 +154,20 @@ p {
   color: rgb(200, 200, 200);
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
 .post-link {
   font-size: 2em;
 }
 
 .wrapper {
   margin: 0 auto;
-}
-
-.wrapper a {
-  text-decoration: none;
 }
 
 .site-nav {
@@ -174,7 +180,7 @@ p {
 }
 
 a, a:visited, a:hover .page-link {
-  color: rgb(32, 255, 188);
+  color: rgb(25, 209, 255);
 }
 
 .face {
@@ -183,17 +189,12 @@ a, a:visited, a:hover .page-link {
 }
 
 .site-title {
-  font-family: "frauncesblack", Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: none;
-}
-
-.site-nav a {
-  font-size: 1em;
   text-decoration: none;
 }
 
@@ -232,21 +233,26 @@ a, a:visited, a:hover .page-link {
   width: 70%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .home-wrapper {
     flex-direction: column;
   }
-  .article {
+  .article, .wrapper, .home-wrapper {
     width: 90%;
   }
 }
-.home-heading {
-  font-family: "frauncesblack", Arial, Helvetica, sans-serif;
+.home-name {
+  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5em;
+}
+
+.home-heading {
+  font-size: 2em;
+  color: rgb(32, 255, 188);
 }
 
 .site-nav {
@@ -297,10 +303,6 @@ a, a:visited, a:hover .page-link {
   border-top: dashed 2px rgb(211, 211, 211);
 }
 
-.blog-entry, .post-detail span {
-  color: rgb(25, 209, 255);
-}
-
 @media (max-width: 800px) {
   .post {
     flex-direction: column;
@@ -337,8 +339,8 @@ a, a:visited, a:hover .page-link {
 
   
 </head>
-<body><header >
-  <nav class="site-header"><a class="site-title" rel="author" href="/">Christopher Himes</a><nav class="site-nav"><a class="page-link" href="/about/">About</a><a class="page-link" href="/blog/">Blog</a></nav></nav>
+<body><header>
+  <nav class="site-header"><div class="site-title"><a rel="author" href="/">christopher himes</a></div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/blog/">blog</a></nav></nav>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">

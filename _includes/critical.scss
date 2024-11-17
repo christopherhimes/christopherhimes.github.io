@@ -1,8 +1,8 @@
 // Placeholder to allow overriding predefined variables smoothly.
 $brand-color: rgb(25, 209, 255);
 
-$link-base-color: rgb(32, 255, 188);
-$link-visited-color: rgb(32, 255, 188);
+$link-base-color: rgb(25, 209, 255);
+$link-visited-color: rgb(25, 209, 255);
 $link-hover-color: rgb(25, 209, 255);
 
 $code-background-color: rgb(0, 0, 0);
@@ -13,9 +13,9 @@ $accent-color: rgb(211, 211, 211);
 $text-color: rgb(200,200,200);
 
 @font-face {
-    font-family: 'frauncesblack';
-    src: url('../../../../../assets/css/frauncessoftwonkopszwght-webfont.woff2') format('woff2'),
-         url('../../../../../assets/css/frauncessoftwonkopszwght-webfont.woff') format('woff');
+    font-family: 'comprehensionsemibold';
+    src: url('../../../../../assets/css/comprehension-semibold-webfont.woff2') format('woff2'),
+         url('../../../../../assets/css/comprehension-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -25,10 +25,12 @@ body {
     background-color: $main-background-color;
     color: $text-color;
     margin-top:0px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: .15em;
 }
 h1, h2, h3, h4, h5 {
-    font-family: 'frauncesblack', Arial, Helvetica, sans-serif;
+    font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
+    letter-spacing: .25em;
 }
 span {
     margin:0;
@@ -52,14 +54,17 @@ hr {
 p {
     color: $text-color;
 }
+a:hover {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+}
 .post-link {
     font-size: 2em;
 }
 .wrapper {
     margin:0 auto;
-}
-.wrapper a{
-    text-decoration: none;
 }
 .site-nav { 
     margin-top: 0;
@@ -77,19 +82,16 @@ a, a:visited, a:hover .page-link {
   }
 
 .site-title {
-    font-family: 'frauncesblack', Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
     background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
 }
-// wd   
-.site-nav a {
-    font-size: 1em;
-    text-decoration: none;
-}
+
+
 .fa-gradient{
     // background: linear-gradient(34deg, #128562, #1086a3) 1;
     background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
@@ -123,22 +125,26 @@ a, a:visited, a:hover .page-link {
     flex-direction: row;
     width:70%;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .home-wrapper {
       flex-direction: column;
     }
-    .article {
+    .article, .wrapper, .home-wrapper {
         width: 90%;
     }
   }
-.home-heading {
-    font-family: 'frauncesblack', Arial, Helvetica, sans-serif;
+.home-name {
+    font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
     // width:325px;
     background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2.5em;
+}
+.home-heading {
+    font-size: 2em;
+    color: $site-title-color;
 }
 .site-nav {
     display: flex;
@@ -190,7 +196,7 @@ a, a:visited, a:hover .page-link {
     border-top: dashed 2px $accent-color;
 }
 .blog-entry, .post-detail span {
-    color: $brand-color;
+    // color: $brand-color;
 }
 
 @media (max-width: 800px) {
