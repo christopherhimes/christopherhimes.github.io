@@ -20,11 +20,11 @@ $text-color: rgb(200,200,200);
     font-style: normal;
 
 }
-  
 body {
     background-color: $main-background-color;
     color: $text-color;
-    margin-top:0px;
+    margin:0px;
+    padding:0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: .15em;
 }
@@ -108,13 +108,15 @@ a, a:visited, a:hover .page-link {
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
-    margin:0px -5px;
+    // margin: 0px -5px 0px -5px;
+    margin:0;
+    padding:0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    // padding-left: 30px;
+    // padding-right: 30px;
 }
 .home-wrapper {
     display: flex;
@@ -199,6 +201,10 @@ a, a:visited, a:hover .page-link {
     justify-content: center;
     align-items: center;
     gap: 1.5em;
+
+}
+.footer-col a:hover {
+    text-decoration: none;
 }
 // @media (max-width: 800px) {
 //     .post{
