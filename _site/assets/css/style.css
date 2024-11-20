@@ -1,4 +1,7 @@
 @charset "UTF-8";
+section#comments .display {
+  color: rgb(32, 255, 188);
+}
 section#comments .comment {
   display: grid;
   column-gap: 1rem;
@@ -17,6 +20,8 @@ section#comments .comment .avatar-link {
 section#comments .comment .avatar-link .avatar {
   height: 100%;
   width: 100%;
+  clip-path: circle(32px at center);
+  filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
 }
 section#comments .comment .author {
   align-items: center;
@@ -63,7 +68,7 @@ section#comments .comment footer .faves:hover {
 }
 section#comments .comment footer .faves::before {
   color: var(--accent-color);
-  content: "♥";
+  content: "💙";
   margin-inline-end: 0.25em;
 }
 section#comments .comment .emoji {
@@ -83,7 +88,7 @@ section#comments .comment.verified .avatar-link::after {
   border-radius: 50%;
   bottom: -0.25rem;
   color: var(--secondary-accent-contrast);
-  content: "✓";
+  content: "🚀";
   display: block;
   font-size: 1.25rem;
   font-weight: bold;
@@ -99,7 +104,7 @@ section#comments .comment.verified .instance {
   color: var(--secondary-accent-contrast);
 }
 section#comments .comment.verified .instance::before {
-  content: "✓";
+  content: "🚀";
   font-weight: bold;
   margin-inline-end: 0.25em;
   margin-inline-start: -0.25em;
