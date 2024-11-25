@@ -157,13 +157,22 @@ a, a:visited, a:hover .page-link {
   text-decoration: none;
 }
 
+.tags {
+  margin: 3em 0em;
+}
+
 .fa-gradient {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: initial; /* reset Font Awesome's display:inline-block */
-  font-display: swap;
+  color: rgb(25, 209, 255);
+}
+
+.footer-links li {
+  list-style: none;
+  line-height: 1em;
+}
+
+.footer-links a {
+  padding: 0;
+  margin: 0;
 }
 
 .site-header {
@@ -260,12 +269,13 @@ a, a:visited, a:hover .page-link {
 .footer-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5em;
 }
 
-.footer-col a:hover {
-  text-decoration: none;
+.footer-col {
+  vertical-align: top;
+  padding: 1em;
 }
 
 @media (max-width: 1200px) {
@@ -289,13 +299,13 @@ a, a:visited, a:hover .page-link {
 
   <link
     rel="preload"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
 />
 <noscript>
     <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1//css/all.min.css"
         rel="stylesheet"
         type="text/css"
     />
@@ -396,34 +406,43 @@ a, a:visited, a:hover .page-link {
 
     <div class="footer-wrapper">
       <div class="footer-col">
-             <a href="/feed.xml" title="RSS">
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:christopher@christopherhimes.com" title="Email me">
               <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
-                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">RSS</span>
-            </a>
-            <a href="mailto:christopher@christopherhimes.com" title="Email me">
-              <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
-                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">Email me</span>
-           </a>
+                <i class="fas fa-envelope fa-gradient fa-stack-1x"></i>
+              </span>Email
+              </a>
+            </li>
+            <li>
             <a href="https://github.com/christopherhimes" title="GitHub">
               <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
-                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">GitHub</span>
+                <i class="fab fa-github fa-gradient fa-stack-1x"></i>
+              </span>GitHub
            </a>
+          </li>
+          <li>
             <a rel="me" href="https://hachyderm.io/@eeentropyyy">
-              <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
-                <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">Mastodon</span>
+              <span class="fa-stack fa-lg fa-gradient" aria-hidden="true">
+                <i class="fab fa-mastodon fa-stack-1x"></i>
+              </span>Mastodon
             </a>
+          </li>
+          <li>
+            <a rel="me" href="https://bsky.app/profile/eeentropyyy.hachyderm.io.ap.brid.gy">
+              <span class="fa-stack fa-lg fa-gradient" aria-hidden="true">
+                <i class="fa-brands fa-bluesky fa-stack-1x"></i>
+              </span>Bluesky
+            </a>
+          </li>
+          <li>
+            <a href="/feed.xml" title="RSS">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fas fa-rss fa-gradient fa-stack-1x"></i>
+              </span>Feed
+            </a>
+          </li>
+          </ul>
       </div>
       <div class="footer-col">
         <p>Christopher Himes is a Product Owner living in Metro Detroit.

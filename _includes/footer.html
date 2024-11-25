@@ -5,34 +5,43 @@
 
     <div class="footer-wrapper">
       <div class="footer-col">
-             <a href="/feed.xml" title="RSS">
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:christopher@christopherhimes.com" title="Email me">
               <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
-                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">RSS</span>
-            </a>
-            <a href="mailto:christopher@christopherhimes.com" title="Email me">
-              <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
-                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">Email me</span>
-           </a>
+                <i class="fas fa-envelope fa-gradient fa-stack-1x"></i>
+              </span>Email
+              </a>
+            </li>
+            <li>
             <a href="https://github.com/christopherhimes" title="GitHub">
               <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
-                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">GitHub</span>
+                <i class="fab fa-github fa-gradient fa-stack-1x"></i>
+              </span>GitHub
            </a>
+          </li>
+          <li>
             <a rel="me" href="https://hachyderm.io/@eeentropyyy">
-              <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x fa-gradient"></i>
-                <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">Mastodon</span>
+              <span class="fa-stack fa-lg fa-gradient" aria-hidden="true">
+                <i class="fab fa-mastodon fa-stack-1x"></i>
+              </span>Mastodon
             </a>
+          </li>
+          <li>
+            <a rel="me" href="https://bsky.app/profile/eeentropyyy.hachyderm.io.ap.brid.gy">
+              <span class="fa-stack fa-lg fa-gradient" aria-hidden="true">
+                <i class="fa-brands fa-bluesky fa-stack-1x"></i>
+              </span>Bluesky
+            </a>
+          </li>
+          <li>
+            <a href="/feed.xml" title="RSS">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fas fa-rss fa-gradient fa-stack-1x"></i>
+              </span>Feed
+            </a>
+          </li>
+          </ul>
       </div>
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>

@@ -8,6 +8,7 @@ share-img: ../../../../assets/img/blog/i-got-married/married.webp
 date:   2024-07-11 20:00:00
 tags: [married]
 blurb: It's been a little over a month now since I got married.
+
 comments:
     id: 112770491280326441 
 ---

@@ -9,7 +9,7 @@ date:   2024-07-26 12:30:00
 tags: [lighthouse, SEO, Web Development, Accessibility]
 blurb: This site is not big, but it is faster, and more accessible.
 comments:
-    id:  112853773240799520
+    id: 112853773240799520
 ---
 
 ![image of a lighthouse]{: class="main-image"}

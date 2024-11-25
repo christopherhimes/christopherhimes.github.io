@@ -4,8 +4,9 @@ title:  "Simple Silly"
 date:   2024-11-21 12:30:00
 tags: [meta]
 blurb: Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general.
+
 comments:
-    id:  113524027545322478
+    id: 113524027545322478
 ---
 
 <!--more-->
