@@ -2,3 +2,5 @@ node_modules/
 .sass-cache/
 vendor/
 .env
+# Local Netlify folder
+.netlify
