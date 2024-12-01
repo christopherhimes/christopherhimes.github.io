@@ -7,14 +7,24 @@
             const MY_USERNAME = 'cshmes';
             const request = new XMLHttpRequest();
 
-            exports.handler = async function (event, context) {
-                const api_key = process.env.LASTFM_API_KEY;
+            // exports.handler = async function (event, context) {
+            //     const api_key = process.env.LASTFM_API_KEY;
 
-                return {
-                    statusCode: 200,
-                    body: JSON.stringify({ message: `Value of MY_IMPORTANT_VARIABLE is ${value}.` }),
-                };
+            //     return {
+            //         statusCode: 200,
+            //         body: JSON.stringify({ message: `Value of MY_IMPORTANT_VARIABLE is ${value}.` }),
+            //     };
+            // };
+
+            export default async (request, context) => {
+                const api_key = Netlify.env.get("LASTFM_API_KEY");
+
+                return new Response(`Value of LASTFM_API_KEY for ${context.site.name} is ${value}.`, {
+                    headers: { "content-type": "text/html" },
+                });
             };
+
+
             request.open('GET', 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+[MY_USERNAME]+'&api_key='+[api_key]+'&format=json');
             request.send(); 
 
