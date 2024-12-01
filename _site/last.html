@@ -5,14 +5,14 @@
     <body>
         <script type="text/javascript">
 
-            export default async (request, context) => {
-                const api_key = Netlify.env.get("LASTFM_API_KEY");
+            // export default async (request, context) => {
+            //     const api_key = Netlify.env.get("LASTFM_API_KEY");
 
-                return new Response(`Value of LASTFM_API_KEY for ${context.site.name} is ${value}.`, {
-                    headers: { "content-type": "text/html" },
-                });
-            };
-
+            //     return new Response(`Value of LASTFM_API_KEY for ${context.site.name} is ${value}.`, {
+            //         headers: { "content-type": "text/html" },
+            //     });
+            // };
+            const api_key = Netlify.env.get("LASTFM_API_KEY");
             const MY_USERNAME = 'cshmes';
             const request = new XMLHttpRequest();
 
