@@ -1,0 +1,21 @@
+{
+	"siteId": "237a6de1-5ef8-4d4a-aaaf-5d31a29b6a2e",
+	"geolocation": {
+		"data": {
+			"city": "Royal Oak",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "MI",
+				"name": "Michigan"
+			},
+			"timezone": "America/Detroit",
+			"latitude": 42.518,
+			"longitude": -83.1576,
+			"postalCode": "48073"
+		},
+		"timestamp": 1733182461752
+	}
+}
