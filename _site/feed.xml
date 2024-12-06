@@ -6,9 +6,51 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 05 Dec 2024 19:37:20 -0500</pubDate>
-    <lastBuildDate>Thu, 05 Dec 2024 19:37:20 -0500</lastBuildDate>
+    <pubDate>Fri, 06 Dec 2024 12:00:17 -0500</pubDate>
+    <lastBuildDate>Fri, 06 Dec 2024 12:00:17 -0500</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Now Page 2024</title>
+        <description>&lt;!--more--&gt;
+
+&lt;p&gt;While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself. There are lots of examples of this on &lt;a href=&quot;https://nownownow.com&quot;&gt;NowNowNow&lt;/a&gt; but my now page is located at &lt;a href=&quot;/now&quot;&gt;/now&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For now it includes a personal, movie/TV, and music section. For the music section I’ve added a line about the latest song I listened to on &lt;a href=&quot;https://spotify.com&quot;&gt;Spotify&lt;/a&gt; via &lt;a href=&quot;https://last.fm&quot;&gt;last.fm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This was a good opportunity to implement api access on the site via a private key. Which is something I understood in practice but had never actually implemented myself. Just not something I had experimented with in the past.&lt;/p&gt;
+
+&lt;p&gt;First thing I did was go to last.fm and get an api key. From there I read the documentation they provided and reviewed samples I found just searching ye olde interweb. Using the most barebone page imaginable to use the key and retrieve the information I was looking for. I have to say there was more trial and error than I thought here which I think is largely due to the type of documentation provided in the api docs.&lt;/p&gt;
+
+&lt;p&gt;Anyway, with that done I knew I could pull the information I was looking for and format it as needed. Piecing together the song title, artist, and album of the latest song was complete.&lt;/p&gt;
+
+&lt;p&gt;Next, I needed to move that private key somewhere to actually keep it private. While the test had hard coded the key onto the page it needs to be stored as an environment variable and accessed in a way that does not expose it to a client.&lt;/p&gt;
+
+&lt;p&gt;Luckily for me, my host of choice &lt;a href=&quot;https://netlify.com&quot;&gt;Netlify&lt;/a&gt; has some good documentation and site configuration to make this easier. There is a section for Environment Variables within the site configuration which allowed me to specify the api key.&lt;/p&gt;
+
+&lt;p&gt;From there I would need a way to access that information at run time versus having the build of this &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; site pull it into the code of the site. This was achieved by the use of Netlify functions which allow for server side Javascript to be run to access environment variables.&lt;/p&gt;
+
+&lt;p&gt;Prior to this addition there was not much configuration in the setup of this site for the Netlify build. Now there are a few more requirements and I’m not sure if it could go back to GitHub Pages.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, my compuslive upgrading has delayed the launch of the page a bit as well as a few of the supporting tools to build the site had some cascading dependency issues tied to updating one piece or another.&lt;/p&gt;
+
+&lt;p&gt;After the api key was setup, kept private in environment variables, accessed via a server side function call, and used to pull song details, I was ready to build the rest of the /now page. I had originally just setup a HTML page but I went ahead and converted it to markdown to utilize the existing templates.&lt;/p&gt;
+
+&lt;p&gt;Then I had to decide what was even happening now which I kept pretty light as it is just a first pass. I think having the page out there and reviewing it periodically would be a good sanity check from time to time.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 06 Dec 2024 07:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2024/12/06/now-2024.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2024/12/06/now-2024.html</guid>
+        
+        <category>now</category>
+        
+        <category>2024</category>
+        
+        <category>meta</category>
+        
+        
+      </item>
     
       <item>
         <title>Simple Silly</title>

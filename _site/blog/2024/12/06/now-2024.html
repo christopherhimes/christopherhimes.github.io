@@ -7,21 +7,13 @@
 
   
 
-  <title>blog</title>
+  <title>Now Page 2024</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="{% for post in site.posts %}
-  
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
-    
-      {{ post.title }}
-    
-    {{ post.blurb }}
-  
-{% endfor %}">
+  <meta name="description" content="While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself. There are lots of examples of this on NowNowNow but my now page is located at /now. For now it includes a personal, movie/TV, and music section. For the music section I’ve added a line about the latest song I listened to on Spotify via last.fm. This was a good opportunity to implement api access on the site via a private key. Which is something I understood in practice but had never actually implemented myself. Just not something I had experimented with in the past. First thing I did was go to last.fm and get an api key. From there I read the documentation they provided and reviewed samples I found just searching ye olde interweb. Using the most barebone page imaginable to use the key and retrieve the information I was looking for. I have to say there was more trial and error than I thought here which I think is largely due to the type of documentation provided in the api docs. Anyway, with that done I knew I could pull the information I was looking for and format it as needed. Piecing together the song title, artist, and album of the latest song was complete. Next, I needed to move that private key somewhere to actually keep it private. While the test had hard coded the key onto the page it needs to be...">
 
   
 
@@ -43,25 +35,19 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="blog">
-  <meta property="og:description" content="{% for post in site.posts %}
-  
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
-    
-      {{ post.title }}
-    
-    {{ post.blurb }}
-  
-{% endfor %}">
+  <meta property="og:title" content="Now Page 2024">
+  <meta property="og:description" content="While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself. There are lots of examples of this on NowNowNow but my now page is located at /now. For now it includes a personal, movie/TV, and music section. For the music section I’ve added a line about the latest song I listened to on Spotify via last.fm. This was a good opportunity to implement api access on the site via a private key. Which is something I understood in practice but had never actually implemented myself. Just not something I had experimented with in the past. First thing I did was go to last.fm and get an api key. From there I read the documentation they provided and reviewed samples I found just searching ye olde interweb. Using the most barebone page imaginable to use the key and retrieve the information I was looking for. I have to say there was more trial and error than I thought here which I think is largely due to the type of documentation provided in the api docs. Anyway, with that done I knew I could pull the information I was looking for and format it as needed. Piecing together the song title, artist, and album of the latest song was complete. Next, I needed to move that private key somewhere to actually keep it private. While the test had hard coded the key onto the page it needs to be...">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/face.webp">
   
 
   
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/blog/">
-  <link rel="canonical" href="http://localhost:4000/blog/">
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Christopher Himes">
+  <meta property="og:article:published_time" content="2024-12-06T07:00:00-05:00">
+  <meta property="og:url" content="http://localhost:4000/blog/2024/12/06/now-2024.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2024/12/06/now-2024.html">
   
   <style type="text/css">
     
@@ -320,93 +306,56 @@ a, a:visited, a:hover .page-link {
   <nav class="site-header"><div class="site-title"><a rel="author" href="/">christopher himes</a></div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/blog/">blog</a></nav></nav>
 </header>
 <main class="wrapper" aria-label="Content">
-        <div class="page-detail">
-<header>
-  <h1 class="page-title">blog</h1>
-</header>
-  
-<article class="blog-entry">
-    <span class="post-meta">Dec 6, 2024</span>
-    <h2>
-      <a class="blog-link" href="/blog/2024/12/06/now-2024.html">Now Page 2024</a>
-    </h2>
-    <p>While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.</p>
-  </article>
+        
 
-<article class="blog-entry">
-    <span class="post-meta">Nov 21, 2024</span>
-    <h2>
-      <a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Simple Silly</a>
-    </h2>
-    <p>Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general.</p>
-  </article>
+<div class="" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-detail">
+  <header>
+    <h1 class="post-title" itemprop="name headline">Now Page 2024</h1>
+    <p><time class="dt-published" datetime="2024-12-06T07:00:00-05:00" itemprop="datePublished">
+        Dec 6, 2024
+      </time></p>
+  </header>
+    <article itemprop="articleBody">
+      <!--more-->
 
-<article class="blog-entry">
-    <span class="post-meta">Jul 26, 2024</span>
-    <h2>
-      <a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Lighthouse</a>
-    </h2>
-    <p>This site is not big, but it is faster, and more accessible.</p>
-  </article>
+<p>While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself. There are lots of examples of this on <a href="https://nownownow.com">NowNowNow</a> but my now page is located at <a href="/now">/now</a>.</p>
 
-<article class="blog-entry">
-    <span class="post-meta">Jul 11, 2024</span>
-    <h2>
-      <a class="blog-link" href="/blog/2024/07/11/i-got-married.html">I got married!</a>
-    </h2>
-    <p>It's been a little over a month now since I got married.</p>
-  </article>
+<p>For now it includes a personal, movie/TV, and music section. For the music section I’ve added a line about the latest song I listened to on <a href="https://spotify.com">Spotify</a> via <a href="https://last.fm">last.fm</a>.</p>
 
-<article class="blog-entry">
-    <span class="post-meta">Jan 13, 2024</span>
-    <h2>
-      <a class="blog-link" href="/blog/2024/01/13/add-comments.html">Add Comments</a>
-    </h2>
-    <p></p>
-  </article>
+<p>This was a good opportunity to implement api access on the site via a private key. Which is something I understood in practice but had never actually implemented myself. Just not something I had experimented with in the past.</p>
 
-<article class="blog-entry">
-    <span class="post-meta">Dec 29, 2023</span>
-    <h2>
-      <a class="blog-link" href="/blog/2023/12/29/a-stream.html">A Stream?</a>
-    </h2>
-    <p></p>
-  </article>
+<p>First thing I did was go to last.fm and get an api key. From there I read the documentation they provided and reviewed samples I found just searching ye olde interweb. Using the most barebone page imaginable to use the key and retrieve the information I was looking for. I have to say there was more trial and error than I thought here which I think is largely due to the type of documentation provided in the api docs.</p>
 
-<article class="blog-entry">
-    <span class="post-meta">Aug 12, 2023</span>
-    <h2>
-      <a class="blog-link" href="/blog/2023/08/12/another-new-design.html">Another New Design</a>
-    </h2>
-    <p></p>
-  </article>
+<p>Anyway, with that done I knew I could pull the information I was looking for and format it as needed. Piecing together the song title, artist, and album of the latest song was complete.</p>
 
-<article class="blog-entry">
-    <span class="post-meta">May 14, 2022</span>
-    <h2>
-      <a class="blog-link" href="/blog/2022/05/14/virtual.html">I'm Virtual Now</a>
-    </h2>
-    <p></p>
-  </article>
+<p>Next, I needed to move that private key somewhere to actually keep it private. While the test had hard coded the key onto the page it needs to be stored as an environment variable and accessed in a way that does not expose it to a client.</p>
 
-<article class="blog-entry">
-    <span class="post-meta">Apr 4, 2017</span>
-    <h2>
-      <a class="blog-link" href="/blog/2017/04/04/time-for-a-change.html">Time for a Change</a>
-    </h2>
-    <p></p>
-  </article>
+<p>Luckily for me, my host of choice <a href="https://netlify.com">Netlify</a> has some good documentation and site configuration to make this easier. There is a section for Environment Variables within the site configuration which allowed me to specify the api key.</p>
 
-<article class="blog-entry">
-    <span class="post-meta">Sep 13, 2015</span>
-    <h2>
-      <a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Take it Home With You</a>
-    </h2>
-    <p></p>
-  </article>
+<p>From there I would need a way to access that information at run time versus having the build of this <a href="https://jekyllrb.com">Jekyll</a> site pull it into the code of the site. This was achieved by the use of Netlify functions which allow for server side Javascript to be run to access environment variables.</p>
+
+<p>Prior to this addition there was not much configuration in the setup of this site for the Netlify build. Now there are a few more requirements and I’m not sure if it could go back to GitHub Pages.</p>
+
+<p>Unfortunately, my compuslive upgrading has delayed the launch of the page a bit as well as a few of the supporting tools to build the site had some cascading dependency issues tied to updating one piece or another.</p>
+
+<p>After the api key was setup, kept private in environment variables, accessed via a server side function call, and used to pull song details, I was ready to build the rest of the /now page. I had originally just setup a HTML page but I went ahead and converted it to markdown to utilize the existing templates.</p>
+
+<p>Then I had to decide what was even happening now which I kept pretty light as it is just a first pass. I think having the page out there and reviewing it periodically would be a good sanity check from time to time.</p>
 
 
+    </article>
+  <a href="/blog/2024/12/06/now-2024.html" hidden></a>
 </div>
+
+<hr />
+
+<div class="post-detail"></div>
+</div>
+
+
+
+
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
