@@ -6,7 +6,7 @@ tags: [now, 2024, meta]
 blurb: While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.
 
 comments:
-    id: 
+    id: 113606984706558220
 ---
 
 <!--more-->
