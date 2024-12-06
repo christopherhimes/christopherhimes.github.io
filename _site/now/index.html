@@ -7,20 +7,29 @@
 
   
 
-  <title>about</title>
+  <title>now</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="I&apos;m a developer living in Metro Detroit.
+  <meta name="description" content="__What I&apos;m doing now__
 
-For a more detailed look at my experience please check out my [cv]
+Updated December 5, 2024
 
-I&apos;ve added a new [now] page as well.
+### Personal
+Leah and I have gone from planning a wedding to planning a trip to France. We&apos;re looking at Airbnbs which has been pretty intersting actually.
 
-[cv]: ../cv
-[now]: ../now">
+### Movies/TV
+Started watching Dune Prophesy and am enjoying the last season of What We do in the Shadows.
+Saw Wicked and will be going again this weekend.
+
+### Music
+I&apos;ve been listening to the Wicked sountrack and the new Kendrick album.
+{% if page.title == &apos;now&apos; %}
+
+
+{% endif %}">
 
   
 
@@ -42,15 +51,24 @@ I&apos;ve added a new [now] page as well.
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="about">
-  <meta property="og:description" content="I&apos;m a developer living in Metro Detroit.
+  <meta property="og:title" content="now">
+  <meta property="og:description" content="__What I&apos;m doing now__
 
-For a more detailed look at my experience please check out my [cv]
+Updated December 5, 2024
 
-I&apos;ve added a new [now] page as well.
+### Personal
+Leah and I have gone from planning a wedding to planning a trip to France. We&apos;re looking at Airbnbs which has been pretty intersting actually.
 
-[cv]: ../cv
-[now]: ../now">
+### Movies/TV
+Started watching Dune Prophesy and am enjoying the last season of What We do in the Shadows.
+Saw Wicked and will be going again this weekend.
+
+### Music
+I&apos;ve been listening to the Wicked sountrack and the new Kendrick album.
+{% if page.title == &apos;now&apos; %}
+
+
+{% endif %}">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/face.webp">
@@ -58,8 +76,8 @@ I&apos;ve added a new [now] page as well.
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/about/">
-  <link rel="canonical" href="http://localhost:4000/about/">
+  <meta property="og:url" content="http://localhost:4000/now/">
+  <link rel="canonical" href="http://localhost:4000/now/">
   
   <style type="text/css">
     
@@ -320,14 +338,58 @@ a, a:visited, a:hover .page-link {
 <main class="wrapper" aria-label="Content">
         <div class="page-detail">
 <header>
-  <h1 class="page-title">about</h1>
+  <h1 class="page-title">now</h1>
 </header>
-  <p>I’m a developer living in Metro Detroit.</p>
+  <p><strong>What I’m doing now</strong></p>
 
-<p>For a more detailed look at my experience please check out my <a href="../cv">cv</a></p>
+<p>Updated December 5, 2024</p>
 
-<p>I’ve added a new <a href="../now">now</a> page as well.</p>
+<h3 id="personal">Personal</h3>
+<p>Leah and I have gone from planning a wedding to planning a trip to France. We’re looking at Airbnbs which has been pretty intersting actually.</p>
 
+<h3 id="moviestv">Movies/TV</h3>
+<p>Started watching Dune Prophesy and am enjoying the last season of What We do in the Shadows.
+Saw Wicked and will be going again this weekend.</p>
+
+<h3 id="music">Music</h3>
+<p>I’ve been listening to the Wicked sountrack and the new Kendrick album.</p>
+
+<script type="text/javascript">
+
+fetch('../../.netlify/functions/hide-token')
+    .then(response => response.json())
+    .then(data => {
+        // console.log(data.message)
+        const api_key = data.message
+        const MY_USERNAME = 'cshmes';
+        const request = new XMLHttpRequest();
+        // console.log(api_key)
+        request.open('GET', 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+[MY_USERNAME]+'&api_key='+api_key+'&format=json');
+        request.send(); 
+
+        request.onload = () => {
+            if (request.status === 200) {
+                // console.log("Success");
+
+                var track = JSON.parse(request.response).recenttracks.track[0];
+                var song = track.name;
+                var artist = track.artist['#text'];
+                var album = track.album['#text'];
+
+                const container = document.getElementById('result');
+                container.innerHTML = 'Last listed to 🎵 ' + song + ' - <i>' + artist + '</i> - <u>' + album + "</u> 🎵 is the as scrobbled by <a href='https://last.fm/user/cshmes'>last.fm</a>"; 
+                // console.log(JSON.parse(request.response).recenttracks.track[0]);  
+            } 
+        };
+
+        request.onerror = () => {
+        console.log("error")
+        };
+    })
+
+</script>
+
+<div id="result"></div>
 
 </div>
     </main><footer class="site-footer h-card">

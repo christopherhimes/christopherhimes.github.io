@@ -2,6 +2,7 @@
 layout: page
 title: Resume/CV
 permalink: /cv/
+mainnav: false
 ---
 
 I'm a developer living in Metro Detroit; using my experience to make complicated things seem effortless, simpler, and elegant.  
