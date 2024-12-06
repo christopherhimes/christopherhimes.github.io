@@ -2,7 +2,7 @@
 layout: post
 title:  "Now Page 2024"
 date:   2024-12-06 12:00:00
-tags: [now, 2024, meta]
+tags: [now, '2024', meta]
 blurb: While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.
 
 comments:
