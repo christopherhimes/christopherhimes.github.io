@@ -42,7 +42,7 @@ fetch('../../.netlify/functions/hide-token')
                 var album = track.album['#text'];
 
                 const container = document.getElementById('result');
-                container.innerHTML = 'Last listed to 🎵 ' + song + ' - <i>' + artist + '</i> - <u>' + album + "</u> 🎵 is the as scrobbled by <a href='https://last.fm/user/cshmes'>last.fm</a>"; 
+                container.innerHTML = 'Last listened to 🎵 ' + song + ' - <i>' + artist + '</i> - <u>' + album + "</u> 🎵 as scrobbled by <a href='https://last.fm/user/cshmes'>last.fm</a>"; 
                 // console.log(JSON.parse(request.response).recenttracks.track[0]);  
             } 
         };
