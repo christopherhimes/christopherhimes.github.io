@@ -6,9 +6,23 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 06 Dec 2024 20:48:05 -0500</pubDate>
-    <lastBuildDate>Fri, 06 Dec 2024 20:48:05 -0500</lastBuildDate>
+    <pubDate>Thu, 13 Mar 2025 14:52:51 -0400</pubDate>
+    <lastBuildDate>Thu, 13 Mar 2025 14:52:51 -0400</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Media Diet December</title>
+        <description>&lt;!--more--&gt;
+
+</description>
+        <pubDate>Sun, 15 Dec 2024 07:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2024/12/15/media-diet-december.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2024/12/15/media-diet-december.html</guid>
+        
+        <category>Media Diet</category>
+        
+        
+      </item>
     
       <item>
         <title>Now Page 2024</title>
@@ -301,30 +315,6 @@ As a Product Owner the daily activities do not typically require much coding so 
         <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2017/04/04/time-for-a-change.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2017/04/04/time-for-a-change.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Take it Home With You</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../../../../../assets/img/blog/take-it-home-with-you/home.webp&quot; alt=&quot;home-image&quot; title=&quot;Home&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The next two weeks are going to be exceedingly difficult not to bring work home.  I’m prone to work through things I’m working on at work while I’m at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.
-&lt;!--more--&gt;
-Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcoming week.  We have a fairly aggressive timeline on the current project and I’d prefer to avoid anyone else having to spend time on it outside of work.  I think we can make the timing work we just have to stick to the plan and hopefully do away with any unknowns early in the process.&lt;/p&gt;
-
-&lt;p&gt;This project is the first big project with the new team.  We’ve got everyone up to speed and on the same page, so I forsee a busy but productive week.  I’m excited to demonstrate all of what we can do.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/royaannmiller&quot;&gt;Roya Ann Miller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 13 Sep 2015 16:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</guid>
-        
-        <category>work</category>
-        
-        <category>home</category>
         
         
       </item>

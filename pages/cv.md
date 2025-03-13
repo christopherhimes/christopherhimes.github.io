@@ -13,7 +13,7 @@ With a strong background in Mathematics and Information Technology (Multimedia C
 
 ### JELD-WEN
 
-**Retail Catalog Manager - Doors(February 2022 – *Present*)**
+**Retail Catalog Manager - Doors(February 2022 – March 2025)**
 * Coordinate between the business, catalog team, and retail partners the maintenance and release of retail door catalogs.
 
 ### MMI Door a JELD-WEN Company 
