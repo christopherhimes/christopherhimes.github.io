@@ -6,9 +6,43 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 13 Mar 2025 15:32:39 -0400</pubDate>
-    <lastBuildDate>Thu, 13 Mar 2025 15:32:39 -0400</lastBuildDate>
+    <pubDate>Mon, 17 Mar 2025 13:30:30 -0400</pubDate>
+    <lastBuildDate>Mon, 17 Mar 2025 13:30:30 -0400</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Starting</title>
+        <description>&lt;!--more--&gt;
+
+&lt;p&gt;After 16 years, 9 months and 12 days I’m unemployed. It’s upsetting and scary but also exciting in a way. That’s a long time for anyone to be doing something and it would be nice to do something else.&lt;/p&gt;
+
+&lt;p&gt;Already I’m looking for ways to use my time productively. I’ve always been somewhat dubious about self help books and influencers of that type. However, I have found a few things lately that I’m going to try. Looking to add some structure in the near term but maybe they’ll stick around and become habits.&lt;/p&gt;
+
+&lt;p&gt;I really like the idea of &lt;a href=&quot;https://doingweeknotes.com/&quot;&gt;Week Notes&lt;/a&gt;, a concept I’ve only been introduced to recently. The general idea is to post publicly (typically within an organization) what your team has worked on this week. Hopefully, making this information public gives other teams, leadership, etc., a better idea of what is going on. This of course is another silo breaking procedure but as activity more akin to a work journal.&lt;/p&gt;
+
+&lt;p&gt;Having sent status emails for years this seems like a nice way to add context to whatever dates may be out there. For example if there is something that comes up unexpectedly this could appear in the weeknote and help avoid future surprises. Of course this is not a replacement for other forms of communication but it may reach people outside of traditional channels. The public forum means not having to guess who should be included on the email chain.&lt;/p&gt;
+
+&lt;p&gt;More importantly than that a team can celebrate a win every week. There are things worth celebrating all the time. Too often focus is on a larger deliverable when so many smaller victories happen every week.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;What does that mean for me though?&lt;/em&gt; I’m going to be working toward my next job every week and documenting these efforts may help me. Having a bit of a self check-in weekly seems valuable.&lt;/p&gt;
+
+&lt;p&gt;Which brings me to the rest of the plan I’m starting today. I’m acting with intent over the next 12 weeks implementing a much more casual version of the &lt;a href=&quot;https://12weekyear.com/&quot;&gt;12 Week Year&lt;/a&gt; after watching this &lt;a href=&quot;https://youtu.be/5SPjd9Zu4-w?si=rjBU_E7WPI-ww1KC&quot;&gt;video&lt;/a&gt; by Zach Highley. I’ve made a few goals and I’m going to keep track of what I’m doing to try and accomplish them.&lt;/p&gt;
+
+&lt;p&gt;To help me keep track of my goals and my planned activities for the 12 weeks I’ve added a template already setup for this sort of thing on &lt;a href=&quot;https://www.notion.so&quot;&gt;Notion&lt;/a&gt;. If you’re not famililar with Notion it started as a note taking app like Evernote. But it has turned into a suite of tools for project management, documentation, and collaboration. Random promotion of Notion aside I’ve got the system setup I just need to start the work.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 17 Mar 2025 09:30:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/03/17/starting-weeknotes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/03/17/starting-weeknotes.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>12 Week Year</category>
+        
+        <category>Notion</category>
+        
+        
+      </item>
     
       <item>
         <title>Now Page 2024</title>
@@ -301,30 +335,6 @@ As a Product Owner the daily activities do not typically require much coding so 
         <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2017/04/04/time-for-a-change.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2017/04/04/time-for-a-change.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Take it Home With You</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../../../../../assets/img/blog/take-it-home-with-you/home.webp&quot; alt=&quot;home-image&quot; title=&quot;Home&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The next two weeks are going to be exceedingly difficult not to bring work home.  I’m prone to work through things I’m working on at work while I’m at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.
-&lt;!--more--&gt;
-Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcoming week.  We have a fairly aggressive timeline on the current project and I’d prefer to avoid anyone else having to spend time on it outside of work.  I think we can make the timing work we just have to stick to the plan and hopefully do away with any unknowns early in the process.&lt;/p&gt;
-
-&lt;p&gt;This project is the first big project with the new team.  We’ve got everyone up to speed and on the same page, so I forsee a busy but productive week.  I’m excited to demonstrate all of what we can do.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/royaannmiller&quot;&gt;Roya Ann Miller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 13 Sep 2015 16:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</guid>
-        
-        <category>work</category>
-        
-        <category>home</category>
         
         
       </item>

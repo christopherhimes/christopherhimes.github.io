@@ -5,7 +5,7 @@ permalink: /cv/
 mainnav: false
 ---
 
-I'm a developer living in Metro Detroit; using my experience to make complicated things seem effortless, simpler, and elegant.  
+I'm a product owner living in Metro Detroit. I enjoy using my experience to deliver value for the customer and improve every day.
 
 With a strong background in Mathematics and Information Technology (Multimedia Concentration) I'm analytically minded with a focus on user experience.  I've worked with C++/C#, Objective-C, PHP, MySQL, Python, Javascript, Version Control with Git and am interested in learning more.
 
