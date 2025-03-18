@@ -31,7 +31,7 @@ body {
 }
 h1, h2, h3, h4, h5 {
     font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
-    letter-spacing: .25em;
+    // letter-spacing: .25em;
 }
 span {
     margin:0;
@@ -39,18 +39,21 @@ span {
 }
 h1 {
     color: $site-title-color;
-    margin-bottom:1em;
+    // margin-bottom:1em;
 } 
 h2 {
-    color: $brand-color;
-    margin: 0;
+    font-size: 1.5em;
+    color: $site-title-color;
+    // margin: 0;
 }
 h3 {
-    color: $accent-color;
-    margin: 2em 0;
+    font-size: 1.25em;
+    color: $brand-color;
+    // margin: 2em 0;
 }
 hr {
-    border: dashed 2px $accent-color;
+    border: dashed 1px $accent-color;
+    margin: 1em;
 }
 p {
     color: $text-color;
@@ -66,6 +69,7 @@ a {
 }
 .wrapper {
     margin:1em auto;
+    width:100%;
     // padding:1em;
 }
 .site-nav { 
@@ -109,6 +113,7 @@ a, a:visited, a:hover .page-link {
 .footer-links li{
     list-style: none;
     line-height: 1em;
+    width: 200px;
 }
 .footer-links a {
     padding:0;
@@ -181,22 +186,25 @@ a, a:visited, a:hover .page-link {
 }
 .wrapper {
     margin: auto;
-    width:1200px;
+    // width:700px;
     display: flex;
     justify-content: left;
     align-items: left;
     gap: 3em;
     // padding:1em;
     flex-direction: column;
-    line-height: 2.5em;
+    // line-height: 1.75em;
     flex: 1 100%;
 }
 .post-detail, .page-detail{
+    display: flex;
+    justify-content: center;
     align-items: left;
-    text-align: left;
+    flex-direction: column;
     font-size: 1.25em;
-    // margin: 0 auto;
-    margin: 1em;
+    margin: 0 auto;
+    // margin: 1em;
+    width: 700px;
 }
 
 .dt-published {
@@ -247,20 +255,23 @@ a, a:visited, a:hover .page-link {
 //         width: 100%;
 //     }
 //   }
-@media (max-width: 1200px) {
-    .wrapper {
-        width: 100%;
-    }
-    .home-wrapper {
-        width: 90%;
-    }
-  }
+// @media (max-width: 1200px) {
+//     .wrapper {
+//         width: 100%;
+//     }
+//     .home-wrapper {
+//         width: 90%;
+//     }
+//   }
 @media (max-width: 800px) {
+    .wrapper {
+        width:100%;
+    }
     .home-wrapper {
     flex-direction: column;
     }
 
     .home-wrapper {
-        width: 90%;
+        width: 100%;
     }
 }

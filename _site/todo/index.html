@@ -96,7 +96,6 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
-  letter-spacing: 0.25em;
 }
 
 span {
@@ -106,21 +105,21 @@ span {
 
 h1 {
   color: rgb(32, 255, 188);
-  margin-bottom: 1em;
 }
 
 h2 {
-  color: rgb(25, 209, 255);
-  margin: 0;
+  font-size: 1.5em;
+  color: rgb(32, 255, 188);
 }
 
 h3 {
-  color: rgb(211, 211, 211);
-  margin: 2em 0;
+  font-size: 1.25em;
+  color: rgb(25, 209, 255);
 }
 
 hr {
-  border: dashed 2px rgb(211, 211, 211);
+  border: dashed 1px rgb(211, 211, 211);
+  margin: 1em;
 }
 
 p {
@@ -141,6 +140,7 @@ a {
 
 .wrapper {
   margin: 1em auto;
+  width: 100%;
 }
 
 .site-nav {
@@ -182,6 +182,7 @@ a, a:visited, a:hover .page-link {
 .footer-links li {
   list-style: none;
   line-height: 1em;
+  width: 200px;
 }
 
 .footer-links a {
@@ -251,21 +252,22 @@ a, a:visited, a:hover .page-link {
 
 .wrapper {
   margin: auto;
-  width: 1200px;
   display: flex;
   justify-content: left;
   align-items: left;
   gap: 3em;
   flex-direction: column;
-  line-height: 2.5em;
   flex: 1 100%;
 }
 
 .post-detail, .page-detail {
+  display: flex;
+  justify-content: center;
   align-items: left;
-  text-align: left;
+  flex-direction: column;
   font-size: 1.25em;
-  margin: 1em;
+  margin: 0 auto;
+  width: 700px;
 }
 
 .dt-published {
@@ -292,20 +294,15 @@ a, a:visited, a:hover .page-link {
   padding: 1em;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .wrapper {
     width: 100%;
   }
   .home-wrapper {
-    width: 90%;
-  }
-}
-@media (max-width: 800px) {
-  .home-wrapper {
     flex-direction: column;
   }
   .home-wrapper {
-    width: 90%;
+    width: 100%;
   }
 }
   </style>
