@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Week 12"
-date:   2025-03-19 17:00:00
+date:   2025-03-21 17:00:00
 tags: ['Week Notes', 'Week 12']
 blurb: 
 

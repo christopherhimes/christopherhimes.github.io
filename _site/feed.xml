@@ -6,28 +6,9 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Mar 2025 16:58:17 -0400</pubDate>
-    <lastBuildDate>Wed, 19 Mar 2025 16:58:17 -0400</lastBuildDate>
+    <pubDate>Wed, 19 Mar 2025 17:06:49 -0400</pubDate>
+    <lastBuildDate>Wed, 19 Mar 2025 17:06:49 -0400</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
-    
-      <item>
-        <title>Week 12</title>
-        <description>&lt;!--more--&gt;
-&lt;h1 id=&quot;week-12&quot;&gt;Week 12&lt;/h1&gt;
-
-&lt;p&gt;&lt;em&gt;It’s week one of my &lt;a href=&quot;https://12weekyear.com/&quot;&gt;12 Week Year&lt;/a&gt; but it’s the 12th week of the year so I’m calling it week 12.&lt;/em&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 19 Mar 2025 13:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2025/03/19/weeknotes-week12.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2025/03/19/weeknotes-week12.html</guid>
-        
-        <category>Week Notes</category>
-        
-        <category>Week 12</category>
-        
-        
-      </item>
     
       <item>
         <title>Starting</title>
@@ -337,6 +318,23 @@ As a Product Owner the daily activities do not typically require much coding so 
         <category>python</category>
         
         <category>gulp</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Time for a Change</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../../../../../../../assets/img/blog/time-for-a-change/change.webp&quot; alt=&quot;change-image&quot; title=&quot;change image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.  I’ve been unenthusiastic about the previous color scheme for a while so this is a nice brighter setup.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@lemuelbutler&quot;&gt;Lemuel Butler on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2017/04/04/time-for-a-change.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/04/04/time-for-a-change.html</guid>
         
         
       </item>
