@@ -270,10 +270,8 @@ a, a:visited, a:hover .page-link {
     .home-wrapper {
     flex-direction: column;
     }
-    .footer-wrapper {
-        flex-direction: column;
-    }
-    .footer-col, .page-detail, .post-detail {
-        width: 90%;
+
+    .home-wrapper {
+        width: 100%;
     }
 }
