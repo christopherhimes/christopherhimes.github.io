@@ -6,9 +6,46 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Mar 2025 17:06:49 -0400</pubDate>
-    <lastBuildDate>Wed, 19 Mar 2025 17:06:49 -0400</lastBuildDate>
+    <pubDate>Fri, 21 Mar 2025 11:53:04 -0400</pubDate>
+    <lastBuildDate>Fri, 21 Mar 2025 11:53:04 -0400</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Week 12</title>
+        <description>&lt;!--more--&gt;
+&lt;h1 id=&quot;week-12&quot;&gt;Week 12&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;It’s week one of my &lt;a href=&quot;https://12weekyear.com/&quot;&gt;12 Week Year&lt;/a&gt; but it’s the 12th week of the year so I’m calling it week 12. This is meant to be forward looking to a week note for every week of the year.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I updated my resume to showcase my experience, skills, and accomplishments as a Product Owner.&lt;/li&gt;
+  &lt;li&gt;Signed up at &lt;a href=&quot;https://www.nextjobtraining.com/&quot;&gt;NextJob&lt;/a&gt; to take advantage of that benefit from my previous employer.&lt;/li&gt;
+  &lt;li&gt;Scheduled a meeting with a job coach for next week.&lt;/li&gt;
+  &lt;li&gt;Updated &lt;a href=&quot;https://www.linkedin.com/in/cshimes&quot;&gt;my LinkedIn profile&lt;/a&gt; and added a few people that I previously worked with in the past.&lt;/li&gt;
+  &lt;li&gt;Originally planned to apply to a few jobs this week but have been saving them for next week and a better resume.&lt;/li&gt;
+  &lt;li&gt;Started documenting some specific projects I’ve had at work over the last few years.&lt;/li&gt;
+  &lt;li&gt;Set resume/cv to appear in the main navigation.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 21 Mar 2025 08:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/03/21/weeknotes-week12.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/03/21/weeknotes-week12.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>Week 12</category>
+        
+        <category>resume</category>
+        
+        <category>NextJob</category>
+        
+        <category>Product Owner</category>
+        
+        <category>Job Search</category>
+        
+        
+      </item>
     
       <item>
         <title>Starting</title>
@@ -318,23 +355,6 @@ As a Product Owner the daily activities do not typically require much coding so 
         <category>python</category>
         
         <category>gulp</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Time for a Change</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../../../../../assets/img/blog/time-for-a-change/change.webp&quot; alt=&quot;change-image&quot; title=&quot;change image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.  I’ve been unenthusiastic about the previous color scheme for a while so this is a nice brighter setup.
-&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@lemuelbutler&quot;&gt;Lemuel Butler on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2017/04/04/time-for-a-change.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/04/04/time-for-a-change.html</guid>
         
         
       </item>

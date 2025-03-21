@@ -228,6 +228,7 @@ a, a:visited, a:hover .page-link {
     justify-content: center;
     align-items: flex-start;
     gap: 1.5em;
+    
 
 }
 .footer-col {
@@ -268,7 +269,7 @@ a, a:visited, a:hover .page-link {
         width:100%;
     }
     .home-wrapper {
-    flex-direction: column;
+        flex-direction: column;
     }
     .footer-wrapper {
         flex-direction: column;
