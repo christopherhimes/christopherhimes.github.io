@@ -7,13 +7,46 @@
 
   
 
-  <title>Christopher Himes</title>
+  <title>Light and Dark</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="I&apos;m looking for work as Product Owner living in Metro Detroit using my experience to make complicated things simpler.">
+  <meta name="description" content="I’m a fan of dark mode on sites, in development editors, and in the operating system too. Staring at a mostly white screen all day is exhausting and I like the way the content on screen emerges from the darkness with dark mode enabled.
+
+Inspired by this post from James G, I set about creating a light mode for this site. This is the reverse from what James had done as he started with a light mode but the the ideas are the same.
+
+My :root to make this work currently looks like this.
+
+:root {
+    color-scheme: light dark;
+    --dark-background-color: rgb(26, 26, 26);
+    --dark-foreground-color: rgb(32, 255, 188);
+    --dark-link-color: rgb(25, 209, 255);
+    --dark-text-color: rgb(240,240,240);
+
+    --light-background-color: rgb(240,240,240);
+    --light-foreground-color: rgb(0, 119, 83);    
+    --light-link-color: rgb(1, 151, 189);
+    --light-text-color: rgb(26, 26, 26);
+
+    --line-color: rgba(211, 211, 211, 30%);
+  }
+
+
+The color-scheme term is required to respect the users setting.
+
+With the global variables set it’s just a matter of using light-dark() to set the appropriate colors.
+
+p, li, ul {
+    color: light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
+
+I still really prefer the dark mode version of the site, so check that out if you’re interested. It’s just a matter of toggling between light and dark in the browser settings. In Zen browser it’s in General &amp;gt; Language and Appearance which means I don’t even have to scroll in the settings.
+
+Which ever mode you prefer I hope you like what you see.">
 
   
 
@@ -35,17 +68,52 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="Christopher Himes">
-  <meta property="og:description" content="I&apos;m looking for work as Product Owner living in Metro Detroit using my experience to make complicated things simpler.">
+  <meta property="og:title" content="Light and Dark">
+  <meta property="og:description" content="I’m a fan of dark mode on sites, in development editors, and in the operating system too. Staring at a mostly white screen all day is exhausting and I like the way the content on screen emerges from the darkness with dark mode enabled.
+
+Inspired by this post from James G, I set about creating a light mode for this site. This is the reverse from what James had done as he started with a light mode but the the ideas are the same.
+
+My :root to make this work currently looks like this.
+
+:root {
+    color-scheme: light dark;
+    --dark-background-color: rgb(26, 26, 26);
+    --dark-foreground-color: rgb(32, 255, 188);
+    --dark-link-color: rgb(25, 209, 255);
+    --dark-text-color: rgb(240,240,240);
+
+    --light-background-color: rgb(240,240,240);
+    --light-foreground-color: rgb(0, 119, 83);    
+    --light-link-color: rgb(1, 151, 189);
+    --light-text-color: rgb(26, 26, 26);
+
+    --line-color: rgba(211, 211, 211, 30%);
+  }
+
+
+The color-scheme term is required to respect the users setting.
+
+With the global variables set it’s just a matter of using light-dark() to set the appropriate colors.
+
+p, li, ul {
+    color: light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
+
+I still really prefer the dark mode version of the site, so check that out if you’re interested. It’s just a matter of toggling between light and dark in the browser settings. In Zen browser it’s in General &amp;gt; Language and Appearance which means I don’t even have to scroll in the settings.
+
+Which ever mode you prefer I hope you like what you see.">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/face.webp">
   
 
   
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/page4/">
-  <link rel="canonical" href="http://localhost:4000/page4/">
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Christopher Himes">
+  <meta property="og:article:published_time" content="2025-03-23T14:10:00-04:00">
+  <meta property="og:url" content="http://localhost:4000/blog/2025/03/23/light-and-dark.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2025/03/23/light-and-dark.html">
   
   <style type="text/css">
     
@@ -357,59 +425,64 @@ a, a:visited, a:hover .page-link {
     </div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/blog/">blog</a><a class="page-link" href="/cv/">resume/cv</a></nav></nav>
 </header>
 <main class="wrapper" aria-label="Content">
-          <div class="home-wrapper">
-      <div class="home-col">
-        <img class="face" width="325" height="325" src="assets/img/new-face.webp" alt="black and white picture of me in a suit">
-      </div>
-      <div class="home-col">
-        <h1>Hi there</h1>
-        <p class="home-heading">I'm Christopher Himes, an accomplished Product Owner seeking new opportunities for transformation and adding value.</p>
-      </div>
-      
-  </div>
-  <div class="home-wrapper-column">
-    <hr />
-    <h1>experience</h1>
-    <p class="headline">Product Owner with 10+ years of leading transformative projects and delivering measurable results. Adept at building and nurturing high-performing teams while driving strategic growth and exceeding customer expectations. <a href="/cv">Read more...</a></p>
-  </div>
-  <div class="home-wrapper-column">
-    <hr />
-    <h1>recent posts</h1>
-    <div class="home-blog">
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/23/light-and-dark.html">Light and Dark</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Now Update and Todo List</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/21/weeknotes-week12.html">Week 12</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Starting</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2024/12/06/now-2024.html">Now Page 2024</a>
-        </h2>
-      </article>
-    
-  </div>
-  <hr />
-  </div>
+        
+
+<div class="" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-detail">
+  <header>
+    <h1 class="post-title" itemprop="name headline">Light and Dark</h1>
+    <p><time class="dt-published" datetime="2025-03-23T14:10:00-04:00" itemprop="datePublished">
+        Mar 23, 2025
+      </time></p>
+  </header>
+    <article itemprop="articleBody">
+      <!--more-->
+
+<p>I’m a fan of dark mode on sites, in development editors, and in the operating system too. Staring at a mostly white screen all day is exhausting and I like the way the content on screen emerges from the darkness with dark mode enabled.</p>
+
+<p>Inspired by <a href="https://jamesg.blog/2024/11/24/dark-mode">this post</a> from James G, I set about creating a light mode for this site. This is the reverse from what James had done as he started with a light mode but the the ideas are the same.</p>
+
+<p>My :root to make this work currently looks like this.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
+    color-scheme: light dark;
+    --dark-background-color: rgb(26, 26, 26);
+    --dark-foreground-color: rgb(32, 255, 188);
+    --dark-link-color: rgb(25, 209, 255);
+    --dark-text-color: rgb(240,240,240);
+
+    --light-background-color: rgb(240,240,240);
+    --light-foreground-color: rgb(0, 119, 83);    
+    --light-link-color: rgb(1, 151, 189);
+    --light-text-color: rgb(26, 26, 26);
+
+    --line-color: rgba(211, 211, 211, 30%);
+  }
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">color-scheme</code> term is required to respect the users setting.</p>
+
+<p>With the global variables set it’s just a matter of using <code class="language-plaintext highlighter-rouge">light-dark()</code> to set the appropriate colors.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p, li, ul {
+    color: light-dark(var(--light-text-color), var(--dark-text-color));
+}
+</code></pre></div></div>
+
+<p>I still really prefer the dark mode version of the site, so check that out if you’re interested. It’s just a matter of toggling between light and dark in the browser settings. In Zen browser it’s in <code class="language-plaintext highlighter-rouge">General &gt; Language and Appearance</code> which means I don’t even have to scroll in the settings.</p>
+
+<p>Which ever mode you prefer I hope you like what you see.</p>
+
+
+    </article>
+  <a href="/blog/2025/03/23/light-and-dark.html" hidden></a>
+</div>
+<div class="post-detail">
+<hr /></div>
+</div>
+
+
+
 
     </main><footer class="site-footer h-card"> 
   <data class="u-url" href="/"></data>

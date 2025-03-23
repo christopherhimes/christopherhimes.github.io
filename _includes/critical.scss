@@ -1,6 +1,3 @@
-// Placeholder to allow overriding predefined variables smoothly.
-$brand-color: rgb(32, 255, 188);
-
 $link-base-color: rgb(25, 209, 255);
 $link-visited-color: rgb(25, 209, 255);
 $link-hover-color: rgb(25, 209, 255);
@@ -12,8 +9,22 @@ $card-background-color: rgb(17, 17, 17);
 $accent-color: rgb(211, 211, 211);
 $text-color: rgb(200,200,200);
 
-$line-color: rgba(211, 211, 211, 30%);
+$line-color: rgb(173, 173, 173);
 
+:root {
+    color-scheme: light dark;
+    --dark-background-color: rgb(26, 26, 26);
+    --dark-foreground-color: rgb(32, 255, 188);
+    --dark-link-color: rgb(25, 209, 255);
+    --dark-text-color: rgb(240,240,240);
+
+    --light-background-color: rgb(240,240,240);
+    --light-foreground-color: rgb(0, 119, 83);    
+    --light-link-color: rgb(1, 151, 189);
+    --light-text-color: rgb(26, 26, 26);
+
+    --line-color: rgba(211, 211, 211, 30%);
+  }
 @font-face {
     font-family: 'lato-normal';
     src: url('../../../../../assets/font/lato-normal.woff2') format('woff2'),
@@ -23,8 +34,9 @@ $line-color: rgba(211, 211, 211, 30%);
 }
 
 body {
-    background-color: $main-background-color;
-    color: $text-color;
+    background-color: light-dark(var(--light-background-color), var(--dark-background-color));
+    // background-color: light-dark(gray, black);
+    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
     margin:0px;
     padding:0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -39,32 +51,35 @@ span {
     padding: none;
 }
 h1 {
-    color: $site-title-color;
+    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
     // margin-bottom:1em;
 } 
 h2 {
     font-size: 1.5em;
-    color: $site-title-color;
+    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
     // margin: 0;
 }
 h3 {
     font-size: 1.25em;
-    color: $brand-color;
+    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
     // margin: 2em 0;
 }
 hr {
-    border: solid 1px $line-color;
+    border: solid 1px --line-color;
     margin: 1em;
     width: 100%;
 }
-p {
-    color: $text-color;
+p, li, ul {
+    color: light-dark(var(--light-text-color), var(--dark-text-color));
 }
 a:hover {
     text-decoration: underline;
 }
 a {
     text-decoration: none;
+}
+.headline {
+    font-size: 1.5em;
 }
 .post-link {
     font-size: 2em;
@@ -82,17 +97,20 @@ a {
     margin: 0 1em;
 }
 a, a:visited, a:hover .page-link {
-    color:$link-base-color;
+    color: light-dark(var(--light-link-color), var(--dark-link-color));
 }
 .face {
     clip-path: circle(150px at center);
     filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
   }
-
+.task-list {
+    list-style-type: none;
+    color: light-dark(var(--light-text-color), var(--dark-text-color));
+}
 .site-title {
     font-family: 'lato-normal', Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
+    background: -webkit-gradient(linear, left top, right bottom, from(light-dark(var(--light-foreground-color), var(--dark-foreground-color))), to(light-dark(var(--light-link-color), var(--dark-link-color))));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -103,7 +121,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .fa-gradient{
-    color:$link-base-color;
+    color: light-dark(var(--light-link-color), var(--dark-link-color));
     // // background: linear-gradient(34deg, #128562, #1086a3) 1;
     // background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
     // -webkit-background-clip: text;
@@ -123,7 +141,7 @@ a, a:visited, a:hover .page-link {
 
 }
 .site-header {
-    border-image: linear-gradient(34deg, $site-title-color, #1086a3) 1;
+    border-image: linear-gradient(34deg, light-dark(var(--light-foreground-color), var(--dark-foreground-color)), light-dark(var(--light-link-color), var(--dark-link-color))) 1;
     border-width: 5px;
     border-style: solid;
     border-left: 0;
@@ -174,7 +192,7 @@ a, a:visited, a:hover .page-link {
 }
 .home-heading {
     font-size: 2em;
-    color: $site-title-color;
+    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 .site-nav {
     display: flex;
@@ -223,10 +241,10 @@ a, a:visited, a:hover .page-link {
     padding: 1em 0;
     align-items: left;
     text-align: left;
-    border-top: solid 2px $line-color;
+    border-top: solid 2px --line-color;
 }
 // .blog-entry, .post-detail span {
-//     // color: $brand-color;
+//     // color: --dark-foreground-color;
 // }
 
 .home-blog {

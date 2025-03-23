@@ -51,15 +51,28 @@
   
   <style type="text/css">
     
-    @font-face {
+    :root {
+  color-scheme: light dark;
+  --dark-background-color: rgb(26, 26, 26);
+  --dark-foreground-color: rgb(32, 255, 188);
+  --dark-link-color: rgb(25, 209, 255);
+  --dark-text-color: rgb(240,240,240);
+  --light-background-color: rgb(240,240,240);
+  --light-foreground-color: rgb(0, 119, 83);
+  --light-link-color: rgb(1, 151, 189);
+  --light-text-color: rgb(26, 26, 26);
+  --line-color: rgba(211, 211, 211, 30%);
+}
+
+@font-face {
   font-family: "lato-normal";
   src: url("../../../../../assets/font/lato-normal.woff2") format("woff2"), url("../../../../../assets/font/lato-normal.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  background-color: rgb(26, 26, 26);
-  color: rgb(200, 200, 200);
+  background-color: light-dark(var(--light-background-color), var(--dark-background-color));
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
   margin: 0px;
   padding: 0px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -76,27 +89,27 @@ span {
 }
 
 h1 {
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 h2 {
   font-size: 1.5em;
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 h3 {
   font-size: 1.25em;
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 hr {
-  border: solid 1px rgba(211, 211, 211, 0.3);
+  border: solid 1px --line-color;
   margin: 1em;
   width: 100%;
 }
 
-p {
-  color: rgb(200, 200, 200);
+p, li, ul {
+  color: light-dark(var(--light-text-color), var(--dark-text-color));
 }
 
 a:hover {
@@ -105,6 +118,10 @@ a:hover {
 
 a {
   text-decoration: none;
+}
+
+.headline {
+  font-size: 1.5em;
 }
 
 .post-link {
@@ -126,7 +143,7 @@ a {
 }
 
 a, a:visited, a:hover .page-link {
-  color: rgb(25, 209, 255);
+  color: light-dark(var(--light-link-color), var(--dark-link-color));
 }
 
 .face {
@@ -134,10 +151,15 @@ a, a:visited, a:hover .page-link {
   filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
 }
 
+.task-list {
+  list-style-type: none;
+  color: light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
 .site-title {
   font-family: "lato-normal", Arial, Helvetica, sans-serif;
   font-size: 1.2em;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  background: -webkit-gradient(linear, left top, right bottom, from(light-dark(var(--light-foreground-color), var(--dark-foreground-color))), to(light-dark(var(--light-link-color), var(--dark-link-color))));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -149,7 +171,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .fa-gradient {
-  color: rgb(25, 209, 255);
+  color: light-dark(var(--light-link-color), var(--dark-link-color));
 }
 
 .footer-links li {
@@ -164,7 +186,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .site-header {
-  border-image: linear-gradient(34deg, rgb(32, 255, 188), #1086a3) 1;
+  border-image: linear-gradient(34deg, light-dark(var(--light-foreground-color), var(--dark-foreground-color)), light-dark(var(--light-link-color), var(--dark-link-color))) 1;
   border-width: 5px;
   border-style: solid;
   border-left: 0;
@@ -214,7 +236,7 @@ a, a:visited, a:hover .page-link {
 
 .home-heading {
   font-size: 2em;
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 .site-nav {
@@ -260,7 +282,7 @@ a, a:visited, a:hover .page-link {
   padding: 1em 0;
   align-items: left;
   text-align: left;
-  border-top: solid 2px rgba(211, 211, 211, 0.3);
+  border-top: solid 2px --line-color;
 }
 
 .home-blog {
@@ -394,7 +416,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: March 23, 2025 12:37 PM UTC-04:00</p>
+        <p>Site last published: March 23, 2025 18:11 PM UTC-04:00</p>
       </div>
     </div>
 

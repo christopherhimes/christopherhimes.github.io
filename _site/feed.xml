@@ -6,9 +6,60 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 23 Mar 2025 12:37:11 -0400</pubDate>
-    <lastBuildDate>Sun, 23 Mar 2025 12:37:11 -0400</lastBuildDate>
+    <pubDate>Sun, 23 Mar 2025 18:11:28 -0400</pubDate>
+    <lastBuildDate>Sun, 23 Mar 2025 18:11:28 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Light and Dark</title>
+        <description>&lt;!--more--&gt;
+
+&lt;p&gt;I’m a fan of dark mode on sites, in development editors, and in the operating system too. Staring at a mostly white screen all day is exhausting and I like the way the content on screen emerges from the darkness with dark mode enabled.&lt;/p&gt;
+
+&lt;p&gt;Inspired by &lt;a href=&quot;https://jamesg.blog/2024/11/24/dark-mode&quot;&gt;this post&lt;/a&gt; from James G, I set about creating a light mode for this site. This is the reverse from what James had done as he started with a light mode but the the ideas are the same.&lt;/p&gt;
+
+&lt;p&gt;My :root to make this work currently looks like this.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:root {
+    color-scheme: light dark;
+    --dark-background-color: rgb(26, 26, 26);
+    --dark-foreground-color: rgb(32, 255, 188);
+    --dark-link-color: rgb(25, 209, 255);
+    --dark-text-color: rgb(240,240,240);
+
+    --light-background-color: rgb(240,240,240);
+    --light-foreground-color: rgb(0, 119, 83);    
+    --light-link-color: rgb(1, 151, 189);
+    --light-text-color: rgb(26, 26, 26);
+
+    --line-color: rgba(211, 211, 211, 30%);
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;color-scheme&lt;/code&gt; term is required to respect the users setting.&lt;/p&gt;
+
+&lt;p&gt;With the global variables set it’s just a matter of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;light-dark()&lt;/code&gt; to set the appropriate colors.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;p, li, ul {
+    color: light-dark(var(--light-text-color), var(--dark-text-color));
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I still really prefer the dark mode version of the site, so check that out if you’re interested. It’s just a matter of toggling between light and dark in the browser settings. In Zen browser it’s in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;General &amp;gt; Language and Appearance&lt;/code&gt; which means I don’t even have to scroll in the settings.&lt;/p&gt;
+
+&lt;p&gt;Which ever mode you prefer I hope you like what you see.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 23 Mar 2025 14:10:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/03/23/light-and-dark.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/03/23/light-and-dark.html</guid>
+        
+        <category>css</category>
+        
+        <category>meta</category>
+        
+        
+      </item>
     
       <item>
         <title>Now Update and Todo List</title>
@@ -309,42 +360,6 @@
         <category>YouTube</category>
         
         <category>OBS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Another New Design</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../..../../../../assets/img/blog/another-new-design/design.webp&quot; alt=&quot;main-image&quot; title=&quot;Design&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s a new design, yes it is! This site gets more visual updates than it does blog posts but that’s where we’re at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The previous template for the site used an altered version of a template that I liked but was never quite happy with. This new version takes a similar approach but is way easier to setup and make adjustments. The other piece to consider is that I never really felt comfortable with leading with a blog as I’m not great about keeping up with it obviously.&lt;/p&gt;
-
-&lt;p&gt;There are a few things about this template and the adjustments I’ve made that I’m happy with. For instance there is significantly less visual clutter on any and every page involved. As I mentioned above I don’t want to lead with a blog so now there is an introductory header element that has my face and a tag line introduction. This is preferable to jumping right into a blog for me. My preference is for dark mode reading so the site reflects that. There is some additional adjustment required to get it where it needs to be but I’m happy with it for now. Additionally I’ve added some brand colors that were lacking in the previous site which was all grey.&lt;/p&gt;
-
-&lt;p&gt;My next approach is to optimize and make it more accessible. I’ve ran lighthouse on it and the plan is to make as many of the suggested changes as possible. One main problem that I agree with and want to correct first is the level of contrast. Some of the colors I’ve chosen and even the standard text are not easy enough to read. I like the way it looks currently but I do hope I’m not the only one that ever looks at the site.&lt;/p&gt;
-
-&lt;p&gt;I would like to follow some tutorials and add comments to my posts. While I don’t suppose I’ll get much in the way of interaction the project to add them using ActivityPub via Mastodon seems interesting.&lt;/p&gt;
-
-&lt;p&gt;Next projects will be documented and shared here. I’m not a web developer but I do like to poke around with this sort of thing so I’ll be recording that information in a blog in 2023 and beyond. Imagine that!&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@raphaelphotoch&quot;&gt;Photo by Raphael Schaller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 12 Aug 2023 16:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2023/08/12/another-new-design.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2023/08/12/another-new-design.html</guid>
-        
-        <category>site</category>
-        
-        <category>design</category>
-        
-        <category>lighthouse</category>
-        
-        <category>accessibility</category>
         
         
       </item>

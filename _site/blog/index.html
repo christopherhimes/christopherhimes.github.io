@@ -21,6 +21,7 @@
     {{ post.date | date: &quot;%b %-d, %Y&quot; }}
     {{ post.blurb }}
   
+  
 {% endfor %}">
 
   
@@ -52,6 +53,7 @@
     {{ post.date | date: &quot;%b %-d, %Y&quot; }}
     {{ post.blurb }}
   
+  
 {% endfor %}">
 
   
@@ -65,15 +67,28 @@
   
   <style type="text/css">
     
-    @font-face {
+    :root {
+  color-scheme: light dark;
+  --dark-background-color: rgb(26, 26, 26);
+  --dark-foreground-color: rgb(32, 255, 188);
+  --dark-link-color: rgb(25, 209, 255);
+  --dark-text-color: rgb(240,240,240);
+  --light-background-color: rgb(240,240,240);
+  --light-foreground-color: rgb(0, 119, 83);
+  --light-link-color: rgb(1, 151, 189);
+  --light-text-color: rgb(26, 26, 26);
+  --line-color: rgba(211, 211, 211, 30%);
+}
+
+@font-face {
   font-family: "lato-normal";
   src: url("../../../../../assets/font/lato-normal.woff2") format("woff2"), url("../../../../../assets/font/lato-normal.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  background-color: rgb(26, 26, 26);
-  color: rgb(200, 200, 200);
+  background-color: light-dark(var(--light-background-color), var(--dark-background-color));
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
   margin: 0px;
   padding: 0px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -90,27 +105,27 @@ span {
 }
 
 h1 {
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 h2 {
   font-size: 1.5em;
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 h3 {
   font-size: 1.25em;
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 hr {
-  border: solid 1px rgba(211, 211, 211, 0.3);
+  border: solid 1px --line-color;
   margin: 1em;
   width: 100%;
 }
 
-p {
-  color: rgb(200, 200, 200);
+p, li, ul {
+  color: light-dark(var(--light-text-color), var(--dark-text-color));
 }
 
 a:hover {
@@ -119,6 +134,10 @@ a:hover {
 
 a {
   text-decoration: none;
+}
+
+.headline {
+  font-size: 1.5em;
 }
 
 .post-link {
@@ -140,7 +159,7 @@ a {
 }
 
 a, a:visited, a:hover .page-link {
-  color: rgb(25, 209, 255);
+  color: light-dark(var(--light-link-color), var(--dark-link-color));
 }
 
 .face {
@@ -148,10 +167,15 @@ a, a:visited, a:hover .page-link {
   filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
 }
 
+.task-list {
+  list-style-type: none;
+  color: light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
 .site-title {
   font-family: "lato-normal", Arial, Helvetica, sans-serif;
   font-size: 1.2em;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  background: -webkit-gradient(linear, left top, right bottom, from(light-dark(var(--light-foreground-color), var(--dark-foreground-color))), to(light-dark(var(--light-link-color), var(--dark-link-color))));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -163,7 +187,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .fa-gradient {
-  color: rgb(25, 209, 255);
+  color: light-dark(var(--light-link-color), var(--dark-link-color));
 }
 
 .footer-links li {
@@ -178,7 +202,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .site-header {
-  border-image: linear-gradient(34deg, rgb(32, 255, 188), #1086a3) 1;
+  border-image: linear-gradient(34deg, light-dark(var(--light-foreground-color), var(--dark-foreground-color)), light-dark(var(--light-link-color), var(--dark-link-color))) 1;
   border-width: 5px;
   border-style: solid;
   border-left: 0;
@@ -228,7 +252,7 @@ a, a:visited, a:hover .page-link {
 
 .home-heading {
   font-size: 2em;
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 .site-nav {
@@ -274,7 +298,7 @@ a, a:visited, a:hover .page-link {
   padding: 1em 0;
   align-items: left;
   text-align: left;
-  border-top: solid 2px rgba(211, 211, 211, 0.3);
+  border-top: solid 2px --line-color;
 }
 
 .home-blog {
@@ -358,107 +382,129 @@ a, a:visited, a:hover .page-link {
   
 <article class="blog-entry">
     <h2>
+      <a class="blog-link" href="/blog/2025/03/23/light-and-dark.html">Light and Dark</a>
+    </h2>
+    <p>Mar 23, 2025</p>
+    <p>I'm a fan of dark mode on sites, in development editors, and the operating system too.</p>
+  </article>
+<hr />
+
+<article class="blog-entry">
+    <h2>
       <a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Now Update and Todo List</a>
     </h2>
-    Mar 22, 2025
+    <p>Mar 22, 2025</p>
     <p>Just a quick update to the now section and a site todo list.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2025/03/21/weeknotes-week12.html">Week 12</a>
     </h2>
-    Mar 21, 2025
+    <p>Mar 21, 2025</p>
     <p>It's week one of my 12 Week Year but it's the 12th week of the year so I'm calling it week 12. This is meant to be forward looking to a week note for every week of the year.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Starting</a>
     </h2>
-    Mar 17, 2025
+    <p>Mar 17, 2025</p>
     <p>Starting something new and taking it day by day and week by week.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2024/12/06/now-2024.html">Now Page 2024</a>
     </h2>
-    Dec 6, 2024
+    <p>Dec 6, 2024</p>
     <p>While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Simple Silly</a>
     </h2>
-    Nov 21, 2024
+    <p>Nov 21, 2024</p>
     <p>Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Lighthouse</a>
     </h2>
-    Jul 26, 2024
+    <p>Jul 26, 2024</p>
     <p>This site is not big, but it is faster, and more accessible.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2024/07/11/i-got-married.html">I got married!</a>
     </h2>
-    Jul 11, 2024
+    <p>Jul 11, 2024</p>
     <p>It's been a little over a month now since I got married.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2024/01/13/add-comments.html">Add Comments</a>
     </h2>
-    Jan 13, 2024
+    <p>Jan 13, 2024</p>
     <p>My blog has Mastodon powered comments now and this post is really just a test for that.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2023/12/29/a-stream.html">A Stream?</a>
     </h2>
-    Dec 29, 2023
+    <p>Dec 29, 2023</p>
     <p>I've been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2023/08/12/another-new-design.html">Another New Design</a>
     </h2>
-    Aug 12, 2023
+    <p>Aug 12, 2023</p>
     <p>It's a new design, yes it is! This site gets more visual updates than it does blog posts but that's where we're at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2022/05/14/virtual.html">I'm Virtual Now</a>
     </h2>
-    May 14, 2022
+    <p>May 14, 2022</p>
     <p>Guess 'now' is relative with working at home for the last two years. As of yesterday I no longer have a desk at an office that I could return to when this whole pandemic blows over.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2017/04/04/time-for-a-change.html">Time for a Change</a>
     </h2>
-    Apr 4, 2017
+    <p>Apr 4, 2017</p>
     <p>The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.</p>
   </article>
+<hr />
 
 <article class="blog-entry">
     <h2>
       <a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Take it Home With You</a>
     </h2>
-    Sep 13, 2015
+    <p>Sep 13, 2015</p>
     <p>The next two weeks are going to be exceedingly difficult not to bring work home.  I'm prone to work through things I'm working on at work while I'm at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.</p>
   </article>
+<hr />
 
 
 </div>
@@ -511,7 +557,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: March 23, 2025 12:37 PM UTC-04:00</p>
+        <p>Site last published: March 23, 2025 18:11 PM UTC-04:00</p>
       </div>
     </div>
 

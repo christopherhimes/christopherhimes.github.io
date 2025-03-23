@@ -1,6 +1,6 @@
 section#comments {
     .display {
-      color: rgb(32, 255, 188);
+      color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
     }
     .comment {
       display: grid;

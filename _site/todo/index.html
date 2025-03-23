@@ -17,19 +17,22 @@
 
 ### Pages to Add
 - [X]  ~~Now page~~ (Added 12/6/24 [/now]).
-- [X]  ~~To-Do Page for site~~ (Added 3/22/25).
+- [X]  ~~To-Do Page for site~~ (Added 3/22/25).[^1]
 - [ ]  Add a dedicated music page that takes advantage of [last.fm] data.
 
 ### Features to add
-1. Add light mode that respects the system settings of the user!
-1. Add higher resolution responsive images in modern web formats.
-1. Add a sparkline that shows post frequency.
+- [ ]  Add light mode that respects the system settings of the user! [^2]
+- [ ]  Add higher resolution responsive images in modern web formats.
+- [ ]  Add a sparkline that shows post frequency.
 
 
 
 
 [/now]: /now
-[last.frm]: https://last.fm">
+[last.frm]: https://last.fm
+
+[^1]: Adding this as a todo feels like cheating.
+[^2]: Added an exclamation point because I tried to add this again but it&apos;s already here.">
 
   
 
@@ -56,19 +59,22 @@
 
 ### Pages to Add
 - [X]  ~~Now page~~ (Added 12/6/24 [/now]).
-- [X]  ~~To-Do Page for site~~ (Added 3/22/25).
+- [X]  ~~To-Do Page for site~~ (Added 3/22/25).[^1]
 - [ ]  Add a dedicated music page that takes advantage of [last.fm] data.
 
 ### Features to add
-1. Add light mode that respects the system settings of the user!
-1. Add higher resolution responsive images in modern web formats.
-1. Add a sparkline that shows post frequency.
+- [ ]  Add light mode that respects the system settings of the user! [^2]
+- [ ]  Add higher resolution responsive images in modern web formats.
+- [ ]  Add a sparkline that shows post frequency.
 
 
 
 
 [/now]: /now
-[last.frm]: https://last.fm">
+[last.frm]: https://last.fm
+
+[^1]: Adding this as a todo feels like cheating.
+[^2]: Added an exclamation point because I tried to add this again but it&apos;s already here.">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/face.webp">
@@ -81,15 +87,28 @@
   
   <style type="text/css">
     
-    @font-face {
+    :root {
+  color-scheme: light dark;
+  --dark-background-color: rgb(26, 26, 26);
+  --dark-foreground-color: rgb(32, 255, 188);
+  --dark-link-color: rgb(25, 209, 255);
+  --dark-text-color: rgb(240,240,240);
+  --light-background-color: rgb(240,240,240);
+  --light-foreground-color: rgb(0, 119, 83);
+  --light-link-color: rgb(1, 151, 189);
+  --light-text-color: rgb(26, 26, 26);
+  --line-color: rgba(211, 211, 211, 30%);
+}
+
+@font-face {
   font-family: "lato-normal";
   src: url("../../../../../assets/font/lato-normal.woff2") format("woff2"), url("../../../../../assets/font/lato-normal.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  background-color: rgb(26, 26, 26);
-  color: rgb(200, 200, 200);
+  background-color: light-dark(var(--light-background-color), var(--dark-background-color));
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
   margin: 0px;
   padding: 0px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -106,27 +125,27 @@ span {
 }
 
 h1 {
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 h2 {
   font-size: 1.5em;
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 h3 {
   font-size: 1.25em;
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 hr {
-  border: solid 1px rgba(211, 211, 211, 0.3);
+  border: solid 1px --line-color;
   margin: 1em;
   width: 100%;
 }
 
-p {
-  color: rgb(200, 200, 200);
+p, li, ul {
+  color: light-dark(var(--light-text-color), var(--dark-text-color));
 }
 
 a:hover {
@@ -135,6 +154,10 @@ a:hover {
 
 a {
   text-decoration: none;
+}
+
+.headline {
+  font-size: 1.5em;
 }
 
 .post-link {
@@ -156,7 +179,7 @@ a {
 }
 
 a, a:visited, a:hover .page-link {
-  color: rgb(25, 209, 255);
+  color: light-dark(var(--light-link-color), var(--dark-link-color));
 }
 
 .face {
@@ -164,10 +187,15 @@ a, a:visited, a:hover .page-link {
   filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
 }
 
+.task-list {
+  list-style-type: none;
+  color: light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
 .site-title {
   font-family: "lato-normal", Arial, Helvetica, sans-serif;
   font-size: 1.2em;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  background: -webkit-gradient(linear, left top, right bottom, from(light-dark(var(--light-foreground-color), var(--dark-foreground-color))), to(light-dark(var(--light-link-color), var(--dark-link-color))));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -179,7 +207,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .fa-gradient {
-  color: rgb(25, 209, 255);
+  color: light-dark(var(--light-link-color), var(--dark-link-color));
 }
 
 .footer-links li {
@@ -194,7 +222,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .site-header {
-  border-image: linear-gradient(34deg, rgb(32, 255, 188), #1086a3) 1;
+  border-image: linear-gradient(34deg, light-dark(var(--light-foreground-color), var(--dark-foreground-color)), light-dark(var(--light-link-color), var(--dark-link-color))) 1;
   border-width: 5px;
   border-style: solid;
   border-left: 0;
@@ -244,7 +272,7 @@ a, a:visited, a:hover .page-link {
 
 .home-heading {
   font-size: 2em;
-  color: rgb(32, 255, 188);
+  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
 }
 
 .site-nav {
@@ -290,7 +318,7 @@ a, a:visited, a:hover .page-link {
   padding: 1em 0;
   align-items: left;
   text-align: left;
-  border-top: solid 2px rgba(211, 211, 211, 0.3);
+  border-top: solid 2px --line-color;
 }
 
 .home-blog {
@@ -376,17 +404,27 @@ a, a:visited, a:hover .page-link {
 <h3 id="pages-to-add">Pages to Add</h3>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><del>Now page</del> (Added 12/6/24 <a href="/now">/now</a>).</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><del>To-Do Page for site</del> (Added 3/22/25).</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><del>To-Do Page for site</del> (Added 3/22/25).<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a dedicated music page that takes advantage of [last.fm] data.</li>
 </ul>
 
 <h3 id="features-to-add">Features to add</h3>
-<ol>
-  <li>Add light mode that respects the system settings of the user!</li>
-  <li>Add higher resolution responsive images in modern web formats.</li>
-  <li>Add a sparkline that shows post frequency.</li>
-</ol>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add light mode that respects the system settings of the user! <sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add higher resolution responsive images in modern web formats.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a sparkline that shows post frequency.</li>
+</ul>
 
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Adding this as a todo feels like cheating. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Added an exclamation point because I tried to add this again but it’s already here. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </div>
     </main><footer class="site-footer h-card"> 
@@ -438,7 +476,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: March 23, 2025 12:37 PM UTC-04:00</p>
+        <p>Site last published: March 23, 2025 18:11 PM UTC-04:00</p>
       </div>
     </div>
 
