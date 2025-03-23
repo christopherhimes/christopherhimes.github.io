@@ -4,6 +4,7 @@ title: resume/cv
 permalink: /cv/
 mainnav: true
 ---
+Here is a [PDF Version].
 
 ## Headline
 Accomplished Product Owner seeking new opportunities | Driving agile teams, product strategy & customer success 🚀
@@ -59,3 +60,5 @@ Accomplished Product Owner with 10+ years of leading transformative projects and
 * Internal and Traditional Customer Catalog - Plan and create the Product Configurator design in Ponderosa ERP software necessary for assembling a bill of materials, unit description, production department, pricing, discounting, lead time, visual answers, option filtering and completed unit visualization 
 * Web Portal - Created custom web portal for dealers to login and review order status, invoice history and submit order specific inquiries
 * Website Data - Used PHP and MySQL to generate data to present product in traditional website form as well as a javascript enhanced web based configurator
+
+[PDF Version]: /assets/pdf/christopher_himes_2025.pdf

@@ -147,7 +147,7 @@ a, a:visited, a:hover .page-link {
     gap: 3em;
     margin:2em auto;
     flex-direction: row;
-    width: 80%;
+    width: 800px;
     flex: 2 100%;
 }
 
@@ -273,8 +273,13 @@ a, a:visited, a:hover .page-link {
     }
     .footer-wrapper {
         flex-direction: column;
+        width: 100%;
     }
     .footer-col, .page-detail, .post-detail {
         width: 90%;
+    }
+    .site-header {
+        justify-content: center;
+        flex-direction: column;
     }
 }
