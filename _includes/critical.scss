@@ -1,5 +1,5 @@
 // Placeholder to allow overriding predefined variables smoothly.
-$brand-color: rgb(25, 209, 255);
+$brand-color: rgb(32, 255, 188);
 
 $link-base-color: rgb(25, 209, 255);
 $link-visited-color: rgb(25, 209, 255);
@@ -12,13 +12,14 @@ $card-background-color: rgb(17, 17, 17);
 $accent-color: rgb(211, 211, 211);
 $text-color: rgb(200,200,200);
 
+$line-color: rgba(211, 211, 211, 30%);
+
 @font-face {
-    font-family: 'comprehensionsemibold';
-    src: url('../../../../../assets/css/comprehension-semibold-webfont.woff2') format('woff2'),
-         url('../../../../../assets/css/comprehension-semibold-webfont.woff') format('woff');
+    font-family: 'lato-normal';
+    src: url('../../../../../assets/font/lato-normal.woff2') format('woff2'),
+         url('../../../../../assets/font/lato-normal.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
@@ -27,7 +28,7 @@ body {
     margin:0px;
     padding:0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: .15em;
+    letter-spacing: .05em;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
@@ -52,8 +53,9 @@ h3 {
     // margin: 2em 0;
 }
 hr {
-    border: dashed 1px $accent-color;
+    border: solid 1px $line-color;
     margin: 1em;
+    width: 100%;
 }
 p {
     color: $text-color;
@@ -88,7 +90,7 @@ a, a:visited, a:hover .page-link {
   }
 
 .site-title {
-    font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
+    font-family: 'lato-normal', Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
     -webkit-background-clip: text;
@@ -142,7 +144,7 @@ a, a:visited, a:hover .page-link {
 }
 .home-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: cenleter;
     align-items: center;
     gap: 3em;
     margin:2em auto;
@@ -150,7 +152,17 @@ a, a:visited, a:hover .page-link {
     width: 800px;
     flex: 2 100%;
 }
-
+.home-wrapper-column {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 800px;
+    gap: 2em;
+    margin:2em auto;
+    margin-bottom:4em;
+    flex-direction: column;
+    flex: 1 100%;
+}
 .home-name {
     font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
     // width:325px;
@@ -206,30 +218,26 @@ a, a:visited, a:hover .page-link {
     // margin: 1em;
     width: 700px;
 }
-
-.dt-published {
-    color:$brand-color;
-}
-
 .blog-entry {
     width: 100%;
     padding: 1em 0;
     align-items: left;
     text-align: left;
-    border-top: dashed 2px $accent-color;
+    border-top: solid 2px $line-color;
 }
 // .blog-entry, .post-detail span {
 //     // color: $brand-color;
 // }
 
+.home-blog {
+    flex-direction: column;
+}
 
 .footer-wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 1.5em;
-    
-
 }
 .footer-col {
     vertical-align: top;
@@ -265,21 +273,32 @@ a, a:visited, a:hover .page-link {
 //     }
 //   }
 @media (max-width: 800px) {
+    .site-title {
+        font-size: 2em;
+        padding: 0;
+    }
+    hr {
+        width: 80%;
+    }
     .wrapper {
         width:100%;
     }
     .home-wrapper {
         flex-direction: column;
+        width: 90%;
     }
     .footer-wrapper {
         flex-direction: column;
         width: 100%;
     }
-    .footer-col, .page-detail, .post-detail {
+    .footer-col, .page-detail, .post-detail, .home-wrapper-column {
         width: 90%;
     }
     .site-header {
         justify-content: center;
         flex-direction: column;
+    }
+    img {
+        width: 100%;
     }
 }

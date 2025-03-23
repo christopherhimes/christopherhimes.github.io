@@ -30,10 +30,8 @@ layout: default
     </article>
   <a href="{{ page.url | relative_url }}" hidden></a>
 </div>
-
-<hr />
-
 <div class="post-detail">
+<hr />
 {%- if page.comments -%}
   {%- if page.comments.id -%}
     {%- include comments.html -%}

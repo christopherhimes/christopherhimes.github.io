@@ -52,8 +52,8 @@
   <style type="text/css">
     
     @font-face {
-  font-family: "comprehensionsemibold";
-  src: url("../../../../../assets/css/comprehension-semibold-webfont.woff2") format("woff2"), url("../../../../../assets/css/comprehension-semibold-webfont.woff") format("woff");
+  font-family: "lato-normal";
+  src: url("../../../../../assets/font/lato-normal.woff2") format("woff2"), url("../../../../../assets/font/lato-normal.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -63,7 +63,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.05em;
 }
 
 h1, h2, h3, h4, h5 {
@@ -86,12 +86,13 @@ h2 {
 
 h3 {
   font-size: 1.25em;
-  color: rgb(25, 209, 255);
+  color: rgb(32, 255, 188);
 }
 
 hr {
-  border: dashed 1px rgb(211, 211, 211);
+  border: solid 1px rgba(211, 211, 211, 0.3);
   margin: 1em;
+  width: 100%;
 }
 
 p {
@@ -134,7 +135,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .site-title {
-  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  font-family: "lato-normal", Arial, Helvetica, sans-serif;
   font-size: 1.2em;
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
   -webkit-background-clip: text;
@@ -181,13 +182,25 @@ a, a:visited, a:hover .page-link {
 
 .home-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: cenleter;
   align-items: center;
   gap: 3em;
   margin: 2em auto;
   flex-direction: row;
   width: 800px;
   flex: 2 100%;
+}
+
+.home-wrapper-column {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 800px;
+  gap: 2em;
+  margin: 2em auto;
+  margin-bottom: 4em;
+  flex-direction: column;
+  flex: 1 100%;
 }
 
 .home-name {
@@ -242,16 +255,16 @@ a, a:visited, a:hover .page-link {
   width: 700px;
 }
 
-.dt-published {
-  color: rgb(25, 209, 255);
-}
-
 .blog-entry {
   width: 100%;
   padding: 1em 0;
   align-items: left;
   text-align: left;
-  border-top: dashed 2px rgb(211, 211, 211);
+  border-top: solid 2px rgba(211, 211, 211, 0.3);
+}
+
+.home-blog {
+  flex-direction: column;
 }
 
 .footer-wrapper {
@@ -267,22 +280,33 @@ a, a:visited, a:hover .page-link {
 }
 
 @media (max-width: 800px) {
+  .site-title {
+    font-size: 2em;
+    padding: 0;
+  }
+  hr {
+    width: 80%;
+  }
   .wrapper {
     width: 100%;
   }
   .home-wrapper {
     flex-direction: column;
+    width: 90%;
   }
   .footer-wrapper {
     flex-direction: column;
     width: 100%;
   }
-  .footer-col, .page-detail, .post-detail {
+  .footer-col, .page-detail, .post-detail, .home-wrapper-column {
     width: 90%;
   }
   .site-header {
     justify-content: center;
     flex-direction: column;
+  }
+  img {
+    width: 100%;
   }
 }
   </style>
@@ -346,10 +370,8 @@ a, a:visited, a:hover .page-link {
     </article>
   <a href="/blog/2025/03/17/starting-weeknotes.html" hidden></a>
 </div>
-
-<hr />
-
-<div class="post-detail"><!--
+<div class="post-detail">
+<hr /><!--
 Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750bb53b9f0f6f28399ce4d21785a3bb7d22/_includes/fediverse_comments.html
 -->
 
@@ -541,12 +563,12 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
 
 
 
-    </main><footer class="site-footer h-card">
+    </main><footer class="site-footer h-card"> 
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
-
     <div class="footer-wrapper">
+      
       <div class="footer-col">
             <ul class="footer-links">
               <li>
@@ -589,6 +611,8 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
       <div class="footer-col">
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
+        <p>© 2025 Christopher Himes. Made in Michigan.</p>
+        <p>Site last published: March 23, 2025 12:37 PM UTC-04:00</p>
       </div>
     </div>
 

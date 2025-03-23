@@ -10,8 +10,6 @@ comments:
 ---
 
 <!--more-->
-# Week 12
-
 _It's week one of my [12 Week Year] but it's the 12th week of the year so I'm calling it week 12. This is meant to be forward looking to a week note for every week of the year._
 
 * I updated my resume to showcase my experience, skills, and accomplishments as a Product Owner.

@@ -9,8 +9,24 @@ layout: base
       <div class="home-col">
         <p class="home-heading">Christopher is an accomplished Product Owner seeking new opportunities </p>
       </div>
+      
   </div>
-  <div class="home-wrapper">
-
-
+  <div class="home-wrapper-column">
+    <hr />
+    <h1>experience</h1>
+    <p>Product Owner with 10+ years of leading transformative projects and delivering measurable results. Adept at building and nurturing high-performing teams while driving strategic growth and exceeding customer expectations. <a href="/cv">Read more...</a></p>
+  </div>
+  <div class="home-wrapper-column">
+    <hr />
+    <h1>recent posts</h1>
+    <div class="home-blog">
+    {% for post in site.posts limit:5 %}
+      <article>
+        <h2>
+          <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </article>
+    {% endfor %}
+  </div>
+  <hr />
   </div>

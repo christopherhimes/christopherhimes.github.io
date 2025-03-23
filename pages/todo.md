@@ -9,7 +9,7 @@ _Building a website To-do list_
 
 ### Pages to Add
 - [X]  ~~Now page~~ (Added 12/6/24 [/now]).
-- [ ]  To-Do Page for site.
+- [X]  ~~To-Do Page for site~~ (Added 3/22/25).
 - [ ]  Add a dedicated music page that takes advantage of [last.fm] data.
 
 ### Features to add
