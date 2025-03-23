@@ -7,17 +7,20 @@ mainnav: false
 
 __What I'm doing now__
 
-Updated December 5, 2024
+Updated March 22, 2025
 
 ### Personal
-Leah and I have gone from planning a wedding to planning a trip to France. We're looking at Airbnbs which has been pretty intersting actually.
+Leah and I have booked AirBNB's and we're still going to France.
+
+My position at JELD-WEN was eliminated and I was let go on 3/13/25. So, the job search begins!
 
 ### Movies/TV
-Started watching Dune Prophesy and am enjoying the last season of What We do in the Shadows.
-Saw Wicked and will be going again this weekend.
+Just finished Severance and this season hits a little different now. Dylan is literally rejected by a door company in the second episode.
+Also, we've just finished the latest seasons of Traitors and Traitors UK. Those UK folks played a really fun game.
 
 ### Music
-I've been listening to the Wicked sountrack and the new Kendrick album.
+I've still been listening to the Wicked soundtrack and the new Kendrick album. There has also been a bit of indie rock in there again.
+
 {% if page.title == 'now' %}
 <script type="text/javascript">
 
