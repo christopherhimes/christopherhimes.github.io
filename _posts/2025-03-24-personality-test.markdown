@@ -3,10 +3,10 @@ layout: post
 title:  "Job Search Personality Test"
 date:   2025-03-24 16:00:00
 tags: [Job Search]
-blurb: 
+blurb: As part of the job search and coaching I've taken a personality test offered by NextJob. Posted below are the results.
 
 comments:
-    id: 
+    id: 114219219579893962
 ---
 
 <!--more-->
