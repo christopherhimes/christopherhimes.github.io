@@ -6,7 +6,7 @@ tags: ['Week Notes', 'Week 13', 'resume', 'NextJob', 'Product Owner', 'Job Searc
 blurb: Job coacing, classes, and driving the family around...
 
 comments:
-    id: 114201242991008377
+    id: 
 ---
 
 <!--more-->
