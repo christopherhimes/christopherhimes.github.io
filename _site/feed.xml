@@ -6,9 +6,50 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 24 Mar 2025 16:10:19 -0400</pubDate>
-    <lastBuildDate>Mon, 24 Mar 2025 16:10:19 -0400</lastBuildDate>
+    <pubDate>Sat, 29 Mar 2025 13:19:13 -0400</pubDate>
+    <lastBuildDate>Sat, 29 Mar 2025 13:19:13 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Week 13</title>
+        <description>&lt;!--more--&gt;
+&lt;ul&gt;
+  &lt;li&gt;I made some additional changes to the resume.&lt;/li&gt;
+  &lt;li&gt;Met with my &lt;a href=&quot;https://www.nextjobtraining.com/&quot;&gt;NextJob&lt;/a&gt; job coach.&lt;/li&gt;
+  &lt;li&gt;Applied to some jobs.&lt;/li&gt;
+  &lt;li&gt;Got a call about one of the positions that I applied for and will be following up next week.&lt;/li&gt;
+  &lt;li&gt;Had lunch with my mom at Sy Thai.&lt;/li&gt;
+  &lt;li&gt;Did some classes on Coursera.&lt;/li&gt;
+  &lt;li&gt;Updated the Indeed profile.&lt;/li&gt;
+  &lt;li&gt;Enabled a month of LinkedIn Premium.&lt;/li&gt;
+  &lt;li&gt;Watched some Last of Us with my wife.&lt;/li&gt;
+  &lt;li&gt;Played Uber driver taking Leah and Noah around town while her car is in the shop.&lt;/li&gt;
+  &lt;li&gt;Solved the Cicada Detroit puzzle 19 and am immediately stuck on 20.&lt;/li&gt;
+  &lt;li&gt;Started taking daily notes in service of writing this post.&lt;/li&gt;
+  &lt;li&gt;Fixed the time stamp in the footer of this page.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 29 Mar 2025 09:30:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/03/29/weeknotes-week13.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/03/29/weeknotes-week13.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>Week 13</category>
+        
+        <category>resume</category>
+        
+        <category>NextJob</category>
+        
+        <category>Product Owner</category>
+        
+        <category>Job Search</category>
+        
+        <category>coach</category>
+        
+        
+      </item>
     
       <item>
         <title>Job Search Personality Test</title>
@@ -409,30 +450,6 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
         <guid isPermaLink="true">http://localhost:4000/blog/2024/07/11/i-got-married.html</guid>
         
         <category>married</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Add Comments</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/add-comments/comments.webp&quot; alt=&quot;main-image&quot; title=&quot;Comments&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;My blog has &lt;a href=&quot;https://joinmastodon.org/&quot;&gt;Mastodon&lt;/a&gt; powered comments now and this post is really just a test for that.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;This is almost completely the &lt;a href=&quot;https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/&quot;&gt;Cassidy James&lt;/a&gt; implementation of comments via Mastodon. Although I do have plans to do some more specific styling for this site it works well as is. Don’t have much more to say about it other than thanks to Mr. James and if you’re interested in adding Mastodon comments to your site I’ve linked to Cassidy’s post about it.&lt;/p&gt;
-
-&lt;p&gt;I may go back and add comments to previous posts but for now this post will be the only one with comments. The implementation requires an API call with reference to an existing post on Mastodon and I’m not sure if I want to be posting about previous entries in this blog.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@ninjason&quot;&gt;Photo by Jason Leung on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 13 Jan 2024 13:00:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2024/01/13/add-comments.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2024/01/13/add-comments.html</guid>
-        
-        <category>comments</category>
         
         
       </item>
