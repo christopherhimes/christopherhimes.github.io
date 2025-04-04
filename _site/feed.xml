@@ -6,9 +6,59 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 29 Mar 2025 13:26:24 -0400</pubDate>
-    <lastBuildDate>Sat, 29 Mar 2025 13:26:24 -0400</lastBuildDate>
+    <pubDate>Fri, 04 Apr 2025 15:16:16 -0400</pubDate>
+    <lastBuildDate>Fri, 04 Apr 2025 15:16:16 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Week 14</title>
+        <description>&lt;!--more--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Made even more changes to the resume.&lt;/li&gt;
+  &lt;li&gt;Schedule a meeting with my job coach for next week.&lt;/li&gt;
+  &lt;li&gt;File taxes joinlty for the first time. Pay instead of get a refund for the first time 🥳&lt;/li&gt;
+  &lt;li&gt;Applied to some jobs.&lt;/li&gt;
+  &lt;li&gt;Did a test for a position I applied for and have an interview next week.&lt;/li&gt;
+  &lt;li&gt;Completed a few lessons on Coursera and have a project pending review.&lt;/li&gt;
+  &lt;li&gt;Had dinner with my brother Matthew at Mexican Village.&lt;/li&gt;
+  &lt;li&gt;Watched some Last of Us with my wife.📺&lt;/li&gt;
+  &lt;li&gt;Remained stuck on Cicada Detroit puzzle 20.&lt;/li&gt;
+  &lt;li&gt;Cleaned the trap on the dishwasher 🧼.&lt;/li&gt;
+  &lt;li&gt;Did some normal laundry (sheets, my clothes, wifes clothes) and some not so normal laundry (chair covers).&lt;/li&gt;
+  &lt;li&gt;Swept and mopped all the hard surface floors.&lt;/li&gt;
+  &lt;li&gt;Vacuumed the carpeted areas.&lt;/li&gt;
+  &lt;li&gt;Took down the Christmas Tree  🎄(do not check the date on this post 📆)&lt;/li&gt;
+  &lt;li&gt;Picked up some groceries.&lt;/li&gt;
+  &lt;li&gt;Made some chicken noodle soup 🍲.&lt;/li&gt;
+  &lt;li&gt;Found new spots for some things that were on the kitchen counter and coffee table.&lt;/li&gt;
+  &lt;li&gt;Installed &lt;a href=&quot;https://medusajs.com/&quot;&gt;MedusaJS&lt;/a&gt; locally.&lt;/li&gt;
+  &lt;li&gt;Installed MedusaJS on &lt;a href=&quot;https://railway.com/&quot;&gt;Railway&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 04 Apr 2025 11:30:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/04/04/weeknotes-week14.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/04/weeknotes-week14.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>Week 14</category>
+        
+        <category>resume</category>
+        
+        <category>Christmas Tree</category>
+        
+        <category>Product Owner</category>
+        
+        <category>Job Search</category>
+        
+        <category>Soup</category>
+        
+        <category>Cicada Detroit</category>
+        
+        
+      </item>
     
       <item>
         <title>Week 13</title>
@@ -420,36 +470,6 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
         <category>Web Development</category>
         
         <category>Accessibility</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>I got married!</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/i-got-married/married.webp&quot; alt=&quot;main-image&quot; title=&quot;Married&quot; class=&quot;main-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s been a little over a month now since I got married.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;First of all the planning had been going on for a few years and I’m happy to say everything went really well. We benefitted greatly by having the entire event in one location. &lt;a href=&quot;https://www.thewhitney.com/&quot;&gt;The Whitney&lt;/a&gt; is a really nice venue with an outdoor location for the ceremony and delicious food.&lt;/p&gt;
-
-&lt;p&gt;We managed to find lots of great inspiration on Pinterest and vendors on Etsy. There are threats at the moment that Etsy is going in a bad direction but we’ve been very happy with the vendors we found. We spent way too long considering invitations but managed to pick out just about everything else very quickly. It was really nice to know that when planning something my wife and I were so in sync.&lt;/p&gt;
-
-&lt;p&gt;We had a first look in the library with just us and her son.The ceremony was in the garden where the weather was warm for May but sunny. It was late enough in the year that everything was green and some flowers had bloomed. It was a small ceremony and dinner with just close family.&lt;/p&gt;
-
-&lt;p&gt;Photos took a long time but we’re really happy with the result. I’ve updated my socials with a solo image from the day which I like quite a bit. We’ve got a book being printed and we are going to pick out at least one image to frame.&lt;/p&gt;
-
-&lt;p&gt;After the wedding we stayed downtown at &lt;a href=&quot;https://www.thedetroitclub.com/&quot;&gt;The Detroit Club&lt;/a&gt; which was a bit fancy but the stay was relaxing. We were within walking distance of a Starbucks and we booked a spa day. The Movement festival was happening downtown so when we rode the People Mover there were some interesting folks making their way around town.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from a &lt;a href=&quot;https://leahandchristopherhimes.com&quot;&gt;wedding site&lt;/a&gt; I made but never showed to anyone but my wife.&lt;/em&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 11 Jul 2024 16:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2024/07/11/i-got-married.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2024/07/11/i-got-married.html</guid>
-        
-        <category>married</category>
         
         
       </item>

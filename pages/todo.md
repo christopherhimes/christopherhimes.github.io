@@ -20,11 +20,12 @@ _Building a website To-do list_
 - [ ]  Add a sparkline that shows post frequency.
 - [ ]  Enable categories for posts so similar ideas can be crossreferenced.
 - [ ]  Renable pagination as the number of blog posts has increased enough to need the functionality.
-
-
+- [ ] Refactor light-dark based on recent blog post from ['James G']
+- [ ] Add indicator for external links.
 
 [/now]: /now
 [last.frm]: https://last.fm
+[James G]: https://jamesg.blog/2025/04/03/light-dark-root
 
 [^1]: Adding this as a todo feels like cheating.
 [^2]: Added an exclamation point because I tried to add this again but it's already here.
