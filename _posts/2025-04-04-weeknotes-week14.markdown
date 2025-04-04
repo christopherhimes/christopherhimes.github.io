@@ -6,7 +6,7 @@ tags: ['Week Notes', 'Week 14', 'resume', 'Christmas Tree', 'Product Owner', 'Jo
 blurb: Job search, soup, and cleaning house
 
 comments:
-    id: 
+    id: 114281399047611622
 ---
 
 <!--more-->
