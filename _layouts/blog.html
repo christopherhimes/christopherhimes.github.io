@@ -1,11 +1,5 @@
 ---
-layout: page
-title: blog
-# mainnav: true
-permalink: /blog/
-pagination:
-  enabled: true
-  permalink: /blog/page/:num/
+layout: default
 ---
 {% for post in paginator.posts %}
   <article class="blog-entry">
@@ -22,15 +16,16 @@ pagination:
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
-      previous</a>
+      previous
+    </a>
   {% else %}
-    <span class="previous">previous</span>
+    <span class="previous">Previous</span>
   {% endif %}
   <span class="page_number ">
-    page: {{ paginator.page }} of {{ paginator.total_pages }}
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">next</a>
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
   {% else %}
     <span class="next ">next</span>
   {% endif %}

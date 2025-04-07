@@ -170,6 +170,10 @@ a, a:visited, a:hover .page-link {
   color: light-dark(var(--light-link-color), var(--dark-link-color));
 }
 
+.post-detail a, p a, .pagination a {
+  text-decoration: underline;
+}
+
 .face {
   clip-path: circle(150px at center);
   filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
@@ -325,6 +329,11 @@ a, a:visited, a:hover .page-link {
   padding: 1em;
 }
 
+.pagination {
+  text-align: center;
+  padding: 1.5em;
+}
+
 @media (max-width: 800px) {
   .site-title {
     font-size: 2em;
@@ -380,7 +389,8 @@ a, a:visited, a:hover .page-link {
 <body><header>
   <nav class="site-header"><div class="site-title">
       <a rel="author" href="/">christopher himes</a>
-    </div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/blog/">blog</a><a class="page-link" href="/cv/">resume/cv</a></nav></nav>
+    </div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/cv/">resume/cv</a><a class="page-link" href="/blog">blog</a>
+      </nav></nav>
 </header>
 <main class="wrapper" aria-label="Content">
         
@@ -657,7 +667,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 4, 2025 3:43 PM UTC-04:00</p>
+        <p>Site last published: April 7, 2025 7:33 PM UTC-04:00</p>
       </div>
     </div>
 

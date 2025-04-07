@@ -7,13 +7,51 @@
 
   
 
-  <title>Christopher Himes</title>
+  <title>Adding Pagination</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="I&apos;m looking for work as Product Owner living in Metro Detroit using my experience to make complicated things simpler.">
+  <meta name="description" content="I don’t remember exactly why I removed the pagination for this site but with the increase of blogs posts I felt that I needed to add it back.
+
+After trying and failing to get the standard jekyll-paginate to work I went ahead and setup jekyll-paginate-v2. This was easier than some had implied and look now there are multiple pages on this here blog.
+
+This was on the todo list so I updated that as well.
+
+First you must install the gem.
+
+gem install jekyll-paginate-v2
+
+
+Then make sure to update _config.yml. Obviously you don’t need all of these settings but this is what I’m using currently.
+
+plugins:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: &apos;/blog/page/:num/&apos;
+  title: &apos;:title - page :num&apos;
+  limit: 0
+  sort_field: &apos;date&apos;
+  sort_reverse: true
+
+
+One thing that did trip me up is I needed to set two permalinks, one for the page itself and another within the pagination.
+
+---
+layout: page
+title: blog
+permalink: /blog/
+pagination:
+  enabled: true
+  permalink: /blog/page/:num/
+---
+
+
+From here I added some padding to the pagination and centered it to make sure it was easy to see.">
 
   
 
@@ -35,17 +73,57 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="Christopher Himes">
-  <meta property="og:description" content="I&apos;m looking for work as Product Owner living in Metro Detroit using my experience to make complicated things simpler.">
+  <meta property="og:title" content="Adding Pagination">
+  <meta property="og:description" content="I don’t remember exactly why I removed the pagination for this site but with the increase of blogs posts I felt that I needed to add it back.
+
+After trying and failing to get the standard jekyll-paginate to work I went ahead and setup jekyll-paginate-v2. This was easier than some had implied and look now there are multiple pages on this here blog.
+
+This was on the todo list so I updated that as well.
+
+First you must install the gem.
+
+gem install jekyll-paginate-v2
+
+
+Then make sure to update _config.yml. Obviously you don’t need all of these settings but this is what I’m using currently.
+
+plugins:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: &apos;/blog/page/:num/&apos;
+  title: &apos;:title - page :num&apos;
+  limit: 0
+  sort_field: &apos;date&apos;
+  sort_reverse: true
+
+
+One thing that did trip me up is I needed to set two permalinks, one for the page itself and another within the pagination.
+
+---
+layout: page
+title: blog
+permalink: /blog/
+pagination:
+  enabled: true
+  permalink: /blog/page/:num/
+---
+
+
+From here I added some padding to the pagination and centered it to make sure it was easy to see.">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/face.webp">
   
 
   
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/page3/">
-  <link rel="canonical" href="http://localhost:4000/page3/">
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Christopher Himes">
+  <meta property="og:article:published_time" content="2025-04-07T15:30:00-04:00">
+  <meta property="og:url" content="http://localhost:4000/blog/2025/04/07/adding-pagination.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2025/04/07/adding-pagination.html">
   
   <style type="text/css">
     
@@ -142,6 +220,10 @@ a {
 
 a, a:visited, a:hover .page-link {
   color: light-dark(var(--light-link-color), var(--dark-link-color));
+}
+
+.post-detail a, p a, .pagination a {
+  text-decoration: underline;
 }
 
 .face {
@@ -299,6 +381,11 @@ a, a:visited, a:hover .page-link {
   padding: 1em;
 }
 
+.pagination {
+  text-align: center;
+  padding: 1.5em;
+}
+
 @media (max-width: 800px) {
   .site-title {
     font-size: 2em;
@@ -354,62 +441,71 @@ a, a:visited, a:hover .page-link {
 <body><header>
   <nav class="site-header"><div class="site-title">
       <a rel="author" href="/">christopher himes</a>
-    </div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/blog/">blog</a><a class="page-link" href="/cv/">resume/cv</a></nav></nav>
+    </div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/cv/">resume/cv</a><a class="page-link" href="/blog">blog</a>
+      </nav></nav>
 </header>
 <main class="wrapper" aria-label="Content">
-          <div class="home-wrapper">
-      <div class="home-col">
-        <img class="face" width="325" height="325" src="assets/img/new-face.webp" alt="black and white picture of me in a suit">
-      </div>
-      <div class="home-col">
-        <h1>Hi there</h1>
-        <p class="home-heading">I'm Christopher Himes, an accomplished Product Owner seeking new opportunities for transformation and adding value.</p>
-      </div>
-      
-  </div>
-  <div class="home-wrapper-column">
-    <hr />
-    <h1>experience</h1>
-    <p class="headline">Product Owner with 10+ years of leading transformative projects and delivering measurable results. Adept at building and nurturing high-performing teams while driving strategic growth and exceeding customer expectations. <a href="/cv">Read more...</a></p>
-  </div>
-  <div class="home-wrapper-column">
-    <hr />
-    <h1>recent posts</h1>
-    <div class="home-blog">
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/04/04/weeknotes-week14.html">Week 14</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/29/weeknotes-week13.html">Week 13</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/24/personality-test.html">Job Search Personality Test</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/23/light-and-dark.html">Light and Dark</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Now Update and Todo List</a>
-        </h2>
-      </article>
-    
-  </div>
-  <hr />
-  </div>
+        
+
+<div class="" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-detail">
+  <header>
+    <h1 class="post-title" itemprop="name headline">Adding Pagination</h1>
+    <p><time class="dt-published" datetime="2025-04-07T15:30:00-04:00" itemprop="datePublished">
+        Apr 7, 2025
+      </time></p>
+  </header>
+    <article itemprop="articleBody">
+      <p>I don’t remember exactly why I removed the pagination for this site but with the increase of blogs posts I felt that I needed to add it back.</p>
+
+<p>After trying and failing to get the standard <em>jekyll-paginate</em> to work I went ahead and setup <em>jekyll-paginate-v2.</em> This was easier than some had implied and look now there are multiple pages on this here blog.</p>
+
+<p>This was on the <a href="/todo">todo</a> list so I updated that as well.</p>
+
+<p>First you must install the gem.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll-paginate-v2
+</code></pre></div></div>
+
+<p>Then make sure to update _config.yml. Obviously you don’t need all of these settings but this is what I’m using currently.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>plugins:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/blog/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+</code></pre></div></div>
+
+<p>One thing that did trip me up is I needed to set two permalinks, one for the page itself and another within the pagination.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: page
+title: blog
+permalink: /blog/
+pagination:
+  enabled: true
+  permalink: /blog/page/:num/
+---
+</code></pre></div></div>
+
+<p>From here I added some padding to the pagination and centered it to make sure it was easy to see.</p>
+
+
+    </article>
+  <a href="/blog/2025/04/07/adding-pagination.html" hidden></a>
+</div>
+<div class="post-detail">
+<hr /></div>
+</div>
+
+
+
 
     </main><footer class="site-footer h-card"> 
   <data class="u-url" href="/"></data>
@@ -460,7 +556,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 4, 2025 3:43 PM UTC-04:00</p>
+        <p>Site last published: April 7, 2025 7:33 PM UTC-04:00</p>
       </div>
     </div>
 

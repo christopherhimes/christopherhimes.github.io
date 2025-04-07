@@ -99,10 +99,13 @@ a {
 a, a:visited, a:hover .page-link {
     color: light-dark(var(--light-link-color), var(--dark-link-color));
 }
+.post-detail a, p a, .pagination a {
+    text-decoration: underline;
+}
 .face {
     clip-path: circle(150px at center);
     filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
-  }
+}
 .task-list {
     list-style-type: none;
     color: light-dark(var(--light-text-color), var(--dark-text-color));
@@ -262,6 +265,10 @@ a, a:visited, a:hover .page-link {
     // border: solid 1px red;
     // text-align: center;
     padding: 1em;
+}
+.pagination {
+    text-align: center;
+    padding: 1.5em;
 }
 // @media (max-width: 800px) {
 //     .post{

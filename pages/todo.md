@@ -15,16 +15,16 @@ _Building a website To-do list_
 
 
 ### Features to add
-- [X]  ~~Add light mode that respects the system settings of the user![^2] ~~
+- [X]  ~~Add light mode that respects the system settings of the user!~~ (Added 3/24/25)[^2]
+- [X]  ~~Renable pagination as the number of blog posts has increased enough to need the functionality~~ (Added 4/7/25).
 - [ ]  Add higher resolution responsive images in modern web formats.
 - [ ]  Add a sparkline that shows post frequency.
 - [ ]  Enable categories for posts so similar ideas can be crossreferenced.
-- [ ]  Renable pagination as the number of blog posts has increased enough to need the functionality.
-- [ ] Refactor light-dark based on recent blog post from ['James G']
+- [ ] Refactor light-dark based on recent blog post from [James G]
 - [ ] Add indicator for external links.
 
 [/now]: /now
-[last.frm]: https://last.fm
+[last.fm]: https://last.fm
 [James G]: https://jamesg.blog/2025/04/03/light-dark-root
 
 [^1]: Adding this as a todo feels like cheating.

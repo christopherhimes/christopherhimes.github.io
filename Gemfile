@@ -5,7 +5,7 @@ source "https://rubygems.org"
 ruby '3.3.3'
 
 # gemspec
-gem 'jekyll-paginate'
+gem 'jekyll-paginate-v2'
 # gem 'jekyll'
 gem 'racc'
 gem 'jekyll-sitemap'

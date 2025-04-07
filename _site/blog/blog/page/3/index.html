@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
+<html lang="en"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -9,13 +7,39 @@
 
   
 
-  <title>christopher himes</title>
+  <title>blog - page 3</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="CHRISTOPHER HIMES">
+  <meta name="description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.blurb }}
+  
+  
+{% endfor %}
+
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
 
@@ -37,8 +61,34 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="christopher himes">
-  <meta property="og:description" content="CHRISTOPHER HIMES">
+  <meta property="og:title" content="blog - page 3">
+  <meta property="og:description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.blurb }}
+  
+  
+{% endfor %}
+
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/face.webp">
@@ -46,8 +96,8 @@
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/index-old">
-  <link rel="canonical" href="http://localhost:4000/index-old">
+  <meta property="og:url" content="http://localhost:4000/blog/blog/page/3/">
+  <link rel="canonical" href="http://localhost:4000/blog/blog/page/3/">
   
   <style type="text/css">
     
@@ -144,6 +194,10 @@ a {
 
 a, a:visited, a:hover .page-link {
   color: light-dark(var(--light-link-color), var(--dark-link-color));
+}
+
+.post-detail a, p a, .pagination a {
+  text-decoration: underline;
 }
 
 .face {
@@ -301,6 +355,11 @@ a, a:visited, a:hover .page-link {
   padding: 1em;
 }
 
+.pagination {
+  text-align: center;
+  padding: 1.5em;
+}
+
 @media (max-width: 800px) {
   .site-title {
     font-size: 2em;
@@ -353,21 +412,79 @@ a, a:visited, a:hover .page-link {
 
   
 </head>
+<body><header>
+  <nav class="site-header"><div class="site-title">
+      <a rel="author" href="/">christopher himes</a>
+    </div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/cv/">resume/cv</a><a class="page-link" href="/blog">blog</a>
+      </nav></nav>
+</header>
+<main class="wrapper" aria-label="Content">
+        <div class="page-detail">
+<header>
+  <h1 class="page-title">blog - page 3</h1>
+</header>
+  
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Lighthouse</a>
+    </h2>
+    <p>Jul 26, 2024</p>
+    <p>This site is not big, but it is faster, and more accessible.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2024/07/11/i-got-married.html">I got married!</a>
+    </h2>
+    <p>Jul 11, 2024</p>
+    <p>It's been a little over a month now since I got married.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2024/01/13/add-comments.html">Add Comments</a>
+    </h2>
+    <p>Jan 13, 2024</p>
+    <p>My blog has Mastodon powered comments now and this post is really just a test for that.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2023/12/29/a-stream.html">A Stream?</a>
+    </h2>
+    <p>Dec 29, 2023</p>
+    <p>I've been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2023/08/12/another-new-design.html">Another New Design</a>
+    </h2>
+    <p>Aug 12, 2023</p>
+    <p>It's a new design, yes it is! This site gets more visual updates than it does blog posts but that's where we're at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.</p>
+  </article>
+  <hr />
 
 
-  <body>
-    <div class="row featureRow header-image">
-      <div >
-        <p>
-          <h1 id='small-name'>CHRISTOPHER HIMES</h1>
-        </p>
-      </div> 
-    </div>      
-  </body>
-</html>
-
-
-    <footer class="site-footer h-card"> 
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/blog/page/2/" class="previous">
+      previous</a>
+  
+  <span class="page_number ">
+    page: 3 of 4
+  </span>
+  
+    <a href="/blog/blog/page/4/" class="next">next</a>
+  
+</div>
+</div>
+    </main><footer class="site-footer h-card"> 
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
@@ -416,7 +533,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 4, 2025 3:43 PM UTC-04:00</p>
+        <p>Site last published: April 7, 2025 7:33 PM UTC-04:00</p>
       </div>
     </div>
 
@@ -424,8 +541,6 @@ a, a:visited, a:hover .page-link {
   </div>
 
 </footer>
+</body>
 
-    <a href="#0" class="cd-top">Top</a>
-  </body>
-  
 </html>

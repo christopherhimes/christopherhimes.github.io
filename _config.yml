@@ -31,38 +31,17 @@ navbar-links:
 avatar: "/assets/img/face.webp"
 
 # By default, the image is cut into a circle. You can disable this behavior by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: false
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 250
 excerpt_separator: <!--more-->
-
-paginate: 3
-
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
 
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
-
-######################################
-# --- Colours / background image --- #
-######################################
-
-# Personalize the colours in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#242526"
-navbar-text-col: "#f8f9fa"
-navbar-border-col: "#808080"
-page-col: "#242526"
-text-col: "#f8f9fa"
-link-col: "#177D4D"
-hover-col: "#177D4D"
-footer-col: "#2f3031"
-footer-text-col: "#f8f9fa"
-footer-link-col: "#808080"
-footer-hover-col: "#177D4D"
 
 # Build settings
 rss-description: "Christopher Himes RSS Feed"
@@ -81,8 +60,14 @@ exclude:
 exclude: [vendor]
   
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
-  # - jekyll-feed
-  # - jekyll-seo-tag
-  # - jekyll-f
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/blog/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true

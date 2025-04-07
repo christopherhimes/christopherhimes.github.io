@@ -7,13 +7,39 @@
 
   
 
-  <title>Christopher Himes</title>
+  <title>blog - page 2</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="I&apos;m looking for work as Product Owner living in Metro Detroit using my experience to make complicated things simpler.">
+  <meta name="description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.blurb }}
+  
+  
+{% endfor %}
+
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
 
@@ -35,8 +61,34 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="Christopher Himes">
-  <meta property="og:description" content="I&apos;m looking for work as Product Owner living in Metro Detroit using my experience to make complicated things simpler.">
+  <meta property="og:title" content="blog - page 2">
+  <meta property="og:description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.blurb }}
+  
+  
+{% endfor %}
+
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/face.webp">
@@ -44,8 +96,8 @@
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/page6/">
-  <link rel="canonical" href="http://localhost:4000/page6/">
+  <meta property="og:url" content="http://localhost:4000/blog/blog/page/2/">
+  <link rel="canonical" href="http://localhost:4000/blog/blog/page/2/">
   
   <style type="text/css">
     
@@ -142,6 +194,10 @@ a {
 
 a, a:visited, a:hover .page-link {
   color: light-dark(var(--light-link-color), var(--dark-link-color));
+}
+
+.post-detail a, p a, .pagination a {
+  text-decoration: underline;
 }
 
 .face {
@@ -299,6 +355,11 @@ a, a:visited, a:hover .page-link {
   padding: 1em;
 }
 
+.pagination {
+  text-align: center;
+  padding: 1.5em;
+}
+
 @media (max-width: 800px) {
   .site-title {
     font-size: 2em;
@@ -354,63 +415,75 @@ a, a:visited, a:hover .page-link {
 <body><header>
   <nav class="site-header"><div class="site-title">
       <a rel="author" href="/">christopher himes</a>
-    </div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/blog/">blog</a><a class="page-link" href="/cv/">resume/cv</a></nav></nav>
+    </div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/cv/">resume/cv</a><a class="page-link" href="/blog">blog</a>
+      </nav></nav>
 </header>
 <main class="wrapper" aria-label="Content">
-          <div class="home-wrapper">
-      <div class="home-col">
-        <img class="face" width="325" height="325" src="assets/img/new-face.webp" alt="black and white picture of me in a suit">
-      </div>
-      <div class="home-col">
-        <h1>Hi there</h1>
-        <p class="home-heading">I'm Christopher Himes, an accomplished Product Owner seeking new opportunities for transformation and adding value.</p>
-      </div>
-      
-  </div>
-  <div class="home-wrapper-column">
-    <hr />
-    <h1>experience</h1>
-    <p class="headline">Product Owner with 10+ years of leading transformative projects and delivering measurable results. Adept at building and nurturing high-performing teams while driving strategic growth and exceeding customer expectations. <a href="/cv">Read more...</a></p>
-  </div>
-  <div class="home-wrapper-column">
-    <hr />
-    <h1>recent posts</h1>
-    <div class="home-blog">
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/04/04/weeknotes-week14.html">Week 14</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/29/weeknotes-week13.html">Week 13</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/24/personality-test.html">Job Search Personality Test</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/23/light-and-dark.html">Light and Dark</a>
-        </h2>
-      </article>
-    
-      <article>
-        <h2>
-          <a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Now Update and Todo List</a>
-        </h2>
-      </article>
-    
-  </div>
+        <div class="page-detail">
+<header>
+  <h1 class="page-title">blog - page 2</h1>
+</header>
+  
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Now Update and Todo List</a>
+    </h2>
+    <p>Mar 22, 2025</p>
+    <p>Just a quick update to the now section and a site todo list.</p>
+  </article>
   <hr />
-  </div>
 
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2025/03/21/weeknotes-week12.html">Week 12</a>
+    </h2>
+    <p>Mar 21, 2025</p>
+    <p>It's week one of my 12 Week Year but it's the 12th week of the year so I'm calling it week 12. This is meant to be forward looking to a week note for every week of the year.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Starting</a>
+    </h2>
+    <p>Mar 17, 2025</p>
+    <p>Starting something new and taking it day by day and week by week.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2024/12/06/now-2024.html">Now Page 2024</a>
+    </h2>
+    <p>Dec 6, 2024</p>
+    <p>While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Simple Silly</a>
+    </h2>
+    <p>Nov 21, 2024</p>
+    <p>Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general.</p>
+  </article>
+  <hr />
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/" class="previous">
+      previous</a>
+  
+  <span class="page_number ">
+    page: 2 of 4
+  </span>
+  
+    <a href="/blog/blog/page/3/" class="next">next</a>
+  
+</div>
+</div>
     </main><footer class="site-footer h-card"> 
   <data class="u-url" href="/"></data>
 
@@ -460,7 +533,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 4, 2025 3:43 PM UTC-04:00</p>
+        <p>Site last published: April 7, 2025 7:33 PM UTC-04:00</p>
       </div>
     </div>
 
