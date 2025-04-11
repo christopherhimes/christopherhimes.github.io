@@ -3,10 +3,10 @@ layout: post
 title:  "100 Days to Offload"
 date:   2025-04-11 11:45:00
 tags: ['Meta', '100 Days To Offload']
-blurb: 
+blurb: 100 Days To Offload is a challenge to publish 100 posts on your personal blog in a year.
 
 comments:
-    id: 
+    id: 114320129045122706
 ---
 This is day 1 of #100DaysToOffload.
 
