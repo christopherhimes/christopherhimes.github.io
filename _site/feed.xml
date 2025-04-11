@@ -6,9 +6,29 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 08 Apr 2025 16:48:37 -0400</pubDate>
-    <lastBuildDate>Tue, 08 Apr 2025 16:48:37 -0400</lastBuildDate>
+    <pubDate>Fri, 11 Apr 2025 11:44:22 -0400</pubDate>
+    <lastBuildDate>Fri, 11 Apr 2025 11:44:22 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>100 Days to Offload</title>
+        <description>&lt;p&gt;This is day 1 of #100DaysToOffload.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://100daystooffload.com/&quot;&gt;100 Days To Offload&lt;/a&gt; is a challenge to publish 100 posts on your personal blog in a year.&lt;/p&gt;
+
+&lt;p&gt;I’ve been trying to write more so I thought this would be a fun challenge. If you go to the website for the challenge they have a hall of fame for people that completed it. This means there are a number of interesting personal blogs to follow as well. Found a few more for the RSS reader.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 11 Apr 2025 07:45:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/04/11/100-days-to-offload.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/11/100-days-to-offload.html</guid>
+        
+        <category>Meta</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Adding Pagination</title>
@@ -448,30 +468,6 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
         <category>now</category>
         
         <category>2024</category>
-        
-        <category>meta</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Simple Silly</title>
-        <description>&lt;!--more--&gt;
-
-&lt;p&gt;I’ve decided not to figure out an image for this post and see if that helps get it together faster. I’m not happy with how the images I have on previous posts work with the latest layouts so I’m considering dropping them all together. I do think I could pull original sources and have the look less terrible.&lt;/p&gt;
-
-&lt;p&gt;Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general. I do not have any projects outside of this site that can scratch that itch. So I figured I would expriment with the site at first and then branch into other things.&lt;/p&gt;
-
-&lt;p&gt;I’ve been reading lots of blogs about things to add to personal sites. So I am making a list and will be making chainges and posting more often (he says again).&lt;/p&gt;
-
-&lt;p&gt;I’m happy with how much simple the site is now. Not having to provide all of bootstrap has significantly reduced the payload for a first draw.The site does not need a bunch of fancy buttons or styling so the critical css file is small. Frankly, it could be smaller still but I’m not great at css let alone optimizing css.&lt;/p&gt;
-
-&lt;p&gt;There was a version of the site that included cards for the blog posts including gradient borders with rounded corners but I decided to scale that way back. I’m not sure about the dashed lines but they work for the moment. I miss cleaner sites so I have been looking at simpler sites for inspiration. There are some fun ideas out there that I plan to incorporate to the site or just as a prompt.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 21 Nov 2024 07:30:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2024/11/21/simple-silly.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2024/11/21/simple-silly.html</guid>
         
         <category>meta</category>
         
