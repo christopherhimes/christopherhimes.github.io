@@ -5,7 +5,7 @@ date:   2025-04-12 14:00:00
 tags: ['Week Notes', 'Week 15', 'concert', 'Bright Eyes', 'Cursive','Cicada Detroit']
 blurb: Job search, birthday party, and a concert
 comments:
-    id: 
+    id: 114326256050926362
 ---
 
 <!--more-->
