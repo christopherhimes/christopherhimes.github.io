@@ -72,6 +72,10 @@ hr {
 p, li, ul {
     color: light-dark(var(--light-text-color), var(--dark-text-color));
 }
+// img {
+//     width: 750px;
+//     border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
+// }
 a:hover {
     text-decoration: underline;
 }
