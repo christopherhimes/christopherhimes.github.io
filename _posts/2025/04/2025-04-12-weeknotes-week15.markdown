@@ -18,5 +18,6 @@ comments:
 * Had Taco Bell and went to the Bright Eyes and Cursive concert.
 * Finished the first season The Last of Us with my wife.📺
 * Remained stuck on Cicada Detroit puzzle 20.
+* Heading to the Zap Zone for my nephews birthday party.
 
 This is day 2 of #100DaysToOffload.
