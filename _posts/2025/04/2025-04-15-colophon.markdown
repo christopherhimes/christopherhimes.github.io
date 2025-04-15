@@ -6,7 +6,7 @@ tags: ['Meta', 'Colophon', '100 Days To Offload']
 blurb: a colophon (/ˈkɒləfən, -fɒn/) is a brief statement containing information about the publication
 
 comments:
-    id: 
+    id: 114343940861231987
 ---
 
 Added a [colophon].
