@@ -6,9 +6,31 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 15 Apr 2025 16:48:16 -0400</pubDate>
-    <lastBuildDate>Tue, 15 Apr 2025 16:48:16 -0400</lastBuildDate>
+    <pubDate>Tue, 15 Apr 2025 17:02:45 -0400</pubDate>
+    <lastBuildDate>Tue, 15 Apr 2025 17:02:45 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>ActivityWatch</title>
+        <description>&lt;p&gt;ActivityWatch is an app that automatically tracks how you spend time on your devices.&lt;/p&gt;
+
+&lt;p&gt;Like I mentioned in a previous post I found some new people to follow in my RSS reader. One of those people is &lt;a href=&quot;https://joelchrono.xyz&quot;&gt;Joel&lt;/a&gt; who’s feed introduced me to the service &lt;a href=&quot;https://activitywatch.net/&quot;&gt;ActivityWatch&lt;/a&gt;. This is now currently running on my machine so I can see how exactly I’m spending my time.&lt;/p&gt;
+
+&lt;p&gt;My intention for now is simply to use the reporting for self reflection. Not sure if I want to be publishing any stats publicly.&lt;/p&gt;
+
+&lt;p&gt;This is day 4 of #100DaysToOffload.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 15 Apr 2025 13:30:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/04/15/activitywatch.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/15/activitywatch.html</guid>
+        
+        <category>ActivityWatch</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Added a Colophon</title>
@@ -426,41 +448,6 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
         <category>todo</category>
         
         <category>meta</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Week 12</title>
-        <description>&lt;!--more--&gt;
-&lt;p&gt;&lt;em&gt;It’s week one of my &lt;a href=&quot;https://12weekyear.com/&quot;&gt;12 Week Year&lt;/a&gt; but it’s the 12th week of the year so I’m calling it week 12. This is meant to be forward looking to a week note for every week of the year.&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I updated my resume to showcase my experience, skills, and accomplishments as a Product Owner.&lt;/li&gt;
-  &lt;li&gt;Signed up at &lt;a href=&quot;https://www.nextjobtraining.com/&quot;&gt;NextJob&lt;/a&gt; to take advantage of that benefit from my previous employer.&lt;/li&gt;
-  &lt;li&gt;Scheduled a meeting with a job coach for next week.&lt;/li&gt;
-  &lt;li&gt;Updated &lt;a href=&quot;https://www.linkedin.com/in/cshimes&quot;&gt;my LinkedIn profile&lt;/a&gt; and added a few people that I previously worked with in the past.&lt;/li&gt;
-  &lt;li&gt;Originally planned to apply to a few jobs this week but have been saving them for next week and a better resume.&lt;/li&gt;
-  &lt;li&gt;Started documenting some specific projects I’ve had at work over the last few years.&lt;/li&gt;
-  &lt;li&gt;Set resume/cv to appear in the main navigation.&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Fri, 21 Mar 2025 08:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2025/03/21/weeknotes-week12.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2025/03/21/weeknotes-week12.html</guid>
-        
-        <category>Week Notes</category>
-        
-        <category>Week 12</category>
-        
-        <category>resume</category>
-        
-        <category>NextJob</category>
-        
-        <category>Product Owner</category>
-        
-        <category>Job Search</category>
         
         
       </item>
