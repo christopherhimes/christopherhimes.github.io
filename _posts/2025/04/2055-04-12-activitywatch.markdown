@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ActivityWatch"
-date:   2025-04-12 19:30:00
+date:   2055-04-12 19:30:00
 tags: ['ActivityWatch']
 blurb: ActivityWatch is an app that automatically tracks how you spend time on your devices.
 

@@ -6,9 +6,37 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 12 Apr 2025 13:50:39 -0400</pubDate>
-    <lastBuildDate>Sat, 12 Apr 2025 13:50:39 -0400</lastBuildDate>
+    <pubDate>Tue, 15 Apr 2025 16:44:35 -0400</pubDate>
+    <lastBuildDate>Tue, 15 Apr 2025 16:44:35 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Added a Colophon</title>
+        <description>&lt;p&gt;Added a &lt;a href=&quot;/colophon&quot;&gt;colophon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Wikipedia lists a colophon as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In publishing, a colophon (/ˈkɒləfən, -fɒn/) is a brief statement containing information about the publication of a book such as an “imprint” (the place of publication, the publisher, and the date of publication).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;My intention is to record the site history, technology stack, and other details of the site there. Really though, check that out if you’re interested in what drives this site.&lt;/p&gt;
+
+&lt;p&gt;This is day 3 of #100DaysToOffload.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 15 Apr 2025 12:45:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/04/15/colophon.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/15/colophon.html</guid>
+        
+        <category>Meta</category>
+        
+        <category>Colophon</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Week 15</title>
@@ -43,6 +71,8 @@
         <category>Cursive</category>
         
         <category>Cicada Detroit</category>
+        
+        <category>100 Days To Offload</category>
         
         
       </item>
@@ -431,40 +461,6 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
         <category>Product Owner</category>
         
         <category>Job Search</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Starting</title>
-        <description>&lt;!--more--&gt;
-
-&lt;p&gt;After 16 years, 9 months and 12 days I’m unemployed. It’s upsetting and scary but also exciting in a way. That’s a long time for anyone to be doing something and it would be nice to do something else.&lt;/p&gt;
-
-&lt;p&gt;Already I’m looking for ways to use my time productively. I’ve always been somewhat dubious about self help books and influencers of that type. However, I have found a few things lately that I’m going to try. Looking to add some structure in the near term but maybe they’ll stick around and become habits.&lt;/p&gt;
-
-&lt;p&gt;I really like the idea of &lt;a href=&quot;https://doingweeknotes.com/&quot;&gt;Week Notes&lt;/a&gt;, a concept I’ve only been introduced to recently. The general idea is to post publicly (typically within an organization) what your team has worked on this week. Hopefully, making this information public gives other teams, leadership, etc., a better idea of what is going on. This of course is another silo breaking procedure but as activity more akin to a work journal.&lt;/p&gt;
-
-&lt;p&gt;Having sent status emails for years this seems like a nice way to add context to whatever dates may be out there. For example if there is something that comes up unexpectedly this could appear in the weeknote and help avoid future surprises. Of course this is not a replacement for other forms of communication but it may reach people outside of traditional channels. The public forum means not having to guess who should be included on the email chain.&lt;/p&gt;
-
-&lt;p&gt;More importantly than that a team can celebrate a win every week. There are things worth celebrating all the time. Too often focus is on a larger deliverable when so many smaller victories happen every week.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;What does that mean for me though?&lt;/em&gt; I’m going to be working toward my next job every week and documenting these efforts may help me. Having a bit of a self check-in weekly seems valuable.&lt;/p&gt;
-
-&lt;p&gt;Which brings me to the rest of the plan I’m starting today. I’m acting with intent over the next 12 weeks implementing a much more casual version of the &lt;a href=&quot;https://12weekyear.com/&quot;&gt;12 Week Year&lt;/a&gt; after watching this &lt;a href=&quot;https://youtu.be/5SPjd9Zu4-w?si=rjBU_E7WPI-ww1KC&quot;&gt;video&lt;/a&gt; by Zach Highley. I’ve made a few goals and I’m going to keep track of what I’m doing to try and accomplish them.&lt;/p&gt;
-
-&lt;p&gt;To help me keep track of my goals and my planned activities for the 12 weeks I’ve added a template already setup for this sort of thing on &lt;a href=&quot;https://www.notion.so&quot;&gt;Notion&lt;/a&gt;. If you’re not famililar with Notion it started as a note taking app like Evernote. But it has turned into a suite of tools for project management, documentation, and collaboration. Random promotion of Notion aside I’ve got the system setup I just need to start the work.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 17 Mar 2025 09:30:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2025/03/17/starting-weeknotes.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2025/03/17/starting-weeknotes.html</guid>
-        
-        <category>Week Notes</category>
-        
-        <category>12 Week Year</category>
-        
-        <category>Notion</category>
         
         
       </item>

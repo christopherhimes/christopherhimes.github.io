@@ -2,7 +2,7 @@
 layout: post
 title:  "Week 15"
 date:   2025-04-12 14:00:00
-tags: ['Week Notes', 'Week 15', 'concert', 'Bright Eyes', 'Cursive','Cicada Detroit']
+tags: ['Week Notes', 'Week 15', 'concert', 'Bright Eyes', 'Cursive','Cicada Detroit', '100 Days To Offload']
 blurb: Job search, birthday party, and a concert
 comments:
     id: 114326256050926362
