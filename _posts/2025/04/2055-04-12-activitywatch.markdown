@@ -6,7 +6,7 @@ tags: ['ActivityWatch', '100 Days To Offload']
 blurb: ActivityWatch is an app that automatically tracks how you spend time on your devices.
 
 comments:
-    id: 
+    id: 114344088862648140
 ---
 ActivityWatch is an app that automatically tracks how you spend time on your devices.
 
