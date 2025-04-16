@@ -13,6 +13,15 @@ I've added a new [now] page as well. There is a greater description there but th
 
 I've got plans for this site and I've started listing them out over on the [todo] page. This section is just getting started.
 
+## Interesting Pages
+* [now]
+* [todo]
+* [colophon]
+* [resume/cv]
+* [tags]
+
 [resume/cv]: ../cv
 [now]: ../now
 [todo]: ../todo
+[colophon]: /colophon
+[tags]: /tags

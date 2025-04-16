@@ -170,6 +170,13 @@ a {
   text-decoration: none;
 }
 
+.language-plaintext {
+  width: 750px;
+  word-break: break-all;
+  display: block;
+  overflow: auto;
+}
+
 .headline {
   font-size: 1.5em;
 }
@@ -343,6 +350,11 @@ a, a:visited, a:hover .page-link {
   flex-direction: column;
 }
 
+.blogimg {
+  max-width: 750px;
+  border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: center;
@@ -425,6 +437,15 @@ a, a:visited, a:hover .page-link {
   
   <article class="blog-entry">
     <h2>
+      <a class="blog-link" href="/blog/2025/04/16/static-site-images.html">Static Site Images</a>
+    </h2>
+    <p>Apr 16, 2025</p>
+    <p>I was recently reaking this blog post by Kev Quirk about image handling on his static site which inspired me to spend some time fixing the images on this site.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
       <a class="blog-link" href="/blog/2025/04/15/activitywatch.html">ActivityWatch</a>
     </h2>
     <p>Apr 15, 2025</p>
@@ -456,15 +477,6 @@ a, a:visited, a:hover .page-link {
     </h2>
     <p>Apr 11, 2025</p>
     <p>100 Days To Offload is a challenge to publish 100 posts on your personal blog in a year.</p>
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/07/adding-pagination.html">Adding Pagination</a>
-    </h2>
-    <p>Apr 7, 2025</p>
-    <p>Adding back in pagination on this here website.</p>
   </article>
   <hr />
 
@@ -531,7 +543,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 15, 2025 5:29 PM UTC-04:00</p>
+        <p>Site last published: April 16, 2025 12:53 PM UTC-04:00</p>
       </div>
     </div>
 

@@ -20,14 +20,7 @@
 * Mail through [Proton Mail].
 * Password Management through [1Password].
 * VPN by [mullvad].
-
-
-* The [now] page uses the [last.fm] API to retrieve the recent played song.
-* Comments are tied to [my] posts on [Mastodon] using a setup similar to the one made by [Cassidy].
 * Development is completed in [VSCodium] a de-microfted version of [VSCode].
-* In an attempt to avoid [Google Fonts] I have included the Lato font in the assets for the site.
-* There is currently no tracking of any kind on this site.
-
 
 [Jekyll]: https://jekyllrb.com
 [Markdown]: https://daringfireball.net/projects/markdown/
@@ -75,14 +68,7 @@
 * Mail through [Proton Mail].
 * Password Management through [1Password].
 * VPN by [mullvad].
-
-
-* The [now] page uses the [last.fm] API to retrieve the recent played song.
-* Comments are tied to [my] posts on [Mastodon] using a setup similar to the one made by [Cassidy].
 * Development is completed in [VSCodium] a de-microfted version of [VSCode].
-* In an attempt to avoid [Google Fonts] I have included the Lato font in the assets for the site.
-* There is currently no tracking of any kind on this site.
-
 
 [Jekyll]: https://jekyllrb.com
 [Markdown]: https://daringfireball.net/projects/markdown/
@@ -180,6 +166,13 @@ a:hover {
 
 a {
   text-decoration: none;
+}
+
+.language-plaintext {
+  width: 750px;
+  word-break: break-all;
+  display: block;
+  overflow: auto;
 }
 
 .headline {
@@ -355,6 +348,11 @@ a, a:visited, a:hover .page-link {
   flex-direction: column;
 }
 
+.blogimg {
+  max-width: 750px;
+  border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: center;
@@ -441,14 +439,8 @@ a, a:visited, a:hover .page-link {
   <li>Domain hosting through <a href="https://www.namecheap.com/">namecheap</a>.</li>
   <li>Mail through <a href="https://proton.me/mail">Proton Mail</a>.</li>
   <li>Password Management through <a href="https://1password.com/">1Password</a>.</li>
-  <li>
-    <p>VPN by <a href="https://mullvad.net">mullvad</a>.</p>
-  </li>
-  <li>The <a href="/now">now</a> page uses the <a href="https://last.fm">last.fm</a> API to retrieve the recent played song.</li>
-  <li>Comments are tied to <a href="https://hachyderm.io/@eeentropyyy">my</a> posts on <a href="https://joinmastodon.org/">Mastodon</a> using a setup similar to the one made by <a href="https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/">Cassidy</a>.</li>
+  <li>VPN by <a href="https://mullvad.net">mullvad</a>.</li>
   <li>Development is completed in <a href="https://vscodium.com/">VSCodium</a> a de-microfted version of <a href="https://code.visualstudio.com/">VSCode</a>.</li>
-  <li>In an attempt to avoid <a href="https://fonts.google.com/">Google Fonts</a> I have included the Lato font in the assets for the site.</li>
-  <li>There is currently no tracking of any kind on this site.</li>
 </ul>
 
 
@@ -502,7 +494,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 15, 2025 5:29 PM UTC-04:00</p>
+        <p>Site last published: April 16, 2025 12:53 PM UTC-04:00</p>
       </div>
     </div>
 

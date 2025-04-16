@@ -170,6 +170,13 @@ a {
   text-decoration: none;
 }
 
+.language-plaintext {
+  width: 750px;
+  word-break: break-all;
+  display: block;
+  overflow: auto;
+}
+
 .headline {
   font-size: 1.5em;
 }
@@ -343,6 +350,11 @@ a, a:visited, a:hover .page-link {
   flex-direction: column;
 }
 
+.blogimg {
+  max-width: 750px;
+  border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: center;
@@ -425,6 +437,15 @@ a, a:visited, a:hover .page-link {
   
   <article class="blog-entry">
     <h2>
+      <a class="blog-link" href="/blog/2025/04/07/adding-pagination.html">Adding Pagination</a>
+    </h2>
+    <p>Apr 7, 2025</p>
+    <p>Adding back in pagination on this here website.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
       <a class="blog-link" href="/blog/2025/04/04/weeknotes-week14.html">Week 14</a>
     </h2>
     <p>Apr 4, 2025</p>
@@ -456,15 +477,6 @@ a, a:visited, a:hover .page-link {
     </h2>
     <p>Mar 23, 2025</p>
     <p>I'm a fan of dark mode on sites, in development editors, and the operating system too.</p>
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Now Update and Todo List</a>
-    </h2>
-    <p>Mar 22, 2025</p>
-    <p>Just a quick update to the now section and a site todo list.</p>
   </article>
   <hr />
 
@@ -532,7 +544,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 15, 2025 5:29 PM UTC-04:00</p>
+        <p>Site last published: April 16, 2025 12:53 PM UTC-04:00</p>
       </div>
     </div>
 

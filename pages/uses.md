@@ -12,14 +12,7 @@ mainnav: false
 * Mail through [Proton Mail].
 * Password Management through [1Password].
 * VPN by [mullvad].
-
-
-* The [now] page uses the [last.fm] API to retrieve the recent played song.
-* Comments are tied to [my] posts on [Mastodon] using a setup similar to the one made by [Cassidy].
 * Development is completed in [VSCodium] a de-microfted version of [VSCode].
-* In an attempt to avoid [Google Fonts] I have included the Lato font in the assets for the site.
-* There is currently no tracking of any kind on this site.
-
 
 [Jekyll]: https://jekyllrb.com
 [Markdown]: https://daringfireball.net/projects/markdown/

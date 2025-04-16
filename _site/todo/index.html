@@ -18,6 +18,7 @@
 ### Pages to Add
 - [X]  ~~Now page~~ (Added 12/6/24 [/now]).
 - [X]  ~~To-Do Page for site~~ (Added 3/22/25).[^1]
+- [X] ~~Add colophon page.~~ (Added 4/15/25).
 - [ ]  Add a projects page dedicated to discussing previous work projects.
 - [ ]  Add a dedicated music page that takes advantage of [last.fm] data.
 
@@ -30,10 +31,20 @@
 - [ ]  Enable categories for posts so similar ideas can be crossreferenced.
 - [ ] Refactor light-dark based on recent blog post from [James G]
 - [ ] Add indicator for external links.
+- [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org]
+- [ ] Add Tags to posts.
+- [ ] Add read time to posts.
+- [ ] Add light and dark mode toggle.
+
+### Other activities
+- [ ] Expriment with [FreshRSS].
+- [ ] Correct terminal in VSCodium.
 
 [/now]: /now
 [last.fm]: https://last.fm
 [James G]: https://jamesg.blog/2025/04/03/light-dark-root
+[FreshRSS]: https://www.freshrss.org/
+[hamatti.org]: notes.hamatti.org
 
 [^1]: Adding this as a todo feels like cheating.
 [^2]: Added an exclamation point because I tried to add this again but it&apos;s already here.">
@@ -64,6 +75,7 @@
 ### Pages to Add
 - [X]  ~~Now page~~ (Added 12/6/24 [/now]).
 - [X]  ~~To-Do Page for site~~ (Added 3/22/25).[^1]
+- [X] ~~Add colophon page.~~ (Added 4/15/25).
 - [ ]  Add a projects page dedicated to discussing previous work projects.
 - [ ]  Add a dedicated music page that takes advantage of [last.fm] data.
 
@@ -76,10 +88,20 @@
 - [ ]  Enable categories for posts so similar ideas can be crossreferenced.
 - [ ] Refactor light-dark based on recent blog post from [James G]
 - [ ] Add indicator for external links.
+- [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org]
+- [ ] Add Tags to posts.
+- [ ] Add read time to posts.
+- [ ] Add light and dark mode toggle.
+
+### Other activities
+- [ ] Expriment with [FreshRSS].
+- [ ] Correct terminal in VSCodium.
 
 [/now]: /now
 [last.fm]: https://last.fm
 [James G]: https://jamesg.blog/2025/04/03/light-dark-root
+[FreshRSS]: https://www.freshrss.org/
+[hamatti.org]: notes.hamatti.org
 
 [^1]: Adding this as a todo feels like cheating.
 [^2]: Added an exclamation point because I tried to add this again but it&apos;s already here.">
@@ -162,6 +184,13 @@ a:hover {
 
 a {
   text-decoration: none;
+}
+
+.language-plaintext {
+  width: 750px;
+  word-break: break-all;
+  display: block;
+  overflow: auto;
 }
 
 .headline {
@@ -337,6 +366,11 @@ a, a:visited, a:hover .page-link {
   flex-direction: column;
 }
 
+.blogimg {
+  max-width: 750px;
+  border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: center;
@@ -422,6 +456,7 @@ a, a:visited, a:hover .page-link {
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><del>Now page</del> (Added 12/6/24 <a href="/now">/now</a>).</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><del>To-Do Page for site</del> (Added 3/22/25).<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><del>Add colophon page.</del> (Added 4/15/25).</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a projects page dedicated to discussing previous work projects.</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a dedicated music page that takes advantage of <a href="https://last.fm">last.fm</a> data.</li>
 </ul>
@@ -435,6 +470,16 @@ a, a:visited, a:hover .page-link {
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Enable categories for posts so similar ideas can be crossreferenced.</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Refactor light-dark based on recent blog post from <a href="https://jamesg.blog/2025/04/03/light-dark-root">James G</a></li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add indicator for external links.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a digital garden. This is a large undertaking. One reference <a href="notes.hamatti.org">hamatti.org</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add Tags to posts.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add read time to posts.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add light and dark mode toggle.</li>
+</ul>
+
+<h3 id="other-activities">Other activities</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Expriment with <a href="https://www.freshrss.org/">FreshRSS</a>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Correct terminal in VSCodium.</li>
 </ul>
 
 <div class="footnotes" role="doc-endnotes">
@@ -498,7 +543,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 15, 2025 5:29 PM UTC-04:00</p>
+        <p>Site last published: April 16, 2025 12:53 PM UTC-04:00</p>
       </div>
     </div>
 

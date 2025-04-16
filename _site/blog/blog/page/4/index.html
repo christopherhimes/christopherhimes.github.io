@@ -170,6 +170,13 @@ a {
   text-decoration: none;
 }
 
+.language-plaintext {
+  width: 750px;
+  word-break: break-all;
+  display: block;
+  overflow: auto;
+}
+
 .headline {
   font-size: 1.5em;
 }
@@ -343,6 +350,11 @@ a, a:visited, a:hover .page-link {
   flex-direction: column;
 }
 
+.blogimg {
+  max-width: 750px;
+  border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: center;
@@ -425,6 +437,15 @@ a, a:visited, a:hover .page-link {
   
   <article class="blog-entry">
     <h2>
+      <a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Lighthouse</a>
+    </h2>
+    <p>Jul 26, 2024</p>
+    <p>This site is not big, but it is faster, and more accessible.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
       <a class="blog-link" href="/blog/2024/07/11/i-got-married.html">I got married!</a>
     </h2>
     <p>Jul 11, 2024</p>
@@ -456,15 +477,6 @@ a, a:visited, a:hover .page-link {
     </h2>
     <p>Aug 12, 2023</p>
     <p>It's a new design, yes it is! This site gets more visual updates than it does blog posts but that's where we're at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.</p>
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2022/05/14/virtual.html">I'm Virtual Now</a>
-    </h2>
-    <p>May 14, 2022</p>
-    <p>Guess 'now' is relative with working at home for the last two years. As of yesterday I no longer have a desk at an office that I could return to when this whole pandemic blows over.</p>
   </article>
   <hr />
 
@@ -532,7 +544,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 15, 2025 5:29 PM UTC-04:00</p>
+        <p>Site last published: April 16, 2025 12:53 PM UTC-04:00</p>
       </div>
     </div>
 

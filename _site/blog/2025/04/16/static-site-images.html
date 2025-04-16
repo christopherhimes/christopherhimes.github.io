@@ -7,16 +7,38 @@
 
   
 
-  <title>christopher himes</title>
+  <title>Static Site Images</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="404
+  <meta name="description" content="I was recently reaking this blog post by Kev Quirk about image handling on his static site which inspired me to spend some time fixing the images on this site.
 
-  Page not found :(
-  The requested page could not be found.">
+My includes are fairly similar to his but I’m passing a class as well.
+
+
+{{=&amp;lt;% %&amp;gt;=}}&amp;lt;img class=&quot;blogimg&quot; alt=&quot;{{include.alt}}&quot; loading=&quot;lazy&quot; src=&quot;/assets/img/{{include.src}}&quot; /&amp;gt;
+
+
+
+The image line in each post is identical to his handling.
+
+
+{% include img.html src=&apos;&apos; alt=&apos;&apos; %}
+
+
+
+Fun side note in creating this post I learned that you have to use {% raw %} and {% endraw %} tags so the liquid code wouldn’t run and replace that information. Also, these tags do not stack so you cannot show this code by putting raw/raw/endraw/endraw.
+
+With this at least partially corrected I’ll be adding images to more posts going forward and revisiting the dark and light mode update with some images.
+
+And here just because it would be bad form to have a post about images without including an image.
+
+
+Photo by Huang Yingone
+
+This is day 5 of #100DaysToOffload.">
 
   
 
@@ -38,20 +60,44 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="christopher himes">
-  <meta property="og:description" content="404
+  <meta property="og:title" content="Static Site Images">
+  <meta property="og:description" content="I was recently reaking this blog post by Kev Quirk about image handling on his static site which inspired me to spend some time fixing the images on this site.
 
-  Page not found :(
-  The requested page could not be found.">
+My includes are fairly similar to his but I’m passing a class as well.
+
+
+{{=&amp;lt;% %&amp;gt;=}}&amp;lt;img class=&quot;blogimg&quot; alt=&quot;{{include.alt}}&quot; loading=&quot;lazy&quot; src=&quot;/assets/img/{{include.src}}&quot; /&amp;gt;
+
+
+
+The image line in each post is identical to his handling.
+
+
+{% include img.html src=&apos;&apos; alt=&apos;&apos; %}
+
+
+
+Fun side note in creating this post I learned that you have to use {% raw %} and {% endraw %} tags so the liquid code wouldn’t run and replace that information. Also, these tags do not stack so you cannot show this code by putting raw/raw/endraw/endraw.
+
+With this at least partially corrected I’ll be adding images to more posts going forward and revisiting the dark and light mode update with some images.
+
+And here just because it would be bad form to have a post about images without including an image.
+
+
+Photo by Huang Yingone
+
+This is day 5 of #100DaysToOffload.">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/face.webp">
   
 
   
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/404.html">
-  <link rel="canonical" href="http://localhost:4000/404.html">
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Christopher Himes">
+  <meta property="og:article:published_time" content="2025-04-16T07:30:00-04:00">
+  <meta property="og:url" content="http://localhost:4000/blog/2025/04/16/static-site-images.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2025/04/16/static-site-images.html">
   
   <style type="text/css">
     
@@ -386,27 +432,49 @@ a, a:visited, a:hover .page-link {
 <main class="wrapper" aria-label="Content">
         
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<div class="" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-detail">
+  <header>
+    <h1 class="post-title" itemprop="name headline">Static Site Images</h1>
+    <p><time class="dt-published" datetime="2025-04-16T07:30:00-04:00" itemprop="datePublished">
+        Apr 16, 2025
+      </time></p>
+  </header>
+    <article itemprop="articleBody">
+      <p>I was recently reaking this blog post by Kev Quirk about <a href="https://kevquirk.com/blog/how-i-manage-jekyll-content">image handling</a> on his static site which inspired me to spend some time fixing the images on this site.</p>
 
-<div class="container">
-  <h1>404</h1>
+<p>My includes are fairly similar to his but I’m passing a class as well.</p>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{{=&lt;% %&gt;=}}&lt;img class="blogimg" alt="{{include.alt}}" loading="lazy" src="/assets/img/{{include.src}}" /&gt;
+
+</code></pre></div></div>
+
+<p>The image line in each post is identical to his handling.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% include img.html src='' alt='' %}
+
+</code></pre></div></div>
+
+<p>Fun side note in creating this post I learned that you have to use {% raw %} and {% endraw %} tags so the <a href="https://heymichellemac.com/jekyll-liquid-tags-code-snippet">liquid code</a> wouldn’t run and replace that information. Also, these tags do not stack so you cannot show this code by putting raw/raw/endraw/endraw.</p>
+
+<p>With this at least partially corrected I’ll be adding images to more posts going forward and revisiting the dark and light mode update with some images.</p>
+
+<p>And here just because it would be bad form to have a post about images without including an image.</p>
+
+<p><img class="blogimg" alt="T-Rex roaring in an urban downtown area" loading="lazy" src="/assets/img//blog/static-images/static-dinosaur.webp" />
+Photo by <a href="https://unsplash.com/@yingone?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Huang Yingone</a></p>
+
+<p>This is day 5 of #100DaysToOffload.</p>
+
+
+    </article>
+  <a href="/blog/2025/04/16/static-site-images.html" hidden></a>
 </div>
-
+<div class="post-detail">
+<hr /></div>
+</div>
 
 
 

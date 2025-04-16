@@ -72,15 +72,18 @@ hr {
 p, li, ul {
     color: light-dark(var(--light-text-color), var(--dark-text-color));
 }
-// img {
-//     width: 750px;
-//     border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
-// }
 a:hover {
     text-decoration: underline;
 }
 a {
     text-decoration: none;
+}
+.language-plaintext {
+    width: 750px;
+    // border: 1px solid red;
+    word-break: break-all;
+    display: block;
+    overflow: auto;
 }
 .headline {
     font-size: 1.5em;
@@ -257,7 +260,10 @@ a, a:visited, a:hover .page-link {
 .home-blog {
     flex-direction: column;
 }
-
+.blogimg {
+    max-width: 750px;
+    border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
+}
 .footer-wrapper {
     display: flex;
     justify-content: center;
