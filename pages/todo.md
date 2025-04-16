@@ -27,6 +27,7 @@ _Building a website To-do list_
 - [ ] Add Tags to posts.
 - [ ] Add read time to posts.
 - [ ] Add light and dark mode toggle.
+- [ ] Enable posting to [IndieNews].
 
 ### Other activities
 - [ ] Expriment with [FreshRSS].
@@ -37,6 +38,7 @@ _Building a website To-do list_
 [James G]: https://jamesg.blog/2025/04/03/light-dark-root
 [FreshRSS]: https://www.freshrss.org/
 [hamatti.org]: notes.hamatti.org
+[IndieNews]: https://news.indieweb.org/how-to-submit-a-post
 
 [^1]: Adding this as a todo feels like cheating.
 [^2]: Added an exclamation point because I tried to add this again but it's already here.
