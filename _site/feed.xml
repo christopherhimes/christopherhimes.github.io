@@ -6,9 +6,100 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 16 Apr 2025 12:57:21 -0400</pubDate>
-    <lastBuildDate>Wed, 16 Apr 2025 12:57:21 -0400</lastBuildDate>
+    <pubDate>Wed, 16 Apr 2025 14:23:42 -0400</pubDate>
+    <lastBuildDate>Wed, 16 Apr 2025 14:23:42 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Light and Dark Mode Revisited</title>
+        <description>&lt;style&gt;
+.box {
+  float: left;
+  /* height: 50px; */
+  /* width: 50px; */
+  padding: 15px;
+  text-align: center;
+  vertical-align: center;
+  margin-bottom: 15px;
+  border: 1px solid light-dark(rgb(26, 26, 26), rgb(240,240,240));
+  color: black;
+  /* clear: both; */
+}
+.white {background-color: rgb(240,240,240);}
+.black {background-color: rgb(26, 26, 26);color:white;}
+.medium-green {background-color: rgb(0, 119, 83);}
+.bright-green {background-color: rgb(32, 255, 188);}
+.medium-blue {background-color: rgb(1, 151, 189);}
+.bright-blue {background-color: rgb(25, 209, 255);}
+&lt;/style&gt;
+
+&lt;p&gt;I wanted to revisit the light and dark update as the original described some changes but didn’t display how these changes impacted the experience on the site. Now that images are working a bit better I figured I would show exactly what’s happening on the site in its current state.&lt;/p&gt;
+
+&lt;p&gt;The dark mode which is the primary way I view the site uses an almost black background with bright green and blue for the headers and links respectively.&lt;/p&gt;
+
+&lt;div class=&quot;box black&quot;&gt;rgb(26, 26, 26)&lt;/div&gt;
+&lt;div class=&quot;box bright-green&quot;&gt;rgb(32, 255, 188)&lt;/div&gt;
+&lt;div class=&quot;box bright-blue&quot;&gt;rgb(25, 209, 255)&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;Dark mode version of this site with a near black background, bright blue links, white text, and bright green header text&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/light-and-dark/dark-mode.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The light mode which I imagine will be the way most people view the site uses an almost white background with medium green and blue for the headers and links respectively.&lt;/p&gt;
+
+&lt;div class=&quot;box white&quot;&gt;rgb(240,240,240)&lt;/div&gt;
+&lt;div class=&quot;box medium-green&quot;&gt;rgb(0, 119, 83)&lt;/div&gt;
+&lt;div class=&quot;box medium-blue&quot;&gt;rgb(1, 151, 189)&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;Light mode version of this site with a near white background, medium blue links, near black text, and medium green header text&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/light-and-dark/light-mode.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Additionally, I’ve simplified the setup for light and dark based on a recent blog by &lt;a href=&quot;https://jamesg.blog/2025/04/03/light-dark-root&quot;&gt;James G&lt;/a&gt; that was a follow up to his original post that inspired this setup in the first place. Previously the CSS suffered from the same redundancy he discussed in his blog post where every time a color was used it checked light-dark. Now this is baked into the :root variables like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:root {
+    color-scheme: light dark;
+    --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
+    --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
+    --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
+    --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
+    --line-color: rgba(211, 211, 211, 30%);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This allows h1 to be styled like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;h1 {
+    color: var(--foreground-color);
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;One last thing is the use of gradients which also change in response to the light or dark settings from the user. One example is the site-tile which is just how my name at the top left on desktop or the top center on mobile is classed. The variables plug in just the same here but the added simplicity really helps the more complex -webkit-gradient lines legibility.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.site-title {
+    font-family: &apos;lato-normal&apos;, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These screenshots were taken by me on 4/11/25.&lt;/p&gt;
+
+&lt;p&gt;This is day 6 of #100DaysToOffload.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 16 Apr 2025 10:30:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/04/16/light-and-dark-revisited.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/16/light-and-dark-revisited.html</guid>
+        
+        <category>CSS</category>
+        
+        <category>Meta</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Static Site Images</title>
@@ -418,57 +509,6 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
         <guid isPermaLink="true">http://localhost:4000/blog/2025/03/24/personality-test.html</guid>
         
         <category>Job Search</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Light and Dark</title>
-        <description>&lt;!--more--&gt;
-
-&lt;p&gt;I’m a fan of dark mode on sites, in development editors, and in the operating system too. Staring at a mostly white screen all day is exhausting and I like the way the content on screen emerges from the darkness with dark mode enabled.&lt;/p&gt;
-
-&lt;p&gt;Inspired by &lt;a href=&quot;https://jamesg.blog/2024/11/24/dark-mode&quot;&gt;this post&lt;/a&gt; from James G, I set about creating a light mode for this site. This is the reverse from what James had done as he started with a light mode but the the ideas are the same.&lt;/p&gt;
-
-&lt;p&gt;My :root to make this work currently looks like this.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:root {
-    color-scheme: light dark;
-    --dark-background-color: rgb(26, 26, 26);
-    --dark-foreground-color: rgb(32, 255, 188);
-    --dark-link-color: rgb(25, 209, 255);
-    --dark-text-color: rgb(240,240,240);
-
-    --light-background-color: rgb(240,240,240);
-    --light-foreground-color: rgb(0, 119, 83);    
-    --light-link-color: rgb(1, 151, 189);
-    --light-text-color: rgb(26, 26, 26);
-
-    --line-color: rgba(211, 211, 211, 30%);
-  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;color-scheme&lt;/code&gt; term is required to respect the users setting.&lt;/p&gt;
-
-&lt;p&gt;With the global variables set it’s just a matter of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;light-dark()&lt;/code&gt; to set the appropriate colors.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;p, li, ul {
-    color: light-dark(var(--light-text-color), var(--dark-text-color));
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I still really prefer the dark mode version of the site, so check that out if you’re interested. It’s just a matter of toggling between light and dark in the browser settings. In Zen browser it’s in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;General &amp;gt; Language and Appearance&lt;/code&gt; which means I don’t even have to scroll in the settings.&lt;/p&gt;
-
-&lt;p&gt;Which ever mode you prefer I hope you like what you see.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 23 Mar 2025 14:10:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2025/03/23/light-and-dark.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2025/03/23/light-and-dark.html</guid>
-        
-        <category>css</category>
-        
-        <category>meta</category>
         
         
       </item>

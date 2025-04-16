@@ -13,18 +13,12 @@ $line-color: rgb(173, 173, 173);
 
 :root {
     color-scheme: light dark;
-    --dark-background-color: rgb(26, 26, 26);
-    --dark-foreground-color: rgb(32, 255, 188);
-    --dark-link-color: rgb(25, 209, 255);
-    --dark-text-color: rgb(240,240,240);
-
-    --light-background-color: rgb(240,240,240);
-    --light-foreground-color: rgb(0, 119, 83);    
-    --light-link-color: rgb(1, 151, 189);
-    --light-text-color: rgb(26, 26, 26);
-
+    --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
+    --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
+    --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
+    --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
     --line-color: rgba(211, 211, 211, 30%);
-  }
+}
 @font-face {
     font-family: 'lato-normal';
     src: url('../../../../../assets/font/lato-normal.woff2') format('woff2'),
@@ -34,9 +28,8 @@ $line-color: rgb(173, 173, 173);
 }
 
 body {
-    background-color: light-dark(var(--light-background-color), var(--dark-background-color));
-    // background-color: light-dark(gray, black);
-    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+    background-color: var(--background-color);
+    color: var(--foreground-color);
     margin:0px;
     padding:0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -51,26 +44,26 @@ span {
     padding: none;
 }
 h1 {
-    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+    color: var(--foreground-color);
     // margin-bottom:1em;
 } 
 h2 {
     font-size: 1.5em;
-    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+    color: var(--foreground-color);
     // margin: 0;
 }
 h3 {
     font-size: 1.25em;
-    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+    color: var(--foreground-color);
     // margin: 2em 0;
 }
 hr {
-    border: solid 1px --line-color;
+    border: solid 1px var(--line-color);
     margin: 1em;
     width: 100%;
 }
 p, li, ul {
-    color: light-dark(var(--light-text-color), var(--dark-text-color));
+    color: var(--text-color);
 }
 a:hover {
     text-decoration: underline;
@@ -80,7 +73,6 @@ a {
 }
 .language-plaintext {
     width: 750px;
-    // border: 1px solid red;
     word-break: break-all;
     display: block;
     overflow: auto;
@@ -104,7 +96,7 @@ a {
     margin: 0 1em;
 }
 a, a:visited, a:hover .page-link {
-    color: light-dark(var(--light-link-color), var(--dark-link-color));
+    color: var(--link-color);
 }
 .post-detail a, p a, .pagination a {
     text-decoration: underline;
@@ -120,7 +112,7 @@ a, a:visited, a:hover .page-link {
 .site-title {
     font-family: 'lato-normal', Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    background: -webkit-gradient(linear, left top, right bottom, from(light-dark(var(--light-foreground-color), var(--dark-foreground-color))), to(light-dark(var(--light-link-color), var(--dark-link-color))));
+    background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -131,7 +123,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .fa-gradient{
-    color: light-dark(var(--light-link-color), var(--dark-link-color));
+    color: var(--link-color);
     // // background: linear-gradient(34deg, #128562, #1086a3) 1;
     // background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
     // -webkit-background-clip: text;
@@ -151,7 +143,7 @@ a, a:visited, a:hover .page-link {
 
 }
 .site-header {
-    border-image: linear-gradient(34deg, light-dark(var(--light-foreground-color), var(--dark-foreground-color)), light-dark(var(--light-link-color), var(--dark-link-color))) 1;
+    border-image: linear-gradient(34deg, var(--foreground-color), var(--link-color) 1);
     border-width: 5px;
     border-style: solid;
     border-left: 0;
@@ -194,7 +186,7 @@ a, a:visited, a:hover .page-link {
 .home-name {
     font-family: 'comprehensionsemibold', Arial, Helvetica, sans-serif;
     // width:325px;
-    background: -webkit-gradient(linear, left top, right bottom, from($site-title-color), to(#1086a3));
+    background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -202,7 +194,7 @@ a, a:visited, a:hover .page-link {
 }
 .home-heading {
     font-size: 2em;
-    color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+    color: var(--foreground-color);
 }
 .site-nav {
     display: flex;
@@ -262,7 +254,7 @@ a, a:visited, a:hover .page-link {
 }
 .blogimg {
     max-width: 750px;
-    border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
+    border: 1px solid var(--text-color);
 }
 .footer-wrapper {
     display: flex;

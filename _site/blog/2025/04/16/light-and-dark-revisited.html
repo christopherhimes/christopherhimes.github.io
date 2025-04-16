@@ -7,39 +7,13 @@
 
   
 
-  <title>blog - page 3</title>
+  <title>Light and Dark Mode Revisited</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="{% for post in paginator.posts %}
-  
-    
-      {{ post.title }}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
-    {{ post.blurb }}
-  
-  
-{% endfor %}
-
-
-
-  {% if paginator.previous_page %}
-    
-      previous
-  {% else %}
-    previous
-  {% endif %}
-  
-    page: {{ paginator.page }} of {{ paginator.total_pages }}
-  
-  {% if paginator.next_page %}
-    next
-  {% else %}
-    next
-  {% endif %}">
+  <meta name="description" content="I wanted to revisit the light and dark update as the original described some changes but didn’t display how these changes impacted the experience on the site. Now that images are working a bit better I figured I would show exactly what’s happening on the site in its current state. The dark mode which is the primary way I view the site uses an almost black background with bright green and blue for the headers and links respectively. rgb(26, 26, 26) rgb(32, 255, 188) rgb(25, 209, 255) The light mode which I imagine will be the way most people view the site uses an almost white background with medium green and blue for the headers and links respectively. rgb(240,240,240) rgb(0, 119, 83) rgb(1, 151, 189) Additionally, I’ve simplified the setup for light and dark based on a recent blog by James G that was a follow up to his original post that inspired this setup in the first place. Previously the CSS suffered from the same redundancy he discussed in his blog post where every time a color was used it checked light-dark. Now this is baked into the :root variables like so: :root { color-scheme: light dark; --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26)); --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188)); --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255)); --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240)); --line-color: rgba(211, 211, 211, 30%); } This allows h1 to be styled like so: h1 { color: var(--foreground-color); } One last thing is the use of gradients which...">
 
   
 
@@ -61,43 +35,19 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="blog - page 3">
-  <meta property="og:description" content="{% for post in paginator.posts %}
-  
-    
-      {{ post.title }}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
-    {{ post.blurb }}
-  
-  
-{% endfor %}
-
-
-
-  {% if paginator.previous_page %}
-    
-      previous
-  {% else %}
-    previous
-  {% endif %}
-  
-    page: {{ paginator.page }} of {{ paginator.total_pages }}
-  
-  {% if paginator.next_page %}
-    next
-  {% else %}
-    next
-  {% endif %}">
+  <meta property="og:title" content="Light and Dark Mode Revisited">
+  <meta property="og:description" content="I wanted to revisit the light and dark update as the original described some changes but didn’t display how these changes impacted the experience on the site. Now that images are working a bit better I figured I would show exactly what’s happening on the site in its current state. The dark mode which is the primary way I view the site uses an almost black background with bright green and blue for the headers and links respectively. rgb(26, 26, 26) rgb(32, 255, 188) rgb(25, 209, 255) The light mode which I imagine will be the way most people view the site uses an almost white background with medium green and blue for the headers and links respectively. rgb(240,240,240) rgb(0, 119, 83) rgb(1, 151, 189) Additionally, I’ve simplified the setup for light and dark based on a recent blog by James G that was a follow up to his original post that inspired this setup in the first place. Previously the CSS suffered from the same redundancy he discussed in his blog post where every time a color was used it checked light-dark. Now this is baked into the :root variables like so: :root { color-scheme: light dark; --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26)); --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188)); --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255)); --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240)); --line-color: rgba(211, 211, 211, 30%); } This allows h1 to be styled like so: h1 { color: var(--foreground-color); } One last thing is the use of gradients which...">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/face.webp">
   
 
   
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/blog/blog/page/3/">
-  <link rel="canonical" href="http://localhost:4000/blog/blog/page/3/">
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Christopher Himes">
+  <meta property="og:article:published_time" content="2025-04-16T10:30:00-04:00">
+  <meta property="og:url" content="http://localhost:4000/blog/2025/04/16/light-and-dark-revisited.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2025/04/16/light-and-dark-revisited.html">
   
   <style type="text/css">
     
@@ -426,71 +376,103 @@ a, a:visited, a:hover .page-link {
       </nav></nav>
 </header>
 <main class="wrapper" aria-label="Content">
-        <div class="page-detail">
-<header>
-  <h1 class="page-title">blog - page 3</h1>
-</header>
-  
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/03/23/light-and-dark.html">Light and Dark</a>
-    </h2>
-    <p>Mar 23, 2025</p>
-    <p>I'm a fan of dark mode on sites, in development editors, and the operating system too.</p>
-  </article>
-  <hr />
+        
 
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Now Update and Todo List</a>
-    </h2>
-    <p>Mar 22, 2025</p>
-    <p>Just a quick update to the now section and a site todo list.</p>
-  </article>
-  <hr />
+<div class="" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-detail">
+  <header>
+    <h1 class="post-title" itemprop="name headline">Light and Dark Mode Revisited</h1>
+    <p><time class="dt-published" datetime="2025-04-16T10:30:00-04:00" itemprop="datePublished">
+        Apr 16, 2025
+      </time></p>
+  </header>
+    <article itemprop="articleBody">
+      <style>
+.box {
+  float: left;
+  /* height: 50px; */
+  /* width: 50px; */
+  padding: 15px;
+  text-align: center;
+  vertical-align: center;
+  margin-bottom: 15px;
+  border: 1px solid light-dark(rgb(26, 26, 26), rgb(240,240,240));
+  color: black;
+  /* clear: both; */
+}
+.white {background-color: rgb(240,240,240);}
+.black {background-color: rgb(26, 26, 26);color:white;}
+.medium-green {background-color: rgb(0, 119, 83);}
+.bright-green {background-color: rgb(32, 255, 188);}
+.medium-blue {background-color: rgb(1, 151, 189);}
+.bright-blue {background-color: rgb(25, 209, 255);}
+</style>
 
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/03/21/weeknotes-week12.html">Week 12</a>
-    </h2>
-    <p>Mar 21, 2025</p>
-    <p>It's week one of my 12 Week Year but it's the 12th week of the year so I'm calling it week 12. This is meant to be forward looking to a week note for every week of the year.</p>
-  </article>
-  <hr />
+<p>I wanted to revisit the light and dark update as the original described some changes but didn’t display how these changes impacted the experience on the site. Now that images are working a bit better I figured I would show exactly what’s happening on the site in its current state.</p>
 
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Starting</a>
-    </h2>
-    <p>Mar 17, 2025</p>
-    <p>Starting something new and taking it day by day and week by week.</p>
-  </article>
-  <hr />
+<p>The dark mode which is the primary way I view the site uses an almost black background with bright green and blue for the headers and links respectively.</p>
 
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2024/12/06/now-2024.html">Now Page 2024</a>
-    </h2>
-    <p>Dec 6, 2024</p>
-    <p>While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.</p>
-  </article>
-  <hr />
+<div class="box black">rgb(26, 26, 26)</div>
+<div class="box bright-green">rgb(32, 255, 188)</div>
+<div class="box bright-blue">rgb(25, 209, 255)</div>
+
+<p><img class="blogimg" alt="Dark mode version of this site with a near black background, bright blue links, white text, and bright green header text" loading="lazy" src="/assets/img//blog/light-and-dark/dark-mode.webp" /></p>
+
+<p>The light mode which I imagine will be the way most people view the site uses an almost white background with medium green and blue for the headers and links respectively.</p>
+
+<div class="box white">rgb(240,240,240)</div>
+<div class="box medium-green">rgb(0, 119, 83)</div>
+<div class="box medium-blue">rgb(1, 151, 189)</div>
+
+<p><img class="blogimg" alt="Light mode version of this site with a near white background, medium blue links, near black text, and medium green header text" loading="lazy" src="/assets/img//blog/light-and-dark/light-mode.webp" /></p>
+
+<p>Additionally, I’ve simplified the setup for light and dark based on a recent blog by <a href="https://jamesg.blog/2025/04/03/light-dark-root">James G</a> that was a follow up to his original post that inspired this setup in the first place. Previously the CSS suffered from the same redundancy he discussed in his blog post where every time a color was used it checked light-dark. Now this is baked into the :root variables like so:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
+    color-scheme: light dark;
+    --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
+    --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
+    --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
+    --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
+    --line-color: rgba(211, 211, 211, 30%);
+}
+</code></pre></div></div>
+
+<p>This allows h1 to be styled like so:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>h1 {
+    color: var(--foreground-color);
+} 
+</code></pre></div></div>
+
+<p>One last thing is the use of gradients which also change in response to the light or dark settings from the user. One example is the site-tile which is just how my name at the top left on desktop or the top center on mobile is classed. The variables plug in just the same here but the added simplicity really helps the more complex -webkit-gradient lines legibility.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.site-title {
+    font-family: 'lato-normal', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+</code></pre></div></div>
+
+<p>These screenshots were taken by me on 4/11/25.</p>
+
+<p>This is day 6 of #100DaysToOffload.</p>
 
 
-<!-- Pagination links -->
-<div class="pagination">
-  
-    <a href="/blog/blog/page/2/" class="previous">
-      previous</a>
-  
-  <span class="page_number ">
-    page: 3 of 5
-  </span>
-  
-    <a href="/blog/blog/page/4/" class="next">next</a>
-  
+    </article>
+  <a href="/blog/2025/04/16/light-and-dark-revisited.html" hidden></a>
 </div>
+<div class="post-detail">
+<hr /></div>
 </div>
+
+
+
+
     </main><footer class="site-footer h-card"> 
   <data class="u-url" href="/"></data>
 

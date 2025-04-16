@@ -75,14 +75,10 @@ This is day 2 of #100DaysToOffload.">
     
     :root {
   color-scheme: light dark;
-  --dark-background-color: rgb(26, 26, 26);
-  --dark-foreground-color: rgb(32, 255, 188);
-  --dark-link-color: rgb(25, 209, 255);
-  --dark-text-color: rgb(240,240,240);
-  --light-background-color: rgb(240,240,240);
-  --light-foreground-color: rgb(0, 119, 83);
-  --light-link-color: rgb(1, 151, 189);
-  --light-text-color: rgb(26, 26, 26);
+  --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
+  --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
+  --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
+  --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
   --line-color: rgba(211, 211, 211, 30%);
 }
 
@@ -93,8 +89,8 @@ This is day 2 of #100DaysToOffload.">
   font-style: normal;
 }
 body {
-  background-color: light-dark(var(--light-background-color), var(--dark-background-color));
-  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+  background-color: var(--background-color);
+  color: var(--foreground-color);
   margin: 0px;
   padding: 0px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -111,27 +107,27 @@ span {
 }
 
 h1 {
-  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+  color: var(--foreground-color);
 }
 
 h2 {
   font-size: 1.5em;
-  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+  color: var(--foreground-color);
 }
 
 h3 {
   font-size: 1.25em;
-  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+  color: var(--foreground-color);
 }
 
 hr {
-  border: solid 1px --line-color;
+  border: solid 1px var(--line-color);
   margin: 1em;
   width: 100%;
 }
 
 p, li, ul {
-  color: light-dark(var(--light-text-color), var(--dark-text-color));
+  color: var(--text-color);
 }
 
 a:hover {
@@ -172,7 +168,7 @@ a {
 }
 
 a, a:visited, a:hover .page-link {
-  color: light-dark(var(--light-link-color), var(--dark-link-color));
+  color: var(--link-color);
 }
 
 .post-detail a, p a, .pagination a {
@@ -192,7 +188,7 @@ a, a:visited, a:hover .page-link {
 .site-title {
   font-family: "lato-normal", Arial, Helvetica, sans-serif;
   font-size: 1.2em;
-  background: -webkit-gradient(linear, left top, right bottom, from(light-dark(var(--light-foreground-color), var(--dark-foreground-color))), to(light-dark(var(--light-link-color), var(--dark-link-color))));
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -204,7 +200,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .fa-gradient {
-  color: light-dark(var(--light-link-color), var(--dark-link-color));
+  color: var(--link-color);
 }
 
 .footer-links li {
@@ -219,7 +215,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .site-header {
-  border-image: linear-gradient(34deg, light-dark(var(--light-foreground-color), var(--dark-foreground-color)), light-dark(var(--light-link-color), var(--dark-link-color))) 1;
+  border-image: linear-gradient(34deg, var(--foreground-color), var(--link-color) 1);
   border-width: 5px;
   border-style: solid;
   border-left: 0;
@@ -260,7 +256,7 @@ a, a:visited, a:hover .page-link {
 
 .home-name {
   font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(32, 255, 188)), to(#1086a3));
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -269,7 +265,7 @@ a, a:visited, a:hover .page-link {
 
 .home-heading {
   font-size: 2em;
-  color: light-dark(var(--light-foreground-color), var(--dark-foreground-color));
+  color: var(--foreground-color);
 }
 
 .site-nav {
@@ -324,7 +320,7 @@ a, a:visited, a:hover .page-link {
 
 .blogimg {
   max-width: 750px;
-  border: 1px solid light-dark(var(--light-text-color), var(--dark-text-color));
+  border: 1px solid var(--text-color);
 }
 
 .footer-wrapper {
@@ -674,7 +670,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 16, 2025 12:57 PM UTC-04:00</p>
+        <p>Site last published: April 16, 2025 2:23 PM UTC-04:00</p>
       </div>
     </div>
 
