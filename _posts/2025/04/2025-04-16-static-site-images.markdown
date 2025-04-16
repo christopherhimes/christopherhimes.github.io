@@ -6,7 +6,7 @@ tags: ['Meta', 'Images', '100 Days To Offload']
 blurb: I was recently reaking this blog post by Kev Quirk about image handling on his static site which inspired me to spend some time fixing the images on this site.
 
 comments:
-    id: 
+    id: 114348695341840488
 ---
 
 I was recently reaking this blog post by Kev Quirk about [image handling] on his static site which inspired me to spend some time fixing the images on this site.
