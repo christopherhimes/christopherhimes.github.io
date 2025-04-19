@@ -3,9 +3,9 @@ layout: post
 title:  "Week 16"
 date:   2025-04-19 15:00:00
 tags: ['Week Notes', 'Week 16', 'Cicada Detroit', 'Overwatch 2', '100 Days To Offload']
-blurb: Job search, 
+blurb: Job search, blogging, and Easter preparations.
 comments:
-    id: 
+    id: 114366326432604103
 ---
 
 <!--more-->
