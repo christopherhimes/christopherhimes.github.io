@@ -6,7 +6,7 @@ tags: ['Product Owner', 'Certification', '100 Days To Offload']
 blurb: It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes.
 
 comments:
-    id: 
+    id: 114395974514482224
 ---
 
 Right now I'm in between roles, and instead of just waiting for the next thing, I'm using the time to grow. I've been doing the Product Owner role for a while, working with Agile teams, managing backlogs, and collaborating with stakeholders, but I realized I’ve never taken a step back to really study it.
