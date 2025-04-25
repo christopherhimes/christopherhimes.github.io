@@ -3,7 +3,7 @@ layout: post
 title:  "Week 17"
 date:   2025-04-25 16:35:00
 tags: ['Week Notes', 'Week 17', '100 Days To Offload']
-blurb: 
+blurb: Weather ☀️ has been nice so I've been working in the yard. The garden beds need some serious care so I'm getting them cleaned up and ready for planting.
 comments:
     id: 114400583204818802
 ---

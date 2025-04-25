@@ -6,15 +6,45 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 24 Apr 2025 21:23:46 -0400</pubDate>
-    <lastBuildDate>Thu, 24 Apr 2025 21:23:46 -0400</lastBuildDate>
+    <pubDate>Fri, 25 Apr 2025 17:02:12 -0400</pubDate>
+    <lastBuildDate>Fri, 25 Apr 2025 17:02:12 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>Product Owner Certification</title>
-        <description>&lt;p&gt;Right now I’m in between roles, and instead of just waiting for the next thing, I’m using the time to grow. I’ve been doing the Product Owner role for a while, working with Agile teams, managing backlogs, and collaborating with stakeholders, but I realized I’ve never taken a step back to really study it.&lt;/p&gt;
+        <title>Week 17</title>
+        <description>&lt;!--more--&gt;
 
-&lt;p&gt;So I jumped into some Product Owner courses on Coursera. It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes. This time is all about getting better.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Applied to some jobs.&lt;/li&gt;
+  &lt;li&gt;Corrected the deprecated warning in the SASS for the @import command used for comments on this site. Switched to @use.&lt;/li&gt;
+  &lt;li&gt;Weather ☀️ has been nice so I’ve been working in the yard. The garden beds need some serious care so I’m getting them cleaned up and ready for planting.&lt;/li&gt;
+  &lt;li&gt;Had a call about what I’m looking for at a potential employer. Conversation was good but they do not currently have an open position for what I’m looking for. It was nice to talk about my experience either way.&lt;/li&gt;
+  &lt;li&gt;Completed the capstone project for the Product Owner IBM certification on Coursera. I don’t usually post to LinkedIn but I did this time. Nice to celebrate a win.&lt;/li&gt;
+  &lt;li&gt;Today was my wife’s late mom’s birthday, so we went to the cemetery to honor her and place some flowers. The irises we planted last year are looking good which is nice. 💐&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is day 9 of #100DaysToOffload.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Apr 2025 12:35:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/04/25/weeknotes-week17.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/25/weeknotes-week17.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>Week 17</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Product Owner Certification</title>
+        <description>&lt;p&gt;Currently between roles and one thing I knew immediately that I wanted to do with the extra time was get a certification. I’ve always been doing more informal self improvement and learning but now seemed like a good time to have a little something to show for it and make it a bit more official.&lt;/p&gt;
+
+&lt;p&gt;So I jumped into some Product Owner courses on Coursera. This track had seven classes with a few projects that were graded. I did learn a few new strategies for prioritization and negotiation which I plan to discuss over the coming weeks.&lt;/p&gt;
+
+&lt;p&gt;I miss having a team that is building something together but that will come in time. For now I’m bettering myself both because I want to and because it will help with whatever the next thing is.&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;IBM Product Owner Certification&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/ibm-product-owner-certification/cert.webp&quot; /&gt;&lt;/p&gt;
 
@@ -367,56 +397,6 @@ pagination:
         <category>Blog</category>
         
         <category>Pagination</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Week 14</title>
-        <description>&lt;!--more--&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Made even more changes to the resume.&lt;/li&gt;
-  &lt;li&gt;Schedule a meeting with my job coach for next week.&lt;/li&gt;
-  &lt;li&gt;File taxes joinlty for the first time. Pay instead of get a refund for the first time 🥳&lt;/li&gt;
-  &lt;li&gt;Applied to some jobs.&lt;/li&gt;
-  &lt;li&gt;Did a test for a position I applied for and have an interview next week.&lt;/li&gt;
-  &lt;li&gt;Completed a few lessons on Coursera and have a project pending review.&lt;/li&gt;
-  &lt;li&gt;Had dinner with my brother Matthew at Mexican Village.&lt;/li&gt;
-  &lt;li&gt;Watched some Last of Us with my wife.📺&lt;/li&gt;
-  &lt;li&gt;Remained stuck on Cicada Detroit puzzle 20.&lt;/li&gt;
-  &lt;li&gt;Cleaned the trap on the dishwasher 🧼.&lt;/li&gt;
-  &lt;li&gt;Did some normal laundry (sheets, my clothes, wifes clothes) and some not so normal laundry (chair covers).&lt;/li&gt;
-  &lt;li&gt;Swept and mopped all the hard surface floors.&lt;/li&gt;
-  &lt;li&gt;Vacuumed the carpeted areas.&lt;/li&gt;
-  &lt;li&gt;Took down the Christmas Tree  🎄(do not check the date on this post 📆)&lt;/li&gt;
-  &lt;li&gt;Picked up some groceries.&lt;/li&gt;
-  &lt;li&gt;Made some chicken noodle soup 🍲.&lt;/li&gt;
-  &lt;li&gt;Found new spots for some things that were on the kitchen counter and coffee table.&lt;/li&gt;
-  &lt;li&gt;Installed &lt;a href=&quot;https://medusajs.com/&quot;&gt;MedusaJS&lt;/a&gt; locally.&lt;/li&gt;
-  &lt;li&gt;Installed MedusaJS on &lt;a href=&quot;https://railway.com/&quot;&gt;Railway&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Fri, 04 Apr 2025 11:30:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2025/04/04/weeknotes-week14.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/04/weeknotes-week14.html</guid>
-        
-        <category>Week Notes</category>
-        
-        <category>Week 14</category>
-        
-        <category>resume</category>
-        
-        <category>Christmas Tree</category>
-        
-        <category>Product Owner</category>
-        
-        <category>Job Search</category>
-        
-        <category>Soup</category>
-        
-        <category>Cicada Detroit</category>
         
         
       </item>

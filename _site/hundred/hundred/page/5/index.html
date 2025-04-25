@@ -7,38 +7,39 @@
 
   
 
-  <title>uses</title>
+  <title>hundred - page 5</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="* This site is built using [Jekyll] a static site generator that uses [Markdown] and [Liquid] to create modern websites. 
-* I use [Netlify] for hosting.
-* The site repository is hosted on [Github]. Although I&apos;m open to changing this in the future.
-* Domain hosting through [namecheap].
-* Mail through [Proton Mail].
-* Password Management through [1Password].
-* VPN by [mullvad].
-* Development is completed in [VSCodium] a de-microfted version of [VSCode].
+  <meta name="description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.blurb }}
+  
+  
+{% endfor %}
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Netlify]: https://netlify.com
-[Github]: https://github.com
-[now]: /now
-[last.fm]: https://last.fm
-[my]: https://hachyderm.io/@eeentropyyy
-[Mastodon]: https://joinmastodon.org/
-[Cassidy]: https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/
-[VSCodium]: https://vscodium.com/
-[VSCode]: https://code.visualstudio.com/
-[Google  Fonts]: https://fonts.google.com/
-[namecheap]: https://www.namecheap.com/
-[Proton Mail]: https://proton.me/mail
-[1Password]: https://1password.com/
-[Mullvad]: https://mullvad.net">
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
 
@@ -60,33 +61,34 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="uses">
-  <meta property="og:description" content="* This site is built using [Jekyll] a static site generator that uses [Markdown] and [Liquid] to create modern websites. 
-* I use [Netlify] for hosting.
-* The site repository is hosted on [Github]. Although I&apos;m open to changing this in the future.
-* Domain hosting through [namecheap].
-* Mail through [Proton Mail].
-* Password Management through [1Password].
-* VPN by [mullvad].
-* Development is completed in [VSCodium] a de-microfted version of [VSCode].
+  <meta property="og:title" content="hundred - page 5">
+  <meta property="og:description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.blurb }}
+  
+  
+{% endfor %}
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Netlify]: https://netlify.com
-[Github]: https://github.com
-[now]: /now
-[last.fm]: https://last.fm
-[my]: https://hachyderm.io/@eeentropyyy
-[Mastodon]: https://joinmastodon.org/
-[Cassidy]: https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/
-[VSCodium]: https://vscodium.com/
-[VSCode]: https://code.visualstudio.com/
-[Google  Fonts]: https://fonts.google.com/
-[namecheap]: https://www.namecheap.com/
-[Proton Mail]: https://proton.me/mail
-[1Password]: https://1password.com/
-[Mullvad]: https://mullvad.net">
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/new-face.webp">
@@ -94,8 +96,8 @@
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/uses/">
-  <link rel="canonical" href="http://localhost:4000/uses/">
+  <meta property="og:url" content="http://localhost:4000/hundred/hundred/page/5/">
+  <link rel="canonical" href="http://localhost:4000/hundred/hundred/page/5/">
   
   <style type="text/css">
     
@@ -427,20 +429,68 @@ a, a:visited, a:hover .page-link {
 <main class="wrapper" aria-label="Content">
         <div class="page-detail">
 <header>
-  <h1 class="page-title">uses</h1>
+  <h1 class="page-title">hundred - page 5</h1>
 </header>
-  <ul>
-  <li>This site is built using <a href="https://jekyllrb.com">Jekyll</a> a static site generator that uses <a href="https://daringfireball.net/projects/markdown/">Markdown</a> and <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> to create modern websites.</li>
-  <li>I use <a href="https://netlify.com">Netlify</a> for hosting.</li>
-  <li>The site repository is hosted on <a href="https://github.com">Github</a>. Although I’m open to changing this in the future.</li>
-  <li>Domain hosting through <a href="https://www.namecheap.com/">namecheap</a>.</li>
-  <li>Mail through <a href="https://proton.me/mail">Proton Mail</a>.</li>
-  <li>Password Management through <a href="https://1password.com/">1Password</a>.</li>
-  <li>VPN by <a href="https://mullvad.net">mullvad</a>.</li>
-  <li>Development is completed in <a href="https://vscodium.com/">VSCodium</a> a de-microfted version of <a href="https://code.visualstudio.com/">VSCode</a>.</li>
-</ul>
+  
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2024/07/11/i-got-married.html">I got married!</a>
+    </h2>
+    <p>Jul 11, 2024</p>
+    <p>It's been a little over a month now since I got married.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2024/01/13/add-comments.html">Add Comments</a>
+    </h2>
+    <p>Jan 13, 2024</p>
+    <p>My blog has Mastodon powered comments now and this post is really just a test for that.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2023/12/29/a-stream.html">A Stream?</a>
+    </h2>
+    <p>Dec 29, 2023</p>
+    <p>I've been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2023/08/12/another-new-design.html">Another New Design</a>
+    </h2>
+    <p>Aug 12, 2023</p>
+    <p>It's a new design, yes it is! This site gets more visual updates than it does blog posts but that's where we're at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2022/05/14/virtual.html">I'm Virtual Now</a>
+    </h2>
+    <p>May 14, 2022</p>
+    <p>Guess 'now' is relative with working at home for the last two years. As of yesterday I no longer have a desk at an office that I could return to when this whole pandemic blows over.</p>
+  </article>
+  <hr />
 
 
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/hundred/hundred/page/4/" class="previous">
+      previous</a>
+  
+  <span class="page_number ">
+    page: 5 of 6
+  </span>
+  
+    <a href="/hundred/hundred/page/6/" class="next">next</a>
+  
+</div>
 </div>
     </main><footer class="site-footer h-card"> 
   <data class="u-url" href="/"></data>

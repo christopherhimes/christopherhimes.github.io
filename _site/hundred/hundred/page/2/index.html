@@ -7,38 +7,39 @@
 
   
 
-  <title>uses</title>
+  <title>hundred - page 2</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="* This site is built using [Jekyll] a static site generator that uses [Markdown] and [Liquid] to create modern websites. 
-* I use [Netlify] for hosting.
-* The site repository is hosted on [Github]. Although I&apos;m open to changing this in the future.
-* Domain hosting through [namecheap].
-* Mail through [Proton Mail].
-* Password Management through [1Password].
-* VPN by [mullvad].
-* Development is completed in [VSCodium] a de-microfted version of [VSCode].
+  <meta name="description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.blurb }}
+  
+  
+{% endfor %}
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Netlify]: https://netlify.com
-[Github]: https://github.com
-[now]: /now
-[last.fm]: https://last.fm
-[my]: https://hachyderm.io/@eeentropyyy
-[Mastodon]: https://joinmastodon.org/
-[Cassidy]: https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/
-[VSCodium]: https://vscodium.com/
-[VSCode]: https://code.visualstudio.com/
-[Google  Fonts]: https://fonts.google.com/
-[namecheap]: https://www.namecheap.com/
-[Proton Mail]: https://proton.me/mail
-[1Password]: https://1password.com/
-[Mullvad]: https://mullvad.net">
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
 
@@ -60,33 +61,34 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="uses">
-  <meta property="og:description" content="* This site is built using [Jekyll] a static site generator that uses [Markdown] and [Liquid] to create modern websites. 
-* I use [Netlify] for hosting.
-* The site repository is hosted on [Github]. Although I&apos;m open to changing this in the future.
-* Domain hosting through [namecheap].
-* Mail through [Proton Mail].
-* Password Management through [1Password].
-* VPN by [mullvad].
-* Development is completed in [VSCodium] a de-microfted version of [VSCode].
+  <meta property="og:title" content="hundred - page 2">
+  <meta property="og:description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.blurb }}
+  
+  
+{% endfor %}
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Netlify]: https://netlify.com
-[Github]: https://github.com
-[now]: /now
-[last.fm]: https://last.fm
-[my]: https://hachyderm.io/@eeentropyyy
-[Mastodon]: https://joinmastodon.org/
-[Cassidy]: https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/
-[VSCodium]: https://vscodium.com/
-[VSCode]: https://code.visualstudio.com/
-[Google  Fonts]: https://fonts.google.com/
-[namecheap]: https://www.namecheap.com/
-[Proton Mail]: https://proton.me/mail
-[1Password]: https://1password.com/
-[Mullvad]: https://mullvad.net">
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/new-face.webp">
@@ -94,8 +96,8 @@
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/uses/">
-  <link rel="canonical" href="http://localhost:4000/uses/">
+  <meta property="og:url" content="http://localhost:4000/hundred/hundred/page/2/">
+  <link rel="canonical" href="http://localhost:4000/hundred/hundred/page/2/">
   
   <style type="text/css">
     
@@ -427,20 +429,68 @@ a, a:visited, a:hover .page-link {
 <main class="wrapper" aria-label="Content">
         <div class="page-detail">
 <header>
-  <h1 class="page-title">uses</h1>
+  <h1 class="page-title">hundred - page 2</h1>
 </header>
-  <ul>
-  <li>This site is built using <a href="https://jekyllrb.com">Jekyll</a> a static site generator that uses <a href="https://daringfireball.net/projects/markdown/">Markdown</a> and <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> to create modern websites.</li>
-  <li>I use <a href="https://netlify.com">Netlify</a> for hosting.</li>
-  <li>The site repository is hosted on <a href="https://github.com">Github</a>. Although I’m open to changing this in the future.</li>
-  <li>Domain hosting through <a href="https://www.namecheap.com/">namecheap</a>.</li>
-  <li>Mail through <a href="https://proton.me/mail">Proton Mail</a>.</li>
-  <li>Password Management through <a href="https://1password.com/">1Password</a>.</li>
-  <li>VPN by <a href="https://mullvad.net">mullvad</a>.</li>
-  <li>Development is completed in <a href="https://vscodium.com/">VSCodium</a> a de-microfted version of <a href="https://code.visualstudio.com/">VSCode</a>.</li>
-</ul>
+  
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2025/04/15/activitywatch.html">ActivityWatch</a>
+    </h2>
+    <p>Apr 15, 2025</p>
+    <p>ActivityWatch is an app that automatically tracks how you spend time on your devices.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2025/04/15/colophon.html">Added a Colophon</a>
+    </h2>
+    <p>Apr 15, 2025</p>
+    <p>a colophon (/ˈkɒləfən, -fɒn/) is a brief statement containing information about the publication</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2025/04/12/weeknotes-week15.html">Week 15</a>
+    </h2>
+    <p>Apr 12, 2025</p>
+    <p>Job search, birthday party, and a concert</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2025/04/11/100-days-to-offload.html">100 Days to Offload</a>
+    </h2>
+    <p>Apr 11, 2025</p>
+    <p>100 Days To Offload is a challenge to publish 100 posts on your personal blog in a year.</p>
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2025/04/07/adding-pagination.html">Adding Pagination</a>
+    </h2>
+    <p>Apr 7, 2025</p>
+    <p>Adding back in pagination on this here website.</p>
+  </article>
+  <hr />
 
 
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/hundred/" class="previous">
+      previous</a>
+  
+  <span class="page_number ">
+    page: 2 of 6
+  </span>
+  
+    <a href="/hundred/hundred/page/3/" class="next">next</a>
+  
+</div>
 </div>
     </main><footer class="site-footer h-card"> 
   <data class="u-url" href="/"></data>
