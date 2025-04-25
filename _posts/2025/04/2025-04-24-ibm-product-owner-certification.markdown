@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Product Owner Certification"
-date:   2025-04-24 29:45:00
+date:   2025-04-24 21:45:00
 tags: ['Product Owner', 'Certification', '100 Days To Offload']
-blurb: 
+blurb: It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes.
 
 comments:
     id: 
