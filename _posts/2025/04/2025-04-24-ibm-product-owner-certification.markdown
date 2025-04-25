@@ -9,9 +9,11 @@ comments:
     id: 114395974514482224
 ---
 
-Right now I'm in between roles, and instead of just waiting for the next thing, I'm using the time to grow. I've been doing the Product Owner role for a while, working with Agile teams, managing backlogs, and collaborating with stakeholders, but I realized I’ve never taken a step back to really study it.
+Currently between roles and one thing I knew immediately that I wanted to do with the extra time was get a certification. I've always been doing more informal self improvement and learning but now seemed like a good time to have a little something to show for it and make it a bit more official.
 
-So I jumped into some Product Owner courses on Coursera. It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes. This time is all about getting better.
+So I jumped into some Product Owner courses on Coursera. This track had seven classes with a few projects that were graded. I did learn a few new strategies for prioritization and negotiation which I plan to discuss over the coming weeks.
+
+I miss having a team that is building something together but that will come in time. For now I'm bettering myself both because I want to and because it will help with whatever the next thing is.
       
 {% include img.html src='/blog/ibm-product-owner-certification/cert.webp' alt='IBM Product Owner Certification' %}
 
