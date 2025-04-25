@@ -101,6 +101,10 @@
 <lastmod>2025-04-19T11:00:00-04:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/2025/04/24/ibm-product-owner-certification.html</loc>
+<lastmod>2025-04-24T12:00:00-04:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -138,6 +142,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/blog/blog/page/5/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/blog/page/6/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdf/Personality.pdf</loc>

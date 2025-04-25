@@ -6,9 +6,33 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 19 Apr 2025 15:41:03 -0400</pubDate>
-    <lastBuildDate>Sat, 19 Apr 2025 15:41:03 -0400</lastBuildDate>
+    <pubDate>Thu, 24 Apr 2025 20:22:40 -0400</pubDate>
+    <lastBuildDate>Thu, 24 Apr 2025 20:22:40 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Product Owner Certification</title>
+        <description>&lt;p&gt;Right now I’m in between roles, and instead of just waiting for the next thing, I’m using the time to grow. I’ve been doing the Product Owner role for a while, working with Agile teams, managing backlogs, and collaborating with stakeholders, but I realized I’ve never taken a step back to really study it.&lt;/p&gt;
+
+&lt;p&gt;So I jumped into some Product Owner courses on Coursera. It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes. This time is all about getting better.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;IBM Product Owner Certification&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/ibm-product-owner-certification/cert.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is day 8 of #100DaysToOffload.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 24 Apr 2025 12:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/04/24/ibm-product-owner-certification.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/24/ibm-product-owner-certification.html</guid>
+        
+        <category>Product Owner</category>
+        
+        <category>Certification</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Week 16</title>
@@ -393,47 +417,6 @@ pagination:
         <category>Soup</category>
         
         <category>Cicada Detroit</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Week 13</title>
-        <description>&lt;!--more--&gt;
-&lt;ul&gt;
-  &lt;li&gt;I made some additional changes to the resume.&lt;/li&gt;
-  &lt;li&gt;Met with my &lt;a href=&quot;https://www.nextjobtraining.com/&quot;&gt;NextJob&lt;/a&gt; job coach.&lt;/li&gt;
-  &lt;li&gt;Applied to some jobs.&lt;/li&gt;
-  &lt;li&gt;Got a call about one of the positions that I applied for and will be following up next week.&lt;/li&gt;
-  &lt;li&gt;Had lunch with my mom at Sy Thai.&lt;/li&gt;
-  &lt;li&gt;Did some classes on Coursera.&lt;/li&gt;
-  &lt;li&gt;Updated the Indeed profile.&lt;/li&gt;
-  &lt;li&gt;Enabled a month of LinkedIn Premium.&lt;/li&gt;
-  &lt;li&gt;Watched some Last of Us with my wife.&lt;/li&gt;
-  &lt;li&gt;Played Uber driver taking Leah and Noah around town while her car is in the shop.&lt;/li&gt;
-  &lt;li&gt;Solved the Cicada Detroit puzzle 19 and am immediately stuck on 20.&lt;/li&gt;
-  &lt;li&gt;Started taking daily notes in service of writing this post.&lt;/li&gt;
-  &lt;li&gt;Fixed the time stamp in the footer of this page.&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sat, 29 Mar 2025 09:30:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2025/03/29/weeknotes-week13.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2025/03/29/weeknotes-week13.html</guid>
-        
-        <category>Week Notes</category>
-        
-        <category>Week 13</category>
-        
-        <category>resume</category>
-        
-        <category>NextJob</category>
-        
-        <category>Product Owner</category>
-        
-        <category>Job Search</category>
-        
-        <category>coach</category>
         
         
       </item>

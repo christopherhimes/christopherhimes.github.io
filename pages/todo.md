@@ -13,6 +13,7 @@ _Building a website To-do list_
 - [X] ~~Add colophon page.~~ (Added 4/15/25).
 - [ ]  Add a projects page dedicated to discussing previous work projects.
 - [ ]  Add a dedicated music page that takes advantage of [last.fm] data.
+- [ ] Add a /uses page like the ones listed on [uses.tech]
 
 
 ### Features to add
@@ -28,10 +29,12 @@ _Building a website To-do list_
 - [ ] Add read time to posts.
 - [ ] Add light and dark mode toggle.
 - [ ] Enable posting to [IndieNews].
+- [ ] Add unique [Open Graph] image for each blog post. Inspired by this post from [Ethan].
 
 ### Other activities
 - [ ] Expriment with [FreshRSS].
 - [ ] Correct terminal in VSCodium.
+- [ ] Create a personal Product Owner portfolio.
 
 [/now]: /now
 [last.fm]: https://last.fm
@@ -39,6 +42,9 @@ _Building a website To-do list_
 [FreshRSS]: https://www.freshrss.org/
 [hamatti.org]: notes.hamatti.org
 [IndieNews]: https://news.indieweb.org/how-to-submit-a-post
+[uses.tech]: https://uses.tech/
+[Open Graph]: https://ogp.me/
+[Ethan]: https://ethanmarcotte.com/wrote/magick-images/
 
 [^1]: Adding this as a todo feels like cheating.
 [^2]: Added an exclamation point because I tried to add this again but it's already here.
