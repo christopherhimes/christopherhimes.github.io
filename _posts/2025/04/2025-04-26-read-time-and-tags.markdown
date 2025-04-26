@@ -5,7 +5,7 @@ date:   2025-04-26 15:00:00
 tags: ['Meta', '100 Days To Offload']
 blurb: Having dramatically scaled back this site to make the restyling easier I have been slowly adding back in some removed features.
 comments:
-    id: 
+    id: 114405991731505054
 ---
 
 Having dramatically scaled back this site to make the restyling easier I have been slowly adding back in some removed features. One thing I've wanted to enable for a while is making a posts tags visible. I have continued to add tags to posts as they're going out but that extra bit of information has not been shared anywhere. 
