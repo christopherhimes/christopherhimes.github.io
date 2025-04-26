@@ -107,6 +107,7 @@
   --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
   --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
   --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
+  --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
   --line-color: rgba(211, 211, 211, 30%);
 }
 
@@ -398,6 +399,37 @@ a, a:visited, a:hover .page-link {
     width: 100%;
   }
 }
+.post-tags {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  text-decoration: none;
+}
+
+.tag-button {
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--link-color);
+  border-radius: 999px;
+  font-size: 0.6em;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: background-color 0.8s, color 0.8s;
+}
+
+.tag-button a {
+  text-decoration: none !important;
+}
+
+.tag-button:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+  color: var(--invert-text-color);
+  text-decoration: none !important;
+}
+
+.reading_time {
+  font-size: 0.7em;
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -434,10 +466,41 @@ a, a:visited, a:hover .page-link {
   
   <article class="blog-entry">
     <h2>
+      <a class="blog-link" href="/blog/2025/04/16/static-site-images.html">Static Site Images</a>
+    </h2>
+    <p>Apr 16, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
+    <p>I was recently reaking this blog post by Kev Quirk about image handling on his static site which inspired me to spend some time fixing the images on this site.</p>
+    <p><a class="blog-link" href="/blog/2025/04/16/static-site-images.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Meta">Meta</a>
+      
+        <a class="tag-button" href="/tags/#Images">Images</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
       <a class="blog-link" href="/blog/2025/04/15/activitywatch.html">ActivityWatch</a>
     </h2>
-    <p>Apr 15, 2025</p>
+    <p>Apr 15, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
     <p>ActivityWatch is an app that automatically tracks how you spend time on your devices.</p>
+    <p><a class="blog-link" href="/blog/2025/04/15/activitywatch.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#ActivityWatch">ActivityWatch</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -445,8 +508,20 @@ a, a:visited, a:hover .page-link {
     <h2>
       <a class="blog-link" href="/blog/2025/04/15/colophon.html">Added a Colophon</a>
     </h2>
-    <p>Apr 15, 2025</p>
+    <p>Apr 15, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
     <p>a colophon (/ˈkɒləfən, -fɒn/) is a brief statement containing information about the publication</p>
+    <p><a class="blog-link" href="/blog/2025/04/15/colophon.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Meta">Meta</a>
+      
+        <a class="tag-button" href="/tags/#Colophon">Colophon</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -454,8 +529,28 @@ a, a:visited, a:hover .page-link {
     <h2>
       <a class="blog-link" href="/blog/2025/04/12/weeknotes-week15.html">Week 15</a>
     </h2>
-    <p>Apr 12, 2025</p>
+    <p>Apr 12, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
     <p>Job search, birthday party, and a concert</p>
+    <p><a class="blog-link" href="/blog/2025/04/12/weeknotes-week15.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      
+        <a class="tag-button" href="/tags/#Week 15">Week 15</a>
+      
+        <a class="tag-button" href="/tags/#concert">concert</a>
+      
+        <a class="tag-button" href="/tags/#Bright Eyes">Bright Eyes</a>
+      
+        <a class="tag-button" href="/tags/#Cursive">Cursive</a>
+      
+        <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -463,17 +558,18 @@ a, a:visited, a:hover .page-link {
     <h2>
       <a class="blog-link" href="/blog/2025/04/11/100-days-to-offload.html">100 Days to Offload</a>
     </h2>
-    <p>Apr 11, 2025</p>
+    <p>Apr 11, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
     <p>100 Days To Offload is a challenge to publish 100 posts on your personal blog in a year.</p>
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/07/adding-pagination.html">Adding Pagination</a>
-    </h2>
-    <p>Apr 7, 2025</p>
-    <p>Adding back in pagination on this here website.</p>
+    <p><a class="blog-link" href="/blog/2025/04/11/100-days-to-offload.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Meta">Meta</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -541,7 +637,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 25, 2025 5:02 PM UTC-04:00</p>
+        <p>Site last published: April 26, 2025 3:25 PM UTC-04:00</p>
       </div>
     </div>
 

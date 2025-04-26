@@ -18,8 +18,16 @@
     
       {{ post.title }}
     
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;{{ post.content | reading_time }} read
     {{ post.blurb }}
+    Read More...
+    {% if post.tags %}
+    
+      {% for tag in post.tags %}
+        {{ tag }}
+      {% endfor %}
+    
+  {% endif %}
   
   
 {% endfor %}
@@ -67,8 +75,16 @@
     
       {{ post.title }}
     
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;{{ post.content | reading_time }} read
     {{ post.blurb }}
+    Read More...
+    {% if post.tags %}
+    
+      {% for tag in post.tags %}
+        {{ tag }}
+      {% endfor %}
+    
+  {% endif %}
   
   
 {% endfor %}
@@ -107,6 +123,7 @@
   --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
   --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
   --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
+  --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
   --line-color: rgba(211, 211, 211, 30%);
 }
 
@@ -398,6 +415,37 @@ a, a:visited, a:hover .page-link {
     width: 100%;
   }
 }
+.post-tags {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  text-decoration: none;
+}
+
+.tag-button {
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--link-color);
+  border-radius: 999px;
+  font-size: 0.6em;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: background-color 0.8s, color 0.8s;
+}
+
+.tag-button a {
+  text-decoration: none !important;
+}
+
+.tag-button:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+  color: var(--invert-text-color);
+  text-decoration: none !important;
+}
+
+.reading_time {
+  font-size: 0.7em;
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -434,10 +482,49 @@ a, a:visited, a:hover .page-link {
   
   <article class="blog-entry">
     <h2>
+      <a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Now Update and Todo List</a>
+    </h2>
+    <p>Mar 22, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
+    <p>Just a quick update to the now section and a site todo list.</p>
+    <p><a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#now">now</a>
+      
+        <a class="tag-button" href="/tags/#todo">todo</a>
+      
+        <a class="tag-button" href="/tags/#meta">meta</a>
+      
+    </div>
+  
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
       <a class="blog-link" href="/blog/2025/03/21/weeknotes-week12.html">Week 12</a>
     </h2>
-    <p>Mar 21, 2025</p>
+    <p>Mar 21, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
     <p>It's week one of my 12 Week Year but it's the 12th week of the year so I'm calling it week 12. This is meant to be forward looking to a week note for every week of the year.</p>
+    <p><a class="blog-link" href="/blog/2025/03/21/weeknotes-week12.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      
+        <a class="tag-button" href="/tags/#Week 12">Week 12</a>
+      
+        <a class="tag-button" href="/tags/#resume">resume</a>
+      
+        <a class="tag-button" href="/tags/#NextJob">NextJob</a>
+      
+        <a class="tag-button" href="/tags/#Product Owner">Product Owner</a>
+      
+        <a class="tag-button" href="/tags/#Job Search">Job Search</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -445,8 +532,20 @@ a, a:visited, a:hover .page-link {
     <h2>
       <a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Starting</a>
     </h2>
-    <p>Mar 17, 2025</p>
+    <p>Mar 17, 2025&nbsp;<span class="reading_time">about 2 minutes read</span></p>
     <p>Starting something new and taking it day by day and week by week.</p>
+    <p><a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      
+        <a class="tag-button" href="/tags/#12 Week Year">12 Week Year</a>
+      
+        <a class="tag-button" href="/tags/#Notion">Notion</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -454,8 +553,20 @@ a, a:visited, a:hover .page-link {
     <h2>
       <a class="blog-link" href="/blog/2024/12/06/now-2024.html">Now Page 2024</a>
     </h2>
-    <p>Dec 6, 2024</p>
+    <p>Dec 6, 2024&nbsp;<span class="reading_time">about 3 minutes read</span></p>
     <p>While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.</p>
+    <p><a class="blog-link" href="/blog/2024/12/06/now-2024.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#now">now</a>
+      
+        <a class="tag-button" href="/tags/#2024">2024</a>
+      
+        <a class="tag-button" href="/tags/#meta">meta</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -463,17 +574,16 @@ a, a:visited, a:hover .page-link {
     <h2>
       <a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Simple Silly</a>
     </h2>
-    <p>Nov 21, 2024</p>
+    <p>Nov 21, 2024&nbsp;<span class="reading_time">about 1 minute read</span></p>
     <p>Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general.</p>
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Lighthouse</a>
-    </h2>
-    <p>Jul 26, 2024</p>
-    <p>This site is not big, but it is faster, and more accessible.</p>
+    <p><a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#meta">meta</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -541,7 +651,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 25, 2025 5:02 PM UTC-04:00</p>
+        <p>Site last published: April 26, 2025 3:25 PM UTC-04:00</p>
       </div>
     </div>
 

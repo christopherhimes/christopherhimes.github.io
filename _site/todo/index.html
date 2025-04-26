@@ -13,7 +13,7 @@
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="_Building a website To-do list_ ### Pages to Add - [X] ~~Now page~~ (Added 12/6/24 [/now]). - [X] ~~To-Do Page for site~~ (Added 3/22/25).[^1] - [X] ~~Add colophon page.~~ (Added 4/15/25). - [ ] Add a projects page dedicated to discussing previous work projects. - [ ] Add a dedicated music page that takes advantage of [last.fm] data. - [ ] Add a /uses page like the ones listed on [uses.tech] ### Features to add - [X] ~~Add light mode that respects the system settings of the user!~~ (Added 3/24/25)[^2] - [X] ~~Renable pagination as the number of blog posts has increased enough to need the functionality~~ (Added 4/7/25). - [ ] Add higher resolution responsive images in modern web formats. - [ ] Add a sparkline that shows post frequency. - [ ] Enable categories for posts so similar ideas can be crossreferenced. - [ ] Refactor light-dark based on recent blog post from [James G] - [ ] Add indicator for external links. - [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org] - [ ] Add Tags to posts. - [ ] Add read time to posts. - [ ] Add light and dark mode toggle. - [ ] Enable posting to [IndieNews]. - [ ] Add unique [Open Graph] image for each blog post. Inspired by this post from [Ethan]. ### Other activities - [ ] Expriment with [FreshRSS]. - [ ] Correct terminal in VSCodium. - [ ] Create a...">
+  <meta name="description" content="_Building a website To-do list_ ### Pages to Add - [X] ~~Now page~~ (Added 12/6/24 [/now]). - [X] ~~To-Do Page for site~~ (Added 3/22/25).[^1] - [X] ~~Add colophon page.~~ (Added 4/15/25). - [ ] Add a projects page dedicated to discussing previous work projects. - [ ] Add a dedicated music page that takes advantage of [last.fm] data. - [ ] Add a /uses page like the ones listed on [uses.tech] ### Features to add - [X] ~~Add light mode that respects the system settings of the user!~~ (Added 3/24/25)[^2] - [X] ~~Renable pagination as the number of blog posts has increased enough to need the functionality~~ (Added 4/7/25). - [ ] Add higher resolution responsive images in modern web formats. - [ ] Add a sparkline that shows post frequency. - [ ] Enable categories for posts so similar ideas can be crossreferenced. - [ ] Refactor light-dark based on recent blog post from [James G] - [ ] Add indicator for external links. - [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org] - [ ] Add Tags to posts. - [ ] Add read time to posts. - [ ] Add light and dark mode toggle. - [ ] Enable posting to [IndieNews]. - [ ] Add unique [Open Graph] image for each blog post. Inspired by this post from [Ethan]. - [ ] Add related posts based on tags to the end of posts. ### Other activities - [ ] Expriment...">
 
   
 
@@ -36,7 +36,7 @@
   
   <meta property="og:site_name" content="christopher himes">
   <meta property="og:title" content="todo">
-  <meta property="og:description" content="_Building a website To-do list_ ### Pages to Add - [X] ~~Now page~~ (Added 12/6/24 [/now]). - [X] ~~To-Do Page for site~~ (Added 3/22/25).[^1] - [X] ~~Add colophon page.~~ (Added 4/15/25). - [ ] Add a projects page dedicated to discussing previous work projects. - [ ] Add a dedicated music page that takes advantage of [last.fm] data. - [ ] Add a /uses page like the ones listed on [uses.tech] ### Features to add - [X] ~~Add light mode that respects the system settings of the user!~~ (Added 3/24/25)[^2] - [X] ~~Renable pagination as the number of blog posts has increased enough to need the functionality~~ (Added 4/7/25). - [ ] Add higher resolution responsive images in modern web formats. - [ ] Add a sparkline that shows post frequency. - [ ] Enable categories for posts so similar ideas can be crossreferenced. - [ ] Refactor light-dark based on recent blog post from [James G] - [ ] Add indicator for external links. - [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org] - [ ] Add Tags to posts. - [ ] Add read time to posts. - [ ] Add light and dark mode toggle. - [ ] Enable posting to [IndieNews]. - [ ] Add unique [Open Graph] image for each blog post. Inspired by this post from [Ethan]. ### Other activities - [ ] Expriment with [FreshRSS]. - [ ] Correct terminal in VSCodium. - [ ] Create a...">
+  <meta property="og:description" content="_Building a website To-do list_ ### Pages to Add - [X] ~~Now page~~ (Added 12/6/24 [/now]). - [X] ~~To-Do Page for site~~ (Added 3/22/25).[^1] - [X] ~~Add colophon page.~~ (Added 4/15/25). - [ ] Add a projects page dedicated to discussing previous work projects. - [ ] Add a dedicated music page that takes advantage of [last.fm] data. - [ ] Add a /uses page like the ones listed on [uses.tech] ### Features to add - [X] ~~Add light mode that respects the system settings of the user!~~ (Added 3/24/25)[^2] - [X] ~~Renable pagination as the number of blog posts has increased enough to need the functionality~~ (Added 4/7/25). - [ ] Add higher resolution responsive images in modern web formats. - [ ] Add a sparkline that shows post frequency. - [ ] Enable categories for posts so similar ideas can be crossreferenced. - [ ] Refactor light-dark based on recent blog post from [James G] - [ ] Add indicator for external links. - [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org] - [ ] Add Tags to posts. - [ ] Add read time to posts. - [ ] Add light and dark mode toggle. - [ ] Enable posting to [IndieNews]. - [ ] Add unique [Open Graph] image for each blog post. Inspired by this post from [Ethan]. - [ ] Add related posts based on tags to the end of posts. ### Other activities - [ ] Expriment...">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/new-face.webp">
@@ -55,6 +55,7 @@
   --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
   --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
   --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
+  --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
   --line-color: rgba(211, 211, 211, 30%);
 }
 
@@ -346,6 +347,37 @@ a, a:visited, a:hover .page-link {
     width: 100%;
   }
 }
+.post-tags {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  text-decoration: none;
+}
+
+.tag-button {
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--link-color);
+  border-radius: 999px;
+  font-size: 0.6em;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: background-color 0.8s, color 0.8s;
+}
+
+.tag-button a {
+  text-decoration: none !important;
+}
+
+.tag-button:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+  color: var(--invert-text-color);
+  text-decoration: none !important;
+}
+
+.reading_time {
+  font-size: 0.7em;
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -406,6 +438,7 @@ a, a:visited, a:hover .page-link {
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add light and dark mode toggle.</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Enable posting to <a href="https://news.indieweb.org/how-to-submit-a-post">IndieNews</a>.</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add unique <a href="https://ogp.me/">Open Graph</a> image for each blog post. Inspired by this post from <a href="https://ethanmarcotte.com/wrote/magick-images/">Ethan</a>.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add related posts based on tags to the end of posts.</li>
 </ul>
 
 <h3 id="other-activities">Other activities</h3>
@@ -476,7 +509,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 25, 2025 5:02 PM UTC-04:00</p>
+        <p>Site last published: April 26, 2025 3:25 PM UTC-04:00</p>
       </div>
     </div>
 

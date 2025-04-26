@@ -57,6 +57,7 @@
   --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
   --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
   --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
+  --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
   --line-color: rgba(211, 211, 211, 30%);
 }
 
@@ -348,6 +349,37 @@ a, a:visited, a:hover .page-link {
     width: 100%;
   }
 }
+.post-tags {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  text-decoration: none;
+}
+
+.tag-button {
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--link-color);
+  border-radius: 999px;
+  font-size: 0.6em;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: background-color 0.8s, color 0.8s;
+}
+
+.tag-button a {
+  text-decoration: none !important;
+}
+
+.tag-button:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+  color: var(--invert-text-color);
+  text-decoration: none !important;
+}
+
+.reading_time {
+  font-size: 0.7em;
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -385,7 +417,8 @@ a, a:visited, a:hover .page-link {
     <h1 class="post-title" itemprop="name headline">I got married!</h1>
     <p><time class="dt-published" datetime="2024-07-11T16:00:00-04:00" itemprop="datePublished">
         Jul 11, 2024
-      </time></p>
+      </time>
+      &nbsp;<span class="reading_time">about 1 minute read</span></p>
   </header>
     <article itemprop="articleBody">
       <p><img src="../../../../assets/img/blog/i-got-married/married.webp" alt="main-image" title="Married" class="main-image" /></p>
@@ -407,6 +440,13 @@ a, a:visited, a:hover .page-link {
 <p><em>The image above is from a <a href="https://leahandchristopherhimes.com">wedding site</a> I made but never showed to anyone but my wife.</em></p>
 
 
+      
+      <div class="post-tags">
+          
+            <a class="tag-button" href="/tags/#married">married</a>
+          
+        </div>
+      
     </article>
   <a href="/blog/2024/07/11/i-got-married.html" hidden></a>
 </div>
@@ -652,7 +692,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 25, 2025 5:02 PM UTC-04:00</p>
+        <p>Site last published: April 26, 2025 3:25 PM UTC-04:00</p>
       </div>
     </div>
 

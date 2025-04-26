@@ -18,8 +18,16 @@
     
       {{ post.title }}
     
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;{{ post.content | reading_time }} read
     {{ post.blurb }}
+    Read More...
+    {% if post.tags %}
+    
+      {% for tag in post.tags %}
+        {{ tag }}
+      {% endfor %}
+    
+  {% endif %}
   
   
 {% endfor %}
@@ -67,8 +75,16 @@
     
       {{ post.title }}
     
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;{{ post.content | reading_time }} read
     {{ post.blurb }}
+    Read More...
+    {% if post.tags %}
+    
+      {% for tag in post.tags %}
+        {{ tag }}
+      {% endfor %}
+    
+  {% endif %}
   
   
 {% endfor %}
@@ -107,6 +123,7 @@
   --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
   --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
   --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
+  --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
   --line-color: rgba(211, 211, 211, 30%);
 }
 
@@ -398,6 +415,37 @@ a, a:visited, a:hover .page-link {
     width: 100%;
   }
 }
+.post-tags {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  text-decoration: none;
+}
+
+.tag-button {
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--link-color);
+  border-radius: 999px;
+  font-size: 0.6em;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: background-color 0.8s, color 0.8s;
+}
+
+.tag-button a {
+  text-decoration: none !important;
+}
+
+.tag-button:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+  color: var(--invert-text-color);
+  text-decoration: none !important;
+}
+
+.reading_time {
+  font-size: 0.7em;
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -434,10 +482,41 @@ a, a:visited, a:hover .page-link {
   
   <article class="blog-entry">
     <h2>
+      <a class="blog-link" href="/blog/2025/04/26/read-time-and-tags.html">Read Time and Tags</a>
+    </h2>
+    <p>Apr 26, 2025&nbsp;<span class="reading_time">about 3 minutes read</span></p>
+    <p>Having dramatically scaled back this site to make the restyling easier I have been slowly adding back in some removed features.</p>
+    <p><a class="blog-link" href="/blog/2025/04/26/read-time-and-tags.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Meta">Meta</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
       <a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Week 17</a>
     </h2>
-    <p>Apr 25, 2025</p>
+    <p>Apr 25, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
     <p>Weather ☀️ has been nice so I've been working in the yard. The garden beds need some serious care so I'm getting them cleaned up and ready for planting.</p>
+    <p><a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      
+        <a class="tag-button" href="/tags/#Week 17">Week 17</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -445,8 +524,20 @@ a, a:visited, a:hover .page-link {
     <h2>
       <a class="blog-link" href="/blog/2025/04/24/ibm-product-owner-certification.html">Product Owner Certification</a>
     </h2>
-    <p>Apr 24, 2025</p>
+    <p>Apr 24, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
     <p>It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes.</p>
+    <p><a class="blog-link" href="/blog/2025/04/24/ibm-product-owner-certification.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Product Owner">Product Owner</a>
+      
+        <a class="tag-button" href="/tags/#Certification">Certification</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -454,8 +545,24 @@ a, a:visited, a:hover .page-link {
     <h2>
       <a class="blog-link" href="/blog/2025/04/19/weeknotes-week16.html">Week 16</a>
     </h2>
-    <p>Apr 19, 2025</p>
+    <p>Apr 19, 2025&nbsp;<span class="reading_time">about 1 minute read</span></p>
     <p>Job search, blogging, and Easter preparations.</p>
+    <p><a class="blog-link" href="/blog/2025/04/19/weeknotes-week16.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      
+        <a class="tag-button" href="/tags/#Week 16">Week 16</a>
+      
+        <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
+      
+        <a class="tag-button" href="/tags/#Overwatch 2">Overwatch 2</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -463,17 +570,20 @@ a, a:visited, a:hover .page-link {
     <h2>
       <a class="blog-link" href="/blog/2025/04/16/light-and-dark-revisited.html">Light and Dark Mode Revisited</a>
     </h2>
-    <p>Apr 16, 2025</p>
+    <p>Apr 16, 2025&nbsp;<span class="reading_time">about 2 minutes read</span></p>
     <p>I wanted to revisit the light and dark update as the original described some changes but didn't display how these changes impacted the experience on the site. Now that images are working a bit better I figured I would show exactly what's happening on the site in its current state.</p>
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/16/static-site-images.html">Static Site Images</a>
-    </h2>
-    <p>Apr 16, 2025</p>
-    <p>I was recently reaking this blog post by Kev Quirk about image handling on his static site which inspired me to spend some time fixing the images on this site.</p>
+    <p><a class="blog-link" href="/blog/2025/04/16/light-and-dark-revisited.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#CSS">CSS</a>
+      
+        <a class="tag-button" href="/tags/#Meta">Meta</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
   </article>
   <hr />
 
@@ -540,7 +650,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 25, 2025 5:02 PM UTC-04:00</p>
+        <p>Site last published: April 26, 2025 3:25 PM UTC-04:00</p>
       </div>
     </div>
 

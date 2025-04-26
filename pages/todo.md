@@ -30,6 +30,7 @@ _Building a website To-do list_
 - [ ] Add light and dark mode toggle.
 - [ ] Enable posting to [IndieNews].
 - [ ] Add unique [Open Graph] image for each blog post. Inspired by this post from [Ethan].
+- [ ] Add related posts based on tags to the end of posts.
 
 ### Other activities
 - [ ] Expriment with [FreshRSS].

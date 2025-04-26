@@ -62,6 +62,7 @@ exclude: [vendor]
 plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
+  - jekyll_reading_time
 
 pagination:
   enabled: true

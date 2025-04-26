@@ -4,7 +4,7 @@ title:  "Product Owner Certification"
 date:   2025-04-24 21:45:00
 tags: ['Product Owner', 'Certification', '100 Days To Offload']
 blurb: It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes.
-
+modified_date: 2025-04-25 16:35:00
 comments:
     id: 114395974514482224
 ---

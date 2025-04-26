@@ -11,3 +11,4 @@ gem 'racc'
 gem 'jekyll-sitemap'
 # gem "minima"
 gem "webrick"
+gem 'jekyll_reading_time'

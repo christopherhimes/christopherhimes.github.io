@@ -72,6 +72,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jekyll_reading_time (0.1.1)
+      jekyll
     json (2.10.2)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
@@ -158,6 +160,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll-paginate-v2
   jekyll-sitemap
+  jekyll_reading_time
   racc
   webrick
 
