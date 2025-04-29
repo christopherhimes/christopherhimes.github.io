@@ -6,9 +6,95 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 29 Apr 2025 12:24:43 -0400</pubDate>
-    <lastBuildDate>Tue, 29 Apr 2025 12:24:43 -0400</lastBuildDate>
+    <pubDate>Tue, 29 Apr 2025 13:34:44 -0400</pubDate>
+    <lastBuildDate>Tue, 29 Apr 2025 13:34:44 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Lighthouse Revisited</title>
+        <description>&lt;style&gt;
+.box {
+  float: left;
+  /* height: 50px; */
+  /* width: 50px; */
+  padding: 15px;
+  text-align: center;
+  vertical-align: center;
+  margin-bottom: 15px;
+  border: 1px solid light-dark(rgb(26, 26, 26), rgb(240,240,240));
+  color: black;
+  /* clear: both; */
+}
+.white {background-color: rgb(240,240,240);}
+.black {background-color: rgb(26, 26, 26);color:white;}
+.medium-green {background-color: rgb(0, 87, 59);}
+.bright-green {background-color: rgb(32, 255, 188);}
+.medium-blue {background-color: rgb(1, 85, 106);}
+.bright-blue {background-color: rgb(25, 209, 255);}
+&lt;/style&gt;
+
+&lt;p&gt;One thing about this site that I’m not happy with is I don’t have the necessary tests in place to ensure changes meet the standard of quality I want. Case in point, a &lt;a href=&quot;/blog/2024/07/26/lighthouse&quot;&gt;few months back&lt;/a&gt; I got the site to a good &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;lighthouse&lt;/a&gt; score. Not just good, the site was at 100% for performance, accessibility, best practices, and SEO on desktop. Mobile had 95% for performance and accessibility.&lt;/p&gt;
+
+&lt;h2 id=&quot;desktop-original&quot;&gt;Desktop (original)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;Past lighthouse scores of 100% in all categories&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/lighthouse/lighthouse-desktop.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mobile-original&quot;&gt;Mobile (original)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;Past lighthouse scores of 100% in all categories but performance and accessibility at 95%&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/lighthouse/lighthouse-mobile.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had not rerun the lighthouse test in a while. The recent run was not good as pictured below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;Recent light mode scores with 87% for performance, 95% for accessibility, and 100% for best practices and SEO&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/lighthouse-revisited/lighthouse-score-current.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First thing that jumps out, and maybe it’s because it’s in &lt;span style=&quot;color:red&quot;&gt;red&lt;/span&gt;, is the “Largest Contentful Paint element”. My face apparently is just too big. To address this I resized the image to match the dimension it will be displayed. Just to be sure I introduced a little bit of lossy compression using cwebp in the command line. Not enough that you should notice but just enough to reduce the file size a little more.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cwebp -q 85 new-face-325x325.webp -o home-face-325x325.webp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;From there I got a lower score than before with the report saying the image was low resolution and it was expecting something around 488 pixels square. I ended up resolving this issue by starting over and providing an image of 650x650 for the 325x325 square. This appears to be a requirement for serving to higher density screens.&lt;/p&gt;
+
+&lt;p&gt;One thing I did find interesting is that it appears lighthouse is using the light mode as a default. This of course exposes that I did not do enough testing of &lt;a href=&quot;https://dequeuniversity.com/rules/axe/4.10/color-contrast&quot;&gt;color contrast&lt;/a&gt; when setting up the &lt;a href=&quot;/blog/2025/04/16/light-and-dark-revisited&quot;&gt;light mode&lt;/a&gt;. Based on the feedback from the contrast test I’ve updated the light mode to the following.&lt;/p&gt;
+
+&lt;div class=&quot;box white&quot;&gt;rgb(240,240,240)&lt;/div&gt;
+&lt;div class=&quot;box medium-green&quot;&gt;rgb(0, 87, 59)&lt;/div&gt;
+&lt;div class=&quot;box medium-blue&quot;&gt;rgb(1, 85, 106)&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;Home page in the latest version of light mode with slightly darker blue and green&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/lighthouse-revisited/light-mode-updated.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you may expect the dark mode which existed first and was used in the original test meets the contrast requirements.&lt;/p&gt;
+
+&lt;p&gt;One more thing I did was to shift some css styling to a sheet that is loaded asynchronously versus the inline critical styling. This has been a bit of guess and check on my part and I’m not sure I have everything where it needs to be just yet. If you see any jumps or restyling when a page loads please let me know.&lt;/p&gt;
+
+&lt;p&gt;One thing slowing down the site was font awesome icons for email, mastodon, bluesky, RSS feed, and github. I tried a few different ways to speed this up but ultimately went with doing away with the icons altogether. For now it’s kinda nice not having a company’s logo on my site.&lt;/p&gt;
+
+&lt;p&gt;I worked through the mobile score first as this is usually the most difficult to get right. The standards are understandably higher due to the variety of devices and connections. The main issue here was the picture of my face which was either too large of a file or low resolution. These things seem like opposites but there is a balancing act between quality images and file size. Ultimately I ended up recreating the image from its source and working with the compression of cwebp to get to a high enough quality image while having a low load time in the browser.&lt;/p&gt;
+
+&lt;p&gt;Here are the results of these efforts!&lt;/p&gt;
+
+&lt;h2 id=&quot;desktop&quot;&gt;Desktop&lt;/h2&gt;
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;Desktop Lighthouse score results with all four categories listed at 100%&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/lighthouse-revisited/lighthouse-desktop.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mobile&quot;&gt;Mobile&lt;/h2&gt;
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;Mobile Lighthouse score results with all four categories listed at 100%&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/lighthouse-revisited/lighthouse-mobile.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a bit of trial and error both the mobile and desktop versions of the site have 100% for all four categories! 🎉&lt;/p&gt;
+
+&lt;p&gt;There are some optional items on the lighthouse page that I would like to pursue as well so this will likely get revisited again. For now things are faster and more people can interact comfortably with the site.&lt;/p&gt;
+
+&lt;p&gt;This is day 11 of #100DaysToOffload.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 29 Apr 2025 09:30:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/04/29/lighthouse-revisited.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/29/lighthouse-revisited.html</guid>
+        
+        <category>Meta</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Read Time and Tags</title>
@@ -362,26 +448,6 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
         <category>Cursive</category>
         
         <category>Cicada Detroit</category>
-        
-        <category>100 Days To Offload</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>100 Days to Offload</title>
-        <description>&lt;p&gt;This is day 1 of #100DaysToOffload.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://100daystooffload.com/&quot;&gt;100 Days To Offload&lt;/a&gt; is a challenge to publish 100 posts on your personal blog in a year.&lt;/p&gt;
-
-&lt;p&gt;I’ve been trying to write more so I thought this would be a fun challenge. If you go to the website for the challenge they have a hall of fame for people that completed it. This means there are a number of interesting personal blogs to follow as well. Found a few more for the RSS reader.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 11 Apr 2025 07:45:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2025/04/11/100-days-to-offload.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/11/100-days-to-offload.html</guid>
-        
-        <category>Meta</category>
         
         <category>100 Days To Offload</category>
         
