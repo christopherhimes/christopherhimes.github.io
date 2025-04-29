@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Tag Index'
+title: '🏷️ Tags'
 ---
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
@@ -12,17 +12,17 @@ title: 'Tag Index'
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
-<div class="tags">
+<div class="tags-nav">
 {%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+    🏷️&nbsp;<a href="#{{- tag -}}" style="white-space:nowrap;margin-inline:0em 0.3em;">{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+
 {%- endfor -%}
 </div>
 
 <div id="full-tags-list">
 {%- for tag in tags_list -%}
     <h3 id="{{- tag -}}" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+        🏷️&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})&nbsp;
     </h3>
     <div class="post-list">
         {%- for post in site.tags[tag] -%}

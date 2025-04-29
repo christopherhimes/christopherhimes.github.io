@@ -110,12 +110,7 @@ section#comments .comment.verified .instance::before {
   margin-inline-start: -0.25em;
 }
 
-.tags {
-  margin: 3em 0em;
-}
-
 .task-list {
-  list-style-type: none;
   color: light-dark(var(--light-text-color), var(--dark-text-color));
 }
 

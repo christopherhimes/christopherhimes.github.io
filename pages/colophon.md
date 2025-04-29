@@ -11,7 +11,6 @@ This site was originally registered in 2011. It has seen a number of different i
 * I use [Netlify] for hosting.
 * The site repository is hosted on [Github]. Although I'm open to changing this in the future.
 * Domain hosting through [namecheap].
-
 * The [now] page uses the [last.fm] API to retrieve the recent played song.
 * Comments are tied to [my] posts on [Mastodon] using a setup similar to the one made by [Cassidy].
 * Development is completed in [VSCodium] a de-microfted version of [VSCode].
