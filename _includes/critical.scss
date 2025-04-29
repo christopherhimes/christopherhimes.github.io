@@ -262,17 +262,21 @@ a, a:visited, a:hover .page-link {
 }
 .footer-col {
     vertical-align: top;
+    text-align: left;
     // border: solid 1px red;
     // text-align: center;
-    padding: 1em;
+    // padding: 1em;
 }
-.footer-links li{
+.footer-links {
+    justify-content: left;
+    padding-left: 0;
     list-style: none;
-    line-height: 1em;
+    line-height: 1.5em;
     width: 200px;
+    // border: solid 1px red;
 }
 .footer-links a {
     padding:0;
-    margin:0;
-
+    margin:auto;
+    // border: solid 1px red;
 }
