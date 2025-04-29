@@ -2,7 +2,7 @@
 layout: post
 title:  "Lighthouse Revisited"
 date:   2025-04-29 13:30:00
-tags: ['Meta', '100 Days To Offload']
+tags: ['Meta', '100 Days To Offload', 'Performance', 'Accessibility', 'SEO', 'Best Practices', 'Light and Dark', 'Lighthouse']
 blurb: After a bit of trial and error both the mobile and desktop versions of the site have 100% for all four categories! 🎉
 comments:
     id: 114422472573351994

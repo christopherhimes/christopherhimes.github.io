@@ -32,10 +32,10 @@ _Building a website To-do list_
 - [ ] Add related posts based on tags to the end of posts.
 
 ### Other activities
+- [X] ~~Refactor critical.css as it no longer contains only the critical items~~ (Added 4/28/25).
 - [ ] Expriment with [FreshRSS].
 - [ ] Correct terminal in VSCodium.
 - [ ] Create a personal Product Owner portfolio.
-- [ ] Refactor critical.css as it no longer contains only the critical items.
 - [ ] Add unique text to RSS feed thanking them for subscribing.
 - [ ] Update the styling of code blocks.
  
