@@ -10,7 +10,7 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
-      &nbsp;<span class="reading_time">{{ content | reading_time }} read</span>
+      &nbsp;<span class="reading_time">read in {{ content | reading_time }}</span>
       {%- if page.modified_date -%}
         <span class="reading_time">&nbsp;( Modified on 
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}

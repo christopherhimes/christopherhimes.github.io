@@ -110,4 +110,63 @@ section#comments .comment.verified .instance::before {
   margin-inline-start: -0.25em;
 }
 
+.tags {
+  margin: 3em 0em;
+}
+
+.task-list {
+  list-style-type: none;
+  color: light-dark(var(--light-text-color), var(--dark-text-color));
+}
+
+.fa-gradient {
+  color: var(--link-color);
+}
+
+.home-blog {
+  flex-direction: column;
+}
+
+.blogimg {
+  max-width: 750px;
+  border: 1px solid var(--text-color);
+}
+
+.pagination {
+  text-align: center;
+  padding: 1.5em;
+}
+
+.post-tags {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  text-decoration: none !important;
+}
+
+.tag-button {
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--link-color);
+  border-radius: 999px;
+  font-size: 0.6em;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: background-color 0.8s, color 0.8s;
+}
+
+.tag-button a {
+  text-decoration: none !important;
+}
+
+.tag-button:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+  color: var(--invert-text-color);
+  text-decoration: none !important;
+}
+
+.reading_time {
+  font-size: 0.7em;
+}
+
 /*# sourceMappingURL=style.css.map */

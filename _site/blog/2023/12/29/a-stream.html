@@ -54,8 +54,8 @@
     :root {
   color-scheme: light dark;
   --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
-  --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
-  --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
+  --foreground-color: light-dark(rgb(0, 87, 59), rgb(32, 255, 188));
+  --link-color: light-dark(rgb(1, 85, 106), rgb(25, 209, 255));
   --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
   --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
   --line-color: rgba(211, 211, 211, 30%);
@@ -66,18 +66,20 @@
   src: url("../../../../../assets/font/lato-normal.woff2") format("woff2"), url("../../../../../assets/font/lato-normal.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+  unicode-range: U+0025-00FF;
 }
 body {
   background-color: var(--background-color);
   color: var(--foreground-color);
   margin: 0px;
   padding: 0px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "lato-normal", Arial, Helvetica, sans-serif;
   letter-spacing: 0.05em;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  font-family: "lato-normal", Arial, Helvetica, sans-serif;
 }
 
 span {
@@ -159,11 +161,6 @@ a, a:visited, a:hover .page-link {
   filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
 }
 
-.task-list {
-  list-style-type: none;
-  color: light-dark(var(--light-text-color), var(--dark-text-color));
-}
-
 .site-title {
   font-family: "lato-normal", Arial, Helvetica, sans-serif;
   font-size: 1.2em;
@@ -172,25 +169,6 @@ a, a:visited, a:hover .page-link {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
-}
-
-.tags {
-  margin: 3em 0em;
-}
-
-.fa-gradient {
-  color: var(--link-color);
-}
-
-.footer-links li {
-  list-style: none;
-  line-height: 1em;
-  width: 200px;
-}
-
-.footer-links a {
-  padding: 0;
-  margin: 0;
 }
 
 .site-header {
@@ -234,7 +212,7 @@ a, a:visited, a:hover .page-link {
 }
 
 .home-name {
-  font-family: "comprehensionsemibold", Arial, Helvetica, sans-serif;
+  font-family: "lato-normal", Arial, Helvetica, sans-serif;
   background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
   -webkit-background-clip: text;
   background-clip: text;
@@ -252,19 +230,6 @@ a, a:visited, a:hover .page-link {
   padding: 10px 15px;
 }
 
-.article {
-  border-width: 2px;
-  border-style: solid;
-  padding: 1em;
-  border: 2px solid transparent;
-  border-radius: 20px;
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  display: flex;
-  flex-flow: column;
-  justify-content: left;
-}
-
 .wrapper {
   margin: auto;
   display: flex;
@@ -273,50 +238,6 @@ a, a:visited, a:hover .page-link {
   gap: 3em;
   flex-direction: column;
   flex: 1 100%;
-}
-
-.post-detail, .page-detail {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  font-size: 1.25em;
-  margin: 0 auto;
-  width: 700px;
-}
-
-.blog-entry {
-  width: 100%;
-  padding: 1em 0;
-  align-items: left;
-  text-align: left;
-  border-top: solid 2px --line-color;
-}
-
-.home-blog {
-  flex-direction: column;
-}
-
-.blogimg {
-  max-width: 750px;
-  border: 1px solid var(--text-color);
-}
-
-.footer-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1.5em;
-}
-
-.footer-col {
-  vertical-align: top;
-  padding: 1em;
-}
-
-.pagination {
-  text-align: center;
-  padding: 1.5em;
 }
 
 @media (max-width: 800px) {
@@ -349,39 +270,61 @@ a, a:visited, a:hover .page-link {
     width: 100%;
   }
 }
-.post-tags {
-  margin-top: 1em;
+.article {
+  border-width: 2px;
+  border-style: solid;
+  padding: 1em;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  text-decoration: none;
+  flex-flow: column;
+  justify-content: left;
 }
 
-.tag-button {
-  padding: 0.3em 0.8em;
-  border: 1px solid var(--link-color);
-  border-radius: 999px;
-  font-size: 0.6em;
-  text-decoration: none;
-  color: var(--link-color);
-  transition: background-color 0.8s, color 0.8s;
+.post-detail, .page-detail {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  font-size: 1.25em;
+  margin: 0 auto;
+  width: 700px;
 }
 
-.tag-button a {
-  text-decoration: none !important;
+.blog-entry {
+  width: 100%;
+  padding: 1em 0;
+  align-items: left;
+  text-align: left;
+  border-top: solid 2px --line-color;
 }
 
-.tag-button:hover {
-  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
-  color: var(--invert-text-color);
-  text-decoration: none !important;
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5em;
 }
 
-.reading_time {
-  font-size: 0.7em;
+.footer-col {
+  vertical-align: top;
+  padding: 1em;
+}
+
+.footer-links li {
+  list-style: none;
+  line-height: 1em;
+  width: 200px;
+}
+
+.footer-links a {
+  padding: 0;
+  margin: 0;
 }
   </style>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
 
   <link
     rel="preload"
@@ -418,7 +361,7 @@ a, a:visited, a:hover .page-link {
     <p><time class="dt-published" datetime="2023-12-29T08:00:00-05:00" itemprop="datePublished">
         Dec 29, 2023
       </time>
-      &nbsp;<span class="reading_time">about 3 minutes read</span></p>
+      &nbsp;<span class="reading_time">read in about 3 minutes</span></p>
   </header>
     <article itemprop="articleBody">
       <p><img src="../../../../assets/img/blog/a-stream/stream.webp" alt="main-image" title="Stream" /></p>
@@ -516,7 +459,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 26, 2025 3:48 PM UTC-04:00</p>
+        <p>Site last published: April 29, 2025 10:42 AM UTC-04:00</p>
       </div>
     </div>
 

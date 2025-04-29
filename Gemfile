@@ -12,3 +12,4 @@ gem 'jekyll-sitemap'
 # gem "minima"
 gem "webrick"
 gem 'jekyll_reading_time'
+gem 'jekyll-minifier'

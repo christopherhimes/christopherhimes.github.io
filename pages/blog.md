@@ -12,7 +12,7 @@ pagination:
     <h2>
       <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
-    <p>{{ post.date | date: "%b %-d, %Y" }}&nbsp;<span class="reading_time">{{ post.content | reading_time }} read</span></p>
+    <p>{{ post.date | date: "%b %-d, %Y" }}&nbsp;<span class="reading_time">read in {{ post.content | reading_time }}</span></p>
     <p>{{ post.blurb }}</p>
     <p><a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">Read More...</a></p>
     {% if post.tags %}

@@ -11,22 +11,21 @@ _Building a website To-do list_
 - [X]  ~~Now page~~ (Added 12/6/24 [/now]).
 - [X]  ~~To-Do Page for site~~ (Added 3/22/25).[^1]
 - [X] ~~Add colophon page.~~ (Added 4/15/25).
-- [ ]  Add a projects page dedicated to discussing previous work projects.
-- [ ]  Add a dedicated music page that takes advantage of [last.fm] data.
+- [ ] Add a projects page dedicated to discussing previous work projects.
+- [ ] Add a dedicated music page that takes advantage of [last.fm] data.
 - [ ] Add a /uses page like the ones listed on [uses.tech]
 
 
 ### Features to add
 - [X]  ~~Add light mode that respects the system settings of the user!~~ (Added 3/24/25)[^2]
 - [X]  ~~Renable pagination as the number of blog posts has increased enough to need the functionality~~ (Added 4/7/25).
-- [ ]  Add higher resolution responsive images in modern web formats.
-- [ ]  Add a sparkline that shows post frequency.
-- [ ]  Enable categories for posts so similar ideas can be crossreferenced.
-- [ ] Refactor light-dark based on recent blog post from [James G]
+- [X] ~~Refactor light-dark based on recent blog post from [James G]~~ (Added 4/16/25).
+- [X] ~~Add Tags to posts~~ (Added 4/6/25).
+- [X] ~~Add read time to posts~~ (Added 4/26/25).
+- [ ] Add higher resolution responsive images in modern web formats.
+- [ ] Add a sparkline that shows post frequency.
 - [ ] Add indicator for external links.
 - [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org]
-- [ ] Add Tags to posts.
-- [ ] Add read time to posts.
 - [ ] Add light and dark mode toggle.
 - [ ] Enable posting to [IndieNews].
 - [ ] Add unique [Open Graph] image for each blog post. Inspired by this post from [Ethan].
@@ -36,6 +35,10 @@ _Building a website To-do list_
 - [ ] Expriment with [FreshRSS].
 - [ ] Correct terminal in VSCodium.
 - [ ] Create a personal Product Owner portfolio.
+- [ ] Refactor critical.css as it no longer contains only the critical items.
+- [ ] Add unique text to RSS feed thanking them for subscribing.
+- [ ] Update the styling of code blocks.
+ 
 
 [/now]: /now
 [last.fm]: https://last.fm
