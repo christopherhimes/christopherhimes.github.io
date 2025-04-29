@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 29 Apr 2025 14:40:51 -0400</pubDate>
-    <lastBuildDate>Tue, 29 Apr 2025 14:40:51 -0400</lastBuildDate>
+    <pubDate>Tue, 29 Apr 2025 14:47:56 -0400</pubDate>
+    <lastBuildDate>Tue, 29 Apr 2025 14:47:56 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -84,7 +84,11 @@
 
 &lt;p&gt;This is day 11 of #100DaysToOffload.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Tue, 29 Apr 2025 09:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/29/lighthouse-revisited.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/29/lighthouse-revisited.html</guid>
@@ -139,7 +143,11 @@
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sat, 26 Apr 2025 11:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/26/read-time-and-tags.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/26/read-time-and-tags.html</guid>
@@ -165,7 +173,11 @@
 &lt;/ul&gt;
 
 &lt;p&gt;This is day 9 of #100DaysToOffload.&lt;/p&gt;
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Fri, 25 Apr 2025 12:35:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/25/weeknotes-week17.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/25/weeknotes-week17.html</guid>
@@ -191,7 +203,11 @@
 
 &lt;p&gt;This is day 8 of #100DaysToOffload.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Thu, 24 Apr 2025 17:45:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/24/ibm-product-owner-certification.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/24/ibm-product-owner-certification.html</guid>
@@ -225,7 +241,11 @@
 
 &lt;p&gt;This is day 7 of #100DaysToOffload.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sat, 19 Apr 2025 11:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/19/weeknotes-week16.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/19/weeknotes-week16.html</guid>
@@ -320,7 +340,11 @@
 
 &lt;p&gt;This is day 6 of #100DaysToOffload.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Wed, 16 Apr 2025 10:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/16/light-and-dark-revisited.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/16/light-and-dark-revisited.html</guid>
@@ -363,7 +387,11 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
 
 &lt;p&gt;This is day 5 of #100DaysToOffload.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Wed, 16 Apr 2025 07:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/16/static-site-images.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/16/static-site-images.html</guid>
@@ -387,7 +415,11 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
 
 &lt;p&gt;This is day 4 of #100DaysToOffload.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Tue, 15 Apr 2025 13:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/15/activitywatch.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/15/activitywatch.html</guid>
@@ -413,7 +445,11 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
 
 &lt;p&gt;This is day 3 of #100DaysToOffload.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Tue, 15 Apr 2025 12:45:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/15/colophon.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/15/colophon.html</guid>
@@ -444,7 +480,11 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
 &lt;/ul&gt;
 
 &lt;p&gt;This is day 2 of #100DaysToOffload.&lt;/p&gt;
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sat, 12 Apr 2025 10:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/12/weeknotes-week15.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/12/weeknotes-week15.html</guid>
@@ -474,7 +514,11 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
 
 &lt;p&gt;I’ve been trying to write more so I thought this would be a fun challenge. If you go to the website for the challenge they have a hall of fame for people that completed it. This means there are a number of interesting personal blogs to follow as well. Found a few more for the RSS reader.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Fri, 11 Apr 2025 07:45:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/11/100-days-to-offload.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/11/100-days-to-offload.html</guid>
@@ -528,7 +572,11 @@ pagination:
 
 &lt;p&gt;From here I added some padding to the pagination and centered it to make sure it was easy to see.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Mon, 07 Apr 2025 15:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/07/adding-pagination.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/07/adding-pagination.html</guid>
@@ -568,7 +616,11 @@ pagination:
   &lt;li&gt;Installed MedusaJS on &lt;a href=&quot;https://railway.com/&quot;&gt;Railway&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Fri, 04 Apr 2025 11:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/04/weeknotes-week14.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/04/weeknotes-week14.html</guid>
@@ -611,7 +663,11 @@ pagination:
   &lt;li&gt;Fixed the time stamp in the footer of this page.&lt;/li&gt;
 &lt;/ul&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sat, 29 Mar 2025 09:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/03/29/weeknotes-week13.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/03/29/weeknotes-week13.html</guid>
@@ -736,7 +792,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;I don’t necessarily agree with all of this but many things rang true which surprised me honestly.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Mon, 24 Mar 2025 12:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/03/24/personality-test.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/03/24/personality-test.html</guid>
@@ -785,7 +845,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;Which ever mode you prefer I hope you like what you see.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sun, 23 Mar 2025 14:10:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/03/23/light-and-dark.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/03/23/light-and-dark.html</guid>
@@ -805,7 +869,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;Also, I have a few items I’ve identified and included in the &lt;a href=&quot;/todo&quot;&gt;todo&lt;/a&gt; list for the site. I don’t believe I’ve linked to this previously so I thought I would do so now.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sat, 22 Mar 2025 17:20:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/03/22/now-update-and-todo-list.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/03/22/now-update-and-todo-list.html</guid>
@@ -834,7 +902,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
   &lt;li&gt;Set resume/cv to appear in the main navigation.&lt;/li&gt;
 &lt;/ul&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Fri, 21 Mar 2025 08:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/03/21/weeknotes-week12.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/03/21/weeknotes-week12.html</guid>
@@ -874,7 +946,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;To help me keep track of my goals and my planned activities for the 12 weeks I’ve added a template already setup for this sort of thing on &lt;a href=&quot;https://www.notion.so&quot;&gt;Notion&lt;/a&gt;. If you’re not famililar with Notion it started as a note taking app like Evernote. But it has turned into a suite of tools for project management, documentation, and collaboration. Random promotion of Notion aside I’ve got the system setup I just need to start the work.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Mon, 17 Mar 2025 09:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/03/17/starting-weeknotes.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/03/17/starting-weeknotes.html</guid>
@@ -916,7 +992,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;Then I had to decide what was even happening now which I kept pretty light as it is just a first pass. I think having the page out there and reviewing it periodically would be a good sanity check from time to time.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Fri, 06 Dec 2024 07:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/2024/12/06/now-2024.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2024/12/06/now-2024.html</guid>
@@ -944,7 +1024,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;There was a version of the site that included cards for the blog posts including gradient borders with rounded corners but I decided to scale that way back. I’m not sure about the dashed lines but they work for the moment. I miss cleaner sites so I have been looking at simpler sites for inspiration. There are some fun ideas out there that I plan to incorporate to the site or just as a prompt.&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Thu, 21 Nov 2024 07:30:00 -0500</pubDate>
         <link>http://localhost:4000/blog/2024/11/21/simple-silly.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2024/11/21/simple-silly.html</guid>
@@ -990,7 +1074,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@nathjennings_&quot;&gt;Photo by Nathan Jennings on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Fri, 26 Jul 2024 08:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2024/07/26/lighthouse.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2024/07/26/lighthouse.html</guid>
@@ -1026,7 +1114,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;&lt;em&gt;The image above is from a &lt;a href=&quot;https://leahandchristopherhimes.com&quot;&gt;wedding site&lt;/a&gt; I made but never showed to anyone but my wife.&lt;/em&gt;&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Thu, 11 Jul 2024 16:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2024/07/11/i-got-married.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2024/07/11/i-got-married.html</guid>
@@ -1050,7 +1142,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@ninjason&quot;&gt;Photo by Jason Leung on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sat, 13 Jan 2024 13:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/2024/01/13/add-comments.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2024/01/13/add-comments.html</guid>
@@ -1084,7 +1180,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@rzunikoff&quot;&gt;Photo by Raphael Schaller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Fri, 29 Dec 2023 08:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/2023/12/29/a-stream.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2023/12/29/a-stream.html</guid>
@@ -1120,7 +1220,11 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
 
 &lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@raphaelphotoch&quot;&gt;Photo by Raphael Schaller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sat, 12 Aug 2023 16:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2023/08/12/another-new-design.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2023/08/12/another-new-design.html</guid>
@@ -1150,7 +1254,11 @@ As a Product Owner the daily activities do not typically require much coding so 
 
 &lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@sortino&quot;&gt;Joshua Sortino on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sat, 14 May 2022 16:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2022/05/14/virtual.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2022/05/14/virtual.html</guid>
@@ -1175,7 +1283,11 @@ As a Product Owner the daily activities do not typically require much coding so 
 
 &lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@lemuelbutler&quot;&gt;Lemuel Butler on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2017/04/04/time-for-a-change.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2017/04/04/time-for-a-change.html</guid>
@@ -1195,7 +1307,11 @@ Today, I went as far as signing into Citrix, Trello, and Slack to plan the upcom
 
 &lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/royaannmiller&quot;&gt;Roya Ann Miller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-<p>Thanks for subscribing to the feed ❤️</p></description>
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
         <pubDate>Sun, 13 Sep 2015 16:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2015/09/13/take-it-home-with-you.html</guid>
