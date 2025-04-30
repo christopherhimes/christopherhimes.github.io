@@ -240,36 +240,15 @@ a, a:visited, a:hover .page-link {
   flex: 1 100%;
 }
 
-@media (max-width: 800px) {
-  .site-title {
-    font-size: 2em;
-    padding: 0;
-  }
-  hr {
-    width: 80%;
-  }
-  .wrapper {
-    width: 100%;
-  }
-  .home-wrapper {
-    flex-direction: column;
-    width: 90%;
-  }
-  .footer-wrapper {
-    flex-direction: column;
-    width: 100%;
-  }
-  .footer-col, .page-detail, .post-detail, .home-wrapper-column {
-    width: 90%;
-  }
-  .site-header {
-    justify-content: center;
-    flex-direction: column;
-  }
-  img {
-    width: 100%;
-  }
+.home-blog {
+  flex-direction: column;
 }
+
+.blogimg {
+  max-width: 750px;
+  border: 1px solid var(--text-color);
+}
+
 .article {
   border-width: 2px;
   border-style: solid;
@@ -304,6 +283,11 @@ a, a:visited, a:hover .page-link {
 .footer-wrapper {
   display: flex;
   justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+  flex: 1 100%;
   align-items: flex-start;
   gap: 1.5em;
 }
@@ -586,13 +570,11 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
 
 
 
-    </main><footer class="site-footer h-card"> 
-  <data class="u-url" href="/"></data>
-
-  <div class="wrapper">
-    <div class="footer-wrapper">
-      
+    </main><footer class="footer-wrapper"> 
+  <data class="u-url" href="/"></data>  
       <div class="footer-col">
+
+          <h3>Links</h3>
             <ul class="footer-links">
               <li>
                 <a rel="me" href="mailto:christopher@christopherhimes.com" title="Email me">email
@@ -620,13 +602,8 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 29, 2025 2:47 PM UTC-04:00</p>
+        <p>Site last published: April 30, 2025 10:56 AM UTC-04:00</p>
       </div>
-    </div>
-
-
-  </div>
-
 </footer>
 </body>
 
