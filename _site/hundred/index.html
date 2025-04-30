@@ -13,33 +13,24 @@
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="{% for post in paginator.posts %}
-  
-    
-      {{ post.title }}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
-    {{ post.blurb }}
-  
-  
-{% endfor %}
+  <meta name="description" content="[100 Days To Offload] is a challenge to publish 100 posts on your personal blog in a year.
+
+This is a dedicated page to list out the current progress for this challenge.
+
+{% assign tagged_posts = site.posts | where_exp: &quot;post&quot;, &quot;post.tags contains &apos;100 Days To Offload&apos;&quot; %}
+{% assign total = tagged_posts | size %}
+{% assign tagged_posts = tagged_posts %}
 
 
-
-  {% if paginator.previous_page %}
+  {% for post in tagged_posts %}
     
-      previous
-  {% else %}
-    previous
-  {% endif %}
-  
-    page: {{ paginator.page }} of {{ paginator.total_pages }}
-  
-  {% if paginator.next_page %}
-    next
-  {% else %}
-    next
-  {% endif %}">
+      {{ total | minus: forloop.index0 }}. 
+      {{ post.title }} - {{ post.date | date: &quot;%B %d, %Y&quot; }}
+    
+  {% endfor %}
+
+
+[100 Days To Offload]: https://100daystooffload.com/">
 
   
 
@@ -62,33 +53,24 @@
   
   <meta property="og:site_name" content="christopher himes">
   <meta property="og:title" content="hundred">
-  <meta property="og:description" content="{% for post in paginator.posts %}
-  
-    
-      {{ post.title }}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}
-    {{ post.blurb }}
-  
-  
-{% endfor %}
+  <meta property="og:description" content="[100 Days To Offload] is a challenge to publish 100 posts on your personal blog in a year.
+
+This is a dedicated page to list out the current progress for this challenge.
+
+{% assign tagged_posts = site.posts | where_exp: &quot;post&quot;, &quot;post.tags contains &apos;100 Days To Offload&apos;&quot; %}
+{% assign total = tagged_posts | size %}
+{% assign tagged_posts = tagged_posts %}
 
 
-
-  {% if paginator.previous_page %}
+  {% for post in tagged_posts %}
     
-      previous
-  {% else %}
-    previous
-  {% endif %}
-  
-    page: {{ paginator.page }} of {{ paginator.total_pages }}
-  
-  {% if paginator.next_page %}
-    next
-  {% else %}
-    next
-  {% endif %}">
+      {{ total | minus: forloop.index0 }}. 
+      {{ post.title }} - {{ post.date | date: &quot;%B %d, %Y&quot; }}
+    
+  {% endfor %}
+
+
+[100 Days To Offload]: https://100daystooffload.com/">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/new-face.webp">
@@ -377,137 +359,75 @@ a, a:visited, a:hover .page-link {
 <header>
   <h1 class="page-title">hundred</h1>
 </header>
-  
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/29/lighthouse-revisited.html">Lighthouse Revisited</a>
-    </h2>
-    <p>Apr 29, 2025&nbsp;<span class="reading_time">read in about 4 minutes</span></p>
-    <p>After a bit of trial and error both the mobile and desktop versions of the site have 100% for all four categories! 🎉</p>
-    <p><a class="blog-link" href="/blog/2025/04/29/lighthouse-revisited.html">Read More...</a></p>
-    
-    <div class="post-tags">
-      
-        <a class="tag-button" href="/tags/#Meta">Meta</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-        <a class="tag-button" href="/tags/#Performance">Performance</a>
-      
-        <a class="tag-button" href="/tags/#Accessibility">Accessibility</a>
-      
-        <a class="tag-button" href="/tags/#SEO">SEO</a>
-      
-        <a class="tag-button" href="/tags/#Best Practices">Best Practices</a>
-      
-        <a class="tag-button" href="/tags/#Light and Dark">Light and Dark</a>
-      
-        <a class="tag-button" href="/tags/#Lighthouse">Lighthouse</a>
-      
-    </div>
-  
-  </article>
-  <hr />
+  <p><a href="https://100daystooffload.com/">100 Days To Offload</a> is a challenge to publish 100 posts on your personal blog in a year.</p>
 
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/26/read-time-and-tags.html">Read Time and Tags</a>
-    </h2>
-    <p>Apr 26, 2025&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
-    <p>Having dramatically scaled back this site to make the restyling easier I have been slowly adding back in some removed features.</p>
-    <p><a class="blog-link" href="/blog/2025/04/26/read-time-and-tags.html">Read More...</a></p>
-    
-    <div class="post-tags">
-      
-        <a class="tag-button" href="/tags/#Meta">Meta</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
-  
-  </article>
-  <hr />
+<p>This is a dedicated page to list out the current progress for this challenge.</p>
 
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Week 17</a>
-    </h2>
-    <p>Apr 25, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Weather ☀️ has been nice so I've been working in the yard. The garden beds need some serious care so I'm getting them cleaned up and ready for planting.</p>
-    <p><a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Read More...</a></p>
-    
-    <div class="post-tags">
-      
-        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
-      
-        <a class="tag-button" href="/tags/#Week 17">Week 17</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
+<ul class="💯">
   
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/24/ibm-product-owner-certification.html">Product Owner Certification</a>
-    </h2>
-    <p>Apr 24, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes.</p>
-    <p><a class="blog-link" href="/blog/2025/04/24/ibm-product-owner-certification.html">Read More...</a></p>
-    
-    <div class="post-tags">
-      
-        <a class="tag-button" href="/tags/#Product Owner">Product Owner</a>
-      
-        <a class="tag-button" href="/tags/#Certification">Certification</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
+    <li>
+      12. 
+      <a href="/blog/2025/04/30/100-day-progress-page.html">Dedicated 100 Days To Offload Progress Page</a> - April 30, 2025
+    </li>
   
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/19/weeknotes-week16.html">Week 16</a>
-    </h2>
-    <p>Apr 19, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Job search, blogging, and Easter preparations.</p>
-    <p><a class="blog-link" href="/blog/2025/04/19/weeknotes-week16.html">Read More...</a></p>
-    
-    <div class="post-tags">
-      
-        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
-      
-        <a class="tag-button" href="/tags/#Week 16">Week 16</a>
-      
-        <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
-      
-        <a class="tag-button" href="/tags/#Overwatch 2">Overwatch 2</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
+    <li>
+      11. 
+      <a href="/blog/2025/04/29/lighthouse-revisited.html">Lighthouse Revisited</a> - April 29, 2025
+    </li>
   
-  </article>
-  <hr />
+    <li>
+      10. 
+      <a href="/blog/2025/04/26/read-time-and-tags.html">Read Time and Tags</a> - April 26, 2025
+    </li>
+  
+    <li>
+      9. 
+      <a href="/blog/2025/04/25/weeknotes-week17.html">Week 17</a> - April 25, 2025
+    </li>
+  
+    <li>
+      8. 
+      <a href="/blog/2025/04/24/ibm-product-owner-certification.html">Product Owner Certification</a> - April 24, 2025
+    </li>
+  
+    <li>
+      7. 
+      <a href="/blog/2025/04/19/weeknotes-week16.html">Week 16</a> - April 19, 2025
+    </li>
+  
+    <li>
+      6. 
+      <a href="/blog/2025/04/16/light-and-dark-revisited.html">Light and Dark Mode Revisited</a> - April 16, 2025
+    </li>
+  
+    <li>
+      5. 
+      <a href="/blog/2025/04/16/static-site-images.html">Static Site Images</a> - April 16, 2025
+    </li>
+  
+    <li>
+      4. 
+      <a href="/blog/2025/04/15/activitywatch.html">ActivityWatch</a> - April 15, 2025
+    </li>
+  
+    <li>
+      3. 
+      <a href="/blog/2025/04/15/colophon.html">Added a Colophon</a> - April 15, 2025
+    </li>
+  
+    <li>
+      2. 
+      <a href="/blog/2025/04/12/weeknotes-week15.html">Week 15</a> - April 12, 2025
+    </li>
+  
+    <li>
+      1. 
+      <a href="/blog/2025/04/11/100-days-to-offload.html">100 Days to Offload</a> - April 11, 2025
+    </li>
+  
+</ul>
 
 
-<!-- Pagination links -->
-<div class="pagination">
-  
-    <span class="previous">previous</span>
-  
-  <span class="page_number ">
-    page: 1 of 6
-  </span>
-  
-    <a href="/hundred/hundred/page/2/" class="next">next</a>
-  
-</div>
 </div>
     </main><footer class="footer-wrapper"> 
   <data class="u-url" href="/"></data>  
@@ -541,7 +461,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 30, 2025 10:56 AM UTC-04:00</p>
+        <p>Site last published: April 30, 2025 11:57 AM UTC-04:00</p>
       </div>
 </footer>
 </body>

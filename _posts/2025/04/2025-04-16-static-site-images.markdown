@@ -2,6 +2,7 @@
 layout: post
 title:  "Static Site Images"
 date:   2025-04-16 11:30:00
+modified_date: 2025-04-30 12:00:00
 tags: ['Meta', 'Images', '100 Days To Offload']
 blurb: I was recently reaking this blog post by Kev Quirk about image handling on his static site which inspired me to spend some time fixing the images on this site.
 
@@ -36,7 +37,7 @@ And here just because it would be bad form to have a post about images without i
 {% include img.html src='/blog/static-images/static-dinosaur.webp' alt='T-Rex roaring in an urban downtown area' %}
 Photo by [Huang Yingone]
       
-This is day 5 of #100DaysToOffload.
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
 
 [image handling]: https://kevquirk.com/blog/how-i-manage-jekyll-content
 [liquid code]: https://heymichellemac.com/jekyll-liquid-tags-code-snippet

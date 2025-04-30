@@ -2,6 +2,7 @@
 layout: post
 title:  "Week 15"
 date:   2025-04-12 14:00:00
+modified_date: 2025-04-30 12:00:00
 tags: ['Week Notes', 'Week 15', 'concert', 'Bright Eyes', 'Cursive','Cicada Detroit', '100 Days To Offload']
 blurb: Job search, birthday party, and a concert
 comments:
@@ -20,4 +21,4 @@ comments:
 * Remained stuck on Cicada Detroit puzzle 20.
 * Heading to the Zap Zone for my nephews birthday party.
 
-This is day 2 of #100DaysToOffload.
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.

@@ -6,9 +6,114 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 30 Apr 2025 10:56:42 -0400</pubDate>
-    <lastBuildDate>Wed, 30 Apr 2025 10:56:42 -0400</lastBuildDate>
+    <pubDate>Wed, 30 Apr 2025 11:57:22 -0400</pubDate>
+    <lastBuildDate>Wed, 30 Apr 2025 11:57:22 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Dedicated 100 Days To Offload Progress Page</title>
+        <description>&lt;p&gt;This one feels a bit like padding but I wanted to post it anyway. I have a few things in mind with the blog but I wanted to test the waters a bit with a dedicated page to the progress of the &lt;a href=&quot;https://100daystooffload.com/&quot;&gt;100 Days To Offload&lt;/a&gt; challenge.&lt;/p&gt;
+
+&lt;p&gt;I’ve added a &lt;a href=&quot;/hundred&quot;&gt;hundred&lt;/a&gt; page that will list out all the available posts that have been tagged with ‘100 Days To Offload.’ I’ve removed pagination, descriptions, tags, etc. and will just be presenting the number in the series, title, and original post date.&lt;/p&gt;
+
+&lt;p&gt;This of course is not an essential page for the site but what I wanted to focus on with its creation is filtering blog posts with &lt;a href=&quot;https://github.com/Shopify/liquid/wiki&quot;&gt;liquid&lt;/a&gt;. Which again is the template engine used by &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt; and others for generating static pages.&lt;/p&gt;
+
+&lt;p&gt;As of publishing this post the &lt;a href=&quot;/hundred&quot;&gt;hundred&lt;/a&gt; page is generated using the following code.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+{% assign tagged_posts = site.posts | where_exp: &quot;post&quot;, &quot;post.tags contains &apos;100 Days To Offload&apos;&quot; %}
+{% assign total = tagged_posts | size %}
+{% assign tagged_posts = tagged_posts %}
+
+&amp;lt;ul class=&quot;💯&quot;&amp;gt;
+  {% for post in tagged_posts %}
+    &amp;lt;li&amp;gt;
+      {{ total | minus: forloop.index0 }}. 
+      &amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt; - {{ post.date | date: &quot;%B %d, %Y&quot; }}
+    &amp;lt;/li&amp;gt;
+  {% endfor %}
+&amp;lt;/ul&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Since CSS supports using emoji for classes I had to go ahead and use 💯 to remove the bullets and padding from this unordered list.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+.💯 {
+    list-style: none;
+    padding-left: 0;
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I thought it was fun anyway.&lt;/p&gt;
+
+&lt;p&gt;The nice thing about having an existing tag with posts is that I can use this to experiment with loading pages prior to getting into the next project which is putting together a portfolio of sorts. With the right filtering and tagging the portfolio can be generated based on blog posts rather than a brand new construction. I’m sure I will need to populate these upcoming posts with more details to better support a more visual presentation that I have planned for them.&lt;/p&gt;
+
+&lt;p&gt;I’m a bit torn between the simplicity of the site currently and wanting to have some more visual representation. The trade off for now will be a portfolio section that is a bit more visual while keeping most of the site simple. I’m not a front-end developer but I would like to add something here that is a bit more engaging.&lt;/p&gt;
+
+&lt;p&gt;I’ve also went ahead and updated every post in this series so I don’t have to keep track of which post is which. Now each post includes a tag number that can be referenced as follows.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+This is day {{ page.tag_numbers[&quot;100 Days To Offload&quot;] }}  of #100DaysToOffload.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Each post within a series does not know how many other posts are in that series. Because of this a plugin was required to make this happen. Here is the plugin that I created to enable this functionality.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+# _plugins/tag_numbering.rb
+
+module Jekyll
+  class TagIndexer &amp;lt; Generator
+    safe true
+    priority :low
+
+    def generate(site)
+      tag_map = Hash.new { |hash, key| hash[key] = [] }
+
+      # Step 1: Group posts by tag
+      site.posts.docs.each do |post|
+        post.data[&apos;tags&apos;]&amp;amp;.each do |tag|
+          tag_map[tag] &amp;lt;&amp;lt; post
+        end
+      end
+
+      # Step 2: Sort posts and assign numbers
+      tag_map.each do |tag, posts|
+        sorted_posts = posts.sort_by { |p| p.data[&apos;date&apos;] }
+
+        sorted_posts.each_with_index do |post, index|
+          post.data[&apos;tag_numbers&apos;] ||= {}
+          post.data[&apos;tag_numbers&apos;][tag] = index + 1
+        end
+      end
+    end
+  end
+end
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;One downside to this is that GitHub Pages will not support this plugin but I use Netlify so that should not be an issue.&lt;/p&gt;
+
+&lt;p&gt;This is day 12  of #100DaysToOffload.&lt;/p&gt;
+
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Wed, 30 Apr 2025 09:30:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/04/30/100-day-progress-page.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/04/30/100-day-progress-page.html</guid>
+        
+        <category>Meta</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Lighthouse Revisited</title>
@@ -82,7 +187,7 @@
 
 &lt;p&gt;There are some optional items on the lighthouse page that I would like to pursue as well so this will likely get revisited again. For now things are faster and more people can interact comfortably with the site.&lt;/p&gt;
 
-&lt;p&gt;This is day 11 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 11  of #100DaysToOffload.&lt;/p&gt;
 
 
         <![CDATA[
@@ -134,7 +239,7 @@
 
 &lt;p&gt;Anyway, as with everything else around here it’s a work in progress.&lt;/p&gt;
 
-&lt;p&gt;This is day 10 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 10  of #100DaysToOffload.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
@@ -172,7 +277,7 @@
   &lt;li&gt;Today was my wife’s late mom’s birthday, so we went to the cemetery to honor her and place some flowers. The irises we planted last year are looking good which is nice. 💐&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This is day 9 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 9  of #100DaysToOffload.&lt;/p&gt;
 
         <![CDATA[
         <p>Thanks for subscribing to the feed ❤️</p>
@@ -201,7 +306,7 @@
 
 &lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;IBM Product Owner Certification&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/ibm-product-owner-certification/cert.webp&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is day 8 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 8  of #100DaysToOffload.&lt;/p&gt;
 
 
         <![CDATA[
@@ -239,7 +344,7 @@
   &lt;li&gt;Completed &lt;a href=&quot;https://overwatch.blizzard.com&quot;&gt;Overwatch 2&lt;/a&gt; drives.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This is day 7 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 7  of #100DaysToOffload.&lt;/p&gt;
 
 
         <![CDATA[
@@ -338,7 +443,7 @@
 
 &lt;p&gt;These screenshots were taken by me on 4/11/25.&lt;/p&gt;
 
-&lt;p&gt;This is day 6 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 6  of #100DaysToOffload.&lt;/p&gt;
 
 
         <![CDATA[
@@ -385,7 +490,7 @@
 &lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;T-Rex roaring in an urban downtown area&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/static-images/static-dinosaur.webp&quot; /&gt;
 Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyText&amp;amp;utm_medium=referral&amp;amp;utm_source=unsplash&quot;&gt;Huang Yingone&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;This is day 5 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 5  of #100DaysToOffload.&lt;/p&gt;
 
 
         <![CDATA[
@@ -413,7 +518,7 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
 
 &lt;p&gt;My intention for now is simply to use the reporting for self reflection. Not sure if I want to be publishing any stats publicly.&lt;/p&gt;
 
-&lt;p&gt;This is day 4 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 4  of #100DaysToOffload.&lt;/p&gt;
 
 
         <![CDATA[
@@ -443,7 +548,7 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
 
 &lt;p&gt;My intention is to record the site history, technology stack, and other details of the site there. Really though, check that out if you’re interested in what drives this site.&lt;/p&gt;
 
-&lt;p&gt;This is day 3 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 3  of #100DaysToOffload.&lt;/p&gt;
 
 
         <![CDATA[
@@ -479,7 +584,7 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
   &lt;li&gt;Heading to the Zap Zone for my nephews birthday party.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This is day 2 of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 2  of #100DaysToOffload.&lt;/p&gt;
 
         <![CDATA[
         <p>Thanks for subscribing to the feed ❤️</p>
@@ -508,7 +613,7 @@ Photo by &lt;a href=&quot;https://unsplash.com/@yingone?utm_content=creditCopyTe
     
       <item>
         <title>100 Days to Offload</title>
-        <description>&lt;p&gt;This is day 1 of #100DaysToOffload.&lt;/p&gt;
+        <description>&lt;p&gt;This is day 1  of #100DaysToOffload.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://100daystooffload.com/&quot;&gt;100 Days To Offload&lt;/a&gt; is a challenge to publish 100 posts on your personal blog in a year.&lt;/p&gt;
 

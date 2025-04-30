@@ -2,6 +2,7 @@
 layout: post
 title:  "Light and Dark Mode Revisited"
 date:   2025-04-16 14:30:00
+modified_date: 2025-04-30 12:00:00
 tags: ['CSS', 'Meta', '100 Days To Offload']
 blurb: I wanted to revisit the light and dark update as the original described some changes but didn't display how these changes impacted the experience on the site. Now that images are working a bit better I figured I would show exactly what's happening on the site in its current state.
 
@@ -82,6 +83,6 @@ One last thing is the use of gradients which also change in response to the ligh
 
 These screenshots were taken by me on 4/11/25.
 
-This is day 6 of #100DaysToOffload.
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
 
 [James G]: https://jamesg.blog/2025/04/03/light-dark-root

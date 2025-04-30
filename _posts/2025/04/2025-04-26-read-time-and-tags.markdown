@@ -2,6 +2,7 @@
 layout: post
 title:  "Read Time and Tags"
 date:   2025-04-26 15:00:00
+modified_date: 2025-04-30 12:00:00
 tags: ['Meta', '100 Days To Offload']
 blurb: Having dramatically scaled back this site to make the restyling easier I have been slowly adding back in some removed features.
 comments:
@@ -28,7 +29,7 @@ These are things I've liked from other sites I've visited and decided to incorpo
 
 Anyway, as with everything else around here it's a work in progress.
 
-This is day 10 of #100DaysToOffload.
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
 
 [jekyll_reading_time]: https://github.com/mslinn/jekyll_reading_time
 [todo]: /todo

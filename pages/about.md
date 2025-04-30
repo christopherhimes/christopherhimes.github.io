@@ -19,9 +19,11 @@ I've got plans for this site and I've started listing them out over on the [todo
 * [colophon]
 * [resume/cv]
 * [tags]
+* [hundred]
 
 [resume/cv]: ../cv
 [now]: ../now
 [todo]: ../todo
 [colophon]: /colophon
 [tags]: /tags
+[hundred]: /hundred

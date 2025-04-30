@@ -2,6 +2,7 @@
 layout: post
 title:  "Lighthouse Revisited"
 date:   2025-04-29 13:30:00
+modified_date: 2025-04-30 12:00:00
 tags: ['Meta', '100 Days To Offload', 'Performance', 'Accessibility', 'SEO', 'Best Practices', 'Light and Dark', 'Lighthouse']
 blurb: After a bit of trial and error both the mobile and desktop versions of the site have 100% for all four categories! 🎉
 comments:
@@ -76,7 +77,7 @@ After a bit of trial and error both the mobile and desktop versions of the site 
 
 There are some optional items on the lighthouse page that I would like to pursue as well so this will likely get revisited again. For now things are faster and more people can interact comfortably with the site.
 
-This is day 11 of #100DaysToOffload.
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
 
 [few months back]: /blog/2024/07/26/lighthouse
 [lighthouse]: https://github.com/GoogleChrome/lighthouse

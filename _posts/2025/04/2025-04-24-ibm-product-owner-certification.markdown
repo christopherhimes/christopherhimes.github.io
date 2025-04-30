@@ -4,7 +4,7 @@ title:  "Product Owner Certification"
 date:   2025-04-24 21:45:00
 tags: ['Product Owner', 'Certification', '100 Days To Offload']
 blurb: It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes.
-modified_date: 2025-04-25 16:35:00
+modified_date: 2025-04-30 12:00:00
 comments:
     id: 114395974514482224
 ---
@@ -17,8 +17,7 @@ I miss having a team that is building something together but that will come in t
       
 {% include img.html src='/blog/ibm-product-owner-certification/cert.webp' alt='IBM Product Owner Certification' %}
 
-
-This is day 8 of #100DaysToOffload.
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
 
 [LinkedIn]: https://www.linkedin.com/posts/cshimes_im-happy-to-share-that-ive-obtained-a-new-activity-7321214654741901342-Cws1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAPJn4kBFy4NXwLreMDW_px6yd7DGHMdwdc
 [Coursera verification]: https://coursera.org/verify/professional-cert/0T2T342WW0V7

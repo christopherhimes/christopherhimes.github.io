@@ -3,35 +3,23 @@ layout: page
 title: hundred
 # mainnav: true
 permalink: /hundred/
-pagination:
-  enabled: true
-  permalink: /hundred/page/:num/
 ---
-{% for post in paginator.posts %}
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-    <p>{{ post.blurb }}</p>
-  </article>
-  <hr />
-{% endfor %}
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      previous</a>
-  {% else %}
-    <span class="previous">previous</span>
-  {% endif %}
-  <span class="page_number ">
-    page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">next</a>
-  {% else %}
-    <span class="next ">next</span>
-  {% endif %}
-</div>
+[100 Days To Offload] is a challenge to publish 100 posts on your personal blog in a year.
+
+This is a dedicated page to list out the current progress for this challenge.
+
+{% assign tagged_posts = site.posts | where_exp: "post", "post.tags contains '100 Days To Offload'" %}
+{% assign total = tagged_posts | size %}
+{% assign tagged_posts = tagged_posts %}
+
+<ul class="💯">
+  {% for post in tagged_posts %}
+    <li>
+      {{ total | minus: forloop.index0 }}. 
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
+
+[100 Days To Offload]: https://100daystooffload.com/

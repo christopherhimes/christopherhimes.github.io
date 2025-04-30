@@ -155,6 +155,11 @@ section#comments .comment.verified .instance::before {
   font-size: 0.7em;
 }
 
+.💯 {
+  list-style: none;
+  padding-left: 0;
+}
+
 @media (max-width: 800px) {
   .site-title {
     font-size: 2em;

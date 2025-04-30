@@ -2,6 +2,7 @@
 layout: post
 title:  "Week 16"
 date:   2025-04-19 15:00:00
+modified_date: 2025-04-30 12:00:00
 tags: ['Week Notes', 'Week 16', 'Cicada Detroit', 'Overwatch 2', '100 Days To Offload']
 blurb: Job search, blogging, and Easter preparations.
 comments:
@@ -22,8 +23,7 @@ comments:
 * Drove my wife around on Friday while her car was in the shop again.
 * Completed [Overwatch 2] drives.
 
-
-This is day 7 of #100DaysToOffload.
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
 
 [Polonia]: https://polonia-restaurant.net/
 [New Palace Bakery]: http://www.newpalacebakery.com/
