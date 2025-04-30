@@ -13,7 +13,7 @@
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="This one feels a bit like padding but I wanted to post it anyway. I have a few things in mind with the blog but I wanted to test the waters a bit with a dedicated page to the progress of the 100 Days To Offload challenge. I’ve added a hundred page that will list out all the available posts that have been tagged with ‘100 Days To Offload.’ I’ve removed pagination, descriptions, tags, etc. and will just be presenting the number in the series, title, and original post date. This of course is not an essential page for the site but what I wanted to focus on with its creation is filtering blog posts with liquid. Which again is the template engine used by jekyll and others for generating static pages. As of publishing this post the hundred page is generated using the following code. {% assign tagged_posts = site.posts | where_exp: &quot;post&quot;, &quot;post.tags contains &apos;100 Days To Offload&apos;&quot; %} {% assign total = tagged_posts | size %} {% assign tagged_posts = tagged_posts %} &amp;lt;ul class=&quot;💯&quot;&amp;gt; {% for post in tagged_posts %} &amp;lt;li&amp;gt; {{ total | minus: forloop.index0 }}. &amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt; - {{ post.date | date: &quot;%B %d, %Y&quot; }} &amp;lt;/li&amp;gt; {% endfor %} &amp;lt;/ul&amp;gt; Since CSS supports using emoji for classes I had to go ahead and use 💯 to remove the bullets and padding from this unordered list. .💯 { list-style: none; padding-left: 0; } I thought it was fun anyway. The nice...">
+  <meta name="description" content="This one feels a bit like padding but I wanted to post it anyway. I have a few things in mind with the blog but I wanted to test the waters a bit with a dedicated page to the progress of the 100 Days To Offload challenge. I’ve added a hundred page that will list out all the available posts that have been tagged with ‘100 Days To Offload.’ I’ve removed pagination, descriptions, tags, etc. and will just be presenting the number in the series, title, and original post date. This of course is not an essential page for the site but what I wanted to focus on with its creation is filtering blog posts with liquid. Which again is the template engine used by jekyll and others for generating static pages. As of publishing this post the hundred page is generated using the following code. 1 2 3 4 5 6 7 8 9 10 11 12 {% assign tagged_posts = site.posts | where_exp: &quot;post&quot;, &quot;post.tags contains &apos;100 Days To Offload&apos;&quot; %} {% assign total = tagged_posts | size %} {% assign tagged_posts = tagged_posts %} &amp;lt;ul class=&quot;💯&quot;&amp;gt; {% for post in tagged_posts %} &amp;lt;li&amp;gt; {{ total | minus: forloop.index0 }}. &amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt; - {{ post.date | date: &quot;%B %d, %Y&quot; }} &amp;lt;/li&amp;gt; {% endfor %} &amp;lt;/ul&amp;gt; Since CSS supports using emoji for classes I had to go ahead and use 💯 to remove the bullets and padding from this unordered list. 1 2 3...">
 
   
 
@@ -36,7 +36,7 @@
   
   <meta property="og:site_name" content="christopher himes">
   <meta property="og:title" content="Dedicated 100 Days To Offload Progress Page">
-  <meta property="og:description" content="This one feels a bit like padding but I wanted to post it anyway. I have a few things in mind with the blog but I wanted to test the waters a bit with a dedicated page to the progress of the 100 Days To Offload challenge. I’ve added a hundred page that will list out all the available posts that have been tagged with ‘100 Days To Offload.’ I’ve removed pagination, descriptions, tags, etc. and will just be presenting the number in the series, title, and original post date. This of course is not an essential page for the site but what I wanted to focus on with its creation is filtering blog posts with liquid. Which again is the template engine used by jekyll and others for generating static pages. As of publishing this post the hundred page is generated using the following code. {% assign tagged_posts = site.posts | where_exp: &quot;post&quot;, &quot;post.tags contains &apos;100 Days To Offload&apos;&quot; %} {% assign total = tagged_posts | size %} {% assign tagged_posts = tagged_posts %} &amp;lt;ul class=&quot;💯&quot;&amp;gt; {% for post in tagged_posts %} &amp;lt;li&amp;gt; {{ total | minus: forloop.index0 }}. &amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt; - {{ post.date | date: &quot;%B %d, %Y&quot; }} &amp;lt;/li&amp;gt; {% endfor %} &amp;lt;/ul&amp;gt; Since CSS supports using emoji for classes I had to go ahead and use 💯 to remove the bullets and padding from this unordered list. .💯 { list-style: none; padding-left: 0; } I thought it was fun anyway. The nice...">
+  <meta property="og:description" content="This one feels a bit like padding but I wanted to post it anyway. I have a few things in mind with the blog but I wanted to test the waters a bit with a dedicated page to the progress of the 100 Days To Offload challenge. I’ve added a hundred page that will list out all the available posts that have been tagged with ‘100 Days To Offload.’ I’ve removed pagination, descriptions, tags, etc. and will just be presenting the number in the series, title, and original post date. This of course is not an essential page for the site but what I wanted to focus on with its creation is filtering blog posts with liquid. Which again is the template engine used by jekyll and others for generating static pages. As of publishing this post the hundred page is generated using the following code. 1 2 3 4 5 6 7 8 9 10 11 12 {% assign tagged_posts = site.posts | where_exp: &quot;post&quot;, &quot;post.tags contains &apos;100 Days To Offload&apos;&quot; %} {% assign total = tagged_posts | size %} {% assign tagged_posts = tagged_posts %} &amp;lt;ul class=&quot;💯&quot;&amp;gt; {% for post in tagged_posts %} &amp;lt;li&amp;gt; {{ total | minus: forloop.index0 }}. &amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt; - {{ post.date | date: &quot;%B %d, %Y&quot; }} &amp;lt;/li&amp;gt; {% endfor %} &amp;lt;/ul&amp;gt; Since CSS supports using emoji for classes I had to go ahead and use 💯 to remove the bullets and padding from this unordered list. 1 2 3...">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/new-face.webp">
@@ -311,6 +311,7 @@ a, a:visited, a:hover .page-link {
 }
   </style>
   <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
+  <link rel="stylesheet" href="/assets/css/syntax_monokai.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="low">
   <link href="/favicon.ico" rel="icon" type="image/x-icon">
   
 <script defer src="https://cloud.umami.is/script.js" data-website-id="7903148e-8cb8-40be-991a-b1343d8c556e"></script>
@@ -332,7 +333,7 @@ a, a:visited, a:hover .page-link {
     <p><time class="dt-published" datetime="2025-04-30T09:30:00-04:00" itemprop="datePublished">
         Apr 30, 2025
       </time>
-      &nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+      &nbsp;<span class="reading_time">read in about 5 minutes</span></p>
   </header>
     <article itemprop="articleBody">
       <p>This one feels a bit like padding but I wanted to post it anyway. I have a few things in mind with the blog but I wanted to test the waters a bit with a dedicated page to the progress of the <a href="https://100daystooffload.com/">100 Days To Offload</a> challenge.</p>
@@ -343,31 +344,43 @@ a, a:visited, a:hover .page-link {
 
 <p>As of publishing this post the <a href="/hundred">hundred</a> page is generated using the following code.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-{% assign tagged_posts = site.posts | where_exp: "post", "post.tags contains '100 Days To Offload'" %}
-{% assign total = tagged_posts | size %}
-{% assign tagged_posts = tagged_posts %}
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="cp">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">tagged_posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">posts</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">where_exp</span><span class="p">:</span><span class="w"> </span><span class="s2">"post"</span><span class="p">,</span><span class="w"> </span><span class="s2">"post.tags contains '100 Days To Offload'"</span><span class="w"> </span><span class="cp">%}</span>
+<span class="cp">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">tagged_posts</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">size</span><span class="w"> </span><span class="cp">%}</span>
+<span class="cp">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">tagged_posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">tagged_posts</span><span class="w"> </span><span class="cp">%}</span>
 
 &lt;ul class="💯"&gt;
-  {% for post in tagged_posts %}
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">tagged_posts</span><span class="w"> </span><span class="cp">%}</span>
     &lt;li&gt;
-      {{ total | minus: forloop.index0 }}. 
-      &lt;a href="{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt; - {{ post.date | date: "%B %d, %Y" }}
+      <span class="cp">{{</span><span class="w"> </span><span class="nv">total</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">minus</span><span class="p">:</span><span class="w"> </span><span class="nb">forloop.index0</span><span class="w"> </span><span class="cp">}}</span>. 
+      &lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="cp">}}</span>"&gt;<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="cp">}}</span>&lt;/a&gt; - <span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%B %d, %Y"</span><span class="w"> </span><span class="cp">}}</span>
     &lt;/li&gt;
-  {% endfor %}
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="cp">%}</span>
 &lt;/ul&gt;
-
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Since CSS supports using emoji for classes I had to go ahead and use 💯 to remove the bullets and padding from this unordered list.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-.💯 {
-    list-style: none;
-    padding-left: 0;
-}
-
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="o">.</span><span class="err">💯</span> <span class="p">{</span>
+    <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">padding-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <p>I thought it was fun anyway.</p>
 
@@ -377,46 +390,74 @@ a, a:visited, a:hover .page-link {
 
 <p>I’ve also went ahead and updated every post in this series so I don’t have to keep track of which post is which. Now each post includes a tag number that can be referenced as follows.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
-
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>This is day <span class="cp">{{</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">tag_numbers</span><span class="p">[</span><span class="s2">"100 Days To Offload"</span><span class="p">]</span><span class="w"> </span><span class="cp">}}</span>  of #100DaysToOffload.
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Each post within a series does not know how many other posts are in that series. Because of this a plugin was required to make this happen. Here is the plugin that I created to enable this functionality.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-# _plugins/tag_numbering.rb
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</pre></td><td class="code"><pre><span class="c1"># _plugins/tag_numbering.rb
+</span>
 
-module Jekyll
-  class TagIndexer &lt; Generator
-    safe true
-    priority :low
+<span class="k">module</span> <span class="nn">Jekyll</span>
+  <span class="k">class</span> <span class="nc">TagIndexer</span> <span class="o">&lt;</span> <span class="no">Generator</span>
+    <span class="n">safe</span> <span class="kp">true</span>
+    <span class="n">priority</span> <span class="ss">:low</span>
 
-    def generate(site)
-      tag_map = Hash.new { |hash, key| hash[key] = [] }
+    <span class="k">def</span> <span class="nf">generate</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
+      <span class="n">tag_map</span> <span class="o">=</span> <span class="no">Hash</span><span class="p">.</span><span class="nf">new</span> <span class="p">{</span> <span class="o">|</span><span class="nb">hash</span><span class="p">,</span> <span class="n">key</span><span class="o">|</span> <span class="nb">hash</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span> <span class="p">}</span>
 
-      # Step 1: Group posts by tag
-      site.posts.docs.each do |post|
-        post.data['tags']&amp;.each do |tag|
-          tag_map[tag] &lt;&lt; post
-        end
-      end
+      <span class="c1"># Step 1: Group posts by tag
+</span>
+      <span class="n">site</span><span class="p">.</span><span class="nf">posts</span><span class="p">.</span><span class="nf">docs</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">post</span><span class="o">|</span>
+        <span class="n">post</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'tags'</span><span class="p">]</span><span class="o">&amp;</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">tag</span><span class="o">|</span>
+          <span class="n">tag_map</span><span class="p">[</span><span class="n">tag</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">post</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
 
-      # Step 2: Sort posts and assign numbers
-      tag_map.each do |tag, posts|
-        sorted_posts = posts.sort_by { |p| p.data['date'] }
+      <span class="c1"># Step 2: Sort posts and assign numbers
+</span>
+      <span class="n">tag_map</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">tag</span><span class="p">,</span> <span class="n">posts</span><span class="o">|</span>
+        <span class="n">sorted_posts</span> <span class="o">=</span> <span class="n">posts</span><span class="p">.</span><span class="nf">sort_by</span> <span class="p">{</span> <span class="o">|</span><span class="nb">p</span><span class="o">|</span> <span class="nb">p</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span> <span class="p">}</span>
 
-        sorted_posts.each_with_index do |post, index|
-          post.data['tag_numbers'] ||= {}
-          post.data['tag_numbers'][tag] = index + 1
-        end
-      end
-    end
-  end
-end
-
-
-</code></pre></div></div>
+        <span class="n">sorted_posts</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">post</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+          <span class="n">post</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'tag_numbers'</span><span class="p">]</span> <span class="o">||=</span> <span class="p">{}</span>
+          <span class="n">post</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'tag_numbers'</span><span class="p">][</span><span class="n">tag</span><span class="p">]</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <p>One downside to this is that GitHub Pages will not support this plugin but I use Netlify so that should not be an issue.</p>
 
@@ -660,7 +701,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 30, 2025 12:05 PM UTC-04:00</p>
+        <p>Site last published: April 30, 2025 1:18 PM UTC-04:00</p>
       </div>
 </footer>
 </body>

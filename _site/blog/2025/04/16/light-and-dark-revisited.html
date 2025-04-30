@@ -311,6 +311,7 @@ a, a:visited, a:hover .page-link {
 }
   </style>
   <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
+  <link rel="stylesheet" href="/assets/css/syntax_monokai.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="low">
   <link href="/favicon.ico" rel="icon" type="image/x-icon">
   
 <script defer src="https://cloud.umami.is/script.js" data-website-id="7903148e-8cb8-40be-991a-b1343d8c556e"></script>
@@ -332,7 +333,7 @@ a, a:visited, a:hover .page-link {
     <p><time class="dt-published" datetime="2025-04-16T10:30:00-04:00" itemprop="datePublished">
         Apr 16, 2025
       </time>
-      &nbsp;<span class="reading_time">read in about 2 minutes</span><span class="reading_time">&nbsp;( Modified on<time datetime="2025-04-30T08:00:00-04:00" itemprop="dateModified">
+      &nbsp;<span class="reading_time">read in about 3 minutes</span><span class="reading_time">&nbsp;( Modified on<time datetime="2025-04-30T08:00:00-04:00" itemprop="dateModified">
           Apr 30, 2025
         </time>)</span></p>
   </header>
@@ -378,34 +379,34 @@ a, a:visited, a:hover .page-link {
 
 <p>Additionally, I’ve simplified the setup for light and dark based on a recent blog by <a href="https://jamesg.blog/2025/04/03/light-dark-root">James G</a> that was a follow up to his original post that inspired this setup in the first place. Previously the CSS suffered from the same redundancy he discussed in his blog post where every time a color was used it checked light-dark. Now this is baked into the :root variables like so:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
-    color-scheme: light dark;
-    --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
-    --foreground-color: light-dark(rgb(0, 119, 83), rgb(32, 255, 188));
-    --link-color: light-dark(rgb(1, 151, 189), rgb(25, 209, 255));
-    --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
-    --line-color: rgba(211, 211, 211, 30%);
-}
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">color-scheme</span><span class="p">:</span> <span class="n">light</span> <span class="n">dark</span><span class="p">;</span>
+    <span class="py">--background-color</span><span class="p">:</span> <span class="n">light-dark</span><span class="p">(</span><span class="nb">rgb</span><span class="p">(</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">),</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">));</span>
+    <span class="py">--foreground-color</span><span class="p">:</span> <span class="n">light-dark</span><span class="p">(</span><span class="nb">rgb</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">119</span><span class="p">,</span> <span class="m">83</span><span class="p">),</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">32</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">188</span><span class="p">));</span>
+    <span class="py">--link-color</span><span class="p">:</span> <span class="n">light-dark</span><span class="p">(</span><span class="nb">rgb</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">151</span><span class="p">,</span> <span class="m">189</span><span class="p">),</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">25</span><span class="p">,</span> <span class="m">209</span><span class="p">,</span> <span class="m">255</span><span class="p">));</span>
+    <span class="py">--text-color</span><span class="p">:</span> <span class="n">light-dark</span><span class="p">(</span><span class="nb">rgb</span><span class="p">(</span><span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">),</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">));</span>
+    <span class="py">--line-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">211</span><span class="p">,</span> <span class="m">211</span><span class="p">,</span> <span class="m">211</span><span class="p">,</span> <span class="m">30%</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <p>This allows h1 to be styled like so:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>h1 {
-    color: var(--foreground-color);
-} 
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--foreground-color</span><span class="p">);</span>
+<span class="p">}</span> 
 </code></pre></div></div>
 
 <p>One last thing is the use of gradients which also change in response to the light or dark settings from the user. One example is the site-tile which is just how my name at the top left on desktop or the top center on mobile is classed. The variables plug in just the same here but the added simplicity really helps the more complex -webkit-gradient lines legibility.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.site-title {
-    font-family: 'lato-normal', Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-}
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.site-title</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'lato-normal'</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.2em</span><span class="p">;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="n">-webkit-gradient</span><span class="p">(</span><span class="n">linear</span><span class="p">,</span> <span class="nb">left</span> <span class="nb">top</span><span class="p">,</span> <span class="nb">right</span> <span class="nb">bottom</span><span class="p">,</span> <span class="n">from</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--foreground-color</span><span class="p">)),</span> <span class="n">to</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--link-color</span><span class="p">)));</span>
+    <span class="nl">-webkit-background-clip</span><span class="p">:</span> <span class="nb">text</span><span class="p">;</span>
+    <span class="nl">background-clip</span><span class="p">:</span> <span class="nb">text</span><span class="p">;</span>
+    <span class="nl">-webkit-text-fill-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <p>These screenshots were taken by me on 4/11/25.</p>
@@ -652,7 +653,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 30, 2025 12:05 PM UTC-04:00</p>
+        <p>Site last published: April 30, 2025 1:18 PM UTC-04:00</p>
       </div>
 </footer>
 </body>

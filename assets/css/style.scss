@@ -57,6 +57,10 @@
     list-style: none;
     padding-left: 0;
 }
+pre {
+    overflow-x: auto;
+    width: 100%;
+  }
 @media (max-width: 800px) {
     .site-title {
         font-size: 2em;

@@ -14,7 +14,7 @@ I was recently reaking this blog post by Kev Quirk about [image handling] on his
 
 My includes are fairly similar to his but I'm passing a class as well.
 
-~~~
+~~~ liquid
 {% raw %}
 {{=<% %>=}}<img class="blogimg" alt="{{include.alt}}" loading="lazy" src="/assets/img/{{include.src}}" />
 {% endraw %}
@@ -22,7 +22,7 @@ My includes are fairly similar to his but I'm passing a class as well.
 
 The image line in each post is identical to his handling.
 
-~~~
+~~~ liquid
 {% raw %}
 {% include img.html src='' alt='' %}
 {% endraw %}

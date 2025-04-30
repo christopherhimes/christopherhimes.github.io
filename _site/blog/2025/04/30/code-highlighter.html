@@ -7,13 +7,45 @@
 
   
 
-  <title>A Stream?</title>
+  <title>Updated Code Block Styling</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time. First, lets talk audio. I’ve spent far too much time adjusting the audio for both personal streaming and for work. Current setup utilizes virtual cables and obs studio filters to achieve what I think is pretty good sounding audio. I’ve primarily been following EposVox audio quality guides. I’m using a shock mounted Yeti Blue microphone and passing it throught Noise Suppression using the built in RNNoise method. I haven’t noticed any CPU impact and this works so well. I have the gain on the microphone down very low but I’ve turned the digital gain boosted by 10 dB. This can sound weird without additional filtering but increases my volume without having to be right on top of the microphone. Next there are a few rounds of correcting for that initial gain boosting and making things sound good. The first round of EQ that uses ReaEQ mostly to cut highs, lows, and a few nasaly places in the mids. This is followed up with a compressor with a 3:1 ratio and a -20dB threshold. From there I do have a Noise Gate set but I’m not sure if it is strictly necessary with all the other things happening. Lastly, there is an additional EQ for some high end and...">
+  <meta name="description" content="Really didn’t like the look of code on the previous post. This has been on the todo list and I just went ahead and made it happen today. Now code is styled using rouge and monokai styling.
+
+Here is an example of html formatting with line numbers.
+
+1
+&amp;lt;marquee&amp;gt;Hello World!&amp;lt;/marquee&amp;gt;
+
+
+Here is a result of the impressive code.
+
+Hello World!
+
+This was implemented by updating the _config.yml for the site like so.
+
+1
+2
+3
+4
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+With the inclusion of styling css in the header.
+
+1
+&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/syntax_monokai.css&quot; media=&quot;print&quot; onload=&quot;this.onload=null;this.removeAttribute(&apos;media&apos;);&quot; fetchpriority=&quot;low&quot;&amp;gt;
+
+
+Not a lot to get it readable which is nice. I’m done with same day changes now I think.
+
+This is day 13  of #100DaysToOffload.">
 
   
 
@@ -35,19 +67,51 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="A Stream?">
-  <meta property="og:description" content="I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time. First, lets talk audio. I’ve spent far too much time adjusting the audio for both personal streaming and for work. Current setup utilizes virtual cables and obs studio filters to achieve what I think is pretty good sounding audio. I’ve primarily been following EposVox audio quality guides. I’m using a shock mounted Yeti Blue microphone and passing it throught Noise Suppression using the built in RNNoise method. I haven’t noticed any CPU impact and this works so well. I have the gain on the microphone down very low but I’ve turned the digital gain boosted by 10 dB. This can sound weird without additional filtering but increases my volume without having to be right on top of the microphone. Next there are a few rounds of correcting for that initial gain boosting and making things sound good. The first round of EQ that uses ReaEQ mostly to cut highs, lows, and a few nasaly places in the mids. This is followed up with a compressor with a 3:1 ratio and a -20dB threshold. From there I do have a Noise Gate set but I’m not sure if it is strictly necessary with all the other things happening. Lastly, there is an additional EQ for some high end and...">
+  <meta property="og:title" content="Updated Code Block Styling">
+  <meta property="og:description" content="Really didn’t like the look of code on the previous post. This has been on the todo list and I just went ahead and made it happen today. Now code is styled using rouge and monokai styling.
+
+Here is an example of html formatting with line numbers.
+
+1
+&amp;lt;marquee&amp;gt;Hello World!&amp;lt;/marquee&amp;gt;
+
+
+Here is a result of the impressive code.
+
+Hello World!
+
+This was implemented by updating the _config.yml for the site like so.
+
+1
+2
+3
+4
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+With the inclusion of styling css in the header.
+
+1
+&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/syntax_monokai.css&quot; media=&quot;print&quot; onload=&quot;this.onload=null;this.removeAttribute(&apos;media&apos;);&quot; fetchpriority=&quot;low&quot;&amp;gt;
+
+
+Not a lot to get it readable which is nice. I’m done with same day changes now I think.
+
+This is day 13  of #100DaysToOffload.">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/img/blog/a-stream/stream.webp">
+  <meta property="og:image" content="http://localhost:4000/assets/img/new-face.webp">
   
 
   
   <meta property="og:type" content="article">
   <meta property="og:article:author" content="Christopher Himes">
-  <meta property="og:article:published_time" content="2023-12-29T08:00:00-05:00">
-  <meta property="og:url" content="http://localhost:4000/blog/2023/12/29/a-stream.html">
-  <link rel="canonical" href="http://localhost:4000/blog/2023/12/29/a-stream.html">
+  <meta property="og:article:published_time" content="2025-04-30T10:30:00-04:00">
+  <meta property="og:url" content="http://localhost:4000/blog/2025/04/30/code-highlighter.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2025/04/30/code-highlighter.html">
   
   <style type="text/css">
     
@@ -329,51 +393,61 @@ a, a:visited, a:hover .page-link {
 <div class="" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-detail">
   <header>
-    <h1 class="post-title" itemprop="name headline">A Stream?</h1>
-    <p><time class="dt-published" datetime="2023-12-29T08:00:00-05:00" itemprop="datePublished">
-        Dec 29, 2023
+    <h1 class="post-title" itemprop="name headline">Updated Code Block Styling</h1>
+    <p><time class="dt-published" datetime="2025-04-30T10:30:00-04:00" itemprop="datePublished">
+        Apr 30, 2025
       </time>
-      &nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
   </header>
     <article itemprop="articleBody">
-      <p><img src="../../../../assets/img/blog/a-stream/stream.webp" alt="main-image" title="Stream" /></p>
+      <p>Really didn’t like the look of code on the previous post. This has been on the <a href="/todo">todo</a> list and I just went ahead and made it happen today. Now code is styled using <a href="https://github.com/rouge-ruby/rouge">rouge</a> and monokai styling.</p>
 
-<p>I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.</p>
+<p>Here is an example of html formatting with line numbers.</p>
 
-<!--more-->
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nt">&lt;marquee&gt;</span>Hello World!<span class="nt">&lt;/marquee&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
-<p>First, lets talk audio. I’ve spent far too much time adjusting the audio for both personal streaming and for work. Current setup utilizes <a href="https://vb-audio.com">virtual cables</a> and <a href="https://obsproject.com">obs</a> studio filters to achieve what I think is pretty good sounding audio. I’ve primarily been following <a href="https://www.youtube.com/@EposVox">EposVox</a> audio quality guides.</p>
+<p>Here is a result of the impressive code.</p>
 
-<p>I’m using a shock mounted Yeti Blue microphone and passing it throught Noise Suppression using the built in RNNoise method. I haven’t noticed any CPU impact and this works so well. I have the gain on the microphone down very low but I’ve turned the digital gain boosted by 10 dB. This can sound weird without additional filtering but increases my volume without having to be right on top of the microphone.</p>
+<marquee>Hello World!</marquee>
 
-<p>Next there are a few rounds of correcting for that initial gain boosting and making things sound good. The first round of EQ that uses ReaEQ mostly to cut highs, lows, and a few nasaly places in the mids. This is followed up with a compressor with a 3:1 ratio and a -20dB threshold. From there I do have a Noise Gate set but I’m not sure if it is strictly necessary with all the other things happening. Lastly, there is an additional EQ for some high end and normal speaking range boosting for clarity and to add interest.</p>
+<p>This was implemented by updating the _config.yml for the site like so.</p>
 
-<p>For the camera side I have a Razer Kiyo that has most of the default settings but with the white balance manually adjusted. It never quite gets that right and I haven’t found the right filters to counter it consistently. I do typically increase the contrast a little and apply a LUT. This is mostly to add back in some warmth as the default settings can read a bit cold. One thing I wanted to add is that the camera in obs has its own dedicated scene that is then added to other scenes to enable different presentation of the same source. I was running into an issue where changing it on one scene would change it in every scene. This is apparently a known thing about obs but it did cause some confusion.</p>
+<figure class="highlight"><pre><code class="language-text" data-lang="text"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+</pre></td></tr></tbody></table></code></pre></figure>
 
-<p>The baked in streaming setup for OBS is so good it doesn’t typically need to be tweaked. I spent the beter part of the last year streaming exclusively to twitch. This is for a few reasons. First, up until recently it was against twitch’s terms of service to stream to more than one platform. Also, for whatever reason I associate twitch with streaming more than YouTube.</p>
+<p>With the inclusion of styling css in the header.</p>
 
-<p>I have been experimenting doing both lately but have determined the only way for me to do that is to use a third party. Specifically, I’ve been using <a href="https://restream.io">Restream</a> to simultaneously stream to both twitch and YouTube. My upload bandwith is not good so I cannot support both at the same time myself. Setting these up is no more complicated than setting up accounts at each and giving access to Restream. The most complicated piece is setting some of the bitrate and sizing information that will work for both. My current setup is not as good for YouTube as it could be due to the limitations coming from twitch.</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/assets/css/syntax_monokai.css"</span> <span class="na">media=</span><span class="s">"print"</span> <span class="na">onload=</span><span class="s">"this.onload=null;this.removeAttribute('media');"</span> <span class="na">fetchpriority=</span><span class="s">"low"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
-<p>I stream infrequently, but when I do it’s at either <a href="https://www.twitch.tv/entropygrows/">EntropyGrows Twitch</a> or <a href="https://www.youtube.com/@entropygrows9669">EntropyGrows YouTube</a></p>
+<p>Not a lot to get it readable which is nice. I’m done with same day changes now I think.</p>
 
-<p><em>The image above is from <a href="https://unsplash.com/@rzunikoff">Photo by Raphael Schaller on Unsplash</a>.</em></p>
+<p>This is day 13  of #100DaysToOffload.</p>
 
 
       
       <div class="post-tags">
           
-            <a class="tag-button" href="/tags/#streaming">streaming</a>
+            <a class="tag-button" href="/tags/#Meta">Meta</a>
           
-            <a class="tag-button" href="/tags/#Twitch">Twitch</a>
+            <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
           
-            <a class="tag-button" href="/tags/#YouTube">YouTube</a>
-          
-            <a class="tag-button" href="/tags/#OBS">OBS</a>
+            <a class="tag-button" href="/tags/#Web Development">Web Development</a>
           
         </div>
       
     </article>
-  <a href="/blog/2023/12/29/a-stream.html" hidden></a>
+  <a href="/blog/2025/04/30/code-highlighter.html" hidden></a>
 </div>
 <div class="post-detail">
 <hr /></div>

@@ -48,7 +48,7 @@ The light mode which I imagine will be the way most people view the site uses an
 
 Additionally, I've simplified the setup for light and dark based on a recent blog by [James G] that was a follow up to his original post that inspired this setup in the first place. Previously the CSS suffered from the same redundancy he discussed in his blog post where every time a color was used it checked light-dark. Now this is baked into the :root variables like so:
 
-~~~
+~~~ css
 :root {
     color-scheme: light dark;
     --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
@@ -61,7 +61,7 @@ Additionally, I've simplified the setup for light and dark based on a recent blo
 
 This allows h1 to be styled like so:
 
-~~~
+~~~ css
 h1 {
     color: var(--foreground-color);
 } 
@@ -69,7 +69,7 @@ h1 {
 
 One last thing is the use of gradients which also change in response to the light or dark settings from the user. One example is the site-tile which is just how my name at the top left on desktop or the top center on mobile is classed. The variables plug in just the same here but the added simplicity really helps the more complex -webkit-gradient lines legibility.
 
-~~~
+~~~ css 
 .site-title {
     font-family: 'lato-normal', Arial, Helvetica, sans-serif;
     font-size: 1.2em;

@@ -15,7 +15,7 @@ This of course is not an essential page for the site but what I wanted to focus 
 
 As of publishing this post the [hundred] page is generated using the following code.
 
-~~~
+{% highlight liquid linenos %}
 {% raw %}
 {% assign tagged_posts = site.posts | where_exp: "post", "post.tags contains '100 Days To Offload'" %}
 {% assign total = tagged_posts | size %}
@@ -30,37 +30,34 @@ As of publishing this post the [hundred] page is generated using the following c
   {% endfor %}
 </ul>
 {% endraw %}
-~~~
+{% endhighlight %}
 
 Since CSS supports using emoji for classes I had to go ahead and use 💯 to remove the bullets and padding from this unordered list.
 
-~~~
-{% raw %}
+{% highlight css linenos %}
 .💯 {
     list-style: none;
     padding-left: 0;
 }
-{% endraw %}
-~~~
+{% endhighlight %}
 
 I thought it was fun anyway.
-
+ 
 The nice thing about having an existing tag with posts is that I can use this to experiment with loading pages prior to getting into the next project which is putting together a portfolio of sorts. With the right filtering and tagging the portfolio can be generated based on blog posts rather than a brand new construction. I'm sure I will need to populate these upcoming posts with more details to better support a more visual presentation that I have planned for them.
 
 I'm a bit torn between the simplicity of the site currently and wanting to have some more visual representation. The trade off for now will be a portfolio section that is a bit more visual while keeping most of the site simple. I'm not a front-end developer but I would like to add something here that is a bit more engaging.
 
 I've also went ahead and updated every post in this series so I don't have to keep track of which post is which. Now each post includes a tag number that can be referenced as follows.
 
-~~~
+{% highlight liquid linenos %}
 {% raw %}
 This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
 {% endraw %}
-~~~
+{% endhighlight %}
 
 Each post within a series does not know how many other posts are in that series. Because of this a plugin was required to make this happen. Here is the plugin that I created to enable this functionality.
 
-~~~
-{% raw %}
+{% highlight ruby linenos %}
 # _plugins/tag_numbering.rb
 
 module Jekyll
@@ -90,9 +87,7 @@ module Jekyll
     end
   end
 end
-
-{% endraw %}
-~~~
+{% endhighlight %}
 
 One downside to this is that GitHub Pages will not support this plugin but I use Netlify so that should not be an issue.
 

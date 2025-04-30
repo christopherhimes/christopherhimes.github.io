@@ -119,6 +119,7 @@
     {{ sass_file | scssify }}
   </style>
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
+  <link rel="stylesheet" href="{{ "/assets/css/syntax_monokai.css" | relative_url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="low">
   <link href="/favicon.ico" rel="icon" type="image/x-icon">
   {% if page.head-extra %}
   {% for file in page.head-extra %}

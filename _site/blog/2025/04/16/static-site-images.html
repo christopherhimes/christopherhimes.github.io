@@ -361,6 +361,7 @@ a, a:visited, a:hover .page-link {
 }
   </style>
   <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
+  <link rel="stylesheet" href="/assets/css/syntax_monokai.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="low">
   <link href="/favicon.ico" rel="icon" type="image/x-icon">
   
 <script defer src="https://cloud.umami.is/script.js" data-website-id="7903148e-8cb8-40be-991a-b1343d8c556e"></script>
@@ -391,15 +392,15 @@ a, a:visited, a:hover .page-link {
 
 <p>My includes are fairly similar to his but I’m passing a class as well.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-{{=&lt;% %&gt;=}}&lt;img class="blogimg" alt="{{include.alt}}" loading="lazy" src="/assets/img/{{include.src}}" /&gt;
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">{{</span>=&lt;%<span class="w"> </span>%&gt;=}}&lt;img<span class="w"> </span><span class="nv">class</span>="blogimg"<span class="w"> </span><span class="nv">alt</span>="{{include.alt}}"<span class="w"> </span><span class="nv">loading</span>="lazy"<span class="w"> </span><span class="nv">src</span>="/assets/img/{{include.src}}"<span class="w"> </span>/&gt;<span class="w">
 
-</code></pre></div></div>
+</span></code></pre></div></div>
 
 <p>The image line in each post is identical to his handling.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-{% include img.html src='' alt='' %}
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>img.html<span class="w"> </span><span class="na">src</span><span class="o">=</span><span class="s1">''</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s1">''</span><span class="w"> </span><span class="cp">%}</span>
 
 </code></pre></div></div>
 
@@ -654,7 +655,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: April 30, 2025 12:05 PM UTC-04:00</p>
+        <p>Site last published: April 30, 2025 1:18 PM UTC-04:00</p>
       </div>
 </footer>
 </body>

@@ -7,21 +7,47 @@
 
   
 
-  <title>I&apos;m Virtual Now</title>
+  <title>blog - page 7</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="Guess ‘now’ is relative with working at home for the last two years. As of yesterday I no longer have a desk at an office that I could return to when this whole pandemic blows over.
+  <meta name="description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
+    {{ post.blurb }}
+    Read More...
+    {% if post.tags %}
+    
+      {% for tag in post.tags %}
+        {{ tag }}
+      {% endfor %}
+    
+  {% endif %}
+  
+  
+{% endfor %}
 
-I have a new role, responsibilities, and more people relying on me than I ever have before. This requires me to make fewer explorations into pet projects. In the past I could find some faster way of doing something work related but now I need to delegate that activity to someone else.
 
-As a Product Owner the daily activities do not typically require much coding so I’m thinking of spending more personal time trying different things out. I downloaded blender again and am thinking of playing with some procedural generation. Last week I wrote some python code to grab some image data so I am thinking about some python projects down the road as well.
 
-Before digging too much into any of that this site’s dependencies are out of control and my plan is to remove them and simplify the entire setup. Not seeing the point in a build process that is broken every time I attempt to build this site. What I mean is the gulp setup will be scaled back dramatically and the patchwork of node modules that build this site will be mostly removed.
-
-The image above is from Joshua Sortino on Unsplash.">
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
 
@@ -43,27 +69,51 @@ The image above is from Joshua Sortino on Unsplash.">
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="I&apos;m Virtual Now">
-  <meta property="og:description" content="Guess ‘now’ is relative with working at home for the last two years. As of yesterday I no longer have a desk at an office that I could return to when this whole pandemic blows over.
+  <meta property="og:title" content="blog - page 7">
+  <meta property="og:description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
+    {{ post.blurb }}
+    Read More...
+    {% if post.tags %}
+    
+      {% for tag in post.tags %}
+        {{ tag }}
+      {% endfor %}
+    
+  {% endif %}
+  
+  
+{% endfor %}
 
-I have a new role, responsibilities, and more people relying on me than I ever have before. This requires me to make fewer explorations into pet projects. In the past I could find some faster way of doing something work related but now I need to delegate that activity to someone else.
 
-As a Product Owner the daily activities do not typically require much coding so I’m thinking of spending more personal time trying different things out. I downloaded blender again and am thinking of playing with some procedural generation. Last week I wrote some python code to grab some image data so I am thinking about some python projects down the road as well.
 
-Before digging too much into any of that this site’s dependencies are out of control and my plan is to remove them and simplify the entire setup. Not seeing the point in a build process that is broken every time I attempt to build this site. What I mean is the gulp setup will be scaled back dramatically and the patchwork of node modules that build this site will be mostly removed.
-
-The image above is from Joshua Sortino on Unsplash.">
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/img/blog/virtual/virtual.webp">
+  <meta property="og:image" content="http://localhost:4000/assets/img/new-face.webp">
   
 
   
-  <meta property="og:type" content="article">
-  <meta property="og:article:author" content="Christopher Himes">
-  <meta property="og:article:published_time" content="2022-05-14T16:00:00-04:00">
-  <meta property="og:url" content="http://localhost:4000/blog/2022/05/14/virtual.html">
-  <link rel="canonical" href="http://localhost:4000/blog/2022/05/14/virtual.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/blog/blog/page/7/">
+  <link rel="canonical" href="http://localhost:4000/blog/blog/page/7/">
   
   <style type="text/css">
     
@@ -340,54 +390,45 @@ a, a:visited, a:hover .page-link {
       </nav></nav>
 </header>
 <main class="wrapper" aria-label="Content">
-        
-
-<div class="" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="post-detail">
-  <header>
-    <h1 class="post-title" itemprop="name headline">I&#39;m Virtual Now</h1>
-    <p><time class="dt-published" datetime="2022-05-14T16:00:00-04:00" itemprop="datePublished">
-        May 14, 2022
-      </time>
-      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
-  </header>
-    <article itemprop="articleBody">
-      <p><img src="../../../..../../../../assets/img/blog/virtual/virtual.webp" alt="virtual-image" title="Virtual" /></p>
-
-<p>Guess ‘now’ is relative with working at home for the last two years. As of yesterday I no longer have a desk at an office that I could return to when this whole pandemic blows over.</p>
-
-<p>I have a new role, responsibilities, and more people relying on me than I ever have before. This requires me to make fewer explorations into pet projects. In the past I could find some faster way of doing something work related but now I need to delegate that activity to someone else.
-<!--more-->
-As a Product Owner the daily activities do not typically require much coding so I’m thinking of spending more personal time trying different things out. I downloaded <a href="https://blender.org">blender</a> again and am thinking of playing with some procedural generation. Last week I wrote some <a href="https://python.org">python</a> code to grab some image data so I am thinking about some python projects down the road as well.</p>
-
-<p>Before digging too much into any of that this site’s dependencies are out of control and my plan is to remove them and simplify the entire setup. Not seeing the point in a build process that is broken every time I attempt to build this site. What I mean is the <a href="http://gulpjs.com/">gulp</a> setup will be scaled back dramatically and the patchwork of node modules that build this site will be mostly removed.</p>
-
-<p><em>The image above is from <a href="https://unsplash.com/@sortino">Joshua Sortino on Unsplash</a>.</em></p>
-
-
+        <div class="page-detail">
+<header>
+  <h1 class="page-title">blog - page 7</h1>
+</header>
+  
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Take it Home With You</a>
+    </h2>
+    <p>Sep 13, 2015&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+    <p>The next two weeks are going to be exceedingly difficult not to bring work home.  I'm prone to work through things I'm working on at work while I'm at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.</p>
+    <p><a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Read More...</a></p>
+    
+    <div class="post-tags">
       
-      <div class="post-tags">
-          
-            <a class="tag-button" href="/tags/#work">work</a>
-          
-            <a class="tag-button" href="/tags/#blender">blender</a>
-          
-            <a class="tag-button" href="/tags/#python">python</a>
-          
-            <a class="tag-button" href="/tags/#gulp">gulp</a>
-          
-        </div>
+        <a class="tag-button" href="/tags/#work">work</a>
       
-    </article>
-  <a href="/blog/2022/05/14/virtual.html" hidden></a>
+        <a class="tag-button" href="/tags/#home">home</a>
+      
+    </div>
+  
+  </article>
+  <hr />
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/blog/page/6/" class="previous">
+      previous</a>
+  
+  <span class="page_number ">
+    page: 7 of 7
+  </span>
+  
+    <span class="next ">next</span>
+  
 </div>
-<div class="post-detail">
-<hr /></div>
 </div>
-
-
-
-
     </main><footer class="footer-wrapper"> 
   <data class="u-url" href="/"></data>  
       <div class="footer-col">

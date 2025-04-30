@@ -33,11 +33,12 @@ _Building a website To-do list_
 
 ### Other activities
 - [X] ~~Refactor critical.css as it no longer contains only the critical items~~ (Added 4/28/25).
+- [X] ~~~Update the styling of code blocks~~~ (Added 4/30/25).
 - [ ] Expriment with [FreshRSS].
 - [ ] Correct terminal in VSCodium.
 - [ ] Create a personal Product Owner portfolio.
 - [ ] Add unique text to RSS feed thanking them for subscribing.
-- [ ] Update the styling of code blocks.
+
  
 
 [/now]: /now

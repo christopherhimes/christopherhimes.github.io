@@ -47,6 +47,9 @@ feed_show_tags: true
 rss-description: "Christopher Himes RSS Feed"
 
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 exclude: 
   - CHANGELOG.md
