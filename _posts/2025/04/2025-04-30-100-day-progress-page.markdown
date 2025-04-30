@@ -3,9 +3,9 @@ layout: post
 title:  "Dedicated 100 Days To Offload Progress Page"
 date:   2025-04-30 13:30:00
 tags: ['Meta', '100 Days To Offload', ]
-blurb: 
+blurb: I've added a /hundred page that will list out all the available posts that have been tagged with '100 Days To Offload.'
 comments:
-    id: 
+    id: 114427762812698997
 ---
 This one feels a bit like padding but I wanted to post it anyway. I have a few things in mind with the blog but I wanted to test the waters a bit with a dedicated page to the progress of the [100 Days To Offload] challenge.
 
