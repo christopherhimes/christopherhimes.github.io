@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Updated Code Block Styling"
-date:   2025-04-30 14:30:00
+date:   2025-04-30 13:30:00
 tags: ['Meta', '100 Days To Offload', "Web Development"]
-blurb: eally didn’t like the look of code on the previous post. This has been on the todo list and I just went ahead and made it happen today. Now code is styled using rouge and monokai styling.
+blurb: Really didn’t like the look of code on the previous post. This has been on the todo list and I just went ahead and made it happen today. Now code is styled using rouge and monokai styling.
 comments:
-    id: 
+    id: 114428066848908841
 ---
 Really didn't like the look of code on the previous post. This has been on the [todo] list and I just went ahead and made it happen today. Now code is styled using [rouge] and monokai styling.
 

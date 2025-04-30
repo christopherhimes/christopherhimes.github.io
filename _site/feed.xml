@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 30 Apr 2025 13:18:20 -0400</pubDate>
-    <lastBuildDate>Wed, 30 Apr 2025 13:18:20 -0400</lastBuildDate>
+    <pubDate>Wed, 30 Apr 2025 13:21:17 -0400</pubDate>
+    <lastBuildDate>Wed, 30 Apr 2025 13:21:17 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -51,7 +51,7 @@ kramdown:
         <p>Thanks for subscribing to the feed ❤️</p>
         ]]>
         </description>
-        <pubDate>Wed, 30 Apr 2025 10:30:00 -0400</pubDate>
+        <pubDate>Wed, 30 Apr 2025 09:30:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2025/04/30/code-highlighter.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2025/04/30/code-highlighter.html</guid>
         
