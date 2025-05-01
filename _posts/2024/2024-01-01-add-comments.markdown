@@ -4,7 +4,7 @@ title:  "Add Comments"
 image: ../../../../assets/img/blog/add-comments/comments.webp
 cover-img: ../../../../assets/img/blog/add-comments/comments.webp
 thumbnail-img: ../../../../assets/img/blog/add-comments/comments.webp
-share-img: ../../../../assets/img/blog/add-comments/comments.webp
+share-img: /assets/img/blog/add-comments/comments.webp
 date:   2024-01-13 18:00:00
 tags: [comments]
 blurb: My blog has Mastodon powered comments now and this post is really just a test for that.

@@ -4,7 +4,7 @@ title:  "Another New Design"
 image: ../../../..../../../../assets/img/blog/another-new-design/design.webp
 cover-img: ../../../..../../../../assets/img/blog/another-new-design/design.webp
 thumbnail-img: ../../../..../../../../assets/img/blog/another-new-design/design.webp
-share-img: ../../../..../../../../assets/img/blog/another-new-design/design.webp
+share-img: /assets/img/blog/another-new-design/design.webp
 date:   2023-08-12 20:00:00
 tags: [site, design, lighthouse, accessibility]
 blurb: It's a new design, yes it is! This site gets more visual updates than it does blog posts but that's where we're at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.

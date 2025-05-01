@@ -13,3 +13,5 @@ gem 'jekyll-sitemap'
 gem "webrick"
 gem 'jekyll_reading_time'
 gem 'jekyll-minifier'
+gem 'mini_magick'
+# gem 'jekyll-unique-og-image'

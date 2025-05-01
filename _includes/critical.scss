@@ -119,8 +119,8 @@ a, a:visited, a:hover .page-link {
     text-decoration: none;
 }
 .site-header {
-    border-image: linear-gradient(34deg, var(--foreground-color), var(--link-color) 1);
-    border-width: 5px;
+    border-image: linear-gradient(34deg, var(--foreground-color), var(--link-color)) 1;
+    border-width: 7px;
     border-style: solid;
     border-left: 0;
     border-right: 0;

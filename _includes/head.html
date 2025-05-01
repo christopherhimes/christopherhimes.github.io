@@ -78,8 +78,10 @@
   {% endif %}
 
   {%- capture img -%}
-    {%- if page.share-img -%}
-      {{ page.share-img }}
+    {%- if page.og_image -%}
+      {{ page.og_image }}
+      {%- elsif page.share-img -%}
+        {{ page.share-img }}
     {%- elsif page.cover-img -%}
       {%- if page.cover-img.first -%}
         {{ page.cover-img[0].first.first }}
@@ -88,8 +90,8 @@
       {%- endif -%}
     {%- elsif page.thumbnail-img -%}
       {{ page.thumbnail-img }}
-    {%- elsif site.avatar -%}
-      {{ site.avatar }}
+    {%- elsif site.generic_share -%}
+      {{ site.generic_share }}
     {% endif %}
   {%- endcapture -%}
   {%- assign img=img | strip -%}

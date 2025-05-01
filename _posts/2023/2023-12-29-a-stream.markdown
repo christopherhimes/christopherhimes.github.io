@@ -4,7 +4,7 @@ title:  "A Stream?"
 image: ../../../../assets/img/blog/a-stream/stream.webp
 cover-img: ../../../../assets/img/blog/a-stream/stream.webp
 thumbnail-img: images/blog/a-stream/stream.webp
-share-img: ../../../../assets/img/blog/a-stream/stream.webp
+share-img: /assets/img/blog/a-stream/stream.webp
 date:   2023-12-29 13:00:00
 tags: [streaming, Twitch, YouTube, OBS]
 blurb: I've been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time. 

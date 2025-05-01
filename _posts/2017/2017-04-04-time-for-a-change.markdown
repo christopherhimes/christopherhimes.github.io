@@ -4,7 +4,7 @@ title:  "Time for a Change"
 image: ../../../../../../../../assets/img/blog/time-for-a-change/change.webp
 cover-img: ../../../../../../../../assets/img/blog/time-for-a-change/change.webp
 thumbnail-img: ../../../../../../../../assets/img/blog/time-for-a-change/change.webp
-share-img: ../../../../../../../../assets/img/blog/time-for-a-change/change.webp
+share-img: /assets/img/blog/time-for-a-change/change.webp
 date:   2017-04-04 20:40:00
 tags: 
 blurb: The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS. 
