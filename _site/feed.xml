@@ -6,9 +6,45 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 May 2025 13:31:07 -0400</pubDate>
-    <lastBuildDate>Thu, 01 May 2025 13:31:07 -0400</lastBuildDate>
+    <pubDate>Mon, 05 May 2025 14:30:52 -0400</pubDate>
+    <lastBuildDate>Mon, 05 May 2025 14:30:52 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Week 18</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Applied to some jobs.&lt;/li&gt;
+  &lt;li&gt;Revisited the lighthouse score for this site and &lt;a href=&quot;/blog/2025/04/29/lighthouse-revisited&quot;&gt;posted about it here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;🎥 Saw Sinners in IMAX with my brother. This is a movie that sticks with you afterward and definitely worth checking out.&lt;/li&gt;
+  &lt;li&gt;Created &lt;a href=&quot;/hundred&quot;&gt;/hundred&lt;/a&gt; a dedicated page for 100 Days To Offload posts.&lt;/li&gt;
+  &lt;li&gt;Created a plugin for jekyll in ruby to count the number of pages for 100 Days To Offload and &lt;a href=&quot;/blog/2025/04/30/100-day-progress-page&quot;&gt;wrote about it here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Updated the code highlighter for this site so future posts that include code will be easier to read.&lt;/li&gt;
+  &lt;li&gt;Added Open Graph images that are automatically generated when a post is created.&lt;/li&gt;
+  &lt;li&gt;🍿 watched A Complete Unknown the Bob Dylan movie with my wife. It was an enjoyable watch with Timothee Chalamet doing some incredible work.&lt;/li&gt;
+  &lt;li&gt;Took my wife to urgent care and eventually we missed her graduation to have surgery. Whether she walked or not she’s just completed her Master’s in Social Work and I’m so proud of her.&lt;/li&gt;
+  &lt;li&gt;Marathoned the first season and a half of True Blood with my wife while she recovered from surgery.&lt;/li&gt;
+  &lt;li&gt;Late posting this because I’ve been taking care of my wife..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is day 15  of #100DaysToOffload.&lt;/p&gt;
+
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Mon, 05 May 2025 11:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/05/05/weeknotes-week18.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/05/05/weeknotes-week18.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>Week 18</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Hi there</title>
