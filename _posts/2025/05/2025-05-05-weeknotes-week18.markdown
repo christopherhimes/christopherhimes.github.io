@@ -5,7 +5,7 @@ date:   2025-05-05 15:00:00
 tags: ['Week Notes', 'Week 18', '100 Days To Offload']
 blurb: This past week has been eventful so I'm late making this post.
 comments:
-    id: 
+    id: 114456674216418038
 ---
 
 * Applied to some jobs.
