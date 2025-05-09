@@ -5,7 +5,7 @@ date:   2025-05-09 15:00:00
 tags: ['Week Notes', 'Week 19', '100 Days To Offload']
 blurb: A shorter set of week notes this week as last week went long.
 comments:
-    id: 
+    id: 114479543742025944
 ---
 
 * Applied to some jobs.
