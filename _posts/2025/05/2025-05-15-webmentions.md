@@ -11,3 +11,6 @@ comments:
 
 This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
 
+
+https://aarongustafson.github.io/jekyll-webmention_io/
+https://aaronparecki.com/2018/06/30/11/your-first-webmention

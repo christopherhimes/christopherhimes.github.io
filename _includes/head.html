@@ -95,7 +95,7 @@
     {% endif %}
   {%- endcapture -%}
   {%- assign img=img | strip -%}
-
+  {% webmentions_head %}
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
 

@@ -35,6 +35,7 @@
 
   
   <meta property="og:site_name" content="christopher himes">
+  <link rel="dns-prefetch" href="https://webmention.io"><link rel="preconnect" href="https://webmention.io"><link rel="preconnect" href="ws://webmention.io:8080"><link rel="pingback" href="https://webmention.io/christopherhimes.com/xmlrpc"><link rel="webmention" href="https://webmention.io/christopherhimes.com/webmention">
   <meta property="og:title" content="Dedicated 100 Days To Offload Progress Page">
   <meta property="og:description" content="This one feels a bit like padding but I wanted to post it anyway. I have a few things in mind with the blog but I wanted to test the waters a bit with a dedicated page to the progress of the 100 Days To Offload challenge. I’ve added a hundred page that will list out all the available posts that have been tagged with ‘100 Days To Offload.’ I’ve removed pagination, descriptions, tags, etc. and will just be presenting the number in the series, title, and original post date. This of course is not an essential page for the site but what I wanted to focus on with its creation is filtering blog posts with liquid. Which again is the template engine used by jekyll and others for generating static pages. As of publishing this post the hundred page is generated using the following code. 1 2 3 4 5 6 7 8 9 10 11 12 {% assign tagged_posts = site.posts | where_exp: &quot;post&quot;, &quot;post.tags contains &apos;100 Days To Offload&apos;&quot; %} {% assign total = tagged_posts | size %} {% assign tagged_posts = tagged_posts %} &amp;lt;ul class=&quot;💯&quot;&amp;gt; {% for post in tagged_posts %} &amp;lt;li&amp;gt; {{ total | minus: forloop.index0 }}. &amp;lt;a href=&quot;{{ post.url }}&quot;&amp;gt;{{ post.title }}&amp;lt;/a&amp;gt; - {{ post.date | date: &quot;%B %d, %Y&quot; }} &amp;lt;/li&amp;gt; {% endfor %} &amp;lt;/ul&amp;gt; Since CSS supports using emoji for classes I had to go ahead and use 💯 to remove the bullets and padding from this unordered list. 1 2 3...">
 
@@ -664,6 +665,9 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
     }
   </script>
 </section><hr /></div>
+<div class="webmentions">
+  <p class="webmentions__not-found">No webmentions were found.</p>
+</div>
 </div>
 
 
@@ -701,7 +705,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: May 9, 2025 4:55 PM UTC-04:00</p>
+        <p>Site last published: May 9, 2025 5:39 PM UTC-04:00</p>
       </div>
 </footer>
 </body>
