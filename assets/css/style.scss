@@ -102,3 +102,8 @@ pre {
         // border: 1px solid red;
     }
 }
+a:focus-visible {
+    outline-offset: 0.25em;
+    outline-width: 0.25em;
+    outline-color: currentColor;
+  }

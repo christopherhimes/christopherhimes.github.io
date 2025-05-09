@@ -205,5 +205,10 @@ pre {
     width: 100%;
   }
 }
+a:focus-visible {
+  outline-offset: 0.25em;
+  outline-width: 0.25em;
+  outline-color: currentColor;
+}
 
 /*# sourceMappingURL=style.css.map */

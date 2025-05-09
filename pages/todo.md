@@ -23,21 +23,23 @@ _Building a website To-do list_
 - [X] ~~Add Tags to posts~~ (Added 4/6/25).
 - [X] ~~Add read time to posts~~ (Added 4/26/25).
 - [ ] Add higher resolution responsive images in modern web formats.
+- [X] ~~Add unique [Open Graph] image for each blog post. Inspired by this post from [Ethan]~~ (Added 5/1/25).
 - [ ] Add a sparkline that shows post frequency.
 - [ ] Add indicator for external links.
 - [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org]
 - [ ] Add light and dark mode toggle.
 - [ ] Enable posting to [IndieNews].
-- [ ] Add unique [Open Graph] image for each blog post. Inspired by this post from [Ethan].
+
 - [ ] Add related posts based on tags to the end of posts.
 
 ### Other activities
 - [X] ~~Refactor critical.css as it no longer contains only the critical items~~ (Added 4/28/25).
 - [X] ~~~Update the styling of code blocks~~~ (Added 4/30/25).
+- [X] ~~Correct terminal in VSCodium~~ (Added 5/1/25).
+- [X] ~~Add unique text to RSS feed thanking them for subscribing~~ (Added 5/1/25).
 - [ ] Expriment with [FreshRSS].
-- [ ] Correct terminal in VSCodium.
 - [ ] Create a personal Product Owner portfolio.
-- [ ] Add unique text to RSS feed thanking them for subscribing.
+
 
  
 
