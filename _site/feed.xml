@@ -6,9 +6,37 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 09 May 2025 17:45:28 -0400</pubDate>
-    <lastBuildDate>Fri, 09 May 2025 17:45:28 -0400</lastBuildDate>
+    <pubDate>Sat, 17 May 2025 15:25:59 -0400</pubDate>
+    <lastBuildDate>Sat, 17 May 2025 15:25:59 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Accessibility Day 2025</title>
+        <description>&lt;p&gt;May 15th 2025 was &lt;a href=&quot;https://accessibility.day/&quot;&gt;Accessibility Day&lt;/a&gt;. I started this post on the day but wasn unable to complete it in time.&lt;/p&gt;
+
+&lt;p&gt;I ran the &lt;a href=&quot;https://wave.webaim.org&quot;&gt;WAVE&lt;/a&gt; test and was happy with the results on the site.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;Past lighthouse scores of 100% in all categories but performance and accessibility at 95%&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/accessibility/score.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a lot more to consider and I’ll be working that into the ongoing changes here.&lt;/p&gt;
+
+&lt;p&gt;This is day 17  of #100DaysToOffload.&lt;/p&gt;
+
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Sat, 17 May 2025 11:15:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/05/17/accessibility.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/05/17/accessibility.html</guid>
+        
+        <category>Accessibility</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Week 19</title>
