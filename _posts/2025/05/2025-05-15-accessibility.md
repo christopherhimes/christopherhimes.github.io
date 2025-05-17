@@ -12,7 +12,7 @@ May 15th 2025 was [Accessibility Day]. I started this post on the day but wasn u
 
 I ran the [WAVE] test and was happy with the results on the site. 
 
-{% include img.html src='/blog/accessibility/score.webp' alt='Past lighthouse scores of 100% in all categories but performance and accessibility at 95%' %}
+{% include img.html src='/blog/accessibility/score.webp' alt='Zero errors on the accessibility test.' %}
 
 There is a lot more to consider and I'll be working that into the ongoing changes here.
 
