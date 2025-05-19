@@ -5,7 +5,7 @@ date:   2025-05-19 17:10:00
 tags: ['Week Notes', 'Week 20', '100 Days To Offload']
 blurb: Certified Scrum Product Owner, Mother's Day, and painting with a twist.
 comments:
-    id: 
+    id: 114536580253195660
 ---
 
 * Completed the CSPO class and am now a Cetrified Scrum Product Owner with Scrum Alliance.  
