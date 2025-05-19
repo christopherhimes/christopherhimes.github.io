@@ -7,32 +7,47 @@
 
   
 
-  <title>now</title>
+  <title>blog - page 8</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="__What I&apos;m doing now__
+  <meta name="description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
+    {{ post.blurb }}
+    Read More...
+    {% if post.tags %}
+    
+      {% for tag in post.tags %}
+        {{ tag }}
+      {% endfor %}
+    
+  {% endif %}
+  
+  
+{% endfor %}
 
-Updated March 22, 2025
-
-### Personal
-Leah and I have booked AirBNB&apos;s and we&apos;re still going to France.
-
-My position at JELD-WEN was eliminated and I was let go on 3/13/25. So, the job search begins!
-
-### Movies/TV
-Just finished Severance and this season hits a little different now. Dylan is literally rejected by a door company in the second episode.
-Also, we&apos;ve just finished the latest seasons of Traitors and Traitors UK. Those UK folks played a really fun game.
-
-### Music
-I&apos;ve still been listening to the Wicked soundtrack and the new Kendrick album. There has also been a bit of indie rock in there again.
-
-{% if page.title == &apos;now&apos; %}
 
 
-{% endif %}">
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
 
@@ -55,27 +70,42 @@ I&apos;ve still been listening to the Wicked soundtrack and the new Kendrick alb
   
   <meta property="og:site_name" content="christopher himes">
   <link rel="dns-prefetch" href="https://webmention.io"><link rel="preconnect" href="https://webmention.io"><link rel="preconnect" href="ws://webmention.io:8080"><link rel="pingback" href="https://webmention.io/christopherhimes.com/xmlrpc"><link rel="webmention" href="https://webmention.io/christopherhimes.com/webmention">
-  <meta property="og:title" content="now">
-  <meta property="og:description" content="__What I&apos;m doing now__
+  <meta property="og:title" content="blog - page 8">
+  <meta property="og:description" content="{% for post in paginator.posts %}
+  
+    
+      {{ post.title }}
+    
+    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
+    {{ post.blurb }}
+    Read More...
+    {% if post.tags %}
+    
+      {% for tag in post.tags %}
+        {{ tag }}
+      {% endfor %}
+    
+  {% endif %}
+  
+  
+{% endfor %}
 
-Updated March 22, 2025
-
-### Personal
-Leah and I have booked AirBNB&apos;s and we&apos;re still going to France.
-
-My position at JELD-WEN was eliminated and I was let go on 3/13/25. So, the job search begins!
-
-### Movies/TV
-Just finished Severance and this season hits a little different now. Dylan is literally rejected by a door company in the second episode.
-Also, we&apos;ve just finished the latest seasons of Traitors and Traitors UK. Those UK folks played a really fun game.
-
-### Music
-I&apos;ve still been listening to the Wicked soundtrack and the new Kendrick album. There has also been a bit of indie rock in there again.
-
-{% if page.title == &apos;now&apos; %}
 
 
-{% endif %}">
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
@@ -83,8 +113,8 @@ I&apos;ve still been listening to the Wicked soundtrack and the new Kendrick alb
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/now/">
-  <link rel="canonical" href="http://localhost:4000/now/">
+  <meta property="og:url" content="http://localhost:4000/blog/blog/page/8/">
+  <link rel="canonical" href="http://localhost:4000/blog/blog/page/8/">
   
   <style type="text/css">
     
@@ -363,61 +393,42 @@ a, a:visited, a:hover .page-link {
 <main class="wrapper" aria-label="Content">
         <div class="page-detail">
 <header>
-  <h1 class="page-title">now</h1>
+  <h1 class="page-title">blog - page 8</h1>
 </header>
-  <p><strong>What I’m doing now</strong></p>
+  
+  <article class="blog-entry">
+    <h2>
+      <a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Take it Home With You</a>
+    </h2>
+    <p>Sep 13, 2015&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+    <p>The next two weeks are going to be exceedingly difficult not to bring work home.  I'm prone to work through things I'm working on at work while I'm at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.</p>
+    <p><a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#work">work</a>
+      
+        <a class="tag-button" href="/tags/#home">home</a>
+      
+    </div>
+  
+  </article>
+  <hr />
 
-<p>Updated March 22, 2025</p>
 
-<h3 id="personal">Personal</h3>
-<p>Leah and I have booked AirBNB’s and we’re still going to France.</p>
-
-<p>My position at JELD-WEN was eliminated and I was let go on 3/13/25. So, the job search begins!</p>
-
-<h3 id="moviestv">Movies/TV</h3>
-<p>Just finished Severance and this season hits a little different now. Dylan is literally rejected by a door company in the second episode.
-Also, we’ve just finished the latest seasons of Traitors and Traitors UK. Those UK folks played a really fun game.</p>
-
-<h3 id="music">Music</h3>
-<p>I’ve still been listening to the Wicked soundtrack and the new Kendrick album. There has also been a bit of indie rock in there again.</p>
-
-<script type="text/javascript">
-
-fetch('../../.netlify/functions/hide-token')
-    .then(response => response.json())
-    .then(data => {
-        // console.log(data.message)
-        const api_key = data.message
-        const MY_USERNAME = 'cshmes';
-        const request = new XMLHttpRequest();
-        // console.log(api_key)
-        request.open('GET', 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+[MY_USERNAME]+'&api_key='+api_key+'&format=json');
-        request.send(); 
-
-        request.onload = () => {
-            if (request.status === 200) {
-                // console.log("Success");
-
-                var track = JSON.parse(request.response).recenttracks.track[0];
-                var song = track.name;
-                var artist = track.artist['#text'];
-                var album = track.album['#text'];
-
-                const container = document.getElementById('result');
-                container.innerHTML = 'Last listened to 🎵 ' + song + ' - <i>' + artist + '</i> - <u>' + album + "</u> 🎵 as scrobbled by <a href='https://last.fm/user/cshmes'>last.fm</a>"; 
-                // console.log(JSON.parse(request.response).recenttracks.track[0]);  
-            } 
-        };
-
-        request.onerror = () => {
-        console.log("error")
-        };
-    })
-
-</script>
-
-<div id="result"></div>
-
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/blog/page/7/" class="previous">
+      previous</a>
+  
+  <span class="page_number ">
+    page: 8 of 8
+  </span>
+  
+    <span class="next ">next</span>
+  
+</div>
 </div>
     </main><footer class="footer-wrapper"> 
   <data class="u-url" href="/"></data>  
