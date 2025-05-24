@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<script src="/assets/js/mentions-united.js"></script>
+<script src="/assets/js/mentions-united-provider_webmentions.js"></script>
+<script src="/assets/js/mentions-united-provider_mastodon.js"></script>
+<script src="/assets/js/mentions-united-renderer_list.js"></script>
+<body>
+<script>
+window.addEventListener('load', function() {
+
+  const mentionsUnited = new MentionsUnited({
+    ownerName: "Christopher Himes"
+  },
+  [
+    new MentionsUnitedProvider_Webmentions({
+      originalUrl: "https://christopherhimes.com/blog/2025/05/09/weeknotes-week19",
+      tryResolveTitle: true
+    }),  
+    new MentionsUnitedRenderer_List({
+      placeholderId: "interactions-list-placeholder"
+    })
+  ]);
+
+  mentionsUnited.load()
+    .then(() => {
+      return mentionsUnited.show();
+    })
+    .then((count) => {
+      // do something final... 
+    });
+
+});
+</script>
+<div id="interactions" class="article-interactions">
+  <h2>Interactions</h2>
+  
+  <div class="message loading">Loading</div>
+
+  <div id="interactions-likes-placeholder"></div>
+  <div id="interactions-reposts-placeholder"></div>
+  <div id="interactions-list-placeholder"></div>
+
+<div>
+</body>
+</html>

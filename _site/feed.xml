@@ -6,9 +6,40 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 19 May 2025 17:24:06 -0400</pubDate>
-    <lastBuildDate>Mon, 19 May 2025 17:24:06 -0400</lastBuildDate>
+    <pubDate>Sat, 24 May 2025 13:52:31 -0400</pubDate>
+    <lastBuildDate>Sat, 24 May 2025 13:52:31 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Week 21</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Pulled weeds and double turned the garden beds in advance of planting the vegetable garden.&lt;/li&gt;
+  &lt;li&gt;Cleaned up the back yard, removing old leaves overgrown trees along the fence, and sweeping out the trampoline.&lt;/li&gt;
+  &lt;li&gt;Made more changes to the resume removing some uses of the word ‘product’ to focus more on product ownership rather than the product that was represented in the retail catalog.&lt;/li&gt;
+  &lt;li&gt;Bought an external CD/DVD drive to start digitalizing some items. I’ve been in a chicken 🐔 or the egg 🥚 situation with getting a NAS so I’m going to use some free time to put together the media that would fill out the library. I’m using the beta Linux version of &lt;a href=&quot;https://www.makemkv.com/&quot;&gt;MakeMKV&lt;/a&gt; for this.&lt;/li&gt;
+  &lt;li&gt;Installed and setup &lt;a href=&quot;jellyfin.org&quot;&gt;Jellyfin&lt;/a&gt; on my computer. This required updating the /etc/fstab file as I had some user specific items in there that was preventing Jellyfin from detecting the existing media. After that it was an easy setup and connection to the apps on both my phone and Roku.&lt;/li&gt;
+  &lt;li&gt;Spent some time experimenting with Webmentions. I have a blog post in my drafts folder but I haven’t decided on the exact implementation just yet. I did run a test and confirm it works I just haven’t written all I want to say just yet.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is day 19  of #100DaysToOffload.&lt;/p&gt;
+
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Sat, 24 May 2025 13:10:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/05/24/weeknotes-week21.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/05/24/weeknotes-week21.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>Week 21</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Week 20</title>
