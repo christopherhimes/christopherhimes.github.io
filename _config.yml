@@ -67,7 +67,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll_reading_time
-  - jekyll-webmention_io
+  # - jekyll-webmention_io
 
 
 pagination:
@@ -105,8 +105,8 @@ pagination:
 #   preserve_patterns:                # Default: (empty)
 #   uglifier_args:                    # Default: (empty)
 
-webmentions:
-  username: christopherhimes.com
-  pages: true
-  collections:
-    - webmentions
+# webmentions:
+#   username: christopherhimes.com
+#   pages: true
+#   collections:
+#     - webmentions

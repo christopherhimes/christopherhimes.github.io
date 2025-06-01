@@ -6,9 +6,53 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 24 May 2025 14:18:33 -0400</pubDate>
-    <lastBuildDate>Sat, 24 May 2025 14:18:33 -0400</lastBuildDate>
+    <pubDate>Sun, 01 Jun 2025 18:06:38 -0400</pubDate>
+    <lastBuildDate>Sun, 01 Jun 2025 18:06:38 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Week 22</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Went to the farmer’s market and at 8 am it was already bumpin.
+    &lt;ul&gt;
+      &lt;li&gt;Bought starters for tomatoes, green bell peppers, cucumbers, and zuchinnis (cukes and zukes as the kids are saying).&lt;/li&gt;
+      &lt;li&gt;Got two lantanas for my wife. She really loves the small bursts of colors.&lt;/li&gt;
+      &lt;li&gt;Picked us up some starbys ⭐☕ on the way home.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Planted the starters I got from the farmer’s market as well as some seeds I had from last year. These included lettuce, spinach, beans, peas, carrots, onions, chives, tarragon, and sunflowers.&lt;/li&gt;
+  &lt;li&gt;Doing any kinda gardening directly under an established tree is a bit of a nightmare. I have two garbage cans full of tree roots if you’re interested.&lt;/li&gt;
+  &lt;li&gt;Split some hostas to add more to the freshly mulched front landscaping.&lt;/li&gt;
+  &lt;li&gt;I’ve been on a tear digitizing our DVD collections using &lt;a href=&quot;https://www.makemkv.com/&quot;&gt;MakeMKV&lt;/a&gt;. I’m through mine and have made a sizable dent in Leah’s. I’m also using &lt;a href=&quot;https://handbrake.fr/&quot;&gt;HandBrake&lt;/a&gt; to make the files a bit more manageable.&lt;/li&gt;
+  &lt;li&gt;I added accounts for Leah and Noah within &lt;a href=&quot;jellyfin.org&quot;&gt;Jellyfin&lt;/a&gt; so we can have our own watch history.&lt;/li&gt;
+  &lt;li&gt;Pulled out the webmention work for the time being as I haven’t gotten it to a good point as of yet.&lt;/li&gt;
+  &lt;li&gt;Took an assessment an was able to schedule an initial interview next week which is nice.&lt;/li&gt;
+  &lt;li&gt;Made an appointment at the library to convert a VHS tape to digital. They have a media lab and have a number of devices for converting media.&lt;/li&gt;
+  &lt;li&gt;Spent some time removing duplicate photos from my collection using &lt;a href=&quot;https://www.digikam.org/&quot;&gt;digiKam&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Updated meta data for my music files using &lt;a href=&quot;https://picard.musicbrainz.org/&quot;&gt;MusicBrainz Picard&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Wrote a bit of a a lengthy post I will be publishing on 6/2.&lt;/li&gt;
+  &lt;li&gt;I’m backdating this post please forgive me.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is day 20  of #100DaysToOffload.&lt;/p&gt;
+
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Sat, 31 May 2025 13:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/05/31/weeknotes-week22.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/05/31/weeknotes-week22.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>Week 22</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Week 21</title>

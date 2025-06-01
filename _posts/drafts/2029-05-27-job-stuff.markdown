@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "Job Stuff"
+date:   2025-06-02 14:15:00
+tags: ['100 Days To Offload']
+blurb: 
+comments: 
+    id: 
+---
+
+## 2008
+* Start June 2nd - Milliken Millwork.
+* Product training and onboarding.
+* Trip to Klamath, OR for training from the developers at JELD-WEN.
+* Initial catalog build was for Home Depot and it was created by JELD-WEN and the marketing department.
+    * Had to go to Atlanta to test the catalog at THD's headquarters. Stage environment testing took place on-site and would continue for both retailers for years.
+* After returning from training work began on bug fixes via [Track-IT] and setup to support another retailer. We were already building out support for Lowe's.
+
+## 2009
+* Early in the year the Milliken retail catalog is available at both major retailers. Lowe's required breaking up the roll out by store and product category (Exterior, Interior, Patio).
+* Wrote a program in Visual Studio 6.0 to monitor a folder that would periodically receive EDI orders. Orders were parsed into Excel documents for formatting purposes, they were then sent to a local printer, and both EDI and Excel files were archived. 
+* Added a Tax Credit question to the catalog and all the filtering necessary to hide products that did not meet the Energy Star requirements which disqualified the items from the credit.
+* Updates happened more slowly at this time and we were largely just resolving issues without adding anything major to the experience. This was a time that everything offered appeared in the printed price pages. A simpler time.
+* Not sure if it 
+
+## 2010
+* Added Commercial Doors to the offering. A brand new offering to the company and the largest addition I made to the catalog to date. Since this category is heavy on hardware additional layers were added to visualization to include exit devices, closers, and kick plates.
+* Built a revamped website with branding similar to the new price pages which were also launching. The site included links to brochures, the usual business site pages (About, Locations, Careers), and a combination Dealer Login and Quick Order Info Search. None of the forms work but you can [still see most of it].
+    * The Quick Order Info Search was probably the best thing about the site at this time. A customer could go to the site with a purchase order number and their Zip code and see the status of the order. This prevented a call in these situations which mean customer service could be dedicated to new business and resolving issues.
+    * The Dealer Login was a fully custom secure area with registration, password management, and the ability to review all pending orders.
+
+## 2011
+* Worked with a website company to build [a new site] with products listed out and an online configurator. Using the data from the retail configurators, enriching it with customer facing terms, and using jquery to allow for custom configurations. 
+* Site also included a dealer locator that required geocoding dealer's addresses and connecting to google map API to determine location relative to zip or address provided. The distance calculated took into account the curvature of the earth which still amuses me.
+
+## 2012
+* Home Depot was switching to WTS Paradigm so I spent a week in Atlanta learning the new software. When I got back immediately got started building out the new catalog with the help of a consultant.
+
+## 2013
+* Stom Doors were added to the offering and were added to both retail catalogs and the website.
+
+## 2014
+
+## 2015
+* Added 14k special order interior doors to the catalog utilizing ImageMagick for manipulating thousands of unique images.
+* Added catalog support for selling to Menards.
+* Transitioned to local hosting for retail catalog including build management and admin duties.
+* Met my future wife!
+
+## 2016
+## 2017
+## 2018
+## 2019
+## 2020
+## 2021
+## 2022
+## 2023
+## 2024
+## 2025
+* End March 13th.
+
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
+
+[Track-IT]: https://www.trackit.com/
+[still see most of it]: https://web.archive.org/web/20100517114144/http://millikenmillwork.com/
+[a new site]: https://web.archive.org/web/20111120183229/http://www.millikenmillwork.com/
