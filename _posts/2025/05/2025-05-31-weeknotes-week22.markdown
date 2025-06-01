@@ -5,7 +5,7 @@ date:   2025-05-31 17:00:00
 tags: ['Week Notes', 'Week 22', '100 Days To Offload']
 blurb: Backdated Week Notes. I'm swear I'll get back on schedule here eventually.
 comments:
-    id: 
+    id: 114610432049631543
 ---
 
 * Went to the farmer's market and at 8 am it was already bumpin.
