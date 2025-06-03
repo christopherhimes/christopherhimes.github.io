@@ -5,7 +5,7 @@ date:   2025-06-02 21:00:00
 tags: ['work', 'work history', '100 Days To Offload']
 blurb: I won't do this non-anniversary thing again but today would have been 17 years
 comments: 
-    id: 
+    id: 114617007320064900
 ---
 
 I don't know if it is nostalgia or what but I've spent the past few weeks thinking about my previous employment. Maybe it's just a consequence of job searching while between jobs that will do that to a person. One thing it has taught me is to do a better job of making notes about what you're doing in the moment. I'm sure I've forgot something or will be tweaking this in the future.
