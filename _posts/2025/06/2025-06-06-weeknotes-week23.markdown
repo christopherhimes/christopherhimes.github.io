@@ -5,7 +5,7 @@ date:   2025-06-06 17:00:00
 tags: ['Week Notes', 'Week 23', '100 Days To Offload']
 blurb: Be Kind Rewind
 comments:
-    id: 
+    id: 114638907998675900
 ---
 
 * Converted the VHS tapes I had planned to at the library. They were pretty degraded so they're not much to look at or anything. I was able to bring one into [Kdenlive] and EQ away some staticy bits that were making it incredibly annoying to listen to atleast. Still there are many artifacts and I will probably experiment with removing them if possible.
