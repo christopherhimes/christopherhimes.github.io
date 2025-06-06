@@ -10,7 +10,7 @@ pagination:
 {% for post in paginator.posts %}
   <article class="blog-entry">
     <h2>
-      <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}{% if post.rating %}&nbsp;({{ post.rating }}){% endif %}</a>
     </h2>
     <p>{{ post.date | date: "%b %-d, %Y" }}&nbsp;<span class="reading_time">read in {{ post.content | reading_time }}</span></p>
     <p>{{ post.blurb }}</p>

@@ -16,7 +16,7 @@
   <meta name="description" content="{% for post in paginator.posts %}
   
     
-      {{ post.title }}
+      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
     
     {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
     {{ post.blurb }}
@@ -73,7 +73,7 @@
   <meta property="og:description" content="{% for post in paginator.posts %}
   
     
-      {{ post.title }}
+      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
     
     {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
     {{ post.blurb }}
@@ -397,6 +397,29 @@ a, a:visited, a:hover .page-link {
   
   <article class="blog-entry">
     <h2>
+      <a class="blog-link" href="/blog/2023/12/29/a-stream.html">A Stream?</a>
+    </h2>
+    <p>Dec 29, 2023&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+    <p>I've been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.</p>
+    <p><a class="blog-link" href="/blog/2023/12/29/a-stream.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#streaming">streaming</a>
+      
+        <a class="tag-button" href="/tags/#Twitch">Twitch</a>
+      
+        <a class="tag-button" href="/tags/#YouTube">YouTube</a>
+      
+        <a class="tag-button" href="/tags/#OBS">OBS</a>
+      
+    </div>
+  
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
       <a class="blog-link" href="/blog/2023/08/12/another-new-design.html">Another New Design</a>
     </h2>
     <p>Aug 12, 2023&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
@@ -522,7 +545,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: June 2, 2025 10:12 PM UTC-04:00</p>
+        <p>Site last published: June 6, 2025 6:30 PM UTC-04:00</p>
       </div>
 </footer>
 </body>

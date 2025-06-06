@@ -6,9 +6,43 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 02 Jun 2025 22:12:44 -0400</pubDate>
-    <lastBuildDate>Mon, 02 Jun 2025 22:12:44 -0400</lastBuildDate>
+    <pubDate>Fri, 06 Jun 2025 18:30:42 -0400</pubDate>
+    <lastBuildDate>Fri, 06 Jun 2025 18:30:42 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Week 23</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Converted the VHS tapes I had planned to at the library. They were pretty degraded so they’re not much to look at or anything. I was able to bring one into &lt;a href=&quot;https://kdenlive.org/&quot;&gt;Kdenlive&lt;/a&gt; and EQ away some staticy bits that were making it incredibly annoying to listen to atleast. Still there are many artifacts and I will probably experiment with removing them if possible.&lt;/li&gt;
+  &lt;li&gt;Had my first interview since &lt;del&gt;becoming an unemployed person&lt;/del&gt; starting the job search. I thought it went well but two days later I received a nicely worded rejection.&lt;/li&gt;
+  &lt;li&gt;Sent in a few more job applications.&lt;/li&gt;
+  &lt;li&gt;Spent more time removing duplicate photos from my collection using &lt;a href=&quot;https://www.digikam.org/&quot;&gt;digiKam&lt;/a&gt;. Apple Photos really did a number on them so now I’m just trying to make sense of it all. There has to be a faster way for this so I’m open to suggestions.&lt;/li&gt;
+  &lt;li&gt;Wrote and published my longest post to date about my &lt;a href=&quot;/blog/2025/06/02/work-history&quot;&gt;work history&lt;/a&gt; on my non-anniversary date of 6/2.&lt;/li&gt;
+  &lt;li&gt;Found my old livejournal and deleted it but not before I saved off one post that will be coming out soon.&lt;/li&gt;
+  &lt;li&gt;Experimented with different ways to post reviews of various media and fell back on adding extra front matter to the markdown posts for now. We’ll see if a more sophisticated solution is warranted.&lt;/li&gt;
+  &lt;li&gt;Felt miserable yesterday so I spent it mostly on the couch.&lt;/li&gt;
+  &lt;li&gt;Setting up the draft for next week in the hopes that I have more to report then.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is day 22  of #100DaysToOffload.&lt;/p&gt;
+
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Fri, 06 Jun 2025 13:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/06/06/weeknotes-week23.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/06/06/weeknotes-week23.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>Week 23</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Work History</title>

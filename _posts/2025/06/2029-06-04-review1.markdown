@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Test"
+date:   2099-06-04 12:00:00
+tags: [media, '100 Days To Offload']
+media_type: movie
+rating: ⭐⭐⭐⭐⭐
+blurb: Example media review
+comments:
+    id: 
+---
+This is an example media review for instance.

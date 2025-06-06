@@ -16,7 +16,7 @@
   <meta name="description" content="{% for post in paginator.posts %}
   
     
-      {{ post.title }}
+      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
     
     {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
     {{ post.blurb }}
@@ -73,7 +73,7 @@
   <meta property="og:description" content="{% for post in paginator.posts %}
   
     
-      {{ post.title }}
+      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
     
     {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
     {{ post.blurb }}
@@ -397,6 +397,35 @@ a, a:visited, a:hover .page-link {
   
   <article class="blog-entry">
     <h2>
+      <a class="blog-link" href="/blog/2025/04/12/weeknotes-week15.html">Week 15</a>
+    </h2>
+    <p>Apr 12, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+    <p>Job search, birthday party, and a concert</p>
+    <p><a class="blog-link" href="/blog/2025/04/12/weeknotes-week15.html">Read More...</a></p>
+    
+    <div class="post-tags">
+      
+        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      
+        <a class="tag-button" href="/tags/#Week 15">Week 15</a>
+      
+        <a class="tag-button" href="/tags/#concert">concert</a>
+      
+        <a class="tag-button" href="/tags/#Bright Eyes">Bright Eyes</a>
+      
+        <a class="tag-button" href="/tags/#Cursive">Cursive</a>
+      
+        <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
+      
+        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+      
+    </div>
+  
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    <h2>
       <a class="blog-link" href="/blog/2025/04/11/100-days-to-offload.html">100 Days to Offload</a>
     </h2>
     <p>Apr 11, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
@@ -495,23 +524,6 @@ a, a:visited, a:hover .page-link {
   </article>
   <hr />
 
-  <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/03/24/personality-test.html">Job Search Personality Test</a>
-    </h2>
-    <p>Mar 24, 2025&nbsp;<span class="reading_time">read in about 8 minutes</span></p>
-    <p>As part of the job search and coaching I've taken a personality test offered by NextJob. Posted below are the results.</p>
-    <p><a class="blog-link" href="/blog/2025/03/24/personality-test.html">Read More...</a></p>
-    
-    <div class="post-tags">
-      
-        <a class="tag-button" href="/tags/#Job Search">Job Search</a>
-      
-    </div>
-  
-  </article>
-  <hr />
-
 
 <!-- Pagination links -->
 <div class="pagination">
@@ -559,7 +571,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: June 2, 2025 10:12 PM UTC-04:00</p>
+        <p>Site last published: June 6, 2025 6:30 PM UTC-04:00</p>
       </div>
 </footer>
 </body>
