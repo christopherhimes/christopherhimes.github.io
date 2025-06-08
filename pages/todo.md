@@ -11,7 +11,7 @@ _Building a website To-do list_
 - [X]  ~~Now page~~ (Added 12/6/24 [/now]).
 - [X]  ~~To-Do Page for site~~ (Added 3/22/25).[^1]
 - [X] ~~Add colophon page.~~ (Added 4/15/25).
-- [ ] Add a projects page dedicated to discussing previous work projects.
+- [ ] Add a projects page dedicated to discussing previous work projects. Create a personal Product Owner portfolio.
 - [ ] Add a dedicated music page that takes advantage of [last.fm] data.
 - [ ] Add a /uses page like the ones listed on [uses.tech]
 
@@ -29,7 +29,6 @@ _Building a website To-do list_
 - [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org]
 - [ ] Add light and dark mode toggle.
 - [ ] Enable posting to [IndieNews].
-
 - [ ] Add related posts based on tags to the end of posts.
 
 ### Other activities
@@ -38,12 +37,13 @@ _Building a website To-do list_
 - [X] ~~Correct terminal in VSCodium~~ (Added 5/1/25).
 - [X] ~~Add unique text to RSS feed thanking them for subscribing~~ (Added 5/1/25).
 - [ ] Expriment with [FreshRSS].
-- [ ] Create a personal Product Owner portfolio.
+- [ ] Write a better [/about] section
 
 
  
 
 [/now]: /now
+[/about]: /about
 [last.fm]: https://last.fm
 [James G]: https://jamesg.blog/2025/04/03/light-dark-root
 [FreshRSS]: https://www.freshrss.org/

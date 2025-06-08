@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Take it Home With You"
 image: ../../../..../../../../assets/img/blog/take-it-home-with-you/home.webp
 cover-img: ../../../..../../../../assets/img/blog/take-it-home-with-you/home.webp

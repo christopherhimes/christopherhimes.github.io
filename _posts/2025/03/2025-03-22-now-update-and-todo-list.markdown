@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Now Update and Todo List"
 date:   2025-03-22 21:20:00
 tags: [now, todo, meta]

@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Job Search Personality Test"
 date:   2025-03-24 16:00:00
 tags: [Job Search]

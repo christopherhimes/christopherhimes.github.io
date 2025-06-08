@@ -15,19 +15,34 @@
 
   <meta name="description" content="{% for post in paginator.posts %}
   
-    
-      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
-    {{ post.blurb }}
-    Read More...
-    {% if post.tags %}
-    
-      {% for tag in post.tags %}
-        {{ tag }}
-      {% endfor %}
-    
-  {% endif %}
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
   
   
 {% endfor %}
@@ -72,19 +87,34 @@
   <meta property="og:title" content="blog - page 5">
   <meta property="og:description" content="{% for post in paginator.posts %}
   
-    
-      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
-    {{ post.blurb }}
-    Read More...
-    {% if post.tags %}
-    
-      {% for tag in post.tags %}
-        {{ tag }}
-      {% endfor %}
-    
-  {% endif %}
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
   
   
 {% endfor %}
@@ -396,131 +426,133 @@ a, a:visited, a:hover .page-link {
 </header>
   
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/12/weeknotes-week15.html">Week 15</a>
-    </h2>
-    <p>Apr 12, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Job search, birthday party, and a concert</p>
-    <p><a class="blog-link" href="/blog/2025/04/12/weeknotes-week15.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/04/15/colophon.html">Added a Colophon</a>
+      </h2>
+      <p>Apr 15, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>a colophon (/ˈkɒləfən, -fɒn/) is a brief statement containing information about the publication</p>
+      <p><a class="blog-link" href="/blog/2025/04/15/colophon.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Meta">Meta</a>
+        
+          <a class="tag-button" href="/tags/#Colophon">Colophon</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#Week 15">Week 15</a>
-      
-        <a class="tag-button" href="/tags/#concert">concert</a>
-      
-        <a class="tag-button" href="/tags/#Bright Eyes">Bright Eyes</a>
-      
-        <a class="tag-button" href="/tags/#Cursive">Cursive</a>
-      
-        <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/11/100-days-to-offload.html">100 Days to Offload</a>
-    </h2>
-    <p>Apr 11, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>100 Days To Offload is a challenge to publish 100 posts on your personal blog in a year.</p>
-    <p><a class="blog-link" href="/blog/2025/04/11/100-days-to-offload.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/04/12/weeknotes-week15.html">Week 15</a>
+      </h2>
+      <p>Apr 12, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Job search, birthday party, and a concert</p>
+      <p><a class="blog-link" href="/blog/2025/04/12/weeknotes-week15.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#Meta">Meta</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+        
+          <a class="tag-button" href="/tags/#Week 15">Week 15</a>
+        
+          <a class="tag-button" href="/tags/#concert">concert</a>
+        
+          <a class="tag-button" href="/tags/#Bright Eyes">Bright Eyes</a>
+        
+          <a class="tag-button" href="/tags/#Cursive">Cursive</a>
+        
+          <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/07/adding-pagination.html">Adding Pagination</a>
-    </h2>
-    <p>Apr 7, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Adding back in pagination on this here website.</p>
-    <p><a class="blog-link" href="/blog/2025/04/07/adding-pagination.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/04/11/100-days-to-offload.html">100 Days to Offload</a>
+      </h2>
+      <p>Apr 11, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>100 Days To Offload is a challenge to publish 100 posts on your personal blog in a year.</p>
+      <p><a class="blog-link" href="/blog/2025/04/11/100-days-to-offload.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#Meta">Meta</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Meta">Meta</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#Blog">Blog</a>
-      
-        <a class="tag-button" href="/tags/#Pagination">Pagination</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/04/04/weeknotes-week14.html">Week 14</a>
-    </h2>
-    <p>Apr 4, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Job search, soup, and cleaning house</p>
-    <p><a class="blog-link" href="/blog/2025/04/04/weeknotes-week14.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/04/07/adding-pagination.html">Adding Pagination</a>
+      </h2>
+      <p>Apr 7, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Adding back in pagination on this here website.</p>
+      <p><a class="blog-link" href="/blog/2025/04/07/adding-pagination.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Meta">Meta</a>
+        
+          <a class="tag-button" href="/tags/#Blog">Blog</a>
+        
+          <a class="tag-button" href="/tags/#Pagination">Pagination</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#Week 14">Week 14</a>
-      
-        <a class="tag-button" href="/tags/#resume">resume</a>
-      
-        <a class="tag-button" href="/tags/#Christmas Tree">Christmas Tree</a>
-      
-        <a class="tag-button" href="/tags/#Product Owner">Product Owner</a>
-      
-        <a class="tag-button" href="/tags/#Job Search">Job Search</a>
-      
-        <a class="tag-button" href="/tags/#Soup">Soup</a>
-      
-        <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/03/29/weeknotes-week13.html">Week 13</a>
-    </h2>
-    <p>Mar 29, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Job coacing, classes, and driving the family around...</p>
-    <p><a class="blog-link" href="/blog/2025/03/29/weeknotes-week13.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/04/04/weeknotes-week14.html">Week 14</a>
+      </h2>
+      <p>Apr 4, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Job search, soup, and cleaning house</p>
+      <p><a class="blog-link" href="/blog/2025/04/04/weeknotes-week14.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+        
+          <a class="tag-button" href="/tags/#Week 14">Week 14</a>
+        
+          <a class="tag-button" href="/tags/#resume">resume</a>
+        
+          <a class="tag-button" href="/tags/#Christmas Tree">Christmas Tree</a>
+        
+          <a class="tag-button" href="/tags/#Product Owner">Product Owner</a>
+        
+          <a class="tag-button" href="/tags/#Job Search">Job Search</a>
+        
+          <a class="tag-button" href="/tags/#Soup">Soup</a>
+        
+          <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#Week 13">Week 13</a>
-      
-        <a class="tag-button" href="/tags/#resume">resume</a>
-      
-        <a class="tag-button" href="/tags/#NextJob">NextJob</a>
-      
-        <a class="tag-button" href="/tags/#Product Owner">Product Owner</a>
-      
-        <a class="tag-button" href="/tags/#Job Search">Job Search</a>
-      
-        <a class="tag-button" href="/tags/#coach">coach</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
@@ -532,7 +564,7 @@ a, a:visited, a:hover .page-link {
       previous</a>
   
   <span class="page_number ">
-    page: 5 of 8
+    page: 5 of 9
   </span>
   
     <a href="/blog/blog/page/6/" class="next">next</a>
@@ -571,7 +603,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: June 6, 2025 7:16 PM UTC-04:00</p>
+        <p>Site last published: June 8, 2025 4:48 PM UTC-04:00</p>
       </div>
 </footer>
 </body>

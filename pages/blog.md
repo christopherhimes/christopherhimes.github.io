@@ -9,19 +9,34 @@ pagination:
 ---
 {% for post in paginator.posts %}
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}{% if post.rating %}&nbsp;({{ post.rating }}){% endif %}</a>
-    </h2>
-    <p>{{ post.date | date: "%b %-d, %Y" }}&nbsp;<span class="reading_time">read in {{ post.content | reading_time }}</span></p>
-    <p>{{ post.blurb }}</p>
-    <p><a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">Read More...</a></p>
-    {% if post.tags %}
-    <div class="post-tags">
-      {% for tag in post.tags %}
-        <a class="tag-button" href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>
-      {% endfor %}
-    </div>
-  {% endif %}
+    {% if post.layout == "none" %}
+      <h2>
+        <a class="blog-link" href="{{ post.external_url }}">{{ post.title }}</a> via <a class="blog-link" href="{{ post.external_main }}">{{ post.external_title }}</a>
+      </h2>
+      <p>{{ post.date | date: "%b %-d, %Y" }} [{{ post.type }}]</p>
+      <p>{{ post.blurb }}</p>
+      {% if post.tags %}
+      <div class="post-tags">
+        {% for tag in post.tags %}
+          <a class="tag-button" href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    {% else %}
+      <h2>
+        <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <p>{{ post.date | date: "%b %-d, %Y" }}&nbsp; [{{ post.type }}]&nbsp;<span class="reading_time">read in {{ post.content | reading_time }}</span></p>
+      <p>{{ post.blurb }}</p>
+      <p><a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">Read More...</a></p>
+      {% if post.tags %}
+      <div class="post-tags">
+        {% for tag in post.tags %}
+          <a class="tag-button" href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    {% endif %}
   </article>
   <hr />
 {% endfor %}

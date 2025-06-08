@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Accessibility Day 2025"
 date:   2025-05-17 15:15:00
 tags: [Accessibility , '100 Days To Offload']

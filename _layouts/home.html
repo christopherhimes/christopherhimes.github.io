@@ -22,9 +22,15 @@ layout: base
     <div class="home-blog">
     {% for post in site.posts limit:5 %}
       <article>
-        <h2>
-          <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        {% if post.layout == "none" %}
+        <h2 style="display: inline-block;">
+          <a class="blog-link" href="{{ post.external_url }}">{{ post.title }}</a> via <a class="blog-link" href="{{ post.external_main }}">{{ post.external_title }}</a>
+        </h2> {{ post.date | date: "%b %-d, %Y" }}
+        {% else %}
+          <h2 style="display: inline-block;">
+            <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2> {{ post.date | date: "%b %-d, %Y" }}
+        {% endif %}
       </article>
     {% endfor %}
   </div>

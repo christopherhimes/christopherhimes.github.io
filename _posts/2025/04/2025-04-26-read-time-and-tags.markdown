@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Read Time and Tags"
 date:   2025-04-26 15:00:00
 modified_date: 2025-04-30 12:00:00

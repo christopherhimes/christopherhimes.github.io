@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Adding Pagination"
 date:   2025-04-07 19:30:00
 tags: ['Meta', 'Blog', 'Pagination']

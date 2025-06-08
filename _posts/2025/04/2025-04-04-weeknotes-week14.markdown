@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Week 14"
 date:   2025-04-04 15:30:00
 tags: ['Week Notes', 'Week 14', 'resume', 'Christmas Tree', 'Product Owner', 'Job Search', 'Soup', 'Cicada Detroit']

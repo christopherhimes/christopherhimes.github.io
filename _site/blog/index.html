@@ -15,19 +15,34 @@
 
   <meta name="description" content="{% for post in paginator.posts %}
   
-    
-      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
-    {{ post.blurb }}
-    Read More...
-    {% if post.tags %}
-    
-      {% for tag in post.tags %}
-        {{ tag }}
-      {% endfor %}
-    
-  {% endif %}
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
   
   
 {% endfor %}
@@ -72,19 +87,34 @@
   <meta property="og:title" content="blog">
   <meta property="og:description" content="{% for post in paginator.posts %}
   
-    
-      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
-    {{ post.blurb }}
-    Read More...
-    {% if post.tags %}
-    
-      {% for tag in post.tags %}
-        {{ tag }}
-      {% endfor %}
-    
-  {% endif %}
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
   
   
 {% endfor %}
@@ -396,107 +426,117 @@ a, a:visited, a:hover .page-link {
 </header>
   
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/06/06/weeknotes-week23.html">Week 23</a>
-    </h2>
-    <p>Jun 6, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Be Kind Rewind</p>
-    <p><a class="blog-link" href="/blog/2025/06/06/weeknotes-week23.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/06/08/a-few-experiments.html">A Few Experiments</a>
+      </h2>
+      <p>Jun 8, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
+      <p>Working on a few content type experiments and reporting on them.</p>
+      <p><a class="blog-link" href="/blog/2025/06/08/a-few-experiments.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#experiments">experiments</a>
+        
+          <a class="tag-button" href="/tags/#meta">meta</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#Week 23">Week 23</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/06/02/work-history.html">Work History</a>
-    </h2>
-    <p>Jun 2, 2025&nbsp;<span class="reading_time">read in about 11 minutes</span></p>
-    <p>I won't do this non-anniversary thing again but today would have been 17 years</p>
-    <p><a class="blog-link" href="/blog/2025/06/02/work-history.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/06/06/weeknotes-week23.html">Week 23</a>
+      </h2>
+      <p>Jun 6, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Be Kind Rewind</p>
+      <p><a class="blog-link" href="/blog/2025/06/06/weeknotes-week23.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#work">work</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+        
+          <a class="tag-button" href="/tags/#Week 23">Week 23</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#work history">work history</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/05/31/weeknotes-week22.html">Week 22</a>
-    </h2>
-    <p>May 31, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Backdated Week Notes. I'm swear I'll get back on schedule here eventually.</p>
-    <p><a class="blog-link" href="/blog/2025/05/31/weeknotes-week22.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/06/02/work-history.html">Work History</a>
+      </h2>
+      <p>Jun 2, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 11 minutes</span></p>
+      <p>I won't do this non-anniversary thing again but today would have been 17 years</p>
+      <p><a class="blog-link" href="/blog/2025/06/02/work-history.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#work">work</a>
+        
+          <a class="tag-button" href="/tags/#work history">work history</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#Week 22">Week 22</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/05/24/weeknotes-week21.html">Week 21</a>
-    </h2>
-    <p>May 24, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Working in the yard and building a media server.</p>
-    <p><a class="blog-link" href="/blog/2025/05/24/weeknotes-week21.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/05/31/weeknotes-week22.html">Week 22</a>
+      </h2>
+      <p>May 31, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Backdated Week Notes. I'm swear I'll get back on schedule here eventually.</p>
+      <p><a class="blog-link" href="/blog/2025/05/31/weeknotes-week22.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+        
+          <a class="tag-button" href="/tags/#Week 22">Week 22</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#Week 21">Week 21</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2025/05/19/weeknotes-week20.html">Week 20</a>
-    </h2>
-    <p>May 19, 2025&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Certified Scrum Product Owner, Mother's Day, and painting with a twist.</p>
-    <p><a class="blog-link" href="/blog/2025/05/19/weeknotes-week20.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/05/24/weeknotes-week21.html">Week 21</a>
+      </h2>
+      <p>May 24, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Working in the yard and building a media server.</p>
+      <p><a class="blog-link" href="/blog/2025/05/24/weeknotes-week21.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+        
+          <a class="tag-button" href="/tags/#Week 21">Week 21</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#Week 20">Week 20</a>
-      
-        <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
@@ -507,7 +547,7 @@ a, a:visited, a:hover .page-link {
     <span class="previous">previous</span>
   
   <span class="page_number ">
-    page: 1 of 8
+    page: 1 of 9
   </span>
   
     <a href="/blog/blog/page/2/" class="next">next</a>
@@ -546,7 +586,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: June 6, 2025 7:16 PM UTC-04:00</p>
+        <p>Site last published: June 8, 2025 4:48 PM UTC-04:00</p>
       </div>
 </footer>
 </body>

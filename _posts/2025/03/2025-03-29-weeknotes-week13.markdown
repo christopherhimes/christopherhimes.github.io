@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Week 13"
 date:   2025-03-29 13:30:00
 tags: ['Week Notes', 'Week 13', 'resume', 'NextJob', 'Product Owner', 'Job Search', 'coach']

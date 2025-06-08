@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Light and Dark Mode Revisited"
 date:   2025-04-16 14:30:00
 modified_date: 2025-04-30 12:00:00

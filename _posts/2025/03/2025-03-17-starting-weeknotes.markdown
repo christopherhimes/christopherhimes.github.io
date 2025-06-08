@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Starting"
 date:   2025-03-17 13:30:00
 tags: ['Week Notes', '12 Week Year', 'Notion']

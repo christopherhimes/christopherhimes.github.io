@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "100 Days to Offload"
 date:   2025-04-11 11:45:00
 modified_date: 2025-04-30 12:00:00

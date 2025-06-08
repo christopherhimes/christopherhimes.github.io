@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Add Comments"
 image: ../../../../assets/img/blog/add-comments/comments.webp
 cover-img: ../../../../assets/img/blog/add-comments/comments.webp

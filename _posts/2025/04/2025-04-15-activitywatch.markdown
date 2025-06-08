@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "ActivityWatch"
 date:   2025-04-15 17:30:00
 modified_date: 2025-04-30 12:00:00

@@ -15,19 +15,34 @@
 
   <meta name="description" content="{% for post in paginator.posts %}
   
-    
-      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
-    {{ post.blurb }}
-    Read More...
-    {% if post.tags %}
-    
-      {% for tag in post.tags %}
-        {{ tag }}
-      {% endfor %}
-    
-  {% endif %}
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
   
   
 {% endfor %}
@@ -72,19 +87,34 @@
   <meta property="og:title" content="blog - page 7">
   <meta property="og:description" content="{% for post in paginator.posts %}
   
-    
-      {{ post.title }}{% if post.rating %}&amp;nbsp;({{ post.rating }}){% endif %}
-    
-    {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp;read in {{ post.content | reading_time }}
-    {{ post.blurb }}
-    Read More...
-    {% if post.tags %}
-    
-      {% for tag in post.tags %}
-        {{ tag }}
-      {% endfor %}
-    
-  {% endif %}
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
   
   
 {% endfor %}
@@ -396,97 +426,111 @@ a, a:visited, a:hover .page-link {
 </header>
   
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2024/12/06/now-2024.html">Now Page 2024</a>
-    </h2>
-    <p>Dec 6, 2024&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
-    <p>While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.</p>
-    <p><a class="blog-link" href="/blog/2024/12/06/now-2024.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Starting</a>
+      </h2>
+      <p>Mar 17, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
+      <p>Starting something new and taking it day by day and week by week.</p>
+      <p><a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#now">now</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+        
+          <a class="tag-button" href="/tags/#12 Week Year">12 Week Year</a>
+        
+          <a class="tag-button" href="/tags/#Notion">Notion</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#2024">2024</a>
-      
-        <a class="tag-button" href="/tags/#meta">meta</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Simple Silly</a>
-    </h2>
-    <p>Nov 21, 2024&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general.</p>
-    <p><a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2024/12/06/now-2024.html">Now Page 2024</a>
+      </h2>
+      <p>Dec 6, 2024&nbsp; [post]&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+      <p>While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.</p>
+      <p><a class="blog-link" href="/blog/2024/12/06/now-2024.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#meta">meta</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#now">now</a>
+        
+          <a class="tag-button" href="/tags/#2024">2024</a>
+        
+          <a class="tag-button" href="/tags/#meta">meta</a>
+        
+      </div>
       
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Lighthouse</a>
-    </h2>
-    <p>Jul 26, 2024&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
-    <p>This site is not big, but it is faster, and more accessible.</p>
-    <p><a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Simple Silly</a>
+      </h2>
+      <p>Nov 21, 2024&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general.</p>
+      <p><a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#lighthouse">lighthouse</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#meta">meta</a>
+        
+      </div>
       
-        <a class="tag-button" href="/tags/#SEO">SEO</a>
-      
-        <a class="tag-button" href="/tags/#Web Development">Web Development</a>
-      
-        <a class="tag-button" href="/tags/#Accessibility">Accessibility</a>
-      
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2024/07/11/i-got-married.html">I got married!</a>
-    </h2>
-    <p>Jul 11, 2024&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>It's been a little over a month now since I got married.</p>
-    <p><a class="blog-link" href="/blog/2024/07/11/i-got-married.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Lighthouse</a>
+      </h2>
+      <p>Jul 26, 2024&nbsp; [post]&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
+      <p>This site is not big, but it is faster, and more accessible.</p>
+      <p><a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#married">married</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#lighthouse">lighthouse</a>
+        
+          <a class="tag-button" href="/tags/#SEO">SEO</a>
+        
+          <a class="tag-button" href="/tags/#Web Development">Web Development</a>
+        
+          <a class="tag-button" href="/tags/#Accessibility">Accessibility</a>
+        
+      </div>
       
-    </div>
-  
+    
   </article>
   <hr />
 
   <article class="blog-entry">
-    <h2>
-      <a class="blog-link" href="/blog/2024/01/13/add-comments.html">Add Comments</a>
-    </h2>
-    <p>Jan 13, 2024&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-    <p>My blog has Mastodon powered comments now and this post is really just a test for that.</p>
-    <p><a class="blog-link" href="/blog/2024/01/13/add-comments.html">Read More...</a></p>
     
-    <div class="post-tags">
+      <h2>
+        <a class="blog-link" href="/blog/2024/07/11/i-got-married.html">I got married!</a>
+      </h2>
+      <p>Jul 11, 2024&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>It's been a little over a month now since I got married.</p>
+      <p><a class="blog-link" href="/blog/2024/07/11/i-got-married.html">Read More...</a></p>
       
-        <a class="tag-button" href="/tags/#comments">comments</a>
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#married">married</a>
+        
+      </div>
       
-    </div>
-  
+    
   </article>
   <hr />
 
@@ -498,7 +542,7 @@ a, a:visited, a:hover .page-link {
       previous</a>
   
   <span class="page_number ">
-    page: 7 of 8
+    page: 7 of 9
   </span>
   
     <a href="/blog/blog/page/8/" class="next">next</a>
@@ -537,7 +581,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: June 6, 2025 7:16 PM UTC-04:00</p>
+        <p>Site last published: June 8, 2025 4:48 PM UTC-04:00</p>
       </div>
 </footer>
 </body>

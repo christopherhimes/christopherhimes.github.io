@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Work History"
 date:   2025-06-02 21:00:00
 tags: ['work', 'work history', '100 Days To Offload']

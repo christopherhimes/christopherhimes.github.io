@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "I got married!"
 image: ../../../../assets/img/blog/i-got-married/married.webp
 cover-img: ../../../../assets/img/blog/i-got-married/married.webp

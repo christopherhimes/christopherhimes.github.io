@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Another New Design"
 image: ../../../..../../../../assets/img/blog/another-new-design/design.webp
 cover-img: ../../../..../../../../assets/img/blog/another-new-design/design.webp

@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Dedicated 100 Days To Offload Progress Page"
 date:   2025-04-30 13:30:00
 tags: ['Meta', '100 Days To Offload', ]

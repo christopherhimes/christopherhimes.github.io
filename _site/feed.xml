@@ -6,9 +6,57 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 06 Jun 2025 19:16:29 -0400</pubDate>
-    <lastBuildDate>Fri, 06 Jun 2025 19:16:29 -0400</lastBuildDate>
+    <pubDate>Sun, 08 Jun 2025 16:48:45 -0400</pubDate>
+    <lastBuildDate>Sun, 08 Jun 2025 16:48:45 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>A Few Experiments</title>
+        <description>&lt;p&gt;First thing first, I added the post date to the ‘recent posts’ section of the home page of the site to add a little more context. With some of these experiments that section may need to change again but I much prefer this little bit of extra content.&lt;/p&gt;
+
+&lt;h2 id=&quot;media&quot;&gt;Media&lt;/h2&gt;
+
+&lt;p&gt;One thing I’ve really enjoyed reading on other folks personal sites is what types of media they are consuming and how they felt about it. Reviews of books, music, movies, etc, seem like an interesting way to break away from some of the more meta/technical posts.&lt;/p&gt;
+
+&lt;p&gt;The nice thing here too would be the lack of required presentation. As in I don’t have to have accomplished anything apart from reading, watching, listening, and forming an opinion.&lt;/p&gt;
+
+&lt;p&gt;I’ll have a more lengthy write up when I roll it out completely but for now posts are all tagged with a type and I can use that to communicate the type of content in the blog section and if necessary limit the scope of an RSS feed. For example if you wanted to subscribe to standard blog posts and not movie reviews, there could be separate feed roll for that. For now you’ll see [post] included in the main blog for everything as I haven’t yet posted any other type.&lt;/p&gt;
+
+&lt;h2 id=&quot;stats&quot;&gt;Stats&lt;/h2&gt;
+
+&lt;p&gt;As a companion enhancement to the Media section I thought it would be neat to present some site specific stats once there are more posts and types of posts. As of now the site only uses a standard Jekyll implementation with no database.&lt;/p&gt;
+
+&lt;p&gt;I’m curious just how far this can be taken and when do the demands of displaying information about what is here require a database. Will probably use a javascript library to display some charts and graphs, but I’m not sure which one as of yet.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Similar to Media, I’ve seen a few implementations of this idea but I’m working on an implementation of a post that appears in the blog with a quick blurb and a direct link to an article. There would not be any dedicated page for this post so it would require some additional setup to make it work as expected. Trying to decide if this is worth doing or if a small blog post would be a better way to handle this idea. Sometimes you just want to say, “here is an interesting article go read it!”&lt;/p&gt;
+
+&lt;h2 id=&quot;webmentions&quot;&gt;Webmentions&lt;/h2&gt;
+
+&lt;p&gt;Disappointed that I ripped out this implementation. I just wasn’t sure the best way to integrate it with what I’m already doing with mastodon comments. I think it would be nice if folks had another way to comment but I’m just not happy with the way I was handling it. Something to revisit sometime soon.&lt;/p&gt;
+
+&lt;h2 id=&quot;portfolio&quot;&gt;Portfolio&lt;/h2&gt;
+
+&lt;p&gt;It’s on the &lt;a href=&quot;/todo&quot;&gt;/todo&lt;/a&gt; and I think the steps to implement the Media section can also be used to make this happen. Portfolio pieces hit the blog which is the waterhose of information that happens on this site and since they’re tagged with a type of ‘portfolio’ for example can be filtered and presented in a different manner on a dedicated portfolio page.&lt;/p&gt;
+
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Sun, 08 Jun 2025 12:50:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/06/08/a-few-experiments.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/06/08/a-few-experiments.html</guid>
+        
+        <category>experiments</category>
+        
+        <category>meta</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Week 23</title>

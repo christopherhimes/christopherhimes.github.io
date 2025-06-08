@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Simple Silly"
 date:   2024-11-21 12:30:00
 tags: [meta]

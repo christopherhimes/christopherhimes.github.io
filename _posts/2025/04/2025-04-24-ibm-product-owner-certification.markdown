@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Product Owner Certification"
 date:   2025-04-24 21:45:00
 tags: ['Product Owner', 'Certification', '100 Days To Offload']

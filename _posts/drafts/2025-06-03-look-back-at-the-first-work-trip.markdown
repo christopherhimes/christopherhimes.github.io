@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Look Back at the First Work Trip"
 date:   2099-06-03 19:00:00
 tags: [work, trip, livejournal, '100 Days To Offload']

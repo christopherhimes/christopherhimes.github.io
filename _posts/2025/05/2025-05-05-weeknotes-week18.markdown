@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Week 18"
 date:   2025-05-05 15:00:00
 tags: ['Week Notes', 'Week 18', '100 Days To Offload']

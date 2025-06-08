@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Webmentions"
 date:   2055-05-15 12:00:00
 tags: [Webmentions, '100 Days To Offload']

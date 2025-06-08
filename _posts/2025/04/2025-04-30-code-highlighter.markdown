@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Updated Code Block Styling"
 date:   2025-04-30 13:30:00
 tags: ['Meta', '100 Days To Offload', "Web Development"]

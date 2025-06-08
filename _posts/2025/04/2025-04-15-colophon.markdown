@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Added a Colophon"
 date:   2025-04-15 16:45:00
 modified_date: 2025-04-30 12:00:00

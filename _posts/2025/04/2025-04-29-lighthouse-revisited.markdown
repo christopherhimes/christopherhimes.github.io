@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Lighthouse Revisited"
 date:   2025-04-29 13:30:00
 modified_date: 2025-04-30 12:00:00

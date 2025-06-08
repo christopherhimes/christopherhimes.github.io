@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Lighthouse"
 image: ../../../../assets/img/blog/lighthouse/lighthouse.webp
 cover-img: ../../../../assets/img/blog/lighthouse/lighthouse.webp

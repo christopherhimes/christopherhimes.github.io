@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Light and Dark"
 date:   2025-03-23 18:10:00
 tags: [css, meta]

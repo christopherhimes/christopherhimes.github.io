@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Time for a Change"
 image: ../../../../../../../../assets/img/blog/time-for-a-change/change.webp
 cover-img: ../../../../../../../../assets/img/blog/time-for-a-change/change.webp

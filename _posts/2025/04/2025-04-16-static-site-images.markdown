@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Static Site Images"
 date:   2025-04-16 11:30:00
 modified_date: 2025-04-30 12:00:00

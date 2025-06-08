@@ -1,5 +1,6 @@
 ---
 layout: post
+type: post
 title:  "Week 17"
 date:   2025-04-25 16:35:00
 modified_date: 2025-04-30 12:00:00
