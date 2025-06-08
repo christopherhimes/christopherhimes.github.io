@@ -6,7 +6,7 @@ date:   2025-06-08 16:50:00
 tags: ['experiments', 'meta', '100 Days To Offload']
 blurb: Working on a few content type experiments and reporting on them.
 comments:
-    id: 
+    id: 114649754851430965
 ---
 First thing first, I added the post date to the 'recent posts' section of the home page of the site to add a little more context. With some of these experiments that section may need to change again but I much prefer this little bit of extra content.
 
