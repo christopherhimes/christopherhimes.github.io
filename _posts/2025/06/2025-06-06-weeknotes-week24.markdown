@@ -1,7 +1,7 @@
 ---
 layout: post
 type: post
-title:  "Week 23"
+title:  "Week 24"
 date:   2025-06-13 21:00:00
 tags: ['Week Notes', 'Week 24', '100 Days To Offload']
 blurb: Friday the 13th. Ooooh Spooky
