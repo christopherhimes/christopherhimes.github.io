@@ -6,7 +6,7 @@ date:   2025-06-21 17:00:00
 tags: ['Week Notes', 'Week 25', '100 Days To Offload']
 blurb: Niece's Birthday, finished photo maintenance, and the job search continues
 comments:
-    id: 
+    id: 114723319821812738
 ---
 
 * Sent in a few more job applications.
