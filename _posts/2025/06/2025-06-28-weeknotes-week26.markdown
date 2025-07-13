@@ -7,7 +7,7 @@ modified_date:   2025-07-13 14:00:00
 tags: ['Week Notes', 'Week 26', '100 Days To Offload']
 blurb: Flew to Paris, visited the Eiffel Tower, Louvre, and Notre Dame.
 comments:
-    id: 
+    id: 114847728196867365
 ---
 
 I was traveling this week and I don't like to post about being away while away. Here is a brief run down of the week. I plan to write something about the trip in more detail soon.

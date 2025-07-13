@@ -7,7 +7,7 @@ modified_date:   2025-07-13 14:00:00
 tags: ['Week Notes', 'Week 27', '100 Days To Offload']
 blurb: I hear Nice is pretty nice this time of year.
 comments:
-    id: 
+    id: 114847773899577832
 ---
 
 I was traveling this week and I don't like to post about being away while away. Here is a brief run down of the week. I plan to write something about the trip in more detail soon.

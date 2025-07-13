@@ -7,7 +7,7 @@ modified_date:   2025-07-13 14:00:00
 tags: ['Week Notes', 'Week 28', '100 Days To Offload']
 blurb: Getting home from holiday, recovery, and petting pets.
 comments:
-    id: 
+    id: 114847782520762098
 ---
 
 I was home yesterday to post this I was just working through the other posts I missed while traveling.
