@@ -1,6 +1,8 @@
 require "mini_magick"
 require "fileutils"
 require "tempfile"
+require "pango"
+require "cairo"
 
 module Jekyll
   class OpenGraphImageGenerator < Generator
@@ -23,7 +25,8 @@ module Jekyll
         public_path = File.join("/assets/og-images", output_filename)
 
         share_image = post.data["share-img"] || ""
-
+        
+        Jekyll.logger.info "Title: ", title
         Jekyll.logger.info "share-img", share_image
 
         if share_image == "" or !File.exist?(File.join(File.join(site.source, post.data["share-img"])))
@@ -60,6 +63,12 @@ module Jekyll
 
       text_image = create_text_image(title, date, blurb)
       canvas = canvas.composite(text_image) do |c|
+        c.compose "Over"
+        c.geometry "+470+60"
+      end
+
+      title_image = create_title_image(title)
+      canvas = canvas.composite(title_image) do |c|
         c.compose "Over"
         c.geometry "+470+60"
       end
@@ -134,6 +143,33 @@ module Jekyll
       result_path
     end
 
+    def create_title_image(title)
+      width = 700
+      height = 520
+      title_file = Tempfile.new(["title", ".png"])
+      MiniMagick::Tool::Convert.new do |convert|
+        # convert.size "#{width}x#{height}"
+        convert.gravity "NorthWest"
+        convert.background "none"
+        # convert.xc "none"
+
+        convert.font "Lato"
+        convert.fill "#20FFBC"
+
+        # Title
+        base_size = 64
+        estimated_char_width = base_size
+        estimated_text_width = title.length * estimated_char_width + (base_size * 5)
+        scale_factor = [1.0, width / estimated_text_width].min
+        final_font_size = [(base_size * scale_factor).to_i, 24].max
+
+        convert.pointsize final_font_size.to_s
+        convert << "pango:#{title}"
+        convert << title_file.path
+      end
+      MiniMagick::Image.open(title_file.path)
+    end
+
     def create_text_image(title, date, blurb)
       width = 740
       height = 540
@@ -148,14 +184,15 @@ module Jekyll
         convert.fill "#20FFBC"
 
         # Title
-        base_size = 64
-        estimated_char_width = base_size * 0.6
-        estimated_text_width = title.length * estimated_char_width
-        scale_factor = [1.0, width / estimated_text_width].min
-        final_font_size = [(base_size * scale_factor).to_i, 24].max
+        # base_size = 64
+        # estimated_char_width = base_size * 0.6
+        # estimated_text_width = title.length * estimated_char_width
+        # scale_factor = [1.0, width / estimated_text_width].min
+        # final_font_size = [(base_size * scale_factor).to_i, 24].max
 
-        convert.pointsize final_font_size.to_s
-        convert.draw "text 0,20 '#{escape(title)}'"
+
+        # convert.pointsize final_font_size.to_s
+        # convert.draw "text 0,20 '#{escape(title)}'"
 
         # Date
         if date

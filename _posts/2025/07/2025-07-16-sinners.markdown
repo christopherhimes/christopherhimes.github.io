@@ -1,0 +1,34 @@
+---
+layout: post
+type: movie
+title:  Sinners (⭐⭐⭐⭐⭐)
+date:   2025-07-16 15:00:00
+tags: [Sinners, movie, review, media, '100 Days To Offload']
+media_type: movie
+rating: ⭐⭐⭐⭐⭐
+share-img: /assets/img/blog/sinners/sinners.webp
+blurb: Sinners is a 2025 southern gothic vampire horror film produced, written, and directed by Ryan Coogler starring Michael B. Jordan.
+comments: 
+    id: 
+---
+
+{% include img.html src='/blog/sinners/sinners.webp' alt='Movie poster for Sinners starring Michael B. Jordan' %}
+
+Sinners is a 2025 southern gothic vampire horror film produced, written, and directed by Ryan Coogler starring Michael B. Jordan.  
+
+I saw this film back in April and it has really stuck with me. It is one of the best examples I've seen of how genre films can communicate an idea that is almost impossible otherwise. There are multiple themes and interpretations of this film but the way the narrative and visual language of the film work together is quite an achievement.
+
+This isn't a scary horror film but the there is a lot of good tension and the implications of the vampirism with the themes of the film are haunting. Vampirism as a metaphor for assimilation as described in [How To Write Intelligent Horror — Sinners] by The Closer Look is a very interesting view on this story. With this reading the characters also exhibit the implications of the theme and it is not exclusively communicated by the plot. As discussed in this video each of the main characters actions can be viewed by how willing they are to assimilate. This is not a horror film with characters doing things just because the plot requires it of them. Motivated actions, even if they end badly, make for such a better story especially in horror (which seems to suffer from that a lot).
+
+This of course is not the only interpretation for this film, which I imagine will inspire many an essay both video and scholarly. Another video I watched discussing the film is [Sinners and the General State of Things] by The Morbid Zoo. The thing that surprised me the most about the movie having gone into it mostly blind is just how essential music is to the story. It is a horror movie with musical moments and a lot to say about music, how art creates community, and how humanity creates meaning with art. This is not just a vampire film by the guy who did Black Panther and Creed.
+
+Sinners is a beautiful film from the cinnematography, to the costuming, to the music, to the largely practical special effects. There are lots of striking visuals but the eyes of the vampires that look like wild animals at night are some of the most unsettling. 
+
+Just to geek out a little here there is a whole color theory interpretation with the red, white, and blue that reoccur throughout the movie. You can have any color lettering on your sign so long as it's red. Red seems to be associated with the assimilation discussed earlier while blue is associated with preserving traditions. A movie about assimilation with a red, white, and blue color palate you say?
+
+There's not a lot of action in the film but the performances more than make up for that. This is a movie with a lot of depth but remains an enjoyable watch if you're only concerned with the more surface level elements of the plot. 
+
+More people should see this movie.
+
+[How To Write Intelligent Horror — Sinners]: https://www.youtube.com/watch?v=vkDRSgo6tdo
+[Sinners and the General State of Things]: https://www.youtube.com/watch?v=s0rpCUIYVJg

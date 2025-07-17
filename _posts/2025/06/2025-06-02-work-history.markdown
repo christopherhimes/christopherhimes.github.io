@@ -26,7 +26,6 @@ I won't do this non-anniversary thing again but today would have been 17 years a
 * Wrote a program in Visual Studio 6.0 to monitor a folder that would periodically receive EDI orders. Orders were parsed into Excel documents for formatting purposes, they were then sent to a local printer, and both EDI and Excel files were archived. 
 * Added a Tax Credit question to the catalog and all the filtering necessary to hide products that did not meet the Energy Star requirements which disqualified the items from the credit.
 * Updates happened more slowly at this time and we were largely just resolving issues without adding anything major to the experience. This was a time that everything offered appeared in the printed price pages. A simpler time.
-* Not sure if it 
 
 ## 2010
 * Added Commercial Doors to the offering. A brand new offering to the company and the largest addition I made to the catalog to date. Since this category is heavy on hardware additional layers were added to visualization to include exit devices, closers, and kick plates.
