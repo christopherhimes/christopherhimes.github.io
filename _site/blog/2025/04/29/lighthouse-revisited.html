@@ -20,7 +20,7 @@
   
 
   
-  <link rel="alternate" type="application/rss+xml" title="christopher himes" href="http://christopherhimes.com/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="christopher himes" href="http://localhost:4000/feed.xml">
   
 
   
@@ -39,15 +39,15 @@
   <meta property="og:description" content="One thing about this site that I’m not happy with is I don’t have the necessary tests in place to ensure changes meet the standard of quality I want. Case in point, a few months back I got the site to a good lighthouse score. Not just good, the site was at 100% for performance, accessibility, best practices, and SEO on desktop. Mobile had 95% for performance and accessibility. Desktop (original) Mobile (original) I had not rerun the lighthouse test in a while. The recent run was not good as pictured below. First thing that jumps out, and maybe it’s because it’s in red, is the “Largest Contentful Paint element”. My face apparently is just too big. To address this I resized the image to match the dimension it will be displayed. Just to be sure I introduced a little bit of lossy compression using cwebp in the command line. Not enough that you should notice but just enough to reduce the file size a little more. cwebp -q 85 new-face-325x325.webp -o home-face-325x325.webp From there I got a lower score than before with the report saying the image was low resolution and it was expecting something around 488 pixels square. I ended up resolving this issue by starting over and providing an image of 650x650 for the 325x325 square. This appears to be a requirement for serving to higher density screens. One thing I did find interesting is that it appears lighthouse is using the light mode as a default....">
 
   
-  <meta property="og:image" content="http://christopherhimes.com/assets/og-images/lighthouse-revisited.webp">
+  <meta property="og:image" content="http://localhost:4000/assets/og-images/lighthouse-revisited.webp">
   
 
   
   <meta property="og:type" content="article">
   <meta property="og:article:author" content="Christopher Himes">
   <meta property="og:article:published_time" content="2025-04-29T09:30:00-04:00">
-  <meta property="og:url" content="http://christopherhimes.com/blog/2025/04/29/lighthouse-revisited.html">
-  <link rel="canonical" href="http://christopherhimes.com/blog/2025/04/29/lighthouse-revisited.html">
+  <meta property="og:url" content="http://localhost:4000/blog/2025/04/29/lighthouse-revisited.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2025/04/29/lighthouse-revisited.html">
   
   <style type="text/css">
     
@@ -662,7 +662,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: July 17, 2025 3:17 PM UTC-04:00</p>
+        <p>Site last published: July 17, 2025 3:34 PM UTC-04:00</p>
       </div>
 </footer>
 </body>

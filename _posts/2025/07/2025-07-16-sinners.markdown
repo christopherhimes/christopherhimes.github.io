@@ -9,7 +9,7 @@ rating: ⭐⭐⭐⭐⭐
 share-img: /assets/img/blog/sinners/sinners.webp
 blurb: Sinners is a 2025 southern gothic vampire horror film produced, written, and directed by Ryan Coogler starring Michael B. Jordan.
 comments: 
-    id: 
+    id: 114870239913911657
 ---
 
 {% include img.html src='/blog/sinners/sinners.webp' alt='Movie poster for Sinners starring Michael B. Jordan' %}
