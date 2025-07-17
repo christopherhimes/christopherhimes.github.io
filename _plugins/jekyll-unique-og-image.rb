@@ -1,8 +1,8 @@
 require "mini_magick"
 require "fileutils"
 require "tempfile"
-require "pango"
-require "cairo"
+# require "pango"
+# require "cairo"
 
 module Jekyll
   class OpenGraphImageGenerator < Generator
