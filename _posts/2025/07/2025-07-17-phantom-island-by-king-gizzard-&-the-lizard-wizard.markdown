@@ -9,7 +9,7 @@ rating: ⭐⭐⭐
 share-img: /assets/img/blog/phantom-island-by-king-gizzard-&-the-lizard-wizard/phantom-island.webp
 blurb: Phantom Island by King Gizzard & The Lizard Wizard is their 27th studio albumm and a venture into the psychedelic and orchestretic.
 comments: 
-    id: 
+    id: 114877165165825053
 ---
 
 {% include img.html src='/blog/phantom-island-by-king-gizzard-&-the-lizard-wizard/phantom-island.webp' alt='Phantom Island by King Gizzard & The Lizard Wizard' %}
