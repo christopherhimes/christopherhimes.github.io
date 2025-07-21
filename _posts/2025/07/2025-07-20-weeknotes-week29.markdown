@@ -6,7 +6,7 @@ date:   2025-07-20 20:00:00
 tags: ['Week Notes', 'Week 29', '100 Days To Offload']
 blurb: Week 
 comments:
-    id: 
+    id: 114888553561229378
 ---
 
 * Weather cooperated so I was able to get out in the garden and clean some stuff up, pulling weeds, and stringing up my chaotic tomatoes.
