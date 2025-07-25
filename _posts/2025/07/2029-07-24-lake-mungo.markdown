@@ -9,7 +9,7 @@ rating: ⭐⭐
 share-img: /assets/img/blog/review-lake-mungo/review-lake-mungo.webp
 blurb: Lake Mungo is a beloved mocumentary ghost story.
 comments:
-    id: 
+    id: 114915762060246219
 ---
 
 {% include img.html src='/blog/review-lake-mungo/review-lake-mungo.webp' alt='Movie poster for Lake Mungo' %}
