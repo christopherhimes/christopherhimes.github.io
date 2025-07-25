@@ -2,9 +2,9 @@
 layout: post
 type: post
 title:  "Week 30"
-date:   2025-07-25 20:00:00
+date:   2025-07-25 17:20:00
 tags: ['Week Notes', 'Week 30', '100 Days To Offload']
-blurb: Week 
+blurb: Week 30 notes including a vet visit, job applications, and baking.
 comments:
     id: 
 ---
@@ -14,7 +14,13 @@ comments:
 * Played some Overwatch 2 with Matthew.
 * Applied for a few jobs each day.
 * Added a few recurring job application items to the [Espanso] Text Expander configuration.
+* Wrote a review of [Lake Mungo].
+* Made some baguettes that turned out pretty well this time around.
+* Wrote a reviews page that I'll be making a post about later.
+
 
 This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
 
 [Espanso]: espanso.org
+[Lake Mungo]: /blog/2025/07/24/lake-mungo.html
+

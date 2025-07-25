@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cat's body -->
+  <path d="M100,100 Q150,50 150,100 Q150,150 100,200 Q50,150 50,100 Q50,50 100,100 Z" fill="#2b2d30" stroke="#4a90e2" stroke-width="3" />
+
+  <!-- Cat's ears -->
+  <path d="M50,50 L30,30 L50,10 Z" fill="#2b2d30" stroke="#4a90e2" stroke-width="3" />
+  <path d="M150,50 L170,30 L150,10 Z" fill="#2b2d30" stroke="#4a90e2" stroke-width="3" />
+
+  <!-- Cat's eyes -->
+  <circle cx="75" cy="80" r="10" fill="#4a90e2" />
+  <circle cx="125" cy="80" r="10" fill="#4a90e2" />
+
+  <!-- Cat's pupils -->
+  <circle cx="75" cy="80" r="5" fill="#2b2d30" />
+  <circle cx="125" cy="80" r="5" fill="#2b2d30" />
+
+  <!-- Cat's nose -->
+  <circle cx="100" cy="110" r="3" fill="#4a90e2" />
+
+  <!-- Cat's mouth -->
+  <path d="M90,120 Q100,130 110,120" stroke="#4a90e2" stroke-width="2" fill="transparent" />
+</svg>
