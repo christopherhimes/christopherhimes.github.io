@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>blog - page 11</title>
+
+  
+  <meta name="author" content="Christopher Himes">
+  
+
+  <meta name="description" content="{% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
+  
+  
+{% endfor %}
+
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
+
+  
+
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="christopher himes" href="http://localhost:4000/feed.xml">
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  <meta property="og:site_name" content="christopher himes">
+  <meta property="og:title" content="blog - page 11">
+  <meta property="og:description" content="{% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
+  
+  
+{% endfor %}
+
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/blog/blog/page/11/">
+  <link rel="canonical" href="http://localhost:4000/blog/blog/page/11/">
+  
+  <style type="text/css">
+    
+    :root {
+  color-scheme: light dark;
+  --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
+  --foreground-color: light-dark(rgb(0, 87, 59), rgb(32, 255, 188));
+  --link-color: light-dark(rgb(1, 85, 106), rgb(25, 209, 255));
+  --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
+  --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
+  --line-color: rgba(211, 211, 211, 30%);
+}
+
+@font-face {
+  font-family: "lato-normal";
+  src: url("../../../../../assets/font/lato-normal.woff2") format("woff2"), url("../../../../../assets/font/lato-normal.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0025-00FF;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  margin: 0px;
+  padding: 0px;
+  font-family: "lato-normal", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "lato-normal", Arial, Helvetica, sans-serif;
+}
+
+span {
+  margin: 0;
+  padding: none;
+}
+
+h1 {
+  color: var(--foreground-color);
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--foreground-color);
+}
+
+h3 {
+  font-size: 1.25em;
+  color: var(--foreground-color);
+}
+
+hr {
+  border: solid 1px var(--line-color);
+  margin: 1em;
+  width: 100%;
+}
+
+p, li, ul {
+  color: var(--text-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.language-plaintext {
+  width: 750px;
+  word-break: break-all;
+  display: block;
+  overflow: auto;
+}
+
+.headline {
+  font-size: 1.5em;
+}
+
+.post-link {
+  font-size: 2em;
+}
+
+.wrapper {
+  margin: 1em auto;
+  width: 100%;
+}
+
+.site-nav {
+  margin-top: 0;
+  float: right;
+}
+
+.page-link {
+  margin: 0 1em;
+}
+
+a, a:visited, a:hover .page-link {
+  color: var(--link-color);
+}
+
+.post-detail a, p a, .pagination a {
+  text-decoration: underline;
+}
+
+.face {
+  clip-path: circle(150px at center);
+  filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
+}
+
+.site-title {
+  font-family: "lato-normal", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.site-header {
+  border-image: linear-gradient(34deg, var(--foreground-color), var(--link-color)) 1;
+  border-width: 7px;
+  border-style: solid;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.site-title {
+  padding-left: 1em;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: cenleter;
+  align-items: center;
+  gap: 3em;
+  margin: 2em auto;
+  flex-direction: row;
+  width: 800px;
+  flex: 2 100%;
+}
+
+.home-wrapper-column {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 800px;
+  gap: 2em;
+  margin: 2em auto;
+  margin-bottom: 4em;
+  flex-direction: column;
+  flex: 1 100%;
+}
+
+.home-name {
+  font-family: "lato-normal", Arial, Helvetica, sans-serif;
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+}
+
+.home-heading {
+  font-size: 2em;
+  color: var(--foreground-color);
+}
+
+.site-nav {
+  display: flex;
+  padding: 10px 15px;
+}
+
+.wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 3em;
+  flex-direction: column;
+  flex: 1 100%;
+}
+
+.home-blog {
+  flex-direction: column;
+}
+
+.blogimg {
+  max-width: 750px;
+  border: 1px solid var(--text-color);
+}
+
+.article {
+  border-width: 2px;
+  border-style: solid;
+  padding: 1em;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: left;
+}
+
+.post-detail, .page-detail {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  font-size: 1.25em;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.blog-entry {
+  width: 100%;
+  padding: 1em 0;
+  align-items: left;
+  text-align: left;
+  border-top: solid 2px --line-color;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+  flex: 1 100%;
+  align-items: flex-start;
+  gap: 0.01em;
+}
+
+.footer-col {
+  vertical-align: top;
+  text-align: left;
+}
+
+.footer-links {
+  justify-content: left;
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.5em;
+  width: 200px;
+}
+
+.footer-links a {
+  padding: 0;
+  margin: auto;
+}
+  </style>
+  <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
+  <link rel="stylesheet" href="/assets/css/syntax_monokai.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="low">
+  <link href="/favicon.ico" rel="icon" type="image/x-icon">
+  
+<script defer src="https://cloud.umami.is/script.js" data-website-id="7903148e-8cb8-40be-991a-b1343d8c556e"></script>
+<link rel="webmention" href="https://webmention.io/christopherhimes.com/webmention" />
+</head>
+<body><header>
+  <nav class="site-header"><div class="site-title">
+      <a rel="author" href="/">christopher himes</a>
+    </div><nav class="site-nav"><a class="page-link" href="/about/">about</a><a class="page-link" href="/cv/">resume/cv</a><a class="page-link" href="/blog">blog</a>
+      </nav></nav>
+</header>
+<main class="wrapper" aria-label="Content">
+        <div class="page-detail">
+<header>
+  <h1 class="page-title">blog - page 11</h1>
+</header>
+  
+  <article class="blog-entry">
+    
+      <h2>
+        <a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Take it Home With You</a>
+      </h2>
+      <p>Sep 13, 2015&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>The next two weeks are going to be exceedingly difficult not to bring work home.  I'm prone to work through things I'm working on at work while I'm at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.</p>
+      <p><a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#work">work</a>
+        
+          <a class="tag-button" href="/tags/#home">home</a>
+        
+      </div>
+      
+    
+  </article>
+  <hr />
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/blog/page/10/" class="previous">
+      previous</a>
+  
+  <span class="page_number ">
+    page: 11 of 11
+  </span>
+  
+    <span class="next ">next</span>
+  
+</div>
+</div>
+    </main><footer class="footer-wrapper"> 
+  <data class="u-url" href="/"></data>
+      <div class="footer-col">
+          <h3>Links</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="/now">now
+                </a>
+              </li>
+              <li>
+                <a href="/todo">todo
+                </a>
+              </li>
+              <li>
+                <a href="/reviews">reviews
+                </a>
+              </li>
+              <li>
+                <a href="/colophon">colophon
+                </a>
+              </li>
+              <li>
+                <a href="/hundred">hundred
+                </a>
+              </li>                                  
+      </div>
+      <div class="footer-col">
+          <h3>Contact</h3>
+            <ul class="footer-links">
+              <li>
+                <a rel="me" href="mailto:christopher@christopherhimes.com" title="Email me">email
+              </a>
+            </li>
+            <li>
+            <a rel="me" href="https://github.com/christopherhimes" title="GitHub">github
+           </a>
+          </li>
+          <li>
+            <a rel="me" href="https://hachyderm.io/@eeentropyyy">mastodon
+            </a>
+          </li>
+          <li>
+            <a rel="me" href="https://bsky.app/profile/eeentropyyy.hachyderm.io.ap.brid.gy">bluesky
+            </a>
+          </li>
+          <li>
+            <a href="/feed.xml" title="RSS">feed
+            </a>
+          </li>
+          </ul>
+      </div>
+      <div class="footer-col">
+        <p>Christopher Himes is a Product Owner living in Metro Detroit.
+</p>
+        <p>© 2025 Christopher Himes. Made in Michigan.</p>
+        <p>Site last published: July 25, 2025 4:25 PM UTC-04:00</p>
+      </div>
+</footer>
+</body>
+
+</html>

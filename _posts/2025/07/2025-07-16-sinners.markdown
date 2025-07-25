@@ -30,5 +30,7 @@ There's not a lot of action in the film but the performances more than make up f
 
 More people should see this movie.
 
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
+
 [How To Write Intelligent Horror — Sinners]: https://www.youtube.com/watch?v=vkDRSgo6tdo
 [Sinners and the General State of Things]: https://www.youtube.com/watch?v=s0rpCUIYVJg
