@@ -22,7 +22,11 @@
               <li>
                 <a href="/hundred">hundred
                 </a>
-              </li>                                  
+              </li>
+              <li>
+                <a href="/experiments">experiments
+                </a>
+              </li>                              
       </div>
       <div class="footer-col">
           <h3>Contact</h3>
@@ -54,4 +58,56 @@
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
         <p>Site last published: {{ site.time | date: "%B %-d, %Y %-I:%M %p UTC%:z" }}</p>
       </div>
+    <button id="theme-toggle">
+        <span id="sun-icon">
+            🌞
+        </span>
+        <span id="moon-icon" style="display: none;">
+            🌙
+        </span>
+    </button>
+    <script>
+        // Function to set the theme
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('sun-icon').style.display = 'none';
+                document.getElementById('moon-icon').style.display = 'inline';
+            } else {
+                document.body.classList.remove('dark-mode');
+                document.getElementById('sun-icon').style.display = 'inline';
+                document.getElementById('moon-icon').style.display = 'none';
+            }
+            localStorage.setItem('theme', theme);
+        }
+
+        // Initialize the theme based on the user's browser preference
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const currentTheme = localStorage.getItem('theme');
+
+        // Determine the initial theme
+        let initialTheme;
+        if (currentTheme === 'dark') {
+            initialTheme = 'dark';
+        } else if (currentTheme === 'light') {
+            initialTheme = 'light';
+        } else {
+            initialTheme = prefersDarkScheme.matches ? 'dark' : 'light';
+        }
+
+        // Set the initial theme
+        setTheme(initialTheme);
+
+        // Listen for changes in the user's preferred color scheme
+        prefersDarkScheme.addEventListener('change', e => {
+            const newTheme = e.matches ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        // Update local storage when theme is toggled
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            setTheme(isDarkMode ? 'light' : 'dark');
+        });
+    </script>
 </footer>

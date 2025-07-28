@@ -6,7 +6,7 @@ date:   2025-07-25 17:20:00
 tags: ['Week Notes', 'Week 30', '100 Days To Offload']
 blurb: Week 30 notes including a vet visit, job applications, and baking.
 comments:
-    id: 
+    id: 114932170016793895
 ---
 
 * Took our boy Tater to the vet to get a mani pedi. He did great and when we left he did a little strut feeling good.

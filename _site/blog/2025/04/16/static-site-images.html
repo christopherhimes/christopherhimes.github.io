@@ -111,6 +111,23 @@ This is day 5  of #100DaysToOffload.">
   --line-color: rgba(211, 211, 211, 30%);
 }
 
+body {
+  --background-color: rgb(240,240,240);
+  --text-color: rgb(26, 26, 26);
+  --link-color: rgb(1, 85, 106);
+  --foreground-color: rgb(0, 87, 59);
+  color-scheme: light;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  --background-color: rgb(26, 26, 26);
+  --text-color: rgb(240,240,240);
+  --link-color: rgb(25, 209, 255);
+  --foreground-color: rgb(32, 255, 188);
+  color-scheme: dark;
+}
+
 @font-face {
   font-family: "lato-normal";
   src: url("../../../../../assets/font/lato-normal.woff2") format("woff2"), url("../../../../../assets/font/lato-normal.woff") format("woff");
@@ -675,7 +692,11 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
               <li>
                 <a href="/hundred">hundred
                 </a>
-              </li>                                  
+              </li>
+              <li>
+                <a href="/experiments">experiments
+                </a>
+              </li>                              
       </div>
       <div class="footer-col">
           <h3>Contact</h3>
@@ -706,8 +727,60 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: July 25, 2025 5:19 PM UTC-04:00</p>
+        <p>Site last published: July 28, 2025 2:03 PM UTC-04:00</p>
       </div>
+    <button id="theme-toggle">
+        <span id="sun-icon">
+            🌞
+        </span>
+        <span id="moon-icon" style="display: none;">
+            🌙
+        </span>
+    </button>
+    <script>
+        // Function to set the theme
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('sun-icon').style.display = 'none';
+                document.getElementById('moon-icon').style.display = 'inline';
+            } else {
+                document.body.classList.remove('dark-mode');
+                document.getElementById('sun-icon').style.display = 'inline';
+                document.getElementById('moon-icon').style.display = 'none';
+            }
+            localStorage.setItem('theme', theme);
+        }
+
+        // Initialize the theme based on the user's browser preference
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const currentTheme = localStorage.getItem('theme');
+
+        // Determine the initial theme
+        let initialTheme;
+        if (currentTheme === 'dark') {
+            initialTheme = 'dark';
+        } else if (currentTheme === 'light') {
+            initialTheme = 'light';
+        } else {
+            initialTheme = prefersDarkScheme.matches ? 'dark' : 'light';
+        }
+
+        // Set the initial theme
+        setTheme(initialTheme);
+
+        // Listen for changes in the user's preferred color scheme
+        prefersDarkScheme.addEventListener('change', e => {
+            const newTheme = e.matches ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        // Update local storage when theme is toggled
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            setTheme(isDarkMode ? 'light' : 'dark');
+        });
+    </script>
 </footer>
 </body>
 

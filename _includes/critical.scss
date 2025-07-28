@@ -11,6 +11,16 @@ $text-color: rgb(200,200,200);
 
 $line-color: rgb(173, 173, 173);
 
+// :root {
+//     color-scheme: light dark;
+//     --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
+//     --foreground-color: light-dark(rgb(0, 87, 59), rgb(32, 255, 188));
+//     --link-color: light-dark(rgb(1, 85, 106), rgb(25, 209, 255));
+//     --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
+//     --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
+//     --line-color: rgba(211, 211, 211, 30%);
+// }
+//alternate :root
 :root {
     color-scheme: light dark;
     --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
@@ -20,6 +30,22 @@ $line-color: rgb(173, 173, 173);
     --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
     --line-color: rgba(211, 211, 211, 30%);
 }
+body {
+    --background-color: rgb(240,240,240);
+    --text-color: rgb(26, 26, 26);
+    --link-color: rgb(1, 85, 106);
+    --foreground-color: rgb(0, 87, 59);
+    color-scheme: light;
+}
+/* Dark mode styles */
+body.dark-mode {
+    --background-color: rgb(26, 26, 26);
+    --text-color: rgb(240,240,240);
+    --link-color: rgb(25, 209, 255);
+    --foreground-color: rgb(32, 255, 188);
+    color-scheme: dark;
+}
+//end alternate root
 @font-face {
     font-family: 'lato-normal';
     src: url('../../../../../assets/font/lato-normal.woff2') format('woff2'),
@@ -289,3 +315,4 @@ a, a:visited, a:hover .page-link {
     filter: none;
     transform: rotate(-2deg) translateY(-5px);
 }
+
