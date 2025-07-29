@@ -6,9 +6,49 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 28 Jul 2025 14:03:04 -0400</pubDate>
-    <lastBuildDate>Mon, 28 Jul 2025 14:03:04 -0400</lastBuildDate>
+    <pubDate>Tue, 29 Jul 2025 17:36:43 -0400</pubDate>
+    <lastBuildDate>Tue, 29 Jul 2025 17:36:43 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>iPhone Ringtones on Linux</title>
+        <description>&lt;p&gt;I don’t want to use iTunes on a virtual machine to add a custom ringtone. Apple doesn’t make a Linux supported version of iTunes. For these reasons I went looking for a solution to get some custom ringtone files onto my iPhone.&lt;/p&gt;
+
+&lt;p&gt;First if you don’t know you can use Audacity to take an MP3 and cut it to ringtone size. This can be done by opening your file in Audacity and selecting the bit of the song you want to use.&lt;/p&gt;
+
+&lt;p&gt;Then you go to Edit &amp;gt; Remove Special &amp;gt; Trim Audio. This file should be saved as an m4a and renamed to m4r. There’s no conversion required just change the file extension.&lt;/p&gt;
+
+&lt;p&gt;Now that we have the file we need to get it onto the phone. That requires getting file access to the iphone and mounting it so your machine can interact.&lt;/p&gt;
+
+&lt;p&gt;To do that I installed both ‘libimobiledevice’ and ‘ifuse’. Then I created a folder ‘mkdir ~/iphone’ and used ifuse to mount the iphone as storage ‘ifuse ~/iphone’.&lt;/p&gt;
+
+&lt;p&gt;From here I could navigate to ‘~/iphone/iTunes_Control/Ringtones’ and place the ringtone file I just created.&lt;/p&gt;
+
+&lt;p&gt;With the file on the iPhone I needed to tell iOS that it existed. To do this I used a &lt;a href=&quot;https://github.com/ic005k/Xplist/releases/tag/1.2.47&quot;&gt;plist editor&lt;/a&gt; to add a new record to ‘~/iphone/iTunes_Control/iTunes/Ringtones.plist’.&lt;/p&gt;
+
+&lt;p&gt;Here I copied an existing one, updated the ringtone name, updated the file name, changed the GUID and PID to be unique, and saved the file. After unmounting the iphone and restarting it the ringtone was available to select in the settings.&lt;/p&gt;
+
+&lt;p&gt;It appears to have worked. I do wonder though if there is a better way.&lt;/p&gt;
+
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Tue, 29 Jul 2025 13:36:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/07/29/iphone-ringtones-on-linux.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/07/29/iphone-ringtones-on-linux.html</guid>
+        
+        <category>iphone</category>
+        
+        <category>linux</category>
+        
+        <category>ringtones</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Week 30</title>
@@ -2378,27 +2418,6 @@ As a Product Owner the daily activities do not typically require much coding so 
         <category>python</category>
         
         <category>gulp</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Time for a Change</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../../../../../assets/img/blog/time-for-a-change/change.webp&quot; alt=&quot;change-image&quot; title=&quot;change image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.  I’ve been unenthusiastic about the previous color scheme for a while so this is a nice brighter setup.
-&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@lemuelbutler&quot;&gt;Lemuel Butler on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-
-        <![CDATA[
-        <p>Thanks for subscribing to the feed ❤️</p>
-        ]]>
-        </description>
-        <pubDate>Tue, 04 Apr 2017 16:40:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2017/04/04/time-for-a-change.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/04/04/time-for-a-change.html</guid>
         
         
       </item>

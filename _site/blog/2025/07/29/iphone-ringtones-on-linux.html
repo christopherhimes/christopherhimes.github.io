@@ -7,62 +7,13 @@
 
   
 
-  <title>blog - page 6</title>
+  <title>iPhone Ringtones on Linux</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="{% for post in paginator.posts %}
-  
-    {% if post.layout == &quot;none&quot; %}
-      
-        {{ post.title }} via {{ post.external_title }}
-      
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
-      {{ post.blurb }}
-      {% if post.tags %}
-      
-        {% for tag in post.tags %}
-          {{ tag }}
-        {% endfor %}
-      
-      {% endif %}
-    {% else %}
-      
-        {{ post.title }}
-      
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
-      {{ post.blurb }}
-      Read More...
-      {% if post.tags %}
-      
-        {% for tag in post.tags %}
-          {{ tag }}
-        {% endfor %}
-      
-      {% endif %}
-    {% endif %}
-  
-  
-{% endfor %}
-
-
-
-  {% if paginator.previous_page %}
-    
-      previous
-  {% else %}
-    previous
-  {% endif %}
-  
-    page: {{ paginator.page }} of {{ paginator.total_pages }}
-  
-  {% if paginator.next_page %}
-    next
-  {% else %}
-    next
-  {% endif %}">
+  <meta name="description" content="I don’t want to use iTunes on a virtual machine to add a custom ringtone. Apple doesn’t make a Linux supported version of iTunes. For these reasons I went looking for a solution to get some custom ringtone files onto my iPhone. First if you don’t know you can use Audacity to take an MP3 and cut it to ringtone size. This can be done by opening your file in Audacity and selecting the bit of the song you want to use. Then you go to Edit &amp;gt; Remove Special &amp;gt; Trim Audio. This file should be saved as an m4a and renamed to m4r. There’s no conversion required just change the file extension. Now that we have the file we need to get it onto the phone. That requires getting file access to the iphone and mounting it so your machine can interact. To do that I installed both ‘libimobiledevice’ and ‘ifuse’. Then I created a folder ‘mkdir ~/iphone’ and used ifuse to mount the iphone as storage ‘ifuse ~/iphone’. From here I could navigate to ‘~/iphone/iTunes_Control/Ringtones’ and place the ringtone file I just created. With the file on the iPhone I needed to tell iOS that it existed. To do this I used a plist editor to add a new record to ‘~/iphone/iTunes_Control/iTunes/Ringtones.plist’. Here I copied an existing one, updated the ringtone name, updated the file name, changed the GUID and PID to be unique, and saved the file. After unmounting the iphone and restarting it the ringtone...">
 
   
 
@@ -84,66 +35,19 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="blog - page 6">
-  <meta property="og:description" content="{% for post in paginator.posts %}
-  
-    {% if post.layout == &quot;none&quot; %}
-      
-        {{ post.title }} via {{ post.external_title }}
-      
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
-      {{ post.blurb }}
-      {% if post.tags %}
-      
-        {% for tag in post.tags %}
-          {{ tag }}
-        {% endfor %}
-      
-      {% endif %}
-    {% else %}
-      
-        {{ post.title }}
-      
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
-      {{ post.blurb }}
-      Read More...
-      {% if post.tags %}
-      
-        {% for tag in post.tags %}
-          {{ tag }}
-        {% endfor %}
-      
-      {% endif %}
-    {% endif %}
-  
-  
-{% endfor %}
-
-
-
-  {% if paginator.previous_page %}
-    
-      previous
-  {% else %}
-    previous
-  {% endif %}
-  
-    page: {{ paginator.page }} of {{ paginator.total_pages }}
-  
-  {% if paginator.next_page %}
-    next
-  {% else %}
-    next
-  {% endif %}">
+  <meta property="og:title" content="iPhone Ringtones on Linux">
+  <meta property="og:description" content="I don’t want to use iTunes on a virtual machine to add a custom ringtone. Apple doesn’t make a Linux supported version of iTunes. For these reasons I went looking for a solution to get some custom ringtone files onto my iPhone. First if you don’t know you can use Audacity to take an MP3 and cut it to ringtone size. This can be done by opening your file in Audacity and selecting the bit of the song you want to use. Then you go to Edit &amp;gt; Remove Special &amp;gt; Trim Audio. This file should be saved as an m4a and renamed to m4r. There’s no conversion required just change the file extension. Now that we have the file we need to get it onto the phone. That requires getting file access to the iphone and mounting it so your machine can interact. To do that I installed both ‘libimobiledevice’ and ‘ifuse’. Then I created a folder ‘mkdir ~/iphone’ and used ifuse to mount the iphone as storage ‘ifuse ~/iphone’. From here I could navigate to ‘~/iphone/iTunes_Control/Ringtones’ and place the ringtone file I just created. With the file on the iPhone I needed to tell iOS that it existed. To do this I used a plist editor to add a new record to ‘~/iphone/iTunes_Control/iTunes/Ringtones.plist’. Here I copied an existing one, updated the ringtone name, updated the file name, changed the GUID and PID to be unique, and saved the file. After unmounting the iphone and restarting it the ringtone...">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
+  <meta property="og:image" content="http://localhost:4000/assets/og-images/iphone-ringtones-on-linux.webp">
   
 
   
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/blog/blog/page/6/">
-  <link rel="canonical" href="http://localhost:4000/blog/blog/page/6/">
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Christopher Himes">
+  <meta property="og:article:published_time" content="2025-07-29T13:36:00-04:00">
+  <meta property="og:url" content="http://localhost:4000/blog/2025/07/29/iphone-ringtones-on-linux.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2025/07/29/iphone-ringtones-on-linux.html">
   
   <style type="text/css">
     
@@ -463,145 +367,62 @@ a, a:visited, a:hover .page-link {
       </nav></nav>
 </header>
 <main class="wrapper" aria-label="Content">
-        <div class="page-detail">
-<header>
-  <h1 class="page-title">blog - page 6</h1>
-</header>
-  
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Week 17</a>
-      </h2>
-      <p>Apr 25, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-      <p>Weather ☀️ has been nice so I've been working in the yard. The garden beds need some serious care so I'm getting them cleaned up and ready for planting.</p>
-      <p><a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Read More...</a></p>
+        
+
+<div class="" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-detail">
+  <header>
+    <h1 class="post-title" itemprop="name headline">iPhone Ringtones on Linux</h1>
+    <p><time class="dt-published" datetime="2025-07-29T13:36:00-04:00" itemprop="datePublished">
+        Jul 29, 2025
+      </time>
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
+  </header>
+    <article itemprop="articleBody">
+      <p>I don’t want to use iTunes on a virtual machine to add a custom ringtone. Apple doesn’t make a Linux supported version of iTunes. For these reasons I went looking for a solution to get some custom ringtone files onto my iPhone.</p>
+
+<p>First if you don’t know you can use Audacity to take an MP3 and cut it to ringtone size. This can be done by opening your file in Audacity and selecting the bit of the song you want to use.</p>
+
+<p>Then you go to Edit &gt; Remove Special &gt; Trim Audio. This file should be saved as an m4a and renamed to m4r. There’s no conversion required just change the file extension.</p>
+
+<p>Now that we have the file we need to get it onto the phone. That requires getting file access to the iphone and mounting it so your machine can interact.</p>
+
+<p>To do that I installed both ‘libimobiledevice’ and ‘ifuse’. Then I created a folder ‘mkdir ~/iphone’ and used ifuse to mount the iphone as storage ‘ifuse ~/iphone’.</p>
+
+<p>From here I could navigate to ‘~/iphone/iTunes_Control/Ringtones’ and place the ringtone file I just created.</p>
+
+<p>With the file on the iPhone I needed to tell iOS that it existed. To do this I used a <a href="https://github.com/ic005k/Xplist/releases/tag/1.2.47">plist editor</a> to add a new record to ‘~/iphone/iTunes_Control/iTunes/Ringtones.plist’.</p>
+
+<p>Here I copied an existing one, updated the ringtone name, updated the file name, changed the GUID and PID to be unique, and saved the file. After unmounting the iphone and restarting it the ringtone was available to select in the settings.</p>
+
+<p>It appears to have worked. I do wonder though if there is a better way.</p>
+
+
       
       <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
-        
-          <a class="tag-button" href="/tags/#Week 17">Week 17</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
+          
+            <a class="tag-button" href="/tags/#iphone">iphone</a>
+          
+            <a class="tag-button" href="/tags/#linux">linux</a>
+          
+            <a class="tag-button" href="/tags/#ringtones">ringtones</a>
+          
+            <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+          
+        </div>
       
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/04/24/ibm-product-owner-certification.html">Product Owner Certification</a>
-      </h2>
-      <p>Apr 24, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-      <p>It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes.</p>
-      <p><a class="blog-link" href="/blog/2025/04/24/ibm-product-owner-certification.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#Product Owner">Product Owner</a>
-        
-          <a class="tag-button" href="/tags/#Certification">Certification</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/04/19/weeknotes-week16.html">Week 16</a>
-      </h2>
-      <p>Apr 19, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-      <p>Job search, blogging, and Easter preparations.</p>
-      <p><a class="blog-link" href="/blog/2025/04/19/weeknotes-week16.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
-        
-          <a class="tag-button" href="/tags/#Week 16">Week 16</a>
-        
-          <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
-        
-          <a class="tag-button" href="/tags/#Overwatch 2">Overwatch 2</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/04/16/light-and-dark-revisited.html">Light and Dark Mode Revisited</a>
-      </h2>
-      <p>Apr 16, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
-      <p>I wanted to revisit the light and dark update as the original described some changes but didn't display how these changes impacted the experience on the site. Now that images are working a bit better I figured I would show exactly what's happening on the site in its current state.</p>
-      <p><a class="blog-link" href="/blog/2025/04/16/light-and-dark-revisited.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#CSS">CSS</a>
-        
-          <a class="tag-button" href="/tags/#Meta">Meta</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/04/16/static-site-images.html">Static Site Images</a>
-      </h2>
-      <p>Apr 16, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-      <p>I was recently reaking this blog post by Kev Quirk about image handling on his static site which inspired me to spend some time fixing the images on this site.</p>
-      <p><a class="blog-link" href="/blog/2025/04/16/static-site-images.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#Meta">Meta</a>
-        
-          <a class="tag-button" href="/tags/#Images">Images</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-
-<!-- Pagination links -->
-<div class="pagination">
-  
-    <a href="/blog/blog/page/5/" class="previous">
-      previous</a>
-  
-  <span class="page_number ">
-    page: 6 of 11
-  </span>
-  
-    <a href="/blog/blog/page/7/" class="next">next</a>
-  
+    </article>
+  <a href="/blog/2025/07/29/iphone-ringtones-on-linux.html" hidden></a>
 </div>
+<div class="post-detail">
+<hr /></div>
+
+
 </div>
+
+
+
+
     </main><footer class="footer-wrapper"> 
   <data class="u-url" href="/"></data>
       <div class="footer-col">
