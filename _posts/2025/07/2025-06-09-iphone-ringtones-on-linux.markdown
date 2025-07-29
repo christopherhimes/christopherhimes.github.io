@@ -6,7 +6,7 @@ date:   2025-07-29 17:36:00
 tags: ['iphone', 'linux', 'ringtones', '100 Days To Offload']
 blurb: I wanted a custom ringtone on my iPhone from my Linux machine.
 comments:
-    id: 
+    id: 114938719141754451
 ---
 
 I don't want to use iTunes on a virtual machine to add a custom ringtone. Apple doesn't make a Linux supported version of iTunes. For these reasons I went looking for a solution to get some custom ringtone files onto my iPhone.
