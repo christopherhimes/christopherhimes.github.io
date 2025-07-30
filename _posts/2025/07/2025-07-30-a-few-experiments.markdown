@@ -19,6 +19,8 @@ I created a page dedicated to things I'm experimenting with on the site. As of n
 
 ### Reviews
 
-I used the media format I discussed in the last [a few experiments] post to write some reviews. I have a few more in draft that I'm still working on. This seems like an okay way for me to write more without having to invent a new project every few days. Especially when I don't seem to have much to say in the week notes. 
+I used the media format I discussed in the last [a few experiments] post to write some [reviews]. I have a few more in draft that I'm still working on. This seems like an okay way for me to write more without having to invent a new project every few days. Especially when I don't seem to have much to say in the week notes. 
 
 [Cat Look]: /experiments/cat-look/
+[a few experiments]: /blog/2025/06/08/a-few-experiments
+[reviews]: /reviews/

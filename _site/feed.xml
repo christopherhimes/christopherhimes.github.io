@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 30 Jul 2025 16:44:00 -0400</pubDate>
-    <lastBuildDate>Wed, 30 Jul 2025 16:44:00 -0400</lastBuildDate>
+    <pubDate>Wed, 30 Jul 2025 16:55:02 -0400</pubDate>
+    <lastBuildDate>Wed, 30 Jul 2025 16:55:02 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -22,7 +22,7 @@
 
 &lt;h3 id=&quot;reviews&quot;&gt;Reviews&lt;/h3&gt;
 
-&lt;p&gt;I used the media format I discussed in the last [a few experiments] post to write some reviews. I have a few more in draft that I’m still working on. This seems like an okay way for me to write more without having to invent a new project every few days. Especially when I don’t seem to have much to say in the week notes.&lt;/p&gt;
+&lt;p&gt;I used the media format I discussed in the last &lt;a href=&quot;/blog/2025/06/08/a-few-experiments&quot;&gt;a few experiments&lt;/a&gt; post to write some &lt;a href=&quot;/reviews/&quot;&gt;reviews&lt;/a&gt;. I have a few more in draft that I’m still working on. This seems like an okay way for me to write more without having to invent a new project every few days. Especially when I don’t seem to have much to say in the week notes.&lt;/p&gt;
 
 
         <![CDATA[
