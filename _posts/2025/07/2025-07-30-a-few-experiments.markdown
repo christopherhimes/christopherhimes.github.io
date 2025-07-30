@@ -2,7 +2,7 @@
 layout: post
 type: post
 title:  "A Few Experiments Continued"
-date:   2029-07-28 20:00:00
+date:   2029-07-30 16:30:00
 tags: ['experiments', 'meta', 'light', 'dark', '100 Days To Offload']
 blurb: A few additional experiments to discuss including a light/dark mode toggle, reviews, and a dedicated experiments page.
 comments:
