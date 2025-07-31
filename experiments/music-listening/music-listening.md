@@ -12,8 +12,6 @@ permalink: /experiments/music-listening/
 .track strong { color: #333; }
 </style>
 
-
-<h1>Last.fm Recent Listening History for cshmes</h1>
 <div id="tracks">Loading...</div>
 
 <script>
