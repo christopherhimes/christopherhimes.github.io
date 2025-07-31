@@ -37,7 +37,7 @@ fetch('../../.netlify/functions/hide-token')
 
         request.onload = () => {
             if (request.status === 200) {
-                // console.log("Success");
+                console.log("Success");
 
                 var track = JSON.parse(request.response).recenttracks.track[0];
                 var song = track.name;
