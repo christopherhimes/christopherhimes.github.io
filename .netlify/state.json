@@ -2,20 +2,20 @@
 	"siteId": "237a6de1-5ef8-4d4a-aaaf-5d31a29b6a2e",
 	"geolocation": {
 		"data": {
-			"city": "Royal Oak",
+			"city": "Chicago",
 			"country": {
 				"code": "US",
 				"name": "United States"
 			},
 			"subdivision": {
-				"code": "MI",
-				"name": "Michigan"
+				"code": "IL",
+				"name": "Illinois"
 			},
-			"timezone": "America/Detroit",
-			"latitude": 42.518,
-			"longitude": -83.1576,
-			"postalCode": "48073"
+			"timezone": "America/Chicago",
+			"latitude": 41.871,
+			"longitude": -87.6289,
+			"postalCode": "60605"
 		},
-		"timestamp": 1742223510362
+		"timestamp": 1753990906178
 	}
 }
