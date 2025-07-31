@@ -17,9 +17,11 @@ permalink: /experiments/music-listening/
 <div id="tracks">Loading...</div>
 
 <script>
+console.log("hello");
 fetch('../../../.netlify/functions/hide-token')
     .then(response => response.json())
     .then(data => {
+        console.log("in here at least");
         const API_KEY = data.message;
         const USER = 'cshmes';
         const URL = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${USER}&api_key=${API_KEY}&format=json&limit=10`;
@@ -56,6 +58,8 @@ fetch('../../../.netlify/functions/hide-token')
             document.getElementById('tracks').textContent = `Error fetching data: ${error.message}`;
             }
         }
+
+        fetchRecentTracks();
 })
 </script>
 
