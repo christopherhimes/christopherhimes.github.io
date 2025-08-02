@@ -6,9 +6,43 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 31 Jul 2025 15:44:14 -0400</pubDate>
-    <lastBuildDate>Thu, 31 Jul 2025 15:44:14 -0400</lastBuildDate>
+    <pubDate>Sat, 02 Aug 2025 15:36:31 -0400</pubDate>
+    <lastBuildDate>Sat, 02 Aug 2025 15:36:31 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Week 31</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Made some more baguettes this time only formed two instead of three, kneeded a bit more, and remembered to cut them. The texture was much better this time around.&lt;/li&gt;
+  &lt;li&gt;Made some Zucchini bread which everyone seemed to like.&lt;/li&gt;
+  &lt;li&gt;Played some Overwatch 2 with Matthew.&lt;/li&gt;
+  &lt;li&gt;Applied for a few jobs each day.&lt;/li&gt;
+  &lt;li&gt;Had a call with some folks about a possible job opportunity that was exciting.&lt;/li&gt;
+  &lt;li&gt;Worked on a few experiments which aren’t really ready to discuss in depth but they’re coming along.&lt;/li&gt;
+  &lt;li&gt;Watched the substance and have some thought I’m working through for a post later.&lt;/li&gt;
+  &lt;li&gt;Installed [FreshRSS] and spent some time setting that up.&lt;/li&gt;
+  &lt;li&gt;Listened to the new Tyler The Creator album Don’t Tap the Glass.&lt;/li&gt;
+  &lt;li&gt;Caught up with missed episodes of Colbert with Leah this morning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is day 36  of #100DaysToOffload.&lt;/p&gt;
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Sat, 02 Aug 2025 15:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/08/02/weeknotes-week31.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/08/02/weeknotes-week31.html</guid>
+        
+        <category>Week Notes</category>
+        
+        <category>Week 31</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>A Few Experiments Continued</title>
@@ -2380,46 +2414,6 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
         <category>YouTube</category>
         
         <category>OBS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Another New Design</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../..../../../../assets/img/blog/another-new-design/design.webp&quot; alt=&quot;main-image&quot; title=&quot;Design&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s a new design, yes it is! This site gets more visual updates than it does blog posts but that’s where we’re at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The previous template for the site used an altered version of a template that I liked but was never quite happy with. This new version takes a similar approach but is way easier to setup and make adjustments. The other piece to consider is that I never really felt comfortable with leading with a blog as I’m not great about keeping up with it obviously.&lt;/p&gt;
-
-&lt;p&gt;There are a few things about this template and the adjustments I’ve made that I’m happy with. For instance there is significantly less visual clutter on any and every page involved. As I mentioned above I don’t want to lead with a blog so now there is an introductory header element that has my face and a tag line introduction. This is preferable to jumping right into a blog for me. My preference is for dark mode reading so the site reflects that. There is some additional adjustment required to get it where it needs to be but I’m happy with it for now. Additionally I’ve added some brand colors that were lacking in the previous site which was all grey.&lt;/p&gt;
-
-&lt;p&gt;My next approach is to optimize and make it more accessible. I’ve ran lighthouse on it and the plan is to make as many of the suggested changes as possible. One main problem that I agree with and want to correct first is the level of contrast. Some of the colors I’ve chosen and even the standard text are not easy enough to read. I like the way it looks currently but I do hope I’m not the only one that ever looks at the site.&lt;/p&gt;
-
-&lt;p&gt;I would like to follow some tutorials and add comments to my posts. While I don’t suppose I’ll get much in the way of interaction the project to add them using ActivityPub via Mastodon seems interesting.&lt;/p&gt;
-
-&lt;p&gt;Next projects will be documented and shared here. I’m not a web developer but I do like to poke around with this sort of thing so I’ll be recording that information in a blog in 2023 and beyond. Imagine that!&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@raphaelphotoch&quot;&gt;Photo by Raphael Schaller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-
-        <![CDATA[
-        <p>Thanks for subscribing to the feed ❤️</p>
-        ]]>
-        </description>
-        <pubDate>Sat, 12 Aug 2023 16:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2023/08/12/another-new-design.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2023/08/12/another-new-design.html</guid>
-        
-        <category>site</category>
-        
-        <category>design</category>
-        
-        <category>lighthouse</category>
-        
-        <category>accessibility</category>
         
         
       </item>

@@ -423,9 +423,9 @@ a, a:visited, a:hover .page-link {
 
 <script>
 console.log("hello");
-// fetch('../../../.netlify/functions/hide-token')
-//     .then(response => response.json())
-//     .then(data => {
+fetch('../../../.netlify/functions/hide-token')
+    .then(response => response.json())
+    .then(data => {
         console.log("in here at least");
         const API_KEY = data.message;
         const USER = 'cshmes';
@@ -479,7 +479,7 @@ console.log("hello");
             }
 
             fetchRecentTracks();
-// })
+})
 </script>
 
 
@@ -543,7 +543,7 @@ console.log("hello");
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: July 31, 2025 3:44 PM UTC-04:00</p>
+        <p>Site last published: August 2, 2025 3:36 PM UTC-04:00</p>
       </div>
     <button id="theme-toggle">
         <span id="sun-icon">

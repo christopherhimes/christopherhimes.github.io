@@ -4,7 +4,9 @@ title: Catfigurator
 mainnav: false
 permalink: /experiments/catfigurator/
 ---
-* This is not finished so don't get too excited. *
+*** This is not finished so don't get too excited. ***
+
+* Elements head, body, tail, leg, eyes, etc should be uniquely defined and transformed into place to make their placement easier.
 
 <svg id="cat" width="400" height="400" viewBox="0 0 400 400">
 
