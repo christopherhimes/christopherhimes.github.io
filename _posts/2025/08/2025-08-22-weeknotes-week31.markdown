@@ -6,7 +6,7 @@ date:   2025-08-02 15:0:00
 tags: ['Week Notes', 'Week 31', '100 Days To Offload']
 blurb: Week 31 notes including job applications, more baking, and more.
 comments:
-    id: 
+    id: 114960986448297835
 ---
 
 
@@ -19,6 +19,7 @@ comments:
 * Watched the substance and have some thought I'm working through for a post later.
 * Installed [FreshRSS] and spent some time setting that up.
 * Listened to the new Tyler The Creator album Don't Tap the Glass.
+* Leah got a flat so I did some driving around to drop her off.
 * Caught up with missed episodes of Colbert with Leah this morning.
 
 
