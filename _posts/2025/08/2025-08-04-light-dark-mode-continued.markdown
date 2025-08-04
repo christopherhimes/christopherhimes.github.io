@@ -5,8 +5,8 @@ title:  "Light and Dark Mode Continued"
 date:   2025-08-04 15:00:00
 tags: ['CSS', 'Meta', '100 Days To Offload']
 blurb: Added a toggle to the footer of my site to easily change from light and dark mode.
-comments: 114971882473670582
-    id: 
+comments: 
+    id: 114971882473670582
 ---
 
 Why are we doing this again and so soon? Well I really wanted a toggle between light and dark so people that visit the site could easily change between light and dark mode. This meant the following light and dark mode setup would need to be tweaked.

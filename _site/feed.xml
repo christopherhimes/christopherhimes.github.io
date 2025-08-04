@@ -6,12 +6,12 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 04 Aug 2025 14:29:26 -0400</pubDate>
-    <lastBuildDate>Mon, 04 Aug 2025 14:29:26 -0400</lastBuildDate>
+    <pubDate>Mon, 04 Aug 2025 14:50:18 -0400</pubDate>
+    <lastBuildDate>Mon, 04 Aug 2025 14:50:18 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title></title>
+        <title>Light and Dark Mode Continued</title>
         <description>&lt;p&gt;Why are we doing this again and so soon? Well I really wanted a toggle between light and dark so people that visit the site could easily change between light and dark mode. This meant the following light and dark mode setup would need to be tweaked.&lt;/p&gt;
 
 &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -65,15 +65,21 @@
 
 &lt;p&gt;You can try this out for yourself by clicking on either the sun or the moon in the footer depending on your default settings.&lt;/p&gt;
 
-&lt;p&gt;This is day   of #100DaysToOffload.&lt;/p&gt;
+&lt;p&gt;This is day 38  of #100DaysToOffload.&lt;/p&gt;
 
         <![CDATA[
         <p>Thanks for subscribing to the feed ❤️</p>
         ]]>
         </description>
-        <pubDate>Mon, 04 Aug 2025 14:29:26 -0400</pubDate>
-        <link>http://localhost:4000/blog/2025/08/04/2025-08-04-light-dark-mode-continued.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2025/08/04/2025-08-04-light-dark-mode-continued.html</guid>
+        <pubDate>Mon, 04 Aug 2025 11:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/08/04/light-dark-mode-continued.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/08/04/light-dark-mode-continued.html</guid>
+        
+        <category>CSS</category>
+        
+        <category>Meta</category>
+        
+        <category>100 Days To Offload</category>
         
         
       </item>
