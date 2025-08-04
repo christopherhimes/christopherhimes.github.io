@@ -7,19 +7,13 @@
 
   
 
-  <title>about</title>
+  <title>Gradient Placement</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="I&apos;m a Product Owner living in Metro Detroit.
-
-For a more detailed look at my experience please check my [resume/cv].
-
-
-
-[resume/cv]: ../cv">
+  <meta name="description" content="">
 
   
 
@@ -41,14 +35,8 @@ For a more detailed look at my experience please check my [resume/cv].
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="about">
-  <meta property="og:description" content="I&apos;m a Product Owner living in Metro Detroit.
-
-For a more detailed look at my experience please check my [resume/cv].
-
-
-
-[resume/cv]: ../cv">
+  <meta property="og:title" content="Gradient Placement">
+  <meta property="og:description" content="">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
@@ -56,8 +44,8 @@ For a more detailed look at my experience please check my [resume/cv].
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/about/">
-  <link rel="canonical" href="http://localhost:4000/about/">
+  <meta property="og:url" content="http://localhost:4000/experiments/gradient-placement/">
+  <link rel="canonical" href="http://localhost:4000/experiments/gradient-placement/">
   
   <style type="text/css">
     
@@ -379,12 +367,46 @@ a, a:visited, a:hover .page-link {
 <main class="wrapper" aria-label="Content">
         <div class="page-detail">
 <header>
-  <h1 class="page-title">about</h1>
+  <h1 class="page-title">Gradient Placement</h1>
 </header>
-  <p>I’m a Product Owner living in Metro Detroit.</p>
+  <style>
+    .gradient-shadow {
+        width: 300px;
+        height: 200px;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        margin: 20px;
+    }
 
-<p>For a more detailed look at my experience please check my <a href="../cv">resume/cv</a>.</p>
+    .gradient-shadow::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 10px;
+        background: linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(0, 255, 0, 0.5));
+        pointer-events: none;
+        z-index: 1;
+    }
 
+    /* .gradient-shadow::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        height: 10px;
+        background: linear-gradient(to right, rgba(0, 0, 255, 0.3), rgba(0, 255, 0, 0.3));
+        pointer-events: none;
+        z-index: 1;
+    } */
+</style>
+
+<body>
+    <div class="gradient-shadow"></div>
+</body>
 
 </div>
     </main><footer class="footer-wrapper"> 

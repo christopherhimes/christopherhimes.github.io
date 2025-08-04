@@ -145,12 +145,14 @@ a, a:visited, a:hover .page-link {
     text-decoration: none;
 }
 .site-header {
+    // box-shadow: 6px 6px 12px var(--foreground-color),
+    //           -6px -6px 12px var(--link-color);
     border-image: linear-gradient(34deg, var(--foreground-color), var(--link-color)) 1;
-    border-width: 7px;
+    border-width: 3px;
     border-style: solid;
     border-left: 0;
     border-right: 0;
-    border-bottom: 0;
+    border-bottom: 0px;
     // margin: 0px -5px 0px -5px;
     // margin:0;
     // margin:5px;

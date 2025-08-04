@@ -7,19 +7,62 @@
 
   
 
-  <title>about</title>
+  <title>blog - page 12</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="I&apos;m a Product Owner living in Metro Detroit.
+  <meta name="description" content="{% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
+  
+  
+{% endfor %}
 
-For a more detailed look at my experience please check my [resume/cv].
 
 
-
-[resume/cv]: ../cv">
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
 
@@ -41,14 +84,57 @@ For a more detailed look at my experience please check my [resume/cv].
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="about">
-  <meta property="og:description" content="I&apos;m a Product Owner living in Metro Detroit.
+  <meta property="og:title" content="blog - page 12">
+  <meta property="og:description" content="{% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
+  
+  
+{% endfor %}
 
-For a more detailed look at my experience please check my [resume/cv].
 
 
-
-[resume/cv]: ../cv">
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
@@ -56,8 +142,8 @@ For a more detailed look at my experience please check my [resume/cv].
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/about/">
-  <link rel="canonical" href="http://localhost:4000/about/">
+  <meta property="og:url" content="http://localhost:4000/blog/blog/page/12/">
+  <link rel="canonical" href="http://localhost:4000/blog/blog/page/12/">
   
   <style type="text/css">
     
@@ -379,13 +465,44 @@ a, a:visited, a:hover .page-link {
 <main class="wrapper" aria-label="Content">
         <div class="page-detail">
 <header>
-  <h1 class="page-title">about</h1>
+  <h1 class="page-title">blog - page 12</h1>
 </header>
-  <p>I’m a Product Owner living in Metro Detroit.</p>
+  
+  <article class="blog-entry">
+    
+      <h2>
+        <a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Take it Home With You</a>
+      </h2>
+      <p>Sep 13, 2015&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>The next two weeks are going to be exceedingly difficult not to bring work home.  I'm prone to work through things I'm working on at work while I'm at home.  This usually stays to the realm of talking through possible solutions or planning my day or week ahead of time.</p>
+      <p><a class="blog-link" href="/blog/2015/09/13/take-it-home-with-you.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#work">work</a>
+        
+          <a class="tag-button" href="/tags/#home">home</a>
+        
+      </div>
+      
+    
+  </article>
+  <hr />
 
-<p>For a more detailed look at my experience please check my <a href="../cv">resume/cv</a>.</p>
 
-
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/blog/blog/page/11/" class="previous">
+      previous</a>
+  
+  <span class="page_number ">
+    page: 12 of 12
+  </span>
+  
+    <span class="next ">next</span>
+  
+</div>
 </div>
     </main><footer class="footer-wrapper"> 
   <data class="u-url" href="/"></data>
