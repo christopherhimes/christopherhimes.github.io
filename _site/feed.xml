@@ -6,9 +6,76 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 02 Aug 2025 16:11:01 -0400</pubDate>
-    <lastBuildDate>Sat, 02 Aug 2025 16:11:01 -0400</lastBuildDate>
+    <pubDate>Mon, 04 Aug 2025 13:17:06 -0400</pubDate>
+    <lastBuildDate>Mon, 04 Aug 2025 13:17:06 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Baguettes</title>
+        <description>&lt;h2 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;3 cups flour&lt;/li&gt;
+  &lt;li&gt;1 1/2 cups lukewarm water&lt;/li&gt;
+  &lt;li&gt;2 tsp yeast&lt;/li&gt;
+  &lt;li&gt;1 tsp salt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;method&quot;&gt;Method&lt;/h2&gt;
+
+&lt;h3 id=&quot;preparation-day-1&quot;&gt;Preparation Day 1&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Combine 1/2 cup of lukewarm water and 2 tsp (or 1 packet) of dry yeast and let sit for ten minutes.&lt;/li&gt;
+  &lt;li&gt;Then combine with the flour, remaining lukewarm water and salt.&lt;/li&gt;
+  &lt;li&gt;This should be kneaded for approximately ten minutes or until windowpane&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot; role=&quot;doc-noteref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; has been achieved.&lt;/li&gt;
+  &lt;li&gt;Roll into a ball and place in a greased bowl covered with plastic for 12-20 hours.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;preparation-day-2&quot;&gt;Preparation Day 2&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;At this point the dough should have doubled. Take it out of the bowl and on a floured surface split it into two even portions.&lt;/li&gt;
+  &lt;li&gt;Each portion should be stretched long and each end folded to meet in the middle resulting in a rectangle shape. Then in the other direction fold a third over from either direction. This should result in a slightly narrower rectangle. These should be left for 10 minutes before continuing.&lt;/li&gt;
+  &lt;li&gt;Each rested portion should be rolled into a baguette shape. Roll them out and allow the ends to go to a point.&lt;/li&gt;
+  &lt;li&gt;Once shaped each baguette should be placed on a floured kitchen towel with the towel used as a barrier between the baguettes. Think taco holder at a restaurant. They should be left to rise a final time for 2 hours. Keeping them close but separate should force the rice up versus out.&lt;/li&gt;
+  &lt;li&gt;Fifteen minutes before the 2 hours is up preheat the oven to 450 degrees and boil 2 cups of water. I use a cast iron pan to boil the water so it can go right in the oven with the baguettes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;bake&quot;&gt;Bake!&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Once preheated place the baguettes on a baking sheet in the oven and below them the cast iron pan with boiling water.&lt;/li&gt;
+  &lt;li&gt;After ten minutes remove the cast iron pan being careful as it should be steamy in the oven.&lt;/li&gt;
+  &lt;li&gt;Bake the baguettes for another 15-20 minutes depending on your oven. Halfway through rotate them for even color.&lt;/li&gt;
+  &lt;li&gt;Remove from the oven and move to a cooling rack for at least ten minutes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;beyond&quot;&gt;Beyond&lt;/h2&gt;
+&lt;p&gt;This has been a little way to bring back France after our trip earlier this summer. I’ve tried some &lt;a href=&quot;http://momsdish.com/baguette&quot;&gt;no knead recipes&lt;/a&gt; and have not been happy with the way they turned out. This is still not where I want it to be but I think I’m struggling with the wetness of the dough and that has impacted the final results. I think the next move needs to be to switch to more precise measurements to dial this in.&lt;/p&gt;
+
+&lt;p&gt;One thing of note my flour choice which is a Canadian flour from Golden Temple, specifically the Durum Atta Flour. Using this flour means my wife who eats gluten free can enjoy these baguettes. Not sure if it’s the durum wheat alone or a combination of that and the pesticides used in the states but American flour is basically off limits for her.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;From the center of the dough you should be able to stretch it thin enough that you can see through without it tearing or breaking. Can you read a newspaper through the dough? You’re ready to move to the next step. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Mon, 04 Aug 2025 09:15:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/08/04/recipe-baguetttes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/08/04/recipe-baguetttes.html</guid>
+        
+        <category>recipe</category>
+        
+        <category>baguettes</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Week 31</title>
@@ -2371,50 +2438,6 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
         <guid isPermaLink="true">http://localhost:4000/blog/2024/01/13/add-comments.html</guid>
         
         <category>comments</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>A Stream?</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/a-stream/stream.webp&quot; alt=&quot;main-image&quot; title=&quot;Stream&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ve been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;First, lets talk audio. I’ve spent far too much time adjusting the audio for both personal streaming and for work. Current setup utilizes &lt;a href=&quot;https://vb-audio.com&quot;&gt;virtual cables&lt;/a&gt; and &lt;a href=&quot;https://obsproject.com&quot;&gt;obs&lt;/a&gt; studio filters to achieve what I think is pretty good sounding audio. I’ve primarily been following &lt;a href=&quot;https://www.youtube.com/@EposVox&quot;&gt;EposVox&lt;/a&gt; audio quality guides.&lt;/p&gt;
-
-&lt;p&gt;I’m using a shock mounted Yeti Blue microphone and passing it throught Noise Suppression using the built in RNNoise method. I haven’t noticed any CPU impact and this works so well. I have the gain on the microphone down very low but I’ve turned the digital gain boosted by 10 dB. This can sound weird without additional filtering but increases my volume without having to be right on top of the microphone.&lt;/p&gt;
-
-&lt;p&gt;Next there are a few rounds of correcting for that initial gain boosting and making things sound good. The first round of EQ that uses ReaEQ mostly to cut highs, lows, and a few nasaly places in the mids. This is followed up with a compressor with a 3:1 ratio and a -20dB threshold. From there I do have a Noise Gate set but I’m not sure if it is strictly necessary with all the other things happening. Lastly, there is an additional EQ for some high end and normal speaking range boosting for clarity and to add interest.&lt;/p&gt;
-
-&lt;p&gt;For the camera side I have a Razer Kiyo that has most of the default settings but with the white balance manually adjusted. It never quite gets that right and I haven’t found the right filters to counter it consistently. I do typically increase the contrast a little and apply a LUT. This is mostly to add back in some warmth as the default settings can read a bit cold. One thing I wanted to add is that the camera in obs has its own dedicated scene that is then added to other scenes to enable different presentation of the same source. I was running into an issue where changing it on one scene would change it in every scene. This is apparently a known thing about obs but it did cause some confusion.&lt;/p&gt;
-
-&lt;p&gt;The baked in streaming setup for OBS is so good it doesn’t typically need to be tweaked. I spent the beter part of the last year streaming exclusively to twitch. This is for a few reasons. First, up until recently it was against twitch’s terms of service to stream to more than one platform. Also, for whatever reason I associate twitch with streaming more than YouTube.&lt;/p&gt;
-
-&lt;p&gt;I have been experimenting doing both lately but have determined the only way for me to do that is to use a third party. Specifically, I’ve been using &lt;a href=&quot;https://restream.io&quot;&gt;Restream&lt;/a&gt; to simultaneously stream to both twitch and YouTube. My upload bandwith is not good so I cannot support both at the same time myself. Setting these up is no more complicated than setting up accounts at each and giving access to Restream. The most complicated piece is setting some of the bitrate and sizing information that will work for both. My current setup is not as good for YouTube as it could be due to the limitations coming from twitch.&lt;/p&gt;
-
-&lt;p&gt;I stream infrequently, but when I do it’s at either &lt;a href=&quot;https://www.twitch.tv/entropygrows/&quot;&gt;EntropyGrows Twitch&lt;/a&gt; or &lt;a href=&quot;https://www.youtube.com/@entropygrows9669&quot;&gt;EntropyGrows YouTube&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@rzunikoff&quot;&gt;Photo by Raphael Schaller on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-
-        <![CDATA[
-        <p>Thanks for subscribing to the feed ❤️</p>
-        ]]>
-        </description>
-        <pubDate>Fri, 29 Dec 2023 08:00:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2023/12/29/a-stream.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2023/12/29/a-stream.html</guid>
-        
-        <category>streaming</category>
-        
-        <category>Twitch</category>
-        
-        <category>YouTube</category>
-        
-        <category>OBS</category>
         
         
       </item>
