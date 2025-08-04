@@ -113,9 +113,51 @@ pagination:
 
 
 From here I added some padding to the pagination and centered it to make sure it was easy to see.">
+  <meta name="twitter:title" content="Adding Pagination">
+  <meta name="twitter:description" content="I don’t remember exactly why I removed the pagination for this site but with the increase of blogs posts I felt that I needed to add it back.
+
+After trying and failing to get the standard jekyll-paginate to work I went ahead and setup jekyll-paginate-v2. This was easier than some had implied and look now there are multiple pages on this here blog.
+
+This was on the todo list so I updated that as well.
+
+First you must install the gem.
+
+gem install jekyll-paginate-v2
+
+
+Then make sure to update _config.yml. Obviously you don’t need all of these settings but this is what I’m using currently.
+
+plugins:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: &apos;/blog/page/:num/&apos;
+  title: &apos;:title - page :num&apos;
+  limit: 0
+  sort_field: &apos;date&apos;
+  sort_reverse: true
+
+
+One thing that did trip me up is I needed to set two permalinks, one for the page itself and another within the pagination.
+
+---
+layout: page
+title: blog
+permalink: /blog/
+pagination:
+  enabled: true
+  permalink: /blog/page/:num/
+---
+
+
+From here I added some padding to the pagination and centered it to make sure it was easy to see.">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/adding-pagination.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:4000/assets/og-images/adding-pagination.webp">
   
 
   
@@ -764,7 +806,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 4, 2025 2:17 PM UTC-04:00</p>
+        <p>Site last published: August 4, 2025 2:29 PM UTC-04:00</p>
       </div>
     <button id="theme-toggle">
         <span id="sun-icon">

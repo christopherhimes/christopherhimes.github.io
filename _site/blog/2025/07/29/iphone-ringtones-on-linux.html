@@ -37,9 +37,13 @@
   <meta property="og:site_name" content="christopher himes">
   <meta property="og:title" content="iPhone Ringtones on Linux">
   <meta property="og:description" content="I don’t want to use iTunes on a virtual machine to add a custom ringtone. Apple doesn’t make a Linux supported version of iTunes. For these reasons I went looking for a solution to get some custom ringtone files onto my iPhone. First if you don’t know you can use Audacity to take an MP3 and cut it to ringtone size. This can be done by opening your file in Audacity and selecting the bit of the song you want to use. Then you go to Edit &amp;gt; Remove Special &amp;gt; Trim Audio. This file should be saved as an m4a and renamed to m4r. There’s no conversion required just change the file extension. Now that we have the file we need to get it onto the phone. That requires getting file access to the iphone and mounting it so your machine can interact. To do that I installed both ‘libimobiledevice’ and ‘ifuse’. Then I created a folder ‘mkdir ~/iphone’ and used ifuse to mount the iphone as storage ‘ifuse ~/iphone’. From here I could navigate to ‘~/iphone/iTunes_Control/Ringtones’ and place the ringtone file I just created. With the file on the iPhone I needed to tell iOS that it existed. To do this I used a plist editor to add a new record to ‘~/iphone/iTunes_Control/iTunes/Ringtones.plist’. Here I copied an existing one, updated the ringtone name, updated the file name, changed the GUID and PID to be unique, and saved the file. After unmounting the iphone and restarting it the ringtone...">
+  <meta name="twitter:title" content="iPhone Ringtones on Linux">
+  <meta name="twitter:description" content="I don’t want to use iTunes on a virtual machine to add a custom ringtone. Apple doesn’t make a Linux supported version of iTunes. For these reasons I went looking for a solution to get some custom ringtone files onto my iPhone. First if you don’t know you can use Audacity to take an MP3 and cut it to ringtone size. This can be done by opening your file in Audacity and selecting the bit of the song you want to use. Then you go to Edit &amp;gt; Remove Special &amp;gt; Trim Audio. This file should be saved as an m4a and renamed to m4r. There’s no conversion required just change the file extension. Now that we have the file we need to get it onto the phone. That requires getting file access to the iphone and mounting it so your machine can interact. To do that I installed both ‘libimobiledevice’ and ‘ifuse’. Then I created a folder ‘mkdir ~/iphone’ and used ifuse to mount the iphone as storage ‘ifuse ~/iphone’. From here I could navigate to ‘~/iphone/iTunes_Control/Ringtones’ and place the ringtone file I just created. With the file on the iPhone I needed to tell iOS that it existed. To do this I used a plist editor to add a new record to ‘~/iphone/iTunes_Control/iTunes/Ringtones.plist’. Here I copied an existing one, updated the ringtone name, updated the file name, changed the GUID and PID to be unique, and saved the file. After unmounting the iphone and restarting it the ringtone...">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/iphone-ringtones-on-linux.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:4000/assets/og-images/iphone-ringtones-on-linux.webp">
   
 
   
@@ -668,7 +672,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 4, 2025 2:17 PM UTC-04:00</p>
+        <p>Site last published: August 4, 2025 2:29 PM UTC-04:00</p>
       </div>
     <button id="theme-toggle">
         <span id="sun-icon">

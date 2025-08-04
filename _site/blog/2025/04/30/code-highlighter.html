@@ -101,9 +101,45 @@ With the inclusion of styling css in the header.
 Not a lot to get it readable which is nice. I’m done with same day changes now I think.
 
 This is day 13  of #100DaysToOffload.">
+  <meta name="twitter:title" content="Updated Code Block Styling">
+  <meta name="twitter:description" content="Really didn’t like the look of code on the previous post. This has been on the todo list and I just went ahead and made it happen today. Now code is styled using rouge and monokai styling.
+
+Here is an example of html formatting with line numbers.
+
+1
+&amp;lt;marquee&amp;gt;Hello World!&amp;lt;/marquee&amp;gt;
+
+
+Here is a result of the impressive code.
+
+Hello World!
+
+This was implemented by updating the _config.yml for the site like so.
+
+1
+2
+3
+4
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+With the inclusion of styling css in the header.
+
+1
+&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/syntax_monokai.css&quot; media=&quot;print&quot; onload=&quot;this.onload=null;this.removeAttribute(&apos;media&apos;);&quot; fetchpriority=&quot;low&quot;&amp;gt;
+
+
+Not a lot to get it readable which is nice. I’m done with same day changes now I think.
+
+This is day 13  of #100DaysToOffload.">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/code-highlighter.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:4000/assets/og-images/code-highlighter.webp">
   
 
   
@@ -746,7 +782,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 4, 2025 2:17 PM UTC-04:00</p>
+        <p>Site last published: August 4, 2025 2:29 PM UTC-04:00</p>
       </div>
     <button id="theme-toggle">
         <span id="sun-icon">

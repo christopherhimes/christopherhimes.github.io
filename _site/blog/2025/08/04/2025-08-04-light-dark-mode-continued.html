@@ -1,0 +1,54 @@
+<p>Why are we doing this again and so soon? Well I really wanted a toggle between light and dark so people that visit the site could easily change between light and dark mode. This meant the following light and dark mode setup would need to be tweaked.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">color-scheme</span><span class="p">:</span> <span class="n">light</span> <span class="n">dark</span><span class="p">;</span>
+    <span class="py">--background-color</span><span class="p">:</span> <span class="n">light-dark</span><span class="p">(</span><span class="nb">rgb</span><span class="p">(</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">),</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">));</span>
+    <span class="py">--foreground-color</span><span class="p">:</span> <span class="n">light-dark</span><span class="p">(</span><span class="nb">rgb</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">119</span><span class="p">,</span> <span class="m">83</span><span class="p">),</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">32</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">188</span><span class="p">));</span>
+    <span class="py">--link-color</span><span class="p">:</span> <span class="n">light-dark</span><span class="p">(</span><span class="nb">rgb</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">151</span><span class="p">,</span> <span class="m">189</span><span class="p">),</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">25</span><span class="p">,</span> <span class="m">209</span><span class="p">,</span> <span class="m">255</span><span class="p">));</span>
+    <span class="py">--text-color</span><span class="p">:</span> <span class="n">light-dark</span><span class="p">(</span><span class="nb">rgb</span><span class="p">(</span><span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">),</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">));</span>
+    <span class="py">--line-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">211</span><span class="p">,</span> <span class="m">211</span><span class="p">,</span> <span class="m">211</span><span class="p">,</span> <span class="m">30%</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>I’ve broken out the color schemes and now declare them as follows.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+    <span class="py">--background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">);</span>
+    <span class="py">--text-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">);</span>
+    <span class="py">--link-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">85</span><span class="p">,</span> <span class="m">106</span><span class="p">);</span>
+    <span class="py">--foreground-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">87</span><span class="p">,</span> <span class="m">59</span><span class="p">);</span>
+    <span class="py">color-scheme</span><span class="p">:</span> <span class="n">light</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* Dark mode styles */</span>
+<span class="nt">body</span><span class="nc">.dark-mode</span> <span class="p">{</span>
+    <span class="py">--background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">,</span> <span class="m">26</span><span class="p">);</span>
+    <span class="py">--text-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">,</span><span class="m">240</span><span class="p">);</span>
+    <span class="py">--link-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">25</span><span class="p">,</span> <span class="m">209</span><span class="p">,</span> <span class="m">255</span><span class="p">);</span>
+    <span class="py">--foreground-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">32</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">188</span><span class="p">);</span>
+    <span class="py">color-scheme</span><span class="p">:</span> <span class="n">dark</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This allows for dark-mode to be specified via JavaScript from the button in the footer.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Set the initial theme</span>
+<span class="nf">setTheme</span><span class="p">(</span><span class="nx">initialTheme</span><span class="p">);</span>
+
+<span class="c1">// Listen for changes in the user's preferred color scheme</span>
+<span class="nx">prefersDarkScheme</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">change</span><span class="dl">'</span><span class="p">,</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">newTheme</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">matches</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">dark</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">light</span><span class="dl">'</span><span class="p">;</span>
+    <span class="nf">setTheme</span><span class="p">(</span><span class="nx">newTheme</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// Update local storage when theme is toggled</span>
+<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">theme-toggle</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">isDarkMode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nf">contains</span><span class="p">(</span><span class="dl">'</span><span class="s1">dark-mode</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nf">setTheme</span><span class="p">(</span><span class="nx">isDarkMode</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">light</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">dark</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>I do see some flickering with this implementation so I will probably continue or revisit this again in the future to eliminate that and improve the setup in some other ways as well.</p>
+
+<p>You can try this out for yourself by clicking on either the sun or the moon in the footer depending on your default settings.</p>
+
+<p>This is day   of #100DaysToOffload.</p>

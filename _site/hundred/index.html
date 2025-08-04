@@ -71,9 +71,30 @@ This is a dedicated page to list out the current progress for this challenge.
 
 
 [100 Days To Offload]: https://100daystooffload.com/">
+  <meta name="twitter:title" content="hundred">
+  <meta name="twitter:description" content="[100 Days To Offload] is a challenge to publish 100 posts on your personal blog in a year.
+
+This is a dedicated page to list out the current progress for this challenge.
+
+{% assign tagged_posts = site.posts | where_exp: &quot;post&quot;, &quot;post.tags contains &apos;100 Days To Offload&apos;&quot; %}
+{% assign total = tagged_posts | size %}
+{% assign tagged_posts = tagged_posts %}
+
+
+  {% for post in tagged_posts %}
+    
+      {{ total | minus: forloop.index0 }}. 
+      {{ post.title }} - {{ post.date | date: &quot;%B %d, %Y&quot; }}
+    
+  {% endfor %}
+
+
+[100 Days To Offload]: https://100daystooffload.com/">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
   
 
   
@@ -410,11 +431,6 @@ a, a:visited, a:hover .page-link {
 <ul class="💯">
   
     <li>
-      38. 
-      <a href="/blog/2025/08/04/light-dark-mode-continued.html">Light and Dark Mode Continued</a> - August 04, 2025
-    </li>
-  
-    <li>
       37. 
       <a href="/blog/2025/08/04/recipe-baguetttes.html">Baguettes</a> - August 04, 2025
     </li>
@@ -662,7 +678,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 4, 2025 2:17 PM UTC-04:00</p>
+        <p>Site last published: August 4, 2025 2:29 PM UTC-04:00</p>
       </div>
     <button id="theme-toggle">
         <span id="sun-icon">

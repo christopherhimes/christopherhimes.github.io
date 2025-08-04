@@ -135,9 +135,62 @@
   {% else %}
     next
   {% endif %}">
+  <meta name="twitter:title" content="blog - page 9">
+  <meta name="twitter:description" content="{% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;none&quot; %}
+      
+        {{ post.title }} via {{ post.external_title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.blurb }}
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% else %}
+      
+        {{ post.title }}
+      
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.blurb }}
+      Read More...
+      {% if post.tags %}
+      
+        {% for tag in post.tags %}
+          {{ tag }}
+        {% endfor %}
+      
+      {% endif %}
+    {% endif %}
+  
+  
+{% endfor %}
+
+
+
+  {% if paginator.previous_page %}
+    
+      previous
+  {% else %}
+    previous
+  {% endif %}
+  
+    page: {{ paginator.page }} of {{ paginator.total_pages }}
+  
+  {% if paginator.next_page %}
+    next
+  {% else %}
+    next
+  {% endif %}">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
   
 
   
@@ -665,7 +718,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 4, 2025 2:17 PM UTC-04:00</p>
+        <p>Site last published: August 4, 2025 2:29 PM UTC-04:00</p>
       </div>
     <button id="theme-toggle">
         <span id="sun-icon">

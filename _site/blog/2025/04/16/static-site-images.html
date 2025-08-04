@@ -87,9 +87,38 @@ And here just because it would be bad form to have a post about images without i
 Photo by Huang Yingone
 
 This is day 5  of #100DaysToOffload.">
+  <meta name="twitter:title" content="Static Site Images">
+  <meta name="twitter:description" content="I was recently reaking this blog post by Kev Quirk about image handling on his static site which inspired me to spend some time fixing the images on this site.
+
+My includes are fairly similar to his but I’m passing a class as well.
+
+
+{{=&amp;lt;% %&amp;gt;=}}&amp;lt;img class=&quot;blogimg&quot; alt=&quot;{{include.alt}}&quot; loading=&quot;lazy&quot; src=&quot;/assets/img/{{include.src}}&quot; /&amp;gt;
+
+
+
+The image line in each post is identical to his handling.
+
+
+{% include img.html src=&apos;&apos; alt=&apos;&apos; %}
+
+
+
+Fun side note in creating this post I learned that you have to use {% raw %} and {% endraw %} tags so the liquid code wouldn’t run and replace that information. Also, these tags do not stack so you cannot show this code by putting raw/raw/endraw/endraw.
+
+With this at least partially corrected I’ll be adding images to more posts going forward and revisiting the dark and light mode update with some images.
+
+And here just because it would be bad form to have a post about images without including an image.
+
+
+Photo by Huang Yingone
+
+This is day 5  of #100DaysToOffload.">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/static-site-images.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:4000/assets/og-images/static-site-images.webp">
   
 
   
@@ -727,7 +756,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 4, 2025 2:17 PM UTC-04:00</p>
+        <p>Site last published: August 4, 2025 2:29 PM UTC-04:00</p>
       </div>
     <button id="theme-toggle">
         <span id="sun-icon">

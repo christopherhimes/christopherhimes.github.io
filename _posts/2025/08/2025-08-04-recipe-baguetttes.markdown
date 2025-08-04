@@ -41,6 +41,8 @@ This has been a little way to bring back France after our trip earlier this summ
 
 One thing of note my flour choice which is a Canadian flour from Golden Temple, specifically the Durum Atta Flour. Using this flour means my wife who eats gluten free can enjoy these baguettes. Not sure if it's the durum wheat alone or a combination of that and the pesticides used in the states but American flour is basically off limits for her.
 
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
+
 [no knead recipes]: http://momsdish.com/baguette
 
 [^1]: From the center of the dough you should be able to stretch it thin enough that you can see through without it tearing or breaking. Can you read a newspaper through the dough? You're ready to move to the next step.

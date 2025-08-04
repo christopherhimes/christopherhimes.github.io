@@ -4,8 +4,8 @@ type: post
 title:  "Light and Dark Mode Continued"
 date:   2025-08-04 15:00:00
 tags: ['CSS', 'Meta', '100 Days To Offload']
-blurb: 
-comments:
+blurb: Added a toggle to the footer of my site to easily change from light and dark mode.
+comments: 114971882473670582
     id: 
 ---
 
@@ -64,3 +64,5 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
 I do see some flickering with this implementation so I will probably continue or revisit this again in the future to eliminate that and improve the setup in some other ways as well.
 
 You can try this out for yourself by clicking on either the sun or the moon in the footer depending on your default settings.
+
+This is day {{ page.tag_numbers["100 Days To Offload"] }}  of #100DaysToOffload.
