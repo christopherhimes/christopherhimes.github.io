@@ -136,9 +136,9 @@ section#comments .comment.verified .instance::before {
   border: 1px solid var(--link-color);
   border-radius: 999px;
   font-size: 0.6em;
-  text-decoration: none;
+  text-decoration: none !important;
   color: var(--link-color);
-  transition: background-color 0.8s, color 0.8s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .tag-button a {
@@ -146,9 +146,8 @@ section#comments .comment.verified .instance::before {
 }
 
 .tag-button:hover {
-  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
-  color: var(--invert-text-color);
-  text-decoration: none !important;
+  background-color: var(--link-color);
+  color: var(--background-color);
 }
 
 .reading_time {

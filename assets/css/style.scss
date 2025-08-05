@@ -36,18 +36,18 @@
     border: 1px solid var(--link-color);
     border-radius: 999px;
     font-size: 0.6em;
-    text-decoration: none;
+    text-decoration: none !important;
     color: var(--link-color);
-    transition: background-color 0.8s, color 0.8s;
+    transition: background-color 0.5s, color 0.5s;
 }
 .tag-button a {
     text-decoration: none !important;
 }
 .tag-button:hover {
-    // background-color: #f0f0f0;
-    background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
-    color: var(--invert-text-color);
-    text-decoration: none !important;
+    background-color: var(--link-color);
+    // background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+    color: var(--background-color);
+    // text-decoration: none !important;
   }
 
 .reading_time {

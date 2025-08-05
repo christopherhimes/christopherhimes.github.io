@@ -273,6 +273,9 @@
 <loc>http://localhost:4000/todo/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/experiments/url-buttons/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/uses/</loc>
 </url>
 <url>

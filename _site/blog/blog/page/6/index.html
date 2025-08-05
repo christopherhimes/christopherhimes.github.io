@@ -203,7 +203,7 @@
     :root {
   color-scheme: light dark;
   --background-color: light-dark(rgb(240,240,240), rgb(26, 26, 26));
-  --foreground-color: light-dark(rgb(0, 87, 59), rgb(32, 255, 188));
+  --text-color: light-dark(rgb(0, 87, 59), rgb(32, 255, 188));
   --link-color: light-dark(rgb(1, 85, 106), rgb(25, 209, 255));
   --text-color: light-dark(rgb(26, 26, 26), rgb(240,240,240));
   --invert-text-color: light-dark(rgb(240,240,240),rgb(26, 26, 26));
@@ -211,19 +211,17 @@
 }
 
 body {
-  --background-color: rgb(240,240,240);
-  --text-color: rgb(26, 26, 26);
-  --link-color: rgb(1, 85, 106);
-  --foreground-color: rgb(0, 87, 59);
+  --background-color: rgb(239, 253, 228);
+  --link-color: rgb(94, 147, 108);
+  --text-color: rgb(62, 95, 68);
   color-scheme: light;
 }
 
 /* Dark mode styles */
 body.dark-mode {
-  --background-color: rgb(26, 26, 26);
-  --text-color: rgb(240,240,240);
-  --link-color: rgb(25, 209, 255);
-  --foreground-color: rgb(32, 255, 188);
+  --background-color: rgb(31, 61, 54);
+  --link-color: rgb(167, 215, 183);
+  --text-color: rgb(108, 157, 122);
   color-scheme: dark;
 }
 
@@ -237,7 +235,7 @@ body.dark-mode {
 }
 body {
   background-color: var(--background-color);
-  color: var(--foreground-color);
+  color: var(--text-color);
   margin: 0px;
   padding: 0px;
   font-family: "lato-normal", Arial, Helvetica, sans-serif;
@@ -254,21 +252,21 @@ span {
 }
 
 h1 {
-  color: var(--foreground-color);
+  color: var(--text-color);
 }
 
 h2 {
   font-size: 1.5em;
-  color: var(--foreground-color);
+  color: var(--text-color);
 }
 
 h3 {
   font-size: 1.25em;
-  color: var(--foreground-color);
+  color: var(--text-color);
 }
 
 hr {
-  border: solid 1px var(--line-color);
+  border: solid 1px var(--text-color);
   margin: 1em;
   width: 100%;
 }
@@ -277,12 +275,16 @@ p, li, ul {
   color: var(--text-color);
 }
 
-a:hover {
+.site-header a:hover, .footer-wrapper a:hover, article a:hover {
   text-decoration: underline;
+  background-color: var(--text-color);
+  color: var(--background-color);
 }
 
 a {
-  text-decoration: none;
+  color: var(--link-color);
+  text-decoration: underline;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .language-plaintext {
@@ -314,31 +316,27 @@ a {
   margin: 0 1em;
 }
 
-a, a:visited, a:hover .page-link {
-  color: var(--link-color);
-}
-
 .post-detail a, p a, .pagination a {
   text-decoration: underline;
 }
 
 .face {
   clip-path: circle(150px at center);
-  filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(186deg) brightness(97%) contrast(101%);
+  filter: grayscale(0.75);
 }
 
 .site-title {
   font-family: "lato-normal", Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.site-title a {
   text-decoration: none;
 }
 
 .site-header {
-  border-image: linear-gradient(34deg, var(--foreground-color), var(--link-color)) 1;
+  border-image: linear-gradient(34deg, var(--text-color), var(--link-color)) 1;
   border-width: 3px;
   border-style: solid;
   border-left: 0;
@@ -379,7 +377,7 @@ a, a:visited, a:hover .page-link {
 
 .home-name {
   font-family: "lato-normal", Arial, Helvetica, sans-serif;
-  background: -webkit-gradient(linear, left top, right bottom, from(var(--foreground-color)), to(var(--link-color)));
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--text-color)), to(var(--link-color)));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -388,7 +386,7 @@ a, a:visited, a:hover .page-link {
 
 .home-heading {
   font-size: 2em;
-  color: var(--foreground-color);
+  color: var(--text-color);
 }
 
 .site-nav {
@@ -443,7 +441,7 @@ a, a:visited, a:hover .page-link {
   padding: 1em 0;
   align-items: left;
   text-align: left;
-  border-top: solid 2px --line-color;
+  border-top: solid 2px --text-color;
 }
 
 .footer-wrapper {
@@ -476,10 +474,6 @@ a, a:visited, a:hover .page-link {
   margin: auto;
 }
 
-.face:hover {
-  filter: none;
-}
-
 .circle-image-container {
   width: 300px;
   height: 300px;
@@ -494,12 +488,6 @@ a, a:visited, a:hover .page-link {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.circle-image-container:hover {
-  box-shadow: 6px 6px 12px var(--foreground-color), -6px -6px 12px var(--link-color);
-  filter: none;
-  transform: rotate(-2deg) translateY(-5px);
 }
   </style>
   <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
@@ -716,7 +704,7 @@ a, a:visited, a:hover .page-link {
         <p>Christopher Himes is a Product Owner living in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 4, 2025 2:50 PM UTC-04:00</p>
+        <p>Site last published: August 5, 2025 3:05 PM UTC-04:00</p>
       </div>
     <button id="theme-toggle">
         <span id="sun-icon">

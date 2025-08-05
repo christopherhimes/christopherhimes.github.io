@@ -5,7 +5,7 @@ permalink: /reviews/
 mainnav: false
 ---
 <div class="blog-grid">
-  {% for post in site.posts limit:8 %}
+  {% for post in site.posts %}
     {% if post.tags contains 'review' %}
       <a href="{{ post.url }}" class="blog-card-link">
         <div class="blog-card">
@@ -42,16 +42,20 @@ mainnav: false
   padding-bottom: 133.33%; /* 3:4 aspect ratio */
   background: var(--background-color); /* Almost black background */
   border-radius: 15px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(62, 95, 68, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   overflow: hidden;
   display: flex;
 }
 
 .blog-card:hover {
+  background-color:none;
   transform: rotate(-2deg) translateY(-5px);
-  box-shadow: 6px 6px 12px var(--foreground-color),
-              -6px -6px 12px var(--link-color);
+  /* transform: scaleX(1.02); */
+  box-shadow: 5px 5px 10px rgba(62, 95, 68, 0.8);
+  /* box-shadow: 5px 5px 10px -6px -6px 12px var(--link-color); */
+  /* box-shadow: 6px 6px 12px var(--foreground-color),
+              -6px -6px 12px var(--link-color); */
 }
 
 .card-content {
@@ -63,7 +67,7 @@ mainnav: false
   padding: 20px;
   display: flex;
   flex-direction: column;
-  color: white; /* White text for dark background */
+  color: var(--text-color); /* White text for dark background */
 }
 
 .card-image {

@@ -7,13 +7,21 @@
 
   
 
-  <title>Another New Design</title>
+  <title>URL Buttons</title>
 
   
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="It’s a new design, yes it is! This site gets more visual updates than it does blog posts but that’s where we’re at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come. The previous template for the site used an altered version of a template that I liked but was never quite happy with. This new version takes a similar approach but is way easier to setup and make adjustments. The other piece to consider is that I never really felt comfortable with leading with a blog as I’m not great about keeping up with it obviously. There are a few things about this template and the adjustments I’ve made that I’m happy with. For instance there is significantly less visual clutter on any and every page involved. As I mentioned above I don’t want to lead with a blog so now there is an introductory header element that has my face and a tag line introduction. This is preferable to jumping right into a blog for me. My preference is for dark mode reading so the site reflects that. There is some additional adjustment required to get it where it needs to be but I’m happy with it for now. Additionally I’ve added some brand colors that were lacking in the previous site which was all grey. My next approach is to optimize and make it more accessible. I’ve ran lighthouse on it...">
+  <meta name="description" content="Set 1: Favorite Colors
+    
+        
+    
+
+
+
+
+    Set 2: Preferred Animals">
 
   
 
@@ -35,23 +43,37 @@
 
   
   <meta property="og:site_name" content="christopher himes">
-  <meta property="og:title" content="Another New Design">
-  <meta property="og:description" content="It’s a new design, yes it is! This site gets more visual updates than it does blog posts but that’s where we’re at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come. The previous template for the site used an altered version of a template that I liked but was never quite happy with. This new version takes a similar approach but is way easier to setup and make adjustments. The other piece to consider is that I never really felt comfortable with leading with a blog as I’m not great about keeping up with it obviously. There are a few things about this template and the adjustments I’ve made that I’m happy with. For instance there is significantly less visual clutter on any and every page involved. As I mentioned above I don’t want to lead with a blog so now there is an introductory header element that has my face and a tag line introduction. This is preferable to jumping right into a blog for me. My preference is for dark mode reading so the site reflects that. There is some additional adjustment required to get it where it needs to be but I’m happy with it for now. Additionally I’ve added some brand colors that were lacking in the previous site which was all grey. My next approach is to optimize and make it more accessible. I’ve ran lighthouse on it...">
-  <meta name="twitter:title" content="Another New Design">
-  <meta name="twitter:description" content="It’s a new design, yes it is! This site gets more visual updates than it does blog posts but that’s where we’re at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come. The previous template for the site used an altered version of a template that I liked but was never quite happy with. This new version takes a similar approach but is way easier to setup and make adjustments. The other piece to consider is that I never really felt comfortable with leading with a blog as I’m not great about keeping up with it obviously. There are a few things about this template and the adjustments I’ve made that I’m happy with. For instance there is significantly less visual clutter on any and every page involved. As I mentioned above I don’t want to lead with a blog so now there is an introductory header element that has my face and a tag line introduction. This is preferable to jumping right into a blog for me. My preference is for dark mode reading so the site reflects that. There is some additional adjustment required to get it where it needs to be but I’m happy with it for now. Additionally I’ve added some brand colors that were lacking in the previous site which was all grey. My next approach is to optimize and make it more accessible. I’ve ran lighthouse on it...">
+  <meta property="og:title" content="URL Buttons">
+  <meta property="og:description" content="Set 1: Favorite Colors
+    
+        
+    
+
+
+
+
+    Set 2: Preferred Animals">
+  <meta name="twitter:title" content="URL Buttons">
+  <meta name="twitter:description" content="Set 1: Favorite Colors
+    
+        
+    
+
+
+
+
+    Set 2: Preferred Animals">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/og-images/another-new-design.webp">
+  <meta property="og:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:4000/assets/og-images/another-new-design.webp">
+  <meta name="twitter:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
   
 
   
-  <meta property="og:type" content="article">
-  <meta property="og:article:author" content="Christopher Himes">
-  <meta property="og:article:published_time" content="2023-08-12T16:00:00-04:00">
-  <meta property="og:url" content="http://localhost:4000/blog/2023/08/12/another-new-design.html">
-  <link rel="canonical" href="http://localhost:4000/blog/2023/08/12/another-new-design.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/experiments/url-buttons/">
+  <link rel="canonical" href="http://localhost:4000/experiments/url-buttons/">
   
   <style type="text/css">
     
@@ -359,62 +381,181 @@ a {
       </nav></nav>
 </header>
 <main class="wrapper" aria-label="Content">
-        
+        <div class="page-detail">
+<header>
+  <h1 class="page-title">URL Buttons</h1>
+</header>
+  <style>
+    .radio-set {
+        /* margin-bottom: 30px; */
+    }
+    .radio-container {
+        display: flex;
+        gap: 10px;
+        margin: 20px;
+    }
+    .radio-button {
+        border: 2px solid #ccc;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 10px; */
+        min-width: 20px;
+        min-height: 20px;
+    }
+    .radio-button.selected {
+        border-color: #4CAF50;
+        box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    }
+    .radio-image {
+        width: 100%;
+        /* height: 100px; */
+        object-fit: cover;
+        display: block;
+    }
+    .radio-label {
+        margin-top: 8px;
+        font-size: 14px;
+        text-align: center;
+    }
+</style>
 
-<div class="" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="post-detail">
-  <header>
-    <h1 class="post-title" itemprop="name headline">Another New Design</h1>
-    <p><time class="dt-published" datetime="2023-08-12T16:00:00-04:00" itemprop="datePublished">
-        Aug 12, 2023
-      </time>
-      &nbsp;<span class="reading_time">read in about 2 minutes</span></p>
-  </header>
-    <article itemprop="articleBody">
-      <p><img src="../../../..../../../../assets/img/blog/another-new-design/design.webp" alt="main-image" title="Design" /></p>
-
-<p>It’s a new design, yes it is! This site gets more visual updates than it does blog posts but that’s where we’re at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.</p>
-
-<!--more-->
-
-<p>The previous template for the site used an altered version of a template that I liked but was never quite happy with. This new version takes a similar approach but is way easier to setup and make adjustments. The other piece to consider is that I never really felt comfortable with leading with a blog as I’m not great about keeping up with it obviously.</p>
-
-<p>There are a few things about this template and the adjustments I’ve made that I’m happy with. For instance there is significantly less visual clutter on any and every page involved. As I mentioned above I don’t want to lead with a blog so now there is an introductory header element that has my face and a tag line introduction. This is preferable to jumping right into a blog for me. My preference is for dark mode reading so the site reflects that. There is some additional adjustment required to get it where it needs to be but I’m happy with it for now. Additionally I’ve added some brand colors that were lacking in the previous site which was all grey.</p>
-
-<p>My next approach is to optimize and make it more accessible. I’ve ran lighthouse on it and the plan is to make as many of the suggested changes as possible. One main problem that I agree with and want to correct first is the level of contrast. Some of the colors I’ve chosen and even the standard text are not easy enough to read. I like the way it looks currently but I do hope I’m not the only one that ever looks at the site.</p>
-
-<p>I would like to follow some tutorials and add comments to my posts. While I don’t suppose I’ll get much in the way of interaction the project to add them using ActivityPub via Mastodon seems interesting.</p>
-
-<p>Next projects will be documented and shared here. I’m not a web developer but I do like to poke around with this sort of thing so I’ll be recording that information in a blog in 2023 and beyond. Imagine that!</p>
-
-<p><em>The image above is from <a href="https://unsplash.com/@raphaelphotoch">Photo by Raphael Schaller on Unsplash</a>.</em></p>
-
-
-      
-      <div class="post-tags">
-          
-            <a class="tag-button" href="/tags/#site">site</a>
-          
-            <a class="tag-button" href="/tags/#design">design</a>
-          
-            <a class="tag-button" href="/tags/#lighthouse">lighthouse</a>
-          
-            <a class="tag-button" href="/tags/#accessibility">accessibility</a>
-          
-        </div>
-      
-    </article>
-  <a href="/blog/2023/08/12/another-new-design.html" hidden></a>
-</div>
-<div class="post-detail">
-<hr /></div>
-
-
+<!-- First set of radio buttons -->
+<div class="radio-set">
+    <h3>Set 1: Favorite Colors</h3>
+    <div class="radio-container" id="colorSet">
+        <!-- Buttons will be added here by JavaScript -->
+    </div>
 </div>
 
+<!-- Second set of radio buttons -->
+<div class="radio-set">
+    <h3>Set 2: Preferred Animals</h3>
+    <div class="radio-container" id="animalSet">
+        <!-- Buttons will be added here by JavaScript -->
+    </div>
+</div>
+
+<script>
+    // Configuration for all radio button sets
+    const radioSetsConfig = [
+        {
+            id: 'colorSet',
+            name: 'colors',
+            options: [
+                { id: 'red', label: 'Red', image: '', color: 'ff0000' },
+                { id: 'green', label: 'Green', image: '', color: '00ff00' },
+                { id: 'purple', label: 'Purple', image: '', color: '800080' },
+                { id: 'blue', label: 'Blue', image: '', color: '0000ff' }
+            ]
+        },
+        {
+            id: 'animalSet',
+            name: 'animals',
+            options: [
+                { id: 'cat', label: 'Cat', image: 'https://placehold.co/100x100/ffcccb/000000?text=Cat' },
+                { id: 'dog', label: 'Dog', image: 'https://placehold.co/100x100/ffffcc/000000?text=Dog' },
+                { id: 'bird', label: 'Bird', image: 'https://placehold.co/100x100/ccffff/000000?text=Bird' }
+            ]
+        }
+    ];
+
+    // Initialize all radio button sets
+    function initializeRadioSets() {
+        radioSetsConfig.forEach(setConfig => {
+            const container = document.getElementById(setConfig.id);
+            setConfig.options.forEach(option => {
+                const button = createRadioButton(option, setConfig.name);
+                container.appendChild(button);
+            });
+        });
+
+        // Set the selected options from URL on page load
+        setSelectedOptionsFromUrl();
+    }
+
+    // Create a single radio button element
+    function createRadioButton(option, setName) {
+        const button = document.createElement('div');
+        button.className = 'radio-button';
+        button.dataset.set = setName;
+        button.dataset.option = option.id;
+        console.log(option.color);        
+        button.style.cssText = 'background-color:#' + option.color;
+        button.onclick = () => selectOption(setName, option.id);
+
+        const img = document.createElement('img');
+        img.src = option.image;
+        // img.alt = option.label;
+        img.className = 'radio-image';
+
+        const label = document.createElement('span');
+        label.className = 'radio-label';
+        // label.textContent = option.label;
+
+        button.appendChild(img);
+        // button.appendChild(label);
+
+        return button;
+    }
+
+    // Function to select an option (radio button behavior)
+    function selectOption(setName, optionId) {
+        // Get the current URL search parameters
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Set the selected option in the URL
+        urlParams.set(setName, optionId);
+
+        // Update the browser history
+        const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+        window.history.pushState({}, '', newUrl);
+
+        // Update the UI to show the selected option
+        updateSelectedOptionUI(setName, optionId);
+    }
+
+    // Function to update the UI based on the selected option
+    function updateSelectedOptionUI(setName, selectedOptionId) {
+        // Remove selection from all options in this set
+        document.querySelectorAll(`.radio-button[data-set="${setName}"]`).forEach(button => {
+            button.classList.remove('selected');
+        });
+
+        // Add selection to the chosen option
+        const selectedElement = document.querySelector(`.radio-button[data-set="${setName}"][data-option="${selectedOptionId}"]`);
+        if (selectedElement) {
+            selectedElement.classList.add('selected');
+        }
+    }
+
+    // Function to set the selected options from URL on page load
+    function setSelectedOptionsFromUrl() {
+        const urlParams = new URLSearchParams(window.location.search);
+
+        radioSetsConfig.forEach(setConfig => {
+            const selectedOption = urlParams.get(setConfig.name);
+            if (selectedOption) {
+                // Verify the selected option exists in this set
+                const validOption = setConfig.options.find(opt => opt.id === selectedOption);
+                if (validOption) {
+                    // Set the selected option in the UI
+                    updateSelectedOptionUI(setConfig.name, selectedOption);
+                }
+            }
+        });
+    }
+
+    // Initialize the radio button sets when the page loads
+    window.onload = initializeRadioSets;
+</script>
 
 
-
+</div>
     </main><footer class="footer-wrapper"> 
   <data class="u-url" href="/"></data>
       <div class="footer-col">

@@ -2,7 +2,7 @@
 layout: post
 type: post
 title:  "Selfhosting FreshRSS"
-date:   2025-08-05 15:00:00
+date:   2029-08-05 15:00:00
 tags: ['RSS', 'Meta', '100 Days To Offload']
 blurb: 
 comments:
