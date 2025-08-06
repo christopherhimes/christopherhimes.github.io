@@ -175,6 +175,13 @@ pre {
   .wrapper {
     width: 90%;
   }
+  .site-nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+  }
   .home-wrapper {
     flex-direction: column;
     width: 90%;
@@ -183,6 +190,9 @@ pre {
     flex-direction: column;
     justify-content: center;
     width: 90%;
+  }
+  .home-col {
+    font-size: 0.8em;
   }
   .footer-col, .page-detail, .post-detail, .home-wrapper-column {
     width: 100%;

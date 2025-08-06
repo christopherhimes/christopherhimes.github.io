@@ -57,15 +57,15 @@
         <p>{{ site.description | escape }}</p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
         <p>Site last published: {{ site.time | date: "%B %-d, %Y %-I:%M %p UTC%:z" }}</p>
+      <button id="theme-toggle">
+          <span id="sun-icon">
+              🌞
+          </span>
+          <span id="moon-icon" style="display: none;">
+              🌙
+          </span>
+      </button>
       </div>
-    <button id="theme-toggle">
-        <span id="sun-icon">
-            🌞
-        </span>
-        <span id="moon-icon" style="display: none;">
-            🌙
-        </span>
-    </button>
     <script>
         // Function to set the theme
         function setTheme(theme) {
