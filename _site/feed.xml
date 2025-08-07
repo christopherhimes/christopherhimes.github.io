@@ -6,12 +6,12 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 07 Aug 2025 16:44:12 -0400</pubDate>
-    <lastBuildDate>Thu, 07 Aug 2025 16:44:12 -0400</lastBuildDate>
+    <pubDate>Thu, 07 Aug 2025 16:49:54 -0400</pubDate>
+    <lastBuildDate>Thu, 07 Aug 2025 16:49:54 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>Selfhosting FreshRSS</title>
+        <title>Self Hosting FreshRSS</title>
         <description>&lt;p&gt;I finally did it! I went ahead and setup FreshRSS on my PC to transition away from Feedly. I’ve been using Feedly since Google Reader shut down and have enjoyned it, in part because I was grandfathered into having seemingly unlimited feeds.&lt;/p&gt;
 
 &lt;p&gt;What really started this is the incessant advertisement but I’m also interested in doing other self host things like Immich and Jellyfin to name a few.&lt;/p&gt;

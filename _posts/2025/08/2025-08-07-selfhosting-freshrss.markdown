@@ -1,12 +1,12 @@
 ---
 layout: post
 type: post
-title:  "Selfhosting FreshRSS"
+title:  "Self Hosting FreshRSS"
 date:   2025-08-07 17:00:00
 tags: ['RSS', 'Meta', '100 Days To Offload']
 blurb: I finally did it! I went ahead and setup FreshRSS on my PC to transition away from Feedly.
 comments:
-    id: 
+    id: 114989450460855494
 ---
 
 I finally did it! I went ahead and setup FreshRSS on my PC to transition away from Feedly. I've been using Feedly since Google Reader shut down and have enjoyned it, in part because I was grandfathered into having seemingly unlimited feeds.
