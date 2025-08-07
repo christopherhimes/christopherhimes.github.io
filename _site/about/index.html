@@ -13,13 +13,7 @@
   <meta name="author" content="Christopher Himes">
   
 
-  <meta name="description" content="I&apos;m a Product Owner living in Metro Detroit.
-
-For a more detailed look at my experience please check my [resume/cv].
-
-
-
-[resume/cv]: ../cv">
+  <meta name="description" content="I&apos;m Christopher (he/him) and I currently live in Metro Detroit with my wife and son. Our family also consists of three cats: Kamala, Phantom, and Queenie; and our dog Tater. Professionally, my most recent role was as a Product Owner at JELD-WEN with the official title of Retail Catalog Manager - Doors. Resposibilites included stakeholder engagement and product backlog management for retail catalogs at The Home Depot, Lowe&apos;s, and Menards; and the dealer catalog for MMI Door. For a more detailed look at my experience please check my [resume/cv]. I enjoy cooking, baking, and gardening. Most recently finding ways to incorporate food from my garden and perfecting a baguette recipe. Spending mornings out in the garden keeping everything healthy and picking what is ready to eat. I like learning and experimenting with technology and like to have this site up as a way to document that part of my life. Slowly walking up to self hosting after having gone head first into using Linux (Pop OS) as my daily driver. I&apos;m not opposed to some friction or a little extra work in order to get things to where I want them. Not at all musical but I do like music. During the pandemic I fell down a bit of an audio rabbithole so now I have a nice set of headphones and the DAC/AMP to drive them. I like a bit of everything but I&apos;m a big into early 00s indie music, emo, rap/hip-hop, Mowtown, soul, and funk. The [/now]...">
 
   
 
@@ -42,21 +36,9 @@ For a more detailed look at my experience please check my [resume/cv].
   
   <meta property="og:site_name" content="christopher himes">
   <meta property="og:title" content="about">
-  <meta property="og:description" content="I&apos;m a Product Owner living in Metro Detroit.
-
-For a more detailed look at my experience please check my [resume/cv].
-
-
-
-[resume/cv]: ../cv">
+  <meta property="og:description" content="I&apos;m Christopher (he/him) and I currently live in Metro Detroit with my wife and son. Our family also consists of three cats: Kamala, Phantom, and Queenie; and our dog Tater. Professionally, my most recent role was as a Product Owner at JELD-WEN with the official title of Retail Catalog Manager - Doors. Resposibilites included stakeholder engagement and product backlog management for retail catalogs at The Home Depot, Lowe&apos;s, and Menards; and the dealer catalog for MMI Door. For a more detailed look at my experience please check my [resume/cv]. I enjoy cooking, baking, and gardening. Most recently finding ways to incorporate food from my garden and perfecting a baguette recipe. Spending mornings out in the garden keeping everything healthy and picking what is ready to eat. I like learning and experimenting with technology and like to have this site up as a way to document that part of my life. Slowly walking up to self hosting after having gone head first into using Linux (Pop OS) as my daily driver. I&apos;m not opposed to some friction or a little extra work in order to get things to where I want them. Not at all musical but I do like music. During the pandemic I fell down a bit of an audio rabbithole so now I have a nice set of headphones and the DAC/AMP to drive them. I like a bit of everything but I&apos;m a big into early 00s indie music, emo, rap/hip-hop, Mowtown, soul, and funk. The [/now]...">
   <meta name="twitter:title" content="about">
-  <meta name="twitter:description" content="I&apos;m a Product Owner living in Metro Detroit.
-
-For a more detailed look at my experience please check my [resume/cv].
-
-
-
-[resume/cv]: ../cv">
+  <meta name="twitter:description" content="I&apos;m Christopher (he/him) and I currently live in Metro Detroit with my wife and son. Our family also consists of three cats: Kamala, Phantom, and Queenie; and our dog Tater. Professionally, my most recent role was as a Product Owner at JELD-WEN with the official title of Retail Catalog Manager - Doors. Resposibilites included stakeholder engagement and product backlog management for retail catalogs at The Home Depot, Lowe&apos;s, and Menards; and the dealer catalog for MMI Door. For a more detailed look at my experience please check my [resume/cv]. I enjoy cooking, baking, and gardening. Most recently finding ways to incorporate food from my garden and perfecting a baguette recipe. Spending mornings out in the garden keeping everything healthy and picking what is ready to eat. I like learning and experimenting with technology and like to have this site up as a way to document that part of my life. Slowly walking up to self hosting after having gone head first into using Linux (Pop OS) as my daily driver. I&apos;m not opposed to some friction or a little extra work in order to get things to where I want them. Not at all musical but I do like music. During the pandemic I fell down a bit of an audio rabbithole so now I have a nice set of headphones and the DAC/AMP to drive them. I like a bit of everything but I&apos;m a big into early 00s indie music, emo, rap/hip-hop, Mowtown, soul, and funk. The [/now]...">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/og-images/hi-there.webp">
@@ -137,8 +119,7 @@ h3 {
 }
 
 hr {
-  border: solid 1px var(--text-color);
-  margin: 1em;
+  border-top: solid 0.2em var(--text-color);
   width: 100%;
 }
 
@@ -365,6 +346,57 @@ a {
   border: 0px;
   background: none;
 }
+
+@media (max-width: 800px) {
+  .site-title {
+    font-size: 2em;
+    padding: 0;
+  }
+  hr {
+    width: 80%;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .site-nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .home-wrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .home-col {
+    font-size: 0.8em;
+  }
+  .footer-col, .page-detail, .post-detail, .home-wrapper-column {
+    width: 100%;
+    justify-content: center;
+  }
+  .site-header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+  .footer-col {
+    text-align: center;
+  }
+  .footer-links {
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
+  }
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
   <link rel="stylesheet" href="/assets/css/syntax_monokai.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="low">
@@ -384,9 +416,21 @@ a {
 <header>
   <h1 class="page-title">about</h1>
 </header>
-  <p>I’m a Product Owner living in Metro Detroit.</p>
+  <p>I’m Christopher (he/him) and I currently live in Metro Detroit with my wife and son. Our family also consists of three cats: Kamala, Phantom, and Queenie; and our dog Tater.</p>
 
-<p>For a more detailed look at my experience please check my <a href="../cv">resume/cv</a>.</p>
+<p>Professionally, my most recent role was as a Product Owner at JELD-WEN with the official title of Retail Catalog Manager - Doors. Resposibilites included stakeholder engagement and product backlog management for retail catalogs at The Home Depot, Lowe’s, and Menards; and the dealer catalog for MMI Door. For a more detailed look at my experience please check my <a href="../cv">resume/cv</a>.</p>
+
+<p>I enjoy cooking, baking, and gardening. Most recently finding ways to incorporate food from my garden and perfecting a baguette recipe. Spending mornings out in the garden keeping everything healthy and picking what is ready to eat.</p>
+
+<p>I like learning and experimenting with technology and like to have this site up as a way to document that part of my life. Slowly walking up to self hosting after having gone head first into using Linux (Pop OS) as my daily driver. I’m not opposed to some friction or a little extra work in order to get things to where I want them.</p>
+
+<p>Not at all musical but I do like music. During the pandemic I fell down a bit of an audio rabbithole so now I have a nice set of headphones and the DAC/AMP to drive them. I like a bit of everything but I’m a big into early 00s indie music, emo, rap/hip-hop, Mowtown, soul, and funk. The <a href="../now">/now</a> page should have the last song I listened to but I have some ideas to have more of a dashboard of those  habits to come.</p>
+
+<p>For better or worse I follow the news quite a bit and have a fairly progressive worldview. Honesty, empathy, and integrity are important to me.</p>
+
+<p>Art has always been important to me. When I was little and asked what I wanted to be I always said an artist. In highschool I completed an AP Art Portfolio that I cringe at now but am still proud of the accomplishment. Favorite artists would be Salvador Dali, Francis Bacon, and Vincent Van Gogh.</p>
+
+<p>Most watched movie genre has got to be horror. Prefer movies that creep you out versus the jump scare variety but I’m always down to watch a horror film from prestige horror down to the more shlocky variety.</p>
 
 
 </div>
@@ -446,10 +490,10 @@ a {
           </ul>
       </div>
       <div class="footer-col">
-        <p>Christopher Himes is a Product Owner living in Metro Detroit.
+        <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 6, 2025 9:35 AM UTC-04:00</p>
+        <p>Site last published: August 7, 2025 4:44 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞

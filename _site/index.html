@@ -119,8 +119,7 @@ h3 {
 }
 
 hr {
-  border: solid 1px var(--text-color);
-  margin: 1em;
+  border-top: solid 0.2em var(--text-color);
   width: 100%;
 }
 
@@ -347,6 +346,57 @@ a {
   border: 0px;
   background: none;
 }
+
+@media (max-width: 800px) {
+  .site-title {
+    font-size: 2em;
+    padding: 0;
+  }
+  hr {
+    width: 80%;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .site-nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .home-wrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .home-col {
+    font-size: 0.8em;
+  }
+  .footer-col, .page-detail, .post-detail, .home-wrapper-column {
+    width: 100%;
+    justify-content: center;
+  }
+  .site-header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+  .footer-col {
+    text-align: center;
+  }
+  .footer-links {
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
+  }
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
   <link rel="stylesheet" href="/assets/css/syntax_monokai.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="low">
@@ -370,7 +420,7 @@ a {
       </div>
       <div class="home-col">
         <h1>Hi there!</h1>
-        <p class="home-heading">I'm Christopher Himes, an accomplished Product Owner seeking new opportunities for transformation and adding value.</p>
+        <p class="home-heading">I'm Christopher Himes (he⁠/⁠him), an accomplished tech professional living in Metro Detroit.</p>
       </div>
       
   </div>
@@ -383,6 +433,14 @@ a {
     <hr />
     <h1>recent posts</h1>
     <div class="home-blog">
+    
+      <article>
+        
+          <h2 style="display: inline-block;">
+            <a class="blog-link" href="/blog/2025/08/07/selfhosting-freshrss.html">Selfhosting FreshRSS</a>
+          </h2> Aug 7, 2025
+        
+      </article>
     
       <article>
         
@@ -413,14 +471,6 @@ a {
           <h2 style="display: inline-block;">
             <a class="blog-link" href="/blog/2025/07/30/a-few-experiments.html">A Few Experiments Continued</a>
           </h2> Jul 30, 2025
-        
-      </article>
-    
-      <article>
-        
-          <h2 style="display: inline-block;">
-            <a class="blog-link" href="/blog/2025/07/29/iphone-ringtones-on-linux.html">iPhone Ringtones on Linux</a>
-          </h2> Jul 29, 2025
         
       </article>
     
@@ -484,10 +534,10 @@ a {
           </ul>
       </div>
       <div class="footer-col">
-        <p>Christopher Himes is a Product Owner living in Metro Detroit.
+        <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 6, 2025 9:35 AM UTC-04:00</p>
+        <p>Site last published: August 7, 2025 4:44 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞

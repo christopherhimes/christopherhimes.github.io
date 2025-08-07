@@ -8,28 +8,26 @@ mainnav: false
 _Building a website To-do list_
 
 ### Pages to Add
-
 - [ ] Add a projects page dedicated to discussing previous work projects. Create a personal Product Owner portfolio.
 - [ ] Add a dedicated music page that takes advantage of [last.fm] data.
 - [ ] Add a /uses page like the ones listed on [uses.tech]
 
 
 ### Features to add
-
 - [ ] Add higher resolution responsive images in modern web formats.
 - [ ] Add a sparkline that shows post frequency.
 - [ ] Add indicator for external links.
 - [ ] Add a digital garden. This is a large undertaking. One reference [hamatti.org]
-- [ ] Add light and dark mode toggle.
 - [ ] Enable posting to [IndieNews].
 - [ ] Add related posts based on tags to the end of posts.
+- [ ] Add previous and sometimes next post to bottom of a post.
 
 ### Other activities
-
-- [ ] Expriment with [FreshRSS].
 - [ ] Write a better [/about] section
 
 ### Done
+- [X] ~~~Expriment with [FreshRSS]~~~ (Complete 8/4/25).
+- [X] ~~~Add light and dark mode toggle~~~ (Added 8/2/25).
 - [X] ~~Refactor critical.css as it no longer contains only the critical items~~ (Added 4/28/25).
 - [X] ~~~Update the styling of code blocks~~~ (Added 4/30/25).
 - [X] ~~Correct terminal in VSCodium~~ (Added 5/1/25).

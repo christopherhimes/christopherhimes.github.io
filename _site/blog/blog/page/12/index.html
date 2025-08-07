@@ -266,8 +266,7 @@ h3 {
 }
 
 hr {
-  border: solid 1px var(--text-color);
-  margin: 1em;
+  border-top: solid 0.2em var(--text-color);
   width: 100%;
 }
 
@@ -494,6 +493,57 @@ a {
   border: 0px;
   background: none;
 }
+
+@media (max-width: 800px) {
+  .site-title {
+    font-size: 2em;
+    padding: 0;
+  }
+  hr {
+    width: 80%;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .site-nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .home-wrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .home-col {
+    font-size: 0.8em;
+  }
+  .footer-col, .page-detail, .post-detail, .home-wrapper-column {
+    width: 100%;
+    justify-content: center;
+  }
+  .site-header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+  .footer-col {
+    text-align: center;
+  }
+  .footer-links {
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
+  }
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
   <link rel="stylesheet" href="/assets/css/syntax_monokai.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="low">
@@ -514,6 +564,23 @@ a {
   <h1 class="page-title">blog - page 12</h1>
 </header>
   
+  <article class="blog-entry">
+    
+      <h2>
+        <a class="blog-link" href="/blog/2017/04/04/time-for-a-change.html">Time for a Change</a>
+      </h2>
+      <p>Apr 4, 2017&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>The changes to this site now are strictly cosmetic but it is interesting to play with the capabilities of Sass and CSS.</p>
+      <p><a class="blog-link" href="/blog/2017/04/04/time-for-a-change.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+      </div>
+      
+    
+  </article>
+  <hr />
+
   <article class="blog-entry">
     
       <h2>
@@ -606,10 +673,10 @@ a {
           </ul>
       </div>
       <div class="footer-col">
-        <p>Christopher Himes is a Product Owner living in Metro Detroit.
+        <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 6, 2025 9:35 AM UTC-04:00</p>
+        <p>Site last published: August 7, 2025 4:44 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞

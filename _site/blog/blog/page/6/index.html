@@ -266,8 +266,7 @@ h3 {
 }
 
 hr {
-  border: solid 1px var(--text-color);
-  margin: 1em;
+  border-top: solid 0.2em var(--text-color);
   width: 100%;
 }
 
@@ -494,6 +493,57 @@ a {
   border: 0px;
   background: none;
 }
+
+@media (max-width: 800px) {
+  .site-title {
+    font-size: 2em;
+    padding: 0;
+  }
+  hr {
+    width: 80%;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .site-nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .home-wrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .home-col {
+    font-size: 0.8em;
+  }
+  .footer-col, .page-detail, .post-detail, .home-wrapper-column {
+    width: 100%;
+    justify-content: center;
+  }
+  .site-header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+  .footer-col {
+    text-align: center;
+  }
+  .footer-links {
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
+  }
+}
   </style>
   <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
   <link rel="stylesheet" href="/assets/css/syntax_monokai.css" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="low">
@@ -514,6 +564,27 @@ a {
   <h1 class="page-title">blog - page 6</h1>
 </header>
   
+  <article class="blog-entry">
+    
+      <h2>
+        <a class="blog-link" href="/blog/2025/05/01/hi-there.html">Hi there</a>
+      </h2>
+      <p>May 1, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>I'm Christopher Himes, an accomplished Product Owner seeking new opportunities for transformation and adding value.</p>
+      <p><a class="blog-link" href="/blog/2025/05/01/hi-there.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Meta">Meta</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
+      
+    
+  </article>
+  <hr />
+
   <article class="blog-entry">
     
       <h2>
@@ -612,29 +683,6 @@ a {
   </article>
   <hr />
 
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Week 17</a>
-      </h2>
-      <p>Apr 25, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-      <p>Weather ☀️ has been nice so I've been working in the yard. The garden beds need some serious care so I'm getting them cleaned up and ready for planting.</p>
-      <p><a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
-        
-          <a class="tag-button" href="/tags/#Week 17">Week 17</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
 
 <!-- Pagination links -->
 <div class="pagination">
@@ -706,10 +754,10 @@ a {
           </ul>
       </div>
       <div class="footer-col">
-        <p>Christopher Himes is a Product Owner living in Metro Detroit.
+        <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 6, 2025 9:35 AM UTC-04:00</p>
+        <p>Site last published: August 7, 2025 4:44 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞
