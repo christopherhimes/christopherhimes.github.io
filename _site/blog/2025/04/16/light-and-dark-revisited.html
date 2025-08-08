@@ -81,24 +81,31 @@ body.dark-mode {
 }
 
 @font-face {
-  font-family: "lato-normal";
-  src: url("../../../../../assets/font/lato-normal.woff2") format("woff2"), url("../../../../../assets/font/lato-normal.woff") format("woff");
+  font-family: "Hattori Hanzo";
+  src: url("../../../../../assets/font/Hattori_Hanzo.woff2") format("woff2"), url("../../../../../assets/font/Hattori_Hanzo.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
   unicode-range: U+0025-00FF;
+}
+@font-face {
+  font-family: "playfair_displayregular";
+  src: url("../../../../../assets/font/playfairdisplay-regular-webfont.woff2") format("woff2"), url("../../../../../assets/font/playfairdisplay-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0px;
   padding: 0px;
-  font-family: "lato-normal", Arial, Helvetica, sans-serif;
+  font-family: "Hattori Hanzo", Arial, Helvetica, sans-serif;
   letter-spacing: 0.05em;
+  line-height: 2em;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "lato-normal", Arial, Helvetica, sans-serif;
+  font-family: "playfair_displayregular", Georgia, "Times New Roman", Times, serif;
 }
 
 span {
@@ -127,6 +134,10 @@ hr {
 
 p, li, ul {
   color: var(--text-color);
+}
+
+p {
+  margin: 1em auto;
 }
 
 .site-header a:hover, .footer-wrapper a:hover, article a:hover {
@@ -180,7 +191,7 @@ a {
 }
 
 .site-title {
-  font-family: "lato-normal", Arial, Helvetica, sans-serif;
+  font-family: "playfair_displayregular", Georgia, "Times New Roman", Times, serif;
   font-size: 1.3em;
   text-decoration: none;
 }
@@ -230,7 +241,7 @@ a {
 }
 
 .home-name {
-  font-family: "lato-normal", Arial, Helvetica, sans-serif;
+  font-family: "playfair_displayregular", Georgia, "Times New Roman", Times, serif;
   background: -webkit-gradient(linear, left top, right bottom, from(var(--text-color)), to(var(--link-color)));
   -webkit-background-clip: text;
   background-clip: text;
@@ -772,7 +783,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 7, 2025 4:49 PM UTC-04:00</p>
+        <p>Site last published: August 8, 2025 9:40 AM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞
