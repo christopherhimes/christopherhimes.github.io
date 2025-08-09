@@ -13,7 +13,7 @@ pagination:
       <h2>
         <a class="blog-link" href="{{ post.external_url }}">{{ post.title }}</a> via <a class="blog-link" href="{{ post.external_main }}">{{ post.external_title }}</a>
       </h2>
-      <p>{{ post.date | date: "%b %-d, %Y" }} [{{ post.type }}]</p>
+      <p>{{ post.date | date: "%b %-d, %Y" }} [{{ post.type }}][{{ post.media }}]</p>
       <p>{{ post.blurb }}</p>
       {% if post.tags %}
       <div class="post-tags">
@@ -26,7 +26,13 @@ pagination:
       <h2>
         <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
-      <p>{{ post.date | date: "%b %-d, %Y" }}&nbsp; [{{ post.type }}]&nbsp;<span class="reading_time">read in {{ post.content | reading_time }}</span></p>
+      <p>{{ post.date | date: "%b %-d, %Y" }}&nbsp; 
+      {% if post.type == "review" %}
+        [<a href="/reviews">{{ post.type }}</a>][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &nbsp;<span class="reading_time">read in {{ post.content | reading_time }}</span></p>
       <p>{{ post.blurb }}</p>
       <p><a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">Read More...</a></p>
       {% if post.tags %}

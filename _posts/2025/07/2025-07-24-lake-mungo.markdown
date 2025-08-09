@@ -1,6 +1,6 @@
 ---
 layout: post
-type: movie
+type: review
 title:  Lake Mungo (⭐⭐)
 date:   2025-07-24 12:00:00
 tags: [Lake Mungo, movie, review, media, '100 Days To Offload']

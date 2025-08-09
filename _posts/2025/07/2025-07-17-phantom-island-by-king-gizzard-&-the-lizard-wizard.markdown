@@ -1,6 +1,6 @@
 ---
 layout: post
-type: music
+type: review
 title:  Phantom Island (⭐⭐⭐)
 date:   2025-07-17 18:15:00
 tags: [Phantom Island, King Gizard & The Lizard Wizard, music, review, media, '100 Days To Offload']

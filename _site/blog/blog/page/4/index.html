@@ -19,7 +19,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -32,7 +32,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -91,7 +97,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -104,7 +110,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -142,7 +154,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -155,7 +167,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -578,9 +596,40 @@ a {
   <article class="blog-entry">
     
       <h2>
+        <a class="blog-link" href="/blog/2025/06/28/weeknotes-week26.html">Week 26</a>
+      </h2>
+      <p>Jun 28, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 4 minutes</span></p>
+      <p>Flew to Paris, visited the Eiffel Tower, Louvre, and Notre Dame.</p>
+      <p><a class="blog-link" href="/blog/2025/06/28/weeknotes-week26.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+        
+          <a class="tag-button" href="/tags/#Week 26">Week 26</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
+      
+    
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    
+      <h2>
         <a class="blog-link" href="/blog/2025/06/21/weeknotes-week25.html">Week 25</a>
       </h2>
-      <p>Jun 21, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Jun 21, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>Niece's Birthday, finished photo maintenance, and the job search continues</p>
       <p><a class="blog-link" href="/blog/2025/06/21/weeknotes-week25.html">Read More...</a></p>
       
@@ -603,7 +652,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/06/13/weeknotes-week24.html">Week 24</a>
       </h2>
-      <p>Jun 13, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Jun 13, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>Friday the 13th. Ooooh Spooky</p>
       <p><a class="blog-link" href="/blog/2025/06/13/weeknotes-week24.html">Read More...</a></p>
       
@@ -626,7 +679,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/06/08/a-few-experiments.html">A Few Experiments</a>
       </h2>
-      <p>Jun 8, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
+      <p>Jun 8, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 2 minutes</span></p>
       <p>Working on a few content type experiments and reporting on them.</p>
       <p><a class="blog-link" href="/blog/2025/06/08/a-few-experiments.html">Read More...</a></p>
       
@@ -649,7 +706,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/06/06/weeknotes-week23.html">Week 23</a>
       </h2>
-      <p>Jun 6, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Jun 6, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>Be Kind Rewind</p>
       <p><a class="blog-link" href="/blog/2025/06/06/weeknotes-week23.html">Read More...</a></p>
       
@@ -658,29 +719,6 @@ a {
           <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
         
           <a class="tag-button" href="/tags/#Week 23">Week 23</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/06/02/work-history.html">Work History</a>
-      </h2>
-      <p>Jun 2, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 11 minutes</span></p>
-      <p>I won't do this non-anniversary thing again but today would have been 17 years</p>
-      <p><a class="blog-link" href="/blog/2025/06/02/work-history.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#work">work</a>
-        
-          <a class="tag-button" href="/tags/#work history">work history</a>
         
           <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
         
@@ -720,6 +758,10 @@ a {
               </li>
               <li>
                 <a href="/reviews">reviews
+                </a>
+              </li>
+              <li>
+                <a href="/recipes">recipes
                 </a>
               </li>
               <li>
@@ -764,7 +806,7 @@ a {
         <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 8, 2025 8:27 PM UTC-04:00</p>
+        <p>Site last published: August 9, 2025 2:47 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞

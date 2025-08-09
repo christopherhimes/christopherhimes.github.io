@@ -11,7 +11,7 @@ mainnav: false
             <img src="{{ post.share-img | default: '/assets/img/new-face-650x650.webp' }}" alt="{{ post.title }}" class="card-image">
             <div  class="card-content">
             <h3 class="card-title">{{ post.title }}</h3>
-            <p>[{{ post.type }}]</p>
+            <p>[{{ post.media_type }}]</p>
             </div>
       </a>
     {% endif %}
@@ -30,7 +30,7 @@ mainnav: false
   display: block;
   position: relative;
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   border-radius: 15px;
   border: solid 2px var(--link-color); 
   overflow: hidden;
@@ -83,12 +83,6 @@ mainnav: false
   .blog-grid {
     grid-template-columns: 1fr;
     gap: 10px;
-  }
-  .blog-card {
-    padding-bottom: 100%; /* More square shape on mobile */
-  }
-  .card-title {
-    margin: 65% 0 10px;
   }
 }
 </style>

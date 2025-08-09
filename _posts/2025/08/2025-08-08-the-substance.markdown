@@ -1,6 +1,6 @@
 ---
 layout: post
-type: movie
+type: review
 title:  The Substance (⭐⭐⭐⭐⭐)
 date:   2025-08-08 20:30:00
 tags: [The Substance, movie, review, media, '100 Days To Offload']
@@ -12,7 +12,7 @@ comments:
     id: 114995969218071167
 ---
 
-{% include img.html src='/blog/the-substance/the-substance.webp' alt='' %}
+{% include img.html src='/blog/the-substance/the-substance.webp' alt='The Substance Movie Poster with various scenes from the movie and reviews' %}
 
 The Substance is a body horror film from 2024 that uses body horror to explore the absurd things that women do to themselves in the of attaining unrealistic body expectations. 
 

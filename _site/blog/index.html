@@ -19,7 +19,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -32,7 +32,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -91,7 +97,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -104,7 +110,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -142,7 +154,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -155,7 +167,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -578,9 +596,40 @@ a {
   <article class="blog-entry">
     
       <h2>
+        <a class="blog-link" href="/blog/2025/08/09/weeknotes-week32.html">Week 32</a>
+      </h2>
+      <p>Aug 9, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Week 32 notes including job applications, more baking, web design, and more.</p>
+      <p><a class="blog-link" href="/blog/2025/08/09/weeknotes-week32.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+        
+          <a class="tag-button" href="/tags/#Week 32">Week 32</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
+      
+    
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    
+      <h2>
         <a class="blog-link" href="/blog/2025/08/08/the-substance.html">The Substance (⭐⭐⭐⭐⭐)</a>
       </h2>
-      <p>Aug 8, 2025&nbsp; [movie]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Aug 8, 2025&nbsp; 
+      
+        [<a href="/reviews">review</a>][movie]
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>The Substance is a body horror film from 2024 that uses body horror to explore the absurd things that women do to themselves in the of attaining unrealistic body expectations.</p>
       <p><a class="blog-link" href="/blog/2025/08/08/the-substance.html">Read More...</a></p>
       
@@ -607,7 +656,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/08/07/selfhosting-freshrss.html">Self Hosting FreshRSS</a>
       </h2>
-      <p>Aug 7, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
+      <p>Aug 7, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 2 minutes</span></p>
       <p>I finally did it! I went ahead and setup FreshRSS on my PC to transition away from Feedly.</p>
       <p><a class="blog-link" href="/blog/2025/08/07/selfhosting-freshrss.html">Read More...</a></p>
       
@@ -630,7 +683,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/08/04/light-dark-mode-continued.html">Light and Dark Mode Continued</a>
       </h2>
-      <p>Aug 4, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+      <p>Aug 4, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 3 minutes</span></p>
       <p>Added a toggle to the footer of my site to easily change from light and dark mode.</p>
       <p><a class="blog-link" href="/blog/2025/08/04/light-dark-mode-continued.html">Read More...</a></p>
       
@@ -653,7 +710,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/08/04/recipe-baguetttes.html">Baguettes</a>
       </h2>
-      <p>Aug 4, 2025&nbsp; [recipe]&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+      <p>Aug 4, 2025&nbsp; 
+      
+        [recipe]  
+      
+      &nbsp;<span class="reading_time">read in about 3 minutes</span></p>
       <p>Straightforward baguette recipe I'm using and working on.</p>
       <p><a class="blog-link" href="/blog/2025/08/04/recipe-baguetttes.html">Read More...</a></p>
       
@@ -662,29 +723,6 @@ a {
           <a class="tag-button" href="/tags/#recipe">recipe</a>
         
           <a class="tag-button" href="/tags/#baguettes">baguettes</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/08/02/weeknotes-week31.html">Week 31</a>
-      </h2>
-      <p>Aug 2, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-      <p>Week 31 notes including job applications, more baking, and more.</p>
-      <p><a class="blog-link" href="/blog/2025/08/02/weeknotes-week31.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
-        
-          <a class="tag-button" href="/tags/#Week 31">Week 31</a>
         
           <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
         
@@ -723,6 +761,10 @@ a {
               </li>
               <li>
                 <a href="/reviews">reviews
+                </a>
+              </li>
+              <li>
+                <a href="/recipes">recipes
                 </a>
               </li>
               <li>
@@ -767,7 +809,7 @@ a {
         <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 8, 2025 8:27 PM UTC-04:00</p>
+        <p>Site last published: August 9, 2025 2:47 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞

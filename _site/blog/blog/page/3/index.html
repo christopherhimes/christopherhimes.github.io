@@ -19,7 +19,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -32,7 +32,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -91,7 +97,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -104,7 +110,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -142,7 +154,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -155,7 +167,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -578,9 +596,40 @@ a {
   <article class="blog-entry">
     
       <h2>
+        <a class="blog-link" href="/blog/2025/07/20/weeknotes-week29.html">Week 29</a>
+      </h2>
+      <p>Jul 20, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Week</p>
+      <p><a class="blog-link" href="/blog/2025/07/20/weeknotes-week29.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
+        
+          <a class="tag-button" href="/tags/#Week 29">Week 29</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+      </div>
+      
+    
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    
+      <h2>
         <a class="blog-link" href="/blog/2025/07/17/phantom-island-by-king-gizzard-&-the-lizard-wizard.html">Phantom Island (⭐⭐⭐)</a>
       </h2>
-      <p>Jul 17, 2025&nbsp; [music]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Jul 17, 2025&nbsp; 
+      
+        [<a href="/reviews">review</a>][music]
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>Phantom Island by King Gizzard & The Lizard Wizard is their 27th studio albumm and a venture into the psychedelic and orchestretic.</p>
       <p><a class="blog-link" href="/blog/2025/07/17/phantom-island-by-king-gizzard-&-the-lizard-wizard.html">Read More...</a></p>
       
@@ -609,7 +658,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/07/16/sinners.html">Sinners (⭐⭐⭐⭐⭐)</a>
       </h2>
-      <p>Jul 16, 2025&nbsp; [movie]&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
+      <p>Jul 16, 2025&nbsp; 
+      
+        [<a href="/reviews">review</a>][movie]
+      
+      &nbsp;<span class="reading_time">read in about 2 minutes</span></p>
       <p>Sinners is a 2025 southern gothic vampire horror film produced, written, and directed by Ryan Coogler starring Michael B. Jordan.</p>
       <p><a class="blog-link" href="/blog/2025/07/16/sinners.html">Read More...</a></p>
       
@@ -636,7 +689,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/07/12/weeknotes-week28.html">Week 28</a>
       </h2>
-      <p>Jul 12, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+      <p>Jul 12, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 3 minutes</span></p>
       <p>Getting home from holiday, recovery, and petting pets.</p>
       <p><a class="blog-link" href="/blog/2025/07/12/weeknotes-week28.html">Read More...</a></p>
       
@@ -659,7 +716,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/07/05/weeknotes-week27.html">Week 27</a>
       </h2>
-      <p>Jul 5, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 4 minutes</span></p>
+      <p>Jul 5, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 4 minutes</span></p>
       <p>I hear Nice is pretty nice this time of year.</p>
       <p><a class="blog-link" href="/blog/2025/07/05/weeknotes-week27.html">Read More...</a></p>
       
@@ -668,29 +729,6 @@ a {
           <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
         
           <a class="tag-button" href="/tags/#Week 27">Week 27</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/06/28/weeknotes-week26.html">Week 26</a>
-      </h2>
-      <p>Jun 28, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 4 minutes</span></p>
-      <p>Flew to Paris, visited the Eiffel Tower, Louvre, and Notre Dame.</p>
-      <p><a class="blog-link" href="/blog/2025/06/28/weeknotes-week26.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#Week Notes">Week Notes</a>
-        
-          <a class="tag-button" href="/tags/#Week 26">Week 26</a>
         
           <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
         
@@ -730,6 +768,10 @@ a {
               </li>
               <li>
                 <a href="/reviews">reviews
+                </a>
+              </li>
+              <li>
+                <a href="/recipes">recipes
                 </a>
               </li>
               <li>
@@ -774,7 +816,7 @@ a {
         <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 8, 2025 8:27 PM UTC-04:00</p>
+        <p>Site last published: August 9, 2025 2:47 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞

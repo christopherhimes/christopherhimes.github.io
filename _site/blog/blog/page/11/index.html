@@ -19,7 +19,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -32,7 +32,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -91,7 +97,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -104,7 +110,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -142,7 +154,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -155,7 +167,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -578,9 +596,36 @@ a {
   <article class="blog-entry">
     
       <h2>
+        <a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Simple Silly</a>
+      </h2>
+      <p>Nov 21, 2024&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general.</p>
+      <p><a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#meta">meta</a>
+        
+      </div>
+      
+    
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    
+      <h2>
         <a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Lighthouse</a>
       </h2>
-      <p>Jul 26, 2024&nbsp; [post]&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
+      <p>Jul 26, 2024&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 2 minutes</span></p>
       <p>This site is not big, but it is faster, and more accessible.</p>
       <p><a class="blog-link" href="/blog/2024/07/26/lighthouse.html">Read More...</a></p>
       
@@ -605,7 +650,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2024/07/11/i-got-married.html">I got married!</a>
       </h2>
-      <p>Jul 11, 2024&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Jul 11, 2024&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>It's been a little over a month now since I got married.</p>
       <p><a class="blog-link" href="/blog/2024/07/11/i-got-married.html">Read More...</a></p>
       
@@ -624,7 +673,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2024/01/13/add-comments.html">Add Comments</a>
       </h2>
-      <p>Jan 13, 2024&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Jan 13, 2024&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>My blog has Mastodon powered comments now and this post is really just a test for that.</p>
       <p><a class="blog-link" href="/blog/2024/01/13/add-comments.html">Read More...</a></p>
       
@@ -643,7 +696,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2023/12/29/a-stream.html">A Stream?</a>
       </h2>
-      <p>Dec 29, 2023&nbsp; [post]&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+      <p>Dec 29, 2023&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 3 minutes</span></p>
       <p>I've been tinkering around with livestreaming and wanted to document some of the things I found. The experiment has been to stream to both Twitch and YouTube starting with just one or the other and eventually to both at the same time.</p>
       <p><a class="blog-link" href="/blog/2023/12/29/a-stream.html">Read More...</a></p>
       
@@ -656,31 +713,6 @@ a {
           <a class="tag-button" href="/tags/#YouTube">YouTube</a>
         
           <a class="tag-button" href="/tags/#OBS">OBS</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2023/08/12/another-new-design.html">Another New Design</a>
-      </h2>
-      <p>Aug 12, 2023&nbsp; [post]&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
-      <p>It's a new design, yes it is! This site gets more visual updates than it does blog posts but that's where we're at currently. What follows is a brief write up about the decisions that went into reworking the design of this site and what is to come.</p>
-      <p><a class="blog-link" href="/blog/2023/08/12/another-new-design.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#site">site</a>
-        
-          <a class="tag-button" href="/tags/#design">design</a>
-        
-          <a class="tag-button" href="/tags/#lighthouse">lighthouse</a>
-        
-          <a class="tag-button" href="/tags/#accessibility">accessibility</a>
         
       </div>
       
@@ -718,6 +750,10 @@ a {
               </li>
               <li>
                 <a href="/reviews">reviews
+                </a>
+              </li>
+              <li>
+                <a href="/recipes">recipes
                 </a>
               </li>
               <li>
@@ -762,7 +798,7 @@ a {
         <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 8, 2025 8:27 PM UTC-04:00</p>
+        <p>Site last published: August 9, 2025 2:47 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞

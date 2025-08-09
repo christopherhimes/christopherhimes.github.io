@@ -19,7 +19,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -32,7 +32,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -91,7 +97,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -104,7 +110,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -142,7 +154,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -155,7 +167,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -578,9 +596,38 @@ a {
   <article class="blog-entry">
     
       <h2>
+        <a class="blog-link" href="/blog/2025/03/23/light-and-dark.html">Light and Dark</a>
+      </h2>
+      <p>Mar 23, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>I'm a fan of dark mode on sites, in development editors, and the operating system too.</p>
+      <p><a class="blog-link" href="/blog/2025/03/23/light-and-dark.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#css">css</a>
+        
+          <a class="tag-button" href="/tags/#meta">meta</a>
+        
+      </div>
+      
+    
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    
+      <h2>
         <a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Now Update and Todo List</a>
       </h2>
-      <p>Mar 22, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Mar 22, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>Just a quick update to the now section and a site todo list.</p>
       <p><a class="blog-link" href="/blog/2025/03/22/now-update-and-todo-list.html">Read More...</a></p>
       
@@ -603,7 +650,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/03/21/weeknotes-week12.html">Week 12</a>
       </h2>
-      <p>Mar 21, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Mar 21, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>It's week one of my 12 Week Year but it's the 12th week of the year so I'm calling it week 12. This is meant to be forward looking to a week note for every week of the year.</p>
       <p><a class="blog-link" href="/blog/2025/03/21/weeknotes-week12.html">Read More...</a></p>
       
@@ -632,7 +683,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Starting</a>
       </h2>
-      <p>Mar 17, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 2 minutes</span></p>
+      <p>Mar 17, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 2 minutes</span></p>
       <p>Starting something new and taking it day by day and week by week.</p>
       <p><a class="blog-link" href="/blog/2025/03/17/starting-weeknotes.html">Read More...</a></p>
       
@@ -655,7 +710,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2024/12/06/now-2024.html">Now Page 2024</a>
       </h2>
-      <p>Dec 6, 2024&nbsp; [post]&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+      <p>Dec 6, 2024&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 3 minutes</span></p>
       <p>While looking at personal sites for inspiration I found the idea of a now page. So I decided to make one for myself.</p>
       <p><a class="blog-link" href="/blog/2024/12/06/now-2024.html">Read More...</a></p>
       
@@ -664,25 +723,6 @@ a {
           <a class="tag-button" href="/tags/#now">now</a>
         
           <a class="tag-button" href="/tags/#2024">2024</a>
-        
-          <a class="tag-button" href="/tags/#meta">meta</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Simple Silly</a>
-      </h2>
-      <p>Nov 21, 2024&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
-      <p>Recent changes on the site have been focusing on un-bootstrapping the site. This is an excuse in part to experiment with flex box and modern CSS in general.</p>
-      <p><a class="blog-link" href="/blog/2024/11/21/simple-silly.html">Read More...</a></p>
-      
-      <div class="post-tags">
         
           <a class="tag-button" href="/tags/#meta">meta</a>
         
@@ -722,6 +762,10 @@ a {
               </li>
               <li>
                 <a href="/reviews">reviews
+                </a>
+              </li>
+              <li>
+                <a href="/recipes">recipes
                 </a>
               </li>
               <li>
@@ -766,7 +810,7 @@ a {
         <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 8, 2025 8:27 PM UTC-04:00</p>
+        <p>Site last published: August 9, 2025 2:47 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞

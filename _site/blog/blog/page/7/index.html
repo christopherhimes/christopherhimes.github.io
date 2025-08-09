@@ -19,7 +19,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -32,7 +32,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -91,7 +97,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -104,7 +110,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -142,7 +154,7 @@
       
         {{ post.title }} via {{ post.external_title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}]
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }} [{{ post.type }}][{{ post.media }}]
       {{ post.blurb }}
       {% if post.tags %}
       
@@ -155,7 +167,13 @@
       
         {{ post.title }}
       
-      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; [{{ post.type }}]&amp;nbsp;read in {{ post.content | reading_time }}
+      {{ post.date | date: &quot;%b %-d, %Y&quot; }}&amp;nbsp; 
+      {% if post.type == &quot;review&quot; %}
+        [{{ post.type }}][{{ post.media_type }}]
+      {% else %}
+        [{{ post.type }}]  
+      {% endif %}
+      &amp;nbsp;read in {{ post.content | reading_time }}
       {{ post.blurb }}
       Read More...
       {% if post.tags %}
@@ -578,9 +596,50 @@ a {
   <article class="blog-entry">
     
       <h2>
+        <a class="blog-link" href="/blog/2025/04/29/lighthouse-revisited.html">Lighthouse Revisited</a>
+      </h2>
+      <p>Apr 29, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 4 minutes</span></p>
+      <p>After a bit of trial and error both the mobile and desktop versions of the site have 100% for all four categories! 🎉</p>
+      <p><a class="blog-link" href="/blog/2025/04/29/lighthouse-revisited.html">Read More...</a></p>
+      
+      <div class="post-tags">
+        
+          <a class="tag-button" href="/tags/#Meta">Meta</a>
+        
+          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
+        
+          <a class="tag-button" href="/tags/#Performance">Performance</a>
+        
+          <a class="tag-button" href="/tags/#Accessibility">Accessibility</a>
+        
+          <a class="tag-button" href="/tags/#SEO">SEO</a>
+        
+          <a class="tag-button" href="/tags/#Best Practices">Best Practices</a>
+        
+          <a class="tag-button" href="/tags/#Light and Dark">Light and Dark</a>
+        
+          <a class="tag-button" href="/tags/#Lighthouse">Lighthouse</a>
+        
+      </div>
+      
+    
+  </article>
+  <hr />
+
+  <article class="blog-entry">
+    
+      <h2>
         <a class="blog-link" href="/blog/2025/04/26/read-time-and-tags.html">Read Time and Tags</a>
       </h2>
-      <p>Apr 26, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
+      <p>Apr 26, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 3 minutes</span></p>
       <p>Having dramatically scaled back this site to make the restyling easier I have been slowly adding back in some removed features.</p>
       <p><a class="blog-link" href="/blog/2025/04/26/read-time-and-tags.html">Read More...</a></p>
       
@@ -601,7 +660,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Week 17</a>
       </h2>
-      <p>Apr 25, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Apr 25, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>Weather ☀️ has been nice so I've been working in the yard. The garden beds need some serious care so I'm getting them cleaned up and ready for planting.</p>
       <p><a class="blog-link" href="/blog/2025/04/25/weeknotes-week17.html">Read More...</a></p>
       
@@ -624,7 +687,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/04/24/ibm-product-owner-certification.html">Product Owner Certification</a>
       </h2>
-      <p>Apr 24, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Apr 24, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>It’s been helpful to put structure around what I already know and pick up new tools for prioritizing, communicating, and delivering better outcomes.</p>
       <p><a class="blog-link" href="/blog/2025/04/24/ibm-product-owner-certification.html">Read More...</a></p>
       
@@ -647,7 +714,11 @@ a {
       <h2>
         <a class="blog-link" href="/blog/2025/04/19/weeknotes-week16.html">Week 16</a>
       </h2>
-      <p>Apr 19, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 1 minute</span></p>
+      <p>Apr 19, 2025&nbsp; 
+      
+        [post]  
+      
+      &nbsp;<span class="reading_time">read in about 1 minute</span></p>
       <p>Job search, blogging, and Easter preparations.</p>
       <p><a class="blog-link" href="/blog/2025/04/19/weeknotes-week16.html">Read More...</a></p>
       
@@ -660,29 +731,6 @@ a {
           <a class="tag-button" href="/tags/#Cicada Detroit">Cicada Detroit</a>
         
           <a class="tag-button" href="/tags/#Overwatch 2">Overwatch 2</a>
-        
-          <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
-        
-      </div>
-      
-    
-  </article>
-  <hr />
-
-  <article class="blog-entry">
-    
-      <h2>
-        <a class="blog-link" href="/blog/2025/04/16/light-and-dark-revisited.html">Light and Dark Mode Revisited</a>
-      </h2>
-      <p>Apr 16, 2025&nbsp; [post]&nbsp;<span class="reading_time">read in about 3 minutes</span></p>
-      <p>I wanted to revisit the light and dark update as the original described some changes but didn't display how these changes impacted the experience on the site. Now that images are working a bit better I figured I would show exactly what's happening on the site in its current state.</p>
-      <p><a class="blog-link" href="/blog/2025/04/16/light-and-dark-revisited.html">Read More...</a></p>
-      
-      <div class="post-tags">
-        
-          <a class="tag-button" href="/tags/#CSS">CSS</a>
-        
-          <a class="tag-button" href="/tags/#Meta">Meta</a>
         
           <a class="tag-button" href="/tags/#100 Days To Offload">100 Days To Offload</a>
         
@@ -722,6 +770,10 @@ a {
               </li>
               <li>
                 <a href="/reviews">reviews
+                </a>
+              </li>
+              <li>
+                <a href="/recipes">recipes
                 </a>
               </li>
               <li>
@@ -766,7 +818,7 @@ a {
         <p>Christopher Himes lives in Metro Detroit.
 </p>
         <p>© 2025 Christopher Himes. Made in Michigan.</p>
-        <p>Site last published: August 8, 2025 8:27 PM UTC-04:00</p>
+        <p>Site last published: August 9, 2025 2:47 PM UTC-04:00</p>
       <button id="theme-toggle">
           <span id="sun-icon">
               🌞

@@ -1,6 +1,6 @@
 ---
 layout: post
-type: movie
+type: review
 title:  Sinners (⭐⭐⭐⭐⭐)
 date:   2025-07-16 15:00:00
 tags: [Sinners, movie, review, media, '100 Days To Offload']
