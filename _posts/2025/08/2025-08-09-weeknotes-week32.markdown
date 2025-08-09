@@ -7,7 +7,7 @@ tags: ['Week Notes', 'Week 32', '100 Days To Offload']
 share-img: /assets/img/blog/2025-week-32/zucchini.webp
 blurb: Week 32 notes including job applications, more baking, web design, and more.
 comments:
-    id: 
+    id: 115000320646032749
 ---
 
 * For some reason Tuesday seems to be baguette day around here. I made some [baguettes] again and this time left out a little bit of water and made sure to add enough flour to keep it easy to handle. If it started sticking to the counter or my hands I sprinkled a little bit more into the dough. This appears to paid off as these were by far the best baguettes I've made yet!
@@ -18,6 +18,7 @@ comments:
 * Rewrote the [/about] page to be more than two quick sentences.
 * Drow my son to the movies yesterday to see Freakier Friday with a friend.
 * Caught up with missed episodes of Colbert with Leah this morning.
+* Made burgers and fries at home this week. Frying up some french fries for the first time in a long while. It's a bit of work but they are delicious.
 
 * Picked some zucchini from the garden. Oh and you can see some baguette in the background too.
 
