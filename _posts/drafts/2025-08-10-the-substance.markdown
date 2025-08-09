@@ -9,7 +9,7 @@ rating: ⭐⭐⭐⭐⭐
 share-img: /assets/img/blog/the-substance/the-substance.webp
 blurb: The Substance is a body horror film from 2024 that uses body horror to explore the absurd things that women do to themselves in the of attaining unrealistic body expectations. 
 comments: 
-    id: 
+    id: 114995969218071167
 ---
 
 {% include img.html src='/blog/the-substance/the-substance.webp' alt='' %}
