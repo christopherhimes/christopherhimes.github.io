@@ -7,14 +7,12 @@ mainnav: false
 <div class="blog-grid">
   {% for post in site.posts %}
     {% if post.tags contains 'review' %}
-      <a href="{{ post.url }}" class="blog-card-link">
-        <div class="blog-card">
-          <div class="card-content">
+      <a class="blog-card blog-card-link" href="{{ post.url }}">
             <img src="{{ post.share-img | default: '/assets/img/new-face-650x650.webp' }}" alt="{{ post.title }}" class="card-image">
+            <div  class="card-content">
             <h3 class="card-title">{{ post.title }}</h3>
             <p>[{{ post.type }}]</p>
-          </div>
-        </div>
+            </div>
       </a>
     {% endif %}
   {% endfor %}
@@ -23,51 +21,31 @@ mainnav: false
 <style>
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 0px;
-  /* max-width: 1400px; */
-  /* margin: 0 auto;  */
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5em; 
 }
 
-.blog-card-link {
-  text-decoration: none;
-  color: inherit;
-}
 
 .blog-card {
+  display: block;
   position: relative;
   width: 100%;
-  height: 0;
-  padding-bottom: 133.33%; /* 3:4 aspect ratio */
-  background: var(--background-color); /* Almost black background */
+  height: 400px;
   border-radius: 15px;
-  box-shadow: 5px 5px 10px rgba(62, 95, 68, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  border: solid 2px var(--link-color); 
   overflow: hidden;
-  display: flex;
+  text-decoration:none;
 }
 
 .blog-card:hover {
   background-color:none;
-  transform: rotate(-2deg) translateY(-5px);
-  /* transform: scaleX(1.02); */
-  box-shadow: 5px 5px 10px rgba(62, 95, 68, 0.8);
-  /* box-shadow: 5px 5px 10px -6px -6px 12px var(--link-color); */
-  /* box-shadow: 6px 6px 12px var(--foreground-color),
-              -6px -6px 12px var(--link-color); */
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+  z-index:100;
 }
 
 .card-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  color: var(--text-color); /* White text for dark background */
+  padding: 1rem;
 }
 
 .card-image {

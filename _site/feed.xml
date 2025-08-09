@@ -6,9 +6,51 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 08 Aug 2025 09:40:28 -0400</pubDate>
-    <lastBuildDate>Fri, 08 Aug 2025 09:40:28 -0400</lastBuildDate>
+    <pubDate>Fri, 08 Aug 2025 20:20:24 -0400</pubDate>
+    <lastBuildDate>Fri, 08 Aug 2025 20:20:24 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>The Substance (⭐⭐⭐⭐⭐)</title>
+        <description>&lt;p&gt;&lt;img class=&quot;blogimg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; src=&quot;https://christopherhimes.com/assets/img//blog/the-substance/the-substance.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Substance is a body horror film from 2024 that uses body horror to explore the absurd things that women do to themselves in the of attaining unrealistic body expectations.&lt;/p&gt;
+
+&lt;p&gt;The cinematography throughout is spectacular. The later parts of the film are about the body horror but early in the film is just stuning to watch. An incredible looking film which apparently only cost 18 million dollars.&lt;/p&gt;
+
+&lt;p&gt;I think the performances in this are incredible. This is one of those movies that if you just described it to somebody, not knowing that it&amp;#8217;s an actual thing that exists, you wouldn&amp;#8217;t believe it.&lt;/p&gt;
+
+&lt;p&gt;The body horror aspect of it, the art behind all of the creature work, the body horror design, is very, very good. I don&amp;#8217;t think it&amp;#8217;s the point that you&amp;#8217;re supposed to feel like this is real. It is convincing enough to gross you out, but it doesn&amp;#8217;t feel real to me. I&amp;#8217;m sure people disagree with that but I don&amp;#8217;t think that&amp;#8217;s the point.&lt;/p&gt;
+
+&lt;p&gt;There is a level of craft and intention on display in this film that you do not see very often. If you can stomach it rewatching absolutely returns hidden connections not apparent on the first watch.&lt;/p&gt;
+
+&lt;p&gt;One thing I did want to mention about this film is there are good portions that you should absolutely not watch while you&amp;#8217;re eating food. Your stomach may be turned while watching this film. So, I think it&amp;#8217;s best to avoid it, especially in the latter half.&lt;/p&gt;
+
+&lt;p&gt;I decided in the last half hour to eat lunch, and I had a couple pieces of pizza. I don&amp;#8217;t recommend that to other people. I was fine, but I don&amp;#8217;t expect that for other folks.&lt;/p&gt;
+
+&lt;p&gt;This is day 40  of #100DaysToOffload.&lt;/p&gt;
+
+
+        <![CDATA[
+        <p>Thanks for subscribing to the feed ❤️</p>
+        ]]>
+        </description>
+        <pubDate>Fri, 08 Aug 2025 16:30:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2025/08/08/the-substance.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2025/08/08/the-substance.html</guid>
+        
+        <category>The Substance</category>
+        
+        <category>movie</category>
+        
+        <category>review</category>
+        
+        <category>media</category>
+        
+        <category>100 Days To Offload</category>
+        
+        
+      </item>
     
       <item>
         <title>Self Hosting FreshRSS</title>
@@ -2432,62 +2474,6 @@ experience well, in an easy-to-follow manner.)&lt;/li&gt;
         <guid isPermaLink="true">http://localhost:4000/blog/2024/11/21/simple-silly.html</guid>
         
         <category>meta</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Lighthouse</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/lighthouse/lighthouse.webp&quot; alt=&quot;image of a lighthouse&quot; title=&quot;Lighthouse at night with lots of stars and the light from the house shining bright.&quot; class=&quot;main-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This site is not big, but it is faster, and more accessible.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;As the briefest of lead ins to this project I wanted to learn about modern approaches to speed and accessibility. I’ve spent some time on Mastodon and follow a number of people that post about these topics regularly.&lt;/p&gt;
-
-&lt;p&gt;I want this site to function as fast as it can and be accessible to folks who may not be interacting with it the same way I am. With that as a goal I downloaded the &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse&lt;/a&gt; extension to analyze this site.&lt;/p&gt;
-
-&lt;p&gt;Starting off the site looked good for SEO and best practices but had some room for improvement with both performance and accessibility. Thankfully the score for each section comes with specific problems and ways to improve.&lt;/p&gt;
-
-&lt;p&gt;For performance images were the largest issue. They have been resized and converted to webp (from jpg). This brought the score up to 100 on desktop but the mobile version only ever got up to 95%. There remains a bit of css that is load blocking and I have not been able to find a way to resolve it without a significant rewrite.&lt;/p&gt;
-
-&lt;p&gt;As far as accessibility goes the usual suspects were the culprits. Images lacked alt tags and contrast was too low with some color choices for links. This is relatively easy to resolve. I updated my color choices in CSS to increase contrast. Here too mobile is at 95% and I cannot figure out why. Out of frustration I set the links to white and the background to black and Lighthouse still reported a contrast issue. Anyway I’ve been updating alt tags but I will probably go back and make them a little better when I have time.&lt;/p&gt;
-
-&lt;p&gt;Here are the final scores!&lt;/p&gt;
-
-&lt;h2 id=&quot;desktop&quot;&gt;Desktop&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/lighthouse/lighthouse-desktop.webp&quot; alt=&quot;desktop score&quot; title=&quot;Lighthouse scores for desktop. Performance is 100%. Accessibility is 100%. Best Practices is 100%. SEO is 100%.&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;mobile&quot;&gt;Mobile&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../../assets/img/blog/lighthouse/lighthouse-mobile.webp&quot; alt=&quot;mobile score&quot; title=&quot;Lighthouse scores for mobile. Performance is 95%. Accessibility is 95%. Best Practices is 100%. SEO is 100%.&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I am happy to have these scores as high as they are but I do not think this is over just yet. Having read a bunch of ways to improve things, now I want to go further. 95% is pretty good on mobile for performance and accessibility but is there any reason why these cannot be 100% as well.&lt;/p&gt;
-
-&lt;p&gt;The rewrite I mentioned earlier is incoming. This site is simply more complicated than it needs to be and I really want to experiment with critical CSS being inlined to prevent load blocking.&lt;/p&gt;
-
-&lt;p&gt;There is no reason that this site should be a recolor of an existing theme. Especially when that theme is introducing so much unnecessary overhead. Anyway, more on that to come.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The image above is from &lt;a href=&quot;https://unsplash.com/@nathjennings_&quot;&gt;Photo by Nathan Jennings on Unsplash&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-
-        <![CDATA[
-        <p>Thanks for subscribing to the feed ❤️</p>
-        ]]>
-        </description>
-        <pubDate>Fri, 26 Jul 2024 08:30:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2024/07/26/lighthouse.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2024/07/26/lighthouse.html</guid>
-        
-        <category>lighthouse</category>
-        
-        <category>SEO</category>
-        
-        <category>Web Development</category>
-        
-        <category>Accessibility</category>
         
         
       </item>
